@@ -1,0 +1,40 @@
+{
+ "built": "2026-10-21T23:40:29.816Z",
+ "layer": "node",
+ "cells": 540,
+ "configurations": [
+  "vastclient",
+  "videoadsdk",
+  "iabloader",
+  "iabloader+nsap",
+  "vastlint"
+ ],
+ "verdicts": {
+  "conforms": 244,
+  "deviates": 60,
+  "delegated": 170,
+  "n/a": 66
+ },
+ "base": {
+  "file": "results/reference/first-run/node/results.jsonl",
+  "cells": 540,
+  "regraded": 495,
+  "regradedChanged": 11
+ },
+ "rerun": {
+  "file": "rerun 2026-10-21 (node)",
+  "cells": 45,
+  "verdictChangedFromBase": 0,
+  "requirements": [
+   "A01",
+   "A02",
+   "A04",
+   "M06",
+   "M07",
+   "M08",
+   "M09",
+   "R04",
+   "R05"
+  ]
+ }
+}

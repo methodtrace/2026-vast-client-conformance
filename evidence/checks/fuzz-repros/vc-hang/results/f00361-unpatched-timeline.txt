@@ -1,0 +1,25 @@
+module=code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js timeout=2000 wrapperLimit=default (10) load1=2.08
+     1 ms  resolving depth=0 /doc/x/f00361/start.xml
+    84 ms  resolved  depth=0 duration=82 ms status=200 error=null
+    86 ms  resolving depth=1 /doc/x/f00361/start.xml?stall=6000
+  6098 ms  resolved  depth=1 duration=6012 ms status=200 error=null
+  6108 ms  resolving depth=2 /doc/x/f00361/start.xml?stall=6000
+ 12116 ms  resolved  depth=2 duration=6008 ms status=200 error=null
+ 12119 ms  resolving depth=3 /doc/x/f00361/start.xml?stall=6000
+ 18125 ms  resolved  depth=3 duration=6006 ms status=200 error=null
+ 18126 ms  resolving depth=4 /doc/x/f00361/start.xml?stall=6000
+ 24130 ms  resolved  depth=4 duration=6004 ms status=200 error=null
+ 24131 ms  resolving depth=5 /doc/x/f00361/start.xml?stall=6000
+ 30137 ms  resolved  depth=5 duration=6006 ms status=200 error=null
+ 30137 ms  resolving depth=6 /doc/x/f00361/start.xml?stall=6000
+ 36143 ms  resolved  depth=6 duration=6006 ms status=200 error=null
+ 36143 ms  resolving depth=7 /doc/x/f00361/start.xml?stall=6000
+ 42166 ms  resolved  depth=7 duration=6023 ms status=200 error=null
+ 42167 ms  resolving depth=8 /doc/x/f00361/start.xml?stall=6000
+ 48172 ms  resolved  depth=8 duration=6005 ms status=200 error=null
+ 48173 ms  resolving depth=9 /doc/x/f00361/start.xml?stall=6000
+ 54181 ms  resolved  depth=9 duration=6008 ms status=200 error=null
+ 54193 ms  VAST-error code=302
+get() resolved, ads=0 after 54194 ms
+doc requests: 10; error pixels: []
+RESULT {"outcome":"resolved, ads=0","totalMs":54194,"docRequests":10,"uncaught":[],"load1":2.34}

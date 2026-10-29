@@ -1,0 +1,29 @@
+{
+ "samples": 49,
+ "clients": {
+  "vastlint": {
+   "config": "vastlint",
+   "client": {
+    "id": "vastlint",
+    "name": "vastlint-client",
+    "version": "0.15.0 (vastlint 0.15.0)",
+    "language": "JavaScript (WebAssembly core)"
+   },
+   "samples": 49,
+   "parsed": 49,
+   "failed": []
+  },
+  "vastclient": {
+   "config": "vastclient",
+   "client": {
+    "id": "vastclient",
+    "name": "@dailymotion/vast-client",
+    "version": "6.5.0",
+    "language": "JavaScript"
+   },
+   "samples": 49,
+   "parsed": 49,
+   "failed": []
+  }
+ }
+}

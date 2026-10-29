@@ -1,0 +1,7 @@
+component	kilobytes	path
+package	393176	~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness
+node_runtime	242576	~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness/.tools
+node_modules	140048	~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness/code/harness/node_modules
+sweep_packages	0	~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness/code/harness/sweep/pkgs (absent)
+playwright_browsers	1607800	~/Library/Caches/ms-playwright
+results	24964	~/vast-conformance-runs/run-20261027T141014

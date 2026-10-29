@@ -1,0 +1,11 @@
+--- a/code/harness/gate2.mjs	2026-10-16 09:09:38.777401651 -0700
++++ b/code/harness/gate2.mjs	2026-10-20 18:52:54.485585690 -0700
+@@ -16,7 +16,7 @@
+ const targets = manifest.filter(m => /^4\./.test(versionOf(m.path) || ''));
+ // Each configuration: [label, client id, options]. iab-vast-loader runs twice: library defaults, and with its own
+ // noSingleAdPods option, which stops a lone <Ad sequence="1"> from being filed as a one-ad pod.
+-const clients = [['vastclient', 'vastclient', {}], ['videoadsdk', 'videoadsdk', {}], ['iabloader', 'iabloader', {}], ['iabloader+nsap', 'iabloader', { noSingleAdPods: true }]];
++const clients = (process.env.G2_CLIENTS ? JSON.parse(process.env.G2_CLIENTS) : [['vastclient', 'vastclient', {}], ['videoadsdk', 'videoadsdk', {}], ['iabloader', 'iabloader', {}], ['iabloader+nsap', 'iabloader', { noSingleAdPods: true }]]);
+ 
+ const srv = await startServer({ root: sampleRoot, mounts: [{ prefix: 'raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_Samples/master/', root: sampleRoot }] });
+ fs.mkdirSync(outDir, { recursive: true });

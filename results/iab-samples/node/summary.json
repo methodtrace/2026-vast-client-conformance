@@ -1,0 +1,145 @@
+{
+ "samples": 49,
+ "clients": {
+  "vastclient": {
+   "config": "vastclient",
+   "client": {
+    "id": "vastclient",
+    "name": "@dailymotion/vast-client",
+    "version": "6.5.0",
+    "language": "JavaScript"
+   },
+   "samples": 49,
+   "parsed": 49,
+   "failed": []
+  },
+  "videoadsdk": {
+   "config": "videoadsdk",
+   "client": {
+    "id": "videoadsdk",
+    "name": "video-ad-sdk",
+    "version": "4.0.1",
+    "language": "TypeScript"
+   },
+   "samples": 49,
+   "parsed": 49,
+   "failed": []
+  },
+  "iabloader": {
+   "config": "iabloader",
+   "client": {
+    "id": "iabloader",
+    "name": "iab-vast-loader",
+    "version": "2.5.1 (parser 1.2.1, model 1.0.2)",
+    "language": "JavaScript"
+   },
+   "samples": 49,
+   "parsed": 37,
+   "failed": [
+    {
+     "sample": "VAST 4.0 Samples/Viewable_Impression-test.xml",
+     "error": null,
+     "errorCode": null
+    },
+    {
+     "sample": "VAST 4.0 Samples/Wrapper_Tag-test.xml",
+     "error": null,
+     "errorCode": null
+    },
+    {
+     "sample": "VAST 4.1 Samples/Closed_Caption_Test.xml",
+     "error": "Multiple values for ClosedCaptionFiles.ClosedCaptionFile",
+     "errorCode": 101
+    },
+    {
+     "sample": "VAST 4.1 Samples/Viewable_Impression-test.xml",
+     "error": null,
+     "errorCode": null
+    },
+    {
+     "sample": "VAST 4.1 Samples/Wrapper_Tag-test.xml",
+     "error": null,
+     "errorCode": null
+    },
+    {
+     "sample": "VAST 4.2 Samples/Category-test.xml",
+     "error": "Multiple values for Creative.UniversalAdId",
+     "errorCode": 101
+    },
+    {
+     "sample": "VAST 4.2 Samples/Closed_Caption_Test.xml",
+     "error": "Multiple values for ClosedCaptionFiles.ClosedCaptionFile",
+     "errorCode": 101
+    },
+    {
+     "sample": "VAST 4.2 Samples/Inline_Linear_Tag-test.xml",
+     "error": "Multiple values for Creative.UniversalAdId",
+     "errorCode": 101
+    },
+    {
+     "sample": "VAST 4.2 Samples/No_Wrapper_Tag-test.xml",
+     "error": "Multiple values for Creative.UniversalAdId",
+     "errorCode": 101
+    },
+    {
+     "sample": "VAST 4.2 Samples/Universal_Ad_ID-multi-test.xml",
+     "error": "Multiple values for Creative.UniversalAdId",
+     "errorCode": 101
+    },
+    {
+     "sample": "VAST 4.2 Samples/Viewable_Impression-test.xml",
+     "error": null,
+     "errorCode": null
+    },
+    {
+     "sample": "VAST 4.2 Samples/Wrapper_Tag-test.xml",
+     "error": null,
+     "errorCode": null
+    }
+   ]
+  },
+  "iabloader+nsap": {
+   "config": "iabloader+nsap",
+   "client": {
+    "id": "iabloader",
+    "name": "iab-vast-loader",
+    "version": "2.5.1 (parser 1.2.1, model 1.0.2)",
+    "language": "JavaScript"
+   },
+   "samples": 49,
+   "parsed": 43,
+   "failed": [
+    {
+     "sample": "VAST 4.1 Samples/Closed_Caption_Test.xml",
+     "error": "Multiple values for ClosedCaptionFiles.ClosedCaptionFile",
+     "errorCode": 101
+    },
+    {
+     "sample": "VAST 4.2 Samples/Category-test.xml",
+     "error": "Multiple values for Creative.UniversalAdId",
+     "errorCode": 101
+    },
+    {
+     "sample": "VAST 4.2 Samples/Closed_Caption_Test.xml",
+     "error": "Multiple values for ClosedCaptionFiles.ClosedCaptionFile",
+     "errorCode": 101
+    },
+    {
+     "sample": "VAST 4.2 Samples/Inline_Linear_Tag-test.xml",
+     "error": "Multiple values for Creative.UniversalAdId",
+     "errorCode": 101
+    },
+    {
+     "sample": "VAST 4.2 Samples/No_Wrapper_Tag-test.xml",
+     "error": "Multiple values for Creative.UniversalAdId",
+     "errorCode": 101
+    },
+    {
+     "sample": "VAST 4.2 Samples/Universal_Ad_ID-multi-test.xml",
+     "error": "Multiple values for Creative.UniversalAdId",
+     "errorCode": 101
+    }
+   ]
+  }
+ }
+}

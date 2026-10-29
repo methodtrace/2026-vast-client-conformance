@@ -1,0 +1,227 @@
+== <scratch>
+      maxNumRedirects: 4,
+== <scratch>
+      const vastClient = new VASTClient();
+      const options = {
+        timeout: this.params.ajaxTimeout,
+        withCredentials: this.params.ajaxWithCredentials,
+        fetchOptions: this.params.fetchOptions,
+        wrapperLimit: this.params.maxNumRedirects,
+        resolveAll: false,
+        allowMultipleAds: true
+      };
+      this.__adTagUrl = vastData;
+
+      Logger.print(this.debugRawConsoleLogs, `Try to load VAST tag at: ${this.__adTagUrl}`);
+
+      vastClient.get(this.__adTagUrl, options).then(response => {
+== <scratch>
+        currentAd.impressionURLTemplates.forEach(impression => {
+          if (impression.url) {
+            this.trackingTags.push({
+              event: 'impression',
+              url: impression.url
+            });
+          }
+== <scratch>
+              if (this.params.omidSupport && currentAd.adVerifications.length > 0) {
+                const omSdkManager = new OmSdkManager(currentAd.adVerifications, this);
+                omSdkManager.init();
+              }
+== <scratch>
+    }
+    // VAST/Ad 
+    if (response.ads.length === 0) {
+      this.rmpVastUtils.processVastErrors(303, true);
+      return;
+    } else {
+      this.#loopAds(response.ads);
+== <scratch>
+  #onVolumeChange() {
+    if (this.#rmpVast.currentAdPlayer) {
+      const muted = this.#rmpVast.currentAdPlayer.muted;
+      const volume = this.#rmpVast.currentAdPlayer.volume;
+      if (muted || volume === 0) {
+        this.dispatchTrackingAndApiEvent('advolumemuted');
+      } else if (!muted && volume > 0) {
+        this.dispatchTrackingAndApiEvent('advolumeunmuted');
+      }
+      this.#rmpVast.rmpVastUtils.createApiEvent('advolumechanged');
+    }
+  }
+== <scratch>
+  #onPlay() {
+    if (this.#rmpVast.currentAdPlayer && !this.#rmpVast.currentAdPlayer.paused) {
+      this.dispatchTrackingAndApiEvent('adresumed');
+    }
+  }
+== <scratch>
+      const pattern10 = /\[UNIVERSALADID\]/gi;
+      if (pattern10.test(finalString) && this.#rmpVast.creative.universalAdIds.length > 0) {
+        let universalAdIdString = '';
+        this.#rmpVast.creative.universalAdIds.forEach((universalAdId, index) => {
+          if (index !== 0 || index !== this.#rmpVast.creative.universalAdIds.length - 1) {
+            universalAdIdString += ',';
+          }
+          universalAdIdString += universalAdId.idRegistry + ' ' + universalAdId.value;
+        });
+        finalString = finalString.replace(
+          pattern10,
+          encodeURIComponent(universalAdIdString)
+        );
+      }
+== <scratch>
+      const pattern23 = /\[PODSEQUENCE\]/gi;
+      if (pattern23.test(finalString) && this.#rmpVast.ad.sequence) {
+        finalString = finalString.replace(pattern23, encodeURIComponent((this.#rmpVast.ad.sequence).toString()));
+      }
+== <scratch>
+    const pattern25 = /\[LIMITADTRACKING\]/gi;
+    const regulationsInfo = this.#rmpVast.regulationsInfo;
+    if (pattern25.test(finalString) && regulationsInfo.limitAdTracking) {
+      finalString = finalString.replace(pattern25, encodeURIComponent(regulationsInfo.limitAdTracking));
+    }
+== <scratch>
+  error(errorCode) {
+    // for each Error tag within an InLine or chain of Wrapper ping error URL
+    let errorTags = this.#rmpVast.adErrorTags;
+    if (errorCode === 303 && this.#rmpVast.vastErrorTags.length > 0) {
+      // here we ping vastErrorTags with error code 303 according to spec
+      // concat array thus
+      errorTags = [...errorTags, ...this.#rmpVast.vastErrorTags];
+    }
+    if (errorTags.length > 0) {
+      errorTags.forEach(errorTag => {
+        if (errorTag.url) {
+          let errorUrl = errorTag.url;
+          const errorRegExp = /\[ERRORCODE\]/gi;
+          if (errorRegExp.test(errorUrl) && FW.isNumber(errorCode) && errorCode > 0 && errorCode < 1000) {
+            errorUrl = errorUrl.replace(errorRegExp, errorCode);
+          }
+          this.#ping(errorUrl);
+        }
+      });
+    }
+  }
+== <scratch>
+  static generateCacheBusting() {
+    let text = '';
+    const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    for (let i = 0; i < 8; i++) {
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    return text;
+  }
+== <scratch>
+
+        // MEDIA_ERR_SRC_NOT_SUPPORTED (numeric value 4)
+        if (errorCode === 4) {
+          this.#rmpVast.rmpVastUtils.processVastErrors(401, true);
+        }
+== <scratch>
+  append() {
+    this.#onPlayingAppendIconsFn = this.#onPlayingAppendIcons.bind(this);
+    // as per VAST 3 spec only append icon when ad starts playing
+    this.#adPlayer.addEventListener('playing', this.#onPlayingAppendIconsFn, { once: true });
+  }
+== <scratch>
+      omidSupport: false,
+== <repo>/evidence/checks/independent-2026-10-16/rmpvast/node_modules/@dailymotion/vast-client/src/parser/vast_parser.js:359,381
+    const ad = { ...adToUnWrap };
+    return new Promise((resolve) => {
+      // Going one level deeper in the wrapper chain
+      wrapperDepth++;
+      // We already have a resolved VAST ad, no need to resolve wrapper
+      if (!ad.nextWrapperURL) {
+        delete ad.nextWrapperURL;
+        return resolve(ad);
+      }
+
+      if (!this.fetcher) {
+        ad.VASTAdTagURI = ad.nextWrapperURL;
+        delete ad.nextWrapperURL;
+        return resolve(ad);
+      }
+
+      if (wrapperDepth >= this.maxWrapperDepth) {
+        // Wrapper limit reached, as defined by the video player.
+        // Too many Wrapper responses have been received with no InLine response.
+        ad.errorCode = 302;
+        delete ad.nextWrapperURL;
+        return resolve(ad);
+      }
+== <repo>/evidence/checks/independent-2026-10-16/rmpvast/node_modules/@dailymotion/vast-client/src/parser/vast_parser.js:389,401
+      // If allowMultipleAds is set inside the parameter 'option' of public method
+      // override the vast value by the one provided
+      const allowMultipleAds =
+        this.parsingOptions.allowMultipleAds ?? ad.allowMultipleAds;
+      // sequence doesn't carry over in wrapper element
+      const wrapperSequence = ad.sequence;
+
+      this.fetcher
+        .fetchVAST({
+          url: ad.nextWrapperURL,
+          emitter: this.emit.bind(this),
+          maxWrapperDepth: this.maxWrapperDepth,
+        })
+== <repo>/evidence/checks/independent-2026-10-16/rmpvast/node_modules/@dailymotion/vast-client/src/parser/vast_parser.js:304,315
+    if (resolveAll === false) {
+      const adPods = parserUtils.getSortedAdPods(ads);
+      const standAloneAds = parserUtils.getStandAloneAds(ads);
+      // Resolve only AdPod found first, if no AdPod found resolve only the first stand alone Ad
+      if (adPods.length) {
+        ads = adPods;
+      } else if (standAloneAds.length) {
+        ads = [standAloneAds.shift()];
+      }
+
+      this.remainingAds = standAloneAds;
+    }
+== <repo>/evidence/checks/independent-2026-10-16/rmpvast/node_modules/@dailymotion/vast-client/src/parser/vast_parser.js:427,433
+        .catch((err) => {
+          // Timeout of VAST URI provided in Wrapper element, or of VAST URI provided in a subsequent Wrapper element.
+          // (URI was either unavailable or reached a timeout as defined by the video player)
+          ad.errorCode = err.message === NON_SUPPORTED_VAST_VERSION ? 102 : 301;
+          ad.errorMessage = err.message;
+          resolve(ad);
+        });
+== <repo>/evidence/checks/independent-2026-10-16/rmpvast/node_modules/@dailymotion/vast-client/src/parser/vast_parser.js:446,466
+    // No Ad case - The parser never bump into an <Ad> element
+    if (vastResponse.ads.length === 0) {
+      this.trackVastError(vastResponse.errorURLTemplates, { ERRORCODE: 303 });
+    } else {
+      for (let index = vastResponse.ads.length - 1; index >= 0; index--) {
+        // - Error encountered while parsing
+        // - No Creative case - The parser has dealt with some <Ad><Wrapper> or/and an <Ad><Inline> elements
+        // but no creative was found
+        const ad = vastResponse.ads[index];
+        const noMediaFilesAvailable = !ad.creatives.some(
+          (creative) =>
+            creative.mediaFiles?.length > 0 || creative.variations?.length > 0
+        );
+
+        if ((ad.errorCode || noMediaFilesAvailable) && !ad.VASTAdTagURI) {
+          // If VASTAdTagURI is in the vastResponse, it means we are dealing with a Wrapper when using parseVAST from the VASTParser.
+          // In that case, we dont want to modify the vastResponse since the creatives node is not required in a wrapper.
+          this.trackVastError(
+            ad.errorURLTemplates.concat(vastResponse.errorURLTemplates),
+            { ERRORCODE: ad.errorCode || 303 },
+            { ERRORMESSAGE: ad.errorMessage || '' },
+== <repo>/evidence/checks/independent-2026-10-16/rmpvast/node_modules/@dailymotion/vast-client/src/fetcher/url_handler.js:56,64
+    const controller = new AbortController();
+    const timer = setTimeout(() => {
+      controller.abort();
+      throw new Error(
+        `URLHandler: Request timed out after ${
+          options.timeout || DEFAULT_TIMEOUT
+        } ms (408)`
+      );
+    }, options.timeout || DEFAULT_TIMEOUT);
+== <repo>/evidence/checks/independent-2026-10-16/rmpvast/node_modules/@dailymotion/vast-client/src/parser/ad_parser.js:228,234
+  ad.allowMultipleAds = allowMultipleAdsValue
+    ? parserUtils.parseBoolean(allowMultipleAdsValue)
+    : false;
+
+  ad.fallbackOnNoAd = fallbackOnNoAdValue
+    ? parserUtils.parseBoolean(fallbackOnNoAdValue)
+    : null;

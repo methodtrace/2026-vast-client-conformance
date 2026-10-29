@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.3" xmlns="http://www.iab.com/VAST">
+  <Ad id="w0">
+    <Wrapper>
+      <AdSystem>harness</AdSystem>
+      <Error><![CDATA[{{BASE}}/t/{{CASE}}/w0/err?code=[ERRORCODE]]]></Error>
+      <Impression id="w0"><![CDATA[{{BASE}}/t/{{CASE}}/w0/imp]]></Impression>
+      <AdVerifications>
+        <Verification vendor="wrapper.harness.test-omid">
+          <JavaScriptResource apiFramework="omid" browserOptional="true"><![CDATA[{{BASE}}/t/{{CASE}}/w0/verif-js]]></JavaScriptResource>
+          <TrackingEvents>
+            <Tracking event="verificationNotExecuted"><![CDATA[{{BASE}}/t/{{CASE}}/w0/vne?reason=[REASON]]]></Tracking>
+          </TrackingEvents>
+          <VerificationParameters><![CDATA[{"harness":"VASTCONF"}]]></VerificationParameters>
+        </Verification>
+      </AdVerifications>
+      <Creatives>
+        <Creative>
+          <Linear>
+            <TrackingEvents>
+        <Tracking event="start"><![CDATA[{{BASE}}/t/{{CASE}}/w0/start]]></Tracking>
+        <Tracking event="firstQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/w0/firstQuartile]]></Tracking>
+        <Tracking event="midpoint"><![CDATA[{{BASE}}/t/{{CASE}}/w0/midpoint]]></Tracking>
+        <Tracking event="thirdQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/w0/thirdQuartile]]></Tracking>
+        <Tracking event="complete"><![CDATA[{{BASE}}/t/{{CASE}}/w0/complete]]></Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickTracking><![CDATA[{{BASE}}/t/{{CASE}}/w0/clicktracking]]></ClickTracking>
+            </VideoClicks>
+          </Linear>
+        </Creative>
+      </Creatives>
+      <VASTAdTagURI><![CDATA[{{BASE}}/doc/{{CASE}}/a_verification/inline.xml?status=204]]></VASTAdTagURI>
+    </Wrapper>
+  </Ad>
+</VAST>

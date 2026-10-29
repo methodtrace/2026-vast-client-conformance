@@ -1,0 +1,11 @@
+Configuration,base,(a) M12 should,"(b) M12, P01, P07 should","(c) macro-list rule: M01, M02, M03, M11, M12 should",P06 must
+vast-client-js 6.5.0 (Chromium),3,2,1,2,3
+video-ad-sdk 4.0.1 (Chromium),16,15,13,13,17
+"iab-vast-loader 2.5.1, defaults (Chromium)",5,4,3,4,5
+"iab-vast-loader 2.5.1, noSingleAdPods (Chromium)",4,3,2,3,4
+vastlint-client 0.15.0 (Node.js),11,10,10,9,11
+Shaka Player 5.2.12 (Chromium),21,21,20,17,21
+"rmp-vast 17.2.0, defaults (Chromium)",12,11,10,8,12
+"rmp-vast 17.2.0, omidSupport (Chromium)",11,10,9,7,11
+"Google IMA HTML5 3.794.0 (Chromium), closed comparison",4,4,4,4,4
+"Total, eight configurations",83,76,68,63,84

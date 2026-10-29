@@ -1,0 +1,26 @@
+operator	unique_cases	disagreeing	induced_disagreeing	induced_rate
+net ?stall	12	6	6	0.50
+insert char	58	31	28	0.48
+duplicate	173	100	82	0.47
+rename	170	95	74	0.44
+VAST version	70	36	27	0.39
+DTD entity	79	28	19	0.24
+net ?ctype	25	8	6	0.24
+encoding decl	72	26	15	0.21
+delete	167	52	33	0.20
+text	103	30	20	0.19
+cdata->text	93	22	18	0.19
+add	177	56	27	0.15
+namespace prefix	65	9	9	0.14
+whitespace removed	69	18	9	0.13
+no XML declaration	77	22	10	0.13
+move	93	30	10	0.11
+comment in	168	35	17	0.10
+BOM	63	15	6	0.10
+attr	81	20	7	0.09
+net ?delay	12	1	1	0.08
+copy	89	17	7	0.08
+remove	67	17	5	0.07
+truncate	78	6	5	0.06
+net ?status	43	1	0	0.00
+net ?gzip	7	1	0	0.00

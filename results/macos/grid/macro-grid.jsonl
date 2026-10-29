@@ -1,0 +1,580 @@
+{"client":"vastclient","context":"request","macro":"TIMESTAMP","support":"required","raw":"[TIMESTAMP]","outcome":"literal","value":"[TIMESTAMP]"}
+{"client":"vastclient","context":"request","macro":"CACHEBUSTING","support":"required","raw":"[CACHEBUSTING]","outcome":"literal","value":"[CACHEBUSTING]"}
+{"client":"vastclient","context":"request","macro":"CONTENTPLAYHEAD","support":"deprecated","raw":"[CONTENTPLAYHEAD]","outcome":"literal","value":"[CONTENTPLAYHEAD]"}
+{"client":"vastclient","context":"request","macro":"MEDIAPLAYHEAD","support":"optional","raw":"[MEDIAPLAYHEAD]","outcome":"literal","value":"[MEDIAPLAYHEAD]"}
+{"client":"vastclient","context":"request","macro":"BREAKPOSITION","support":"optional","raw":"[BREAKPOSITION]","outcome":"literal","value":"[BREAKPOSITION]"}
+{"client":"vastclient","context":"request","macro":"BLOCKEDADCATEGORIES","support":"optional","raw":"[BLOCKEDADCATEGORIES]","outcome":"literal","value":"[BLOCKEDADCATEGORIES]"}
+{"client":"vastclient","context":"request","macro":"ADCATEGORIES","support":"optional","raw":"[ADCATEGORIES]","outcome":"literal","value":"[ADCATEGORIES]"}
+{"client":"vastclient","context":"request","macro":"ADCOUNT","support":"optional","raw":"[ADCOUNT]","outcome":"literal","value":"[ADCOUNT]"}
+{"client":"vastclient","context":"request","macro":"TRANSACTIONID","support":"optional","raw":"[TRANSACTIONID]","outcome":"literal","value":"[TRANSACTIONID]"}
+{"client":"vastclient","context":"request","macro":"PLACEMENTTYPE","support":"optional","raw":"[PLACEMENTTYPE]","outcome":"literal","value":"[PLACEMENTTYPE]"}
+{"client":"vastclient","context":"request","macro":"ADTYPE","support":"optional","raw":"[ADTYPE]","outcome":"literal","value":"[ADTYPE]"}
+{"client":"vastclient","context":"request","macro":"BREAKMAXDURATION","support":"optional","raw":"[BREAKMAXDURATION]","outcome":"literal","value":"[BREAKMAXDURATION]"}
+{"client":"vastclient","context":"request","macro":"BREAKMAXADS","support":"optional","raw":"[BREAKMAXADS]","outcome":"literal","value":"[BREAKMAXADS]"}
+{"client":"vastclient","context":"request","macro":"BREAKMINADLENGTH","support":"optional","raw":"[BREAKMINADLENGTH]","outcome":"literal","value":"[BREAKMINADLENGTH]"}
+{"client":"vastclient","context":"request","macro":"BREAKMAXADLENGTH","support":"optional","raw":"[BREAKMAXADLENGTH]","outcome":"literal","value":"[BREAKMAXADLENGTH]"}
+{"client":"vastclient","context":"request","macro":"IFA","support":"optional","raw":"[IFA]","outcome":"literal","value":"[IFA]"}
+{"client":"vastclient","context":"request","macro":"IFATYPE","support":"optional","raw":"[IFATYPE]","outcome":"literal","value":"[IFATYPE]"}
+{"client":"vastclient","context":"request","macro":"CLIENTUA","support":"optional","raw":"[CLIENTUA]","outcome":"literal","value":"[CLIENTUA]"}
+{"client":"vastclient","context":"request","macro":"SERVERUA","support":"optional","raw":"[SERVERUA]","outcome":"literal","value":"[SERVERUA]"}
+{"client":"vastclient","context":"request","macro":"DEVICEUA","support":"optional","raw":"[DEVICEUA]","outcome":"literal","value":"[DEVICEUA]"}
+{"client":"vastclient","context":"request","macro":"SERVERSIDE","support":"optional","raw":"[SERVERSIDE]","outcome":"literal","value":"[SERVERSIDE]"}
+{"client":"vastclient","context":"request","macro":"DEVICEIP","support":"optional","raw":"[DEVICEIP]","outcome":"literal","value":"[DEVICEIP]"}
+{"client":"vastclient","context":"request","macro":"LATLONG","support":"optional","raw":"[LATLONG]","outcome":"literal","value":"[LATLONG]"}
+{"client":"vastclient","context":"request","macro":"DOMAIN","support":"optional","raw":"[DOMAIN]","outcome":"literal","value":"[DOMAIN]"}
+{"client":"vastclient","context":"request","macro":"PAGEURL","support":"required-if-OM","raw":"[PAGEURL]","outcome":"literal","value":"[PAGEURL]"}
+{"client":"vastclient","context":"request","macro":"APPBUNDLE","support":"required-if-OM","raw":"[APPBUNDLE]","outcome":"literal","value":"[APPBUNDLE]"}
+{"client":"vastclient","context":"request","macro":"VASTVERSIONS","support":"optional","raw":"[VASTVERSIONS]","outcome":"literal","value":"[VASTVERSIONS]"}
+{"client":"vastclient","context":"request","macro":"APIFRAMEWORKS","support":"optional","raw":"[APIFRAMEWORKS]","outcome":"literal","value":"[APIFRAMEWORKS]"}
+{"client":"vastclient","context":"request","macro":"EXTENSIONS","support":"optional","raw":"[EXTENSIONS]","outcome":"literal","value":"[EXTENSIONS]"}
+{"client":"vastclient","context":"request","macro":"VERIFICATIONVENDORS","support":"optional","raw":"[VERIFICATIONVENDORS]","outcome":"literal","value":"[VERIFICATIONVENDORS]"}
+{"client":"vastclient","context":"request","macro":"OMIDPARTNER","support":"required-if-OM","raw":"[OMIDPARTNER]","outcome":"literal","value":"[OMIDPARTNER]"}
+{"client":"vastclient","context":"request","macro":"MEDIAMIME","support":"optional","raw":"[MEDIAMIME]","outcome":"literal","value":"[MEDIAMIME]"}
+{"client":"vastclient","context":"request","macro":"PLAYERCAPABILITIES","support":"optional","raw":"[PLAYERCAPABILITIES]","outcome":"literal","value":"[PLAYERCAPABILITIES]"}
+{"client":"vastclient","context":"request","macro":"CLICKTYPE","support":"optional","raw":"[CLICKTYPE]","outcome":"literal","value":"[CLICKTYPE]"}
+{"client":"vastclient","context":"request","macro":"INVENTORYSTATE","support":"optional","raw":"[INVENTORYSTATE]","outcome":"literal","value":"[INVENTORYSTATE]"}
+{"client":"vastclient","context":"request","macro":"PLAYERSIZE","support":"optional","raw":"[PLAYERSIZE]","outcome":"literal","value":"[PLAYERSIZE]"}
+{"client":"vastclient","context":"request","macro":"CONTENTID","support":"optional","raw":"[CONTENTID]","outcome":"literal","value":"[CONTENTID]"}
+{"client":"vastclient","context":"request","macro":"CONTENTURI","support":"optional","raw":"[CONTENTURI]","outcome":"literal","value":"[CONTENTURI]"}
+{"client":"vastclient","context":"request","macro":"LIMITADTRACKING","support":"required","raw":"[LIMITADTRACKING]","outcome":"literal","value":"[LIMITADTRACKING]"}
+{"client":"vastclient","context":"request","macro":"REGULATIONS","support":"optional","raw":"[REGULATIONS]","outcome":"literal","value":"[REGULATIONS]"}
+{"client":"vastclient","context":"request","macro":"GDPRCONSENT","support":"optional","raw":"[GDPRCONSENT]","outcome":"literal","value":"[GDPRCONSENT]"}
+{"client":"vastclient","context":"request","macro":"STOREID","support":"optional","raw":"[STOREID]","outcome":"literal","value":"[STOREID]"}
+{"client":"vastclient","context":"request","macro":"STOREURL","support":"optional","raw":"[STOREURL]","outcome":"literal","value":"[STOREURL]"}
+{"client":"vastclient","context":"request","macro":"PLAYBACKMETHODS","support":"optional","raw":"[PLAYBACKMETHODS]","outcome":"literal","value":"[PLAYBACKMETHODS]"}
+{"client":"vastclient","context":"request","macro":"CONTENTCAT","support":"optional","raw":"[CONTENTCAT]","outcome":"literal","value":"[CONTENTCAT]"}
+{"client":"vastclient","context":"request","macro":"GPPSTRING","support":"optional","raw":"[GPPSTRING]","outcome":"literal","value":"[GPPSTRING]"}
+{"client":"vastclient","context":"request","macro":"GPPSECTIONID","support":"optional","raw":"[GPPSECTIONID]","outcome":"literal","value":"[GPPSECTIONID]"}
+{"client":"vastclient","context":"request","macro":"DSAREQUIRED","support":"optional","raw":"[DSAREQUIRED]","outcome":"literal","value":"[DSAREQUIRED]"}
+{"client":"vastclient","context":"request","macro":"DSAPARAMS","support":"optional","raw":"[DSAPARAMS]","outcome":"literal","value":"[DSAPARAMS]"}
+{"client":"vastclient","context":"request","macro":"DSAPUBRENDER","support":"optional","raw":"[DSAPUBRENDER]","outcome":"literal","value":"[DSAPUBRENDER]"}
+{"client":"vastclient","context":"pixel","macro":"TIMESTAMP","support":"required","raw":"2026-10-27T21%3A30%3A37.610Z","outcome":"value","value":"2026-10-27T21:30:37.610Z"}
+{"client":"vastclient","context":"pixel","macro":"CACHEBUSTING","support":"required","raw":"51714264","outcome":"value","value":"51714264"}
+{"client":"vastclient","context":"pixel","macro":"CONTENTPLAYHEAD","support":"deprecated","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"MEDIAPLAYHEAD","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"BREAKPOSITION","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"ADCOUNT","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"TRANSACTIONID","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"PLACEMENTTYPE","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"ADTYPE","support":"optional","raw":"video","outcome":"value","value":"video"}
+{"client":"vastclient","context":"pixel","macro":"UNIVERSALADID","support":"optional","raw":"ad-id.org%20MACR0001","outcome":"value","value":"ad-id.org MACR0001"}
+{"client":"vastclient","context":"pixel","macro":"BREAKMAXDURATION","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"BREAKMAXADS","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"BREAKMINADLENGTH","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"BREAKMAXADLENGTH","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"IFA","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"IFATYPE","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"CLIENTUA","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"SERVERUA","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"DEVICEUA","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"SERVERSIDE","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"DEVICEIP","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"LATLONG","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"DOMAIN","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"PAGEURL","support":"required-if-OM","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"APPBUNDLE","support":"required-if-OM","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"OMIDPARTNER","support":"required-if-OM","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"PLAYERCAPABILITIES","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"CLICKTYPE","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"PLAYERSTATE","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"INVENTORYSTATE","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"PLAYERSIZE","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"ADPLAYHEAD","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"ASSETURI","support":"optional","raw":"http%3A%2F%2F127.0.0.1%3A51884%2Fm%2Fmg001%2Fin.mp4","outcome":"value","value":"http://127.0.0.1:51884/m/mg001/in.mp4"}
+{"client":"vastclient","context":"pixel","macro":"CONTENTID","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"CONTENTURI","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"PODSEQUENCE","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"ADSERVINGID","support":"optional","raw":"serving-123","outcome":"value","value":"serving-123"}
+{"client":"vastclient","context":"pixel","macro":"LIMITADTRACKING","support":"required","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"REGULATIONS","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"GDPRCONSENT","support":"optional","raw":"-1","outcome":"unknown (-1)","value":"-1"}
+{"client":"vastclient","context":"pixel","macro":"STOREID","support":"optional","raw":"[STOREID]","outcome":"literal","value":"[STOREID]"}
+{"client":"vastclient","context":"pixel","macro":"STOREURL","support":"optional","raw":"[STOREURL]","outcome":"literal","value":"[STOREURL]"}
+{"client":"vastclient","context":"pixel","macro":"PLAYBACKMETHODS","support":"optional","raw":"[PLAYBACKMETHODS]","outcome":"literal","value":"[PLAYBACKMETHODS]"}
+{"client":"vastclient","context":"pixel","macro":"GPPSTRING","support":"optional","raw":"[GPPSTRING]","outcome":"literal","value":"[GPPSTRING]"}
+{"client":"vastclient","context":"pixel","macro":"GPPSECTIONID","support":"optional","raw":"[GPPSECTIONID]","outcome":"literal","value":"[GPPSECTIONID]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"TIMESTAMP","support":"required","raw":"[TIMESTAMP]","outcome":"literal","value":"[TIMESTAMP]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"CACHEBUSTING","support":"required","raw":"[CACHEBUSTING]","outcome":"literal","value":"[CACHEBUSTING]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"CONTENTPLAYHEAD","support":"deprecated","raw":"[CONTENTPLAYHEAD]","outcome":"literal","value":"[CONTENTPLAYHEAD]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"MEDIAPLAYHEAD","support":"optional","raw":"[MEDIAPLAYHEAD]","outcome":"literal","value":"[MEDIAPLAYHEAD]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"BREAKPOSITION","support":"optional","raw":"[BREAKPOSITION]","outcome":"literal","value":"[BREAKPOSITION]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"BLOCKEDADCATEGORIES","support":"optional","raw":"[BLOCKEDADCATEGORIES]","outcome":"literal","value":"[BLOCKEDADCATEGORIES]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"ADCATEGORIES","support":"optional","raw":"[ADCATEGORIES]","outcome":"literal","value":"[ADCATEGORIES]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"ADCOUNT","support":"optional","raw":"[ADCOUNT]","outcome":"literal","value":"[ADCOUNT]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"TRANSACTIONID","support":"optional","raw":"[TRANSACTIONID]","outcome":"literal","value":"[TRANSACTIONID]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"PLACEMENTTYPE","support":"optional","raw":"[PLACEMENTTYPE]","outcome":"literal","value":"[PLACEMENTTYPE]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"ADTYPE","support":"optional","raw":"[ADTYPE]","outcome":"literal","value":"[ADTYPE]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"BREAKMAXDURATION","support":"optional","raw":"[BREAKMAXDURATION]","outcome":"literal","value":"[BREAKMAXDURATION]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"BREAKMAXADS","support":"optional","raw":"[BREAKMAXADS]","outcome":"literal","value":"[BREAKMAXADS]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"BREAKMINADLENGTH","support":"optional","raw":"[BREAKMINADLENGTH]","outcome":"literal","value":"[BREAKMINADLENGTH]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"BREAKMAXADLENGTH","support":"optional","raw":"[BREAKMAXADLENGTH]","outcome":"literal","value":"[BREAKMAXADLENGTH]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"IFA","support":"optional","raw":"[IFA]","outcome":"literal","value":"[IFA]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"IFATYPE","support":"optional","raw":"[IFATYPE]","outcome":"literal","value":"[IFATYPE]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"CLIENTUA","support":"optional","raw":"[CLIENTUA]","outcome":"literal","value":"[CLIENTUA]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"SERVERUA","support":"optional","raw":"[SERVERUA]","outcome":"literal","value":"[SERVERUA]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"DEVICEUA","support":"optional","raw":"[DEVICEUA]","outcome":"literal","value":"[DEVICEUA]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"SERVERSIDE","support":"optional","raw":"[SERVERSIDE]","outcome":"literal","value":"[SERVERSIDE]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"DEVICEIP","support":"optional","raw":"[DEVICEIP]","outcome":"literal","value":"[DEVICEIP]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"LATLONG","support":"optional","raw":"[LATLONG]","outcome":"literal","value":"[LATLONG]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"DOMAIN","support":"optional","raw":"[DOMAIN]","outcome":"literal","value":"[DOMAIN]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"PAGEURL","support":"required-if-OM","raw":"[PAGEURL]","outcome":"literal","value":"[PAGEURL]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"APPBUNDLE","support":"required-if-OM","raw":"[APPBUNDLE]","outcome":"literal","value":"[APPBUNDLE]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"VASTVERSIONS","support":"optional","raw":"[VASTVERSIONS]","outcome":"literal","value":"[VASTVERSIONS]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"APIFRAMEWORKS","support":"optional","raw":"[APIFRAMEWORKS]","outcome":"literal","value":"[APIFRAMEWORKS]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"EXTENSIONS","support":"optional","raw":"[EXTENSIONS]","outcome":"literal","value":"[EXTENSIONS]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"VERIFICATIONVENDORS","support":"optional","raw":"[VERIFICATIONVENDORS]","outcome":"literal","value":"[VERIFICATIONVENDORS]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"OMIDPARTNER","support":"required-if-OM","raw":"[OMIDPARTNER]","outcome":"literal","value":"[OMIDPARTNER]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"MEDIAMIME","support":"optional","raw":"[MEDIAMIME]","outcome":"literal","value":"[MEDIAMIME]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"PLAYERCAPABILITIES","support":"optional","raw":"[PLAYERCAPABILITIES]","outcome":"literal","value":"[PLAYERCAPABILITIES]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"CLICKTYPE","support":"optional","raw":"[CLICKTYPE]","outcome":"literal","value":"[CLICKTYPE]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"INVENTORYSTATE","support":"optional","raw":"[INVENTORYSTATE]","outcome":"literal","value":"[INVENTORYSTATE]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"PLAYERSIZE","support":"optional","raw":"[PLAYERSIZE]","outcome":"literal","value":"[PLAYERSIZE]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"CONTENTID","support":"optional","raw":"[CONTENTID]","outcome":"literal","value":"[CONTENTID]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"CONTENTURI","support":"optional","raw":"[CONTENTURI]","outcome":"literal","value":"[CONTENTURI]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"LIMITADTRACKING","support":"required","raw":"[LIMITADTRACKING]","outcome":"literal","value":"[LIMITADTRACKING]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"REGULATIONS","support":"optional","raw":"[REGULATIONS]","outcome":"literal","value":"[REGULATIONS]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"GDPRCONSENT","support":"optional","raw":"[GDPRCONSENT]","outcome":"literal","value":"[GDPRCONSENT]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"STOREID","support":"optional","raw":"[STOREID]","outcome":"literal","value":"[STOREID]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"STOREURL","support":"optional","raw":"[STOREURL]","outcome":"literal","value":"[STOREURL]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"PLAYBACKMETHODS","support":"optional","raw":"[PLAYBACKMETHODS]","outcome":"literal","value":"[PLAYBACKMETHODS]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"CONTENTCAT","support":"optional","raw":"[CONTENTCAT]","outcome":"literal","value":"[CONTENTCAT]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"GPPSTRING","support":"optional","raw":"[GPPSTRING]","outcome":"literal","value":"[GPPSTRING]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"GPPSECTIONID","support":"optional","raw":"[GPPSECTIONID]","outcome":"literal","value":"[GPPSECTIONID]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"DSAREQUIRED","support":"optional","raw":"[DSAREQUIRED]","outcome":"literal","value":"[DSAREQUIRED]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"DSAPARAMS","support":"optional","raw":"[DSAPARAMS]","outcome":"literal","value":"[DSAPARAMS]"}
+{"client":"vastclient","context":"request (escaped &amp;)","macro":"DSAPUBRENDER","support":"optional","raw":"[DSAPUBRENDER]","outcome":"literal","value":"[DSAPUBRENDER]"}
+{"client":"videoadsdk","context":"request","macro":"TIMESTAMP","support":"required","raw":"[TIMESTAMP]","outcome":"literal","value":"[TIMESTAMP]"}
+{"client":"videoadsdk","context":"request","macro":"CACHEBUSTING","support":"required","raw":"[CACHEBUSTING]","outcome":"literal","value":"[CACHEBUSTING]"}
+{"client":"videoadsdk","context":"request","macro":"CONTENTPLAYHEAD","support":"deprecated","raw":"[CONTENTPLAYHEAD]","outcome":"literal","value":"[CONTENTPLAYHEAD]"}
+{"client":"videoadsdk","context":"request","macro":"MEDIAPLAYHEAD","support":"optional","raw":"[MEDIAPLAYHEAD]","outcome":"literal","value":"[MEDIAPLAYHEAD]"}
+{"client":"videoadsdk","context":"request","macro":"BREAKPOSITION","support":"optional","raw":"[BREAKPOSITION]","outcome":"literal","value":"[BREAKPOSITION]"}
+{"client":"videoadsdk","context":"request","macro":"BLOCKEDADCATEGORIES","support":"optional","raw":"[BLOCKEDADCATEGORIES]","outcome":"literal","value":"[BLOCKEDADCATEGORIES]"}
+{"client":"videoadsdk","context":"request","macro":"ADCATEGORIES","support":"optional","raw":"[ADCATEGORIES]","outcome":"literal","value":"[ADCATEGORIES]"}
+{"client":"videoadsdk","context":"request","macro":"ADCOUNT","support":"optional","raw":"[ADCOUNT]","outcome":"literal","value":"[ADCOUNT]"}
+{"client":"videoadsdk","context":"request","macro":"TRANSACTIONID","support":"optional","raw":"[TRANSACTIONID]","outcome":"literal","value":"[TRANSACTIONID]"}
+{"client":"videoadsdk","context":"request","macro":"PLACEMENTTYPE","support":"optional","raw":"[PLACEMENTTYPE]","outcome":"literal","value":"[PLACEMENTTYPE]"}
+{"client":"videoadsdk","context":"request","macro":"ADTYPE","support":"optional","raw":"[ADTYPE]","outcome":"literal","value":"[ADTYPE]"}
+{"client":"videoadsdk","context":"request","macro":"BREAKMAXDURATION","support":"optional","raw":"[BREAKMAXDURATION]","outcome":"literal","value":"[BREAKMAXDURATION]"}
+{"client":"videoadsdk","context":"request","macro":"BREAKMAXADS","support":"optional","raw":"[BREAKMAXADS]","outcome":"literal","value":"[BREAKMAXADS]"}
+{"client":"videoadsdk","context":"request","macro":"BREAKMINADLENGTH","support":"optional","raw":"[BREAKMINADLENGTH]","outcome":"literal","value":"[BREAKMINADLENGTH]"}
+{"client":"videoadsdk","context":"request","macro":"BREAKMAXADLENGTH","support":"optional","raw":"[BREAKMAXADLENGTH]","outcome":"literal","value":"[BREAKMAXADLENGTH]"}
+{"client":"videoadsdk","context":"request","macro":"IFA","support":"optional","raw":"[IFA]","outcome":"literal","value":"[IFA]"}
+{"client":"videoadsdk","context":"request","macro":"IFATYPE","support":"optional","raw":"[IFATYPE]","outcome":"literal","value":"[IFATYPE]"}
+{"client":"videoadsdk","context":"request","macro":"CLIENTUA","support":"optional","raw":"[CLIENTUA]","outcome":"literal","value":"[CLIENTUA]"}
+{"client":"videoadsdk","context":"request","macro":"SERVERUA","support":"optional","raw":"[SERVERUA]","outcome":"literal","value":"[SERVERUA]"}
+{"client":"videoadsdk","context":"request","macro":"DEVICEUA","support":"optional","raw":"[DEVICEUA]","outcome":"literal","value":"[DEVICEUA]"}
+{"client":"videoadsdk","context":"request","macro":"SERVERSIDE","support":"optional","raw":"[SERVERSIDE]","outcome":"literal","value":"[SERVERSIDE]"}
+{"client":"videoadsdk","context":"request","macro":"DEVICEIP","support":"optional","raw":"[DEVICEIP]","outcome":"literal","value":"[DEVICEIP]"}
+{"client":"videoadsdk","context":"request","macro":"LATLONG","support":"optional","raw":"[LATLONG]","outcome":"literal","value":"[LATLONG]"}
+{"client":"videoadsdk","context":"request","macro":"DOMAIN","support":"optional","raw":"[DOMAIN]","outcome":"literal","value":"[DOMAIN]"}
+{"client":"videoadsdk","context":"request","macro":"PAGEURL","support":"required-if-OM","raw":"[PAGEURL]","outcome":"literal","value":"[PAGEURL]"}
+{"client":"videoadsdk","context":"request","macro":"APPBUNDLE","support":"required-if-OM","raw":"[APPBUNDLE]","outcome":"literal","value":"[APPBUNDLE]"}
+{"client":"videoadsdk","context":"request","macro":"VASTVERSIONS","support":"optional","raw":"[VASTVERSIONS]","outcome":"literal","value":"[VASTVERSIONS]"}
+{"client":"videoadsdk","context":"request","macro":"APIFRAMEWORKS","support":"optional","raw":"[APIFRAMEWORKS]","outcome":"literal","value":"[APIFRAMEWORKS]"}
+{"client":"videoadsdk","context":"request","macro":"EXTENSIONS","support":"optional","raw":"[EXTENSIONS]","outcome":"literal","value":"[EXTENSIONS]"}
+{"client":"videoadsdk","context":"request","macro":"VERIFICATIONVENDORS","support":"optional","raw":"[VERIFICATIONVENDORS]","outcome":"literal","value":"[VERIFICATIONVENDORS]"}
+{"client":"videoadsdk","context":"request","macro":"OMIDPARTNER","support":"required-if-OM","raw":"[OMIDPARTNER]","outcome":"literal","value":"[OMIDPARTNER]"}
+{"client":"videoadsdk","context":"request","macro":"MEDIAMIME","support":"optional","raw":"[MEDIAMIME]","outcome":"literal","value":"[MEDIAMIME]"}
+{"client":"videoadsdk","context":"request","macro":"PLAYERCAPABILITIES","support":"optional","raw":"[PLAYERCAPABILITIES]","outcome":"literal","value":"[PLAYERCAPABILITIES]"}
+{"client":"videoadsdk","context":"request","macro":"CLICKTYPE","support":"optional","raw":"[CLICKTYPE]","outcome":"literal","value":"[CLICKTYPE]"}
+{"client":"videoadsdk","context":"request","macro":"INVENTORYSTATE","support":"optional","raw":"[INVENTORYSTATE]","outcome":"literal","value":"[INVENTORYSTATE]"}
+{"client":"videoadsdk","context":"request","macro":"PLAYERSIZE","support":"optional","raw":"[PLAYERSIZE]","outcome":"literal","value":"[PLAYERSIZE]"}
+{"client":"videoadsdk","context":"request","macro":"CONTENTID","support":"optional","raw":"[CONTENTID]","outcome":"literal","value":"[CONTENTID]"}
+{"client":"videoadsdk","context":"request","macro":"CONTENTURI","support":"optional","raw":"[CONTENTURI]","outcome":"literal","value":"[CONTENTURI]"}
+{"client":"videoadsdk","context":"request","macro":"LIMITADTRACKING","support":"required","raw":"[LIMITADTRACKING]","outcome":"literal","value":"[LIMITADTRACKING]"}
+{"client":"videoadsdk","context":"request","macro":"REGULATIONS","support":"optional","raw":"[REGULATIONS]","outcome":"literal","value":"[REGULATIONS]"}
+{"client":"videoadsdk","context":"request","macro":"GDPRCONSENT","support":"optional","raw":"[GDPRCONSENT]","outcome":"literal","value":"[GDPRCONSENT]"}
+{"client":"videoadsdk","context":"request","macro":"STOREID","support":"optional","raw":"[STOREID]","outcome":"literal","value":"[STOREID]"}
+{"client":"videoadsdk","context":"request","macro":"STOREURL","support":"optional","raw":"[STOREURL]","outcome":"literal","value":"[STOREURL]"}
+{"client":"videoadsdk","context":"request","macro":"PLAYBACKMETHODS","support":"optional","raw":"[PLAYBACKMETHODS]","outcome":"literal","value":"[PLAYBACKMETHODS]"}
+{"client":"videoadsdk","context":"request","macro":"CONTENTCAT","support":"optional","raw":"[CONTENTCAT]","outcome":"literal","value":"[CONTENTCAT]"}
+{"client":"videoadsdk","context":"request","macro":"GPPSTRING","support":"optional","raw":"[GPPSTRING]","outcome":"literal","value":"[GPPSTRING]"}
+{"client":"videoadsdk","context":"request","macro":"GPPSECTIONID","support":"optional","raw":"[GPPSECTIONID]","outcome":"literal","value":"[GPPSECTIONID]"}
+{"client":"videoadsdk","context":"request","macro":"DSAREQUIRED","support":"optional","raw":"[DSAREQUIRED]","outcome":"literal","value":"[DSAREQUIRED]"}
+{"client":"videoadsdk","context":"request","macro":"DSAPARAMS","support":"optional","raw":"[DSAPARAMS]","outcome":"literal","value":"[DSAPARAMS]"}
+{"client":"videoadsdk","context":"request","macro":"DSAPUBRENDER","support":"optional","raw":"[DSAPUBRENDER]","outcome":"literal","value":"[DSAPUBRENDER]"}
+{"client":"videoadsdk","context":"pixel","macro":"TIMESTAMP","support":"required","raw":"2026-10-27T21%3A30%3A39.235Z","outcome":"value","value":"2026-10-27T21:30:39.235Z"}
+{"client":"videoadsdk","context":"pixel","macro":"CACHEBUSTING","support":"required","raw":"793674652","outcome":"value","value":"793674652"}
+{"client":"videoadsdk","context":"pixel","macro":"CONTENTPLAYHEAD","support":"deprecated","raw":"[CONTENTPLAYHEAD]","outcome":"literal","value":"[CONTENTPLAYHEAD]"}
+{"client":"videoadsdk","context":"pixel","macro":"MEDIAPLAYHEAD","support":"optional","raw":"[MEDIAPLAYHEAD]","outcome":"literal","value":"[MEDIAPLAYHEAD]"}
+{"client":"videoadsdk","context":"pixel","macro":"BREAKPOSITION","support":"optional","raw":"[BREAKPOSITION]","outcome":"literal","value":"[BREAKPOSITION]"}
+{"client":"videoadsdk","context":"pixel","macro":"ADCOUNT","support":"optional","raw":"[ADCOUNT]","outcome":"literal","value":"[ADCOUNT]"}
+{"client":"videoadsdk","context":"pixel","macro":"TRANSACTIONID","support":"optional","raw":"[TRANSACTIONID]","outcome":"literal","value":"[TRANSACTIONID]"}
+{"client":"videoadsdk","context":"pixel","macro":"PLACEMENTTYPE","support":"optional","raw":"[PLACEMENTTYPE]","outcome":"literal","value":"[PLACEMENTTYPE]"}
+{"client":"videoadsdk","context":"pixel","macro":"ADTYPE","support":"optional","raw":"[ADTYPE]","outcome":"literal","value":"[ADTYPE]"}
+{"client":"videoadsdk","context":"pixel","macro":"UNIVERSALADID","support":"optional","raw":"[UNIVERSALADID]","outcome":"literal","value":"[UNIVERSALADID]"}
+{"client":"videoadsdk","context":"pixel","macro":"BREAKMAXDURATION","support":"optional","raw":"[BREAKMAXDURATION]","outcome":"literal","value":"[BREAKMAXDURATION]"}
+{"client":"videoadsdk","context":"pixel","macro":"BREAKMAXADS","support":"optional","raw":"[BREAKMAXADS]","outcome":"literal","value":"[BREAKMAXADS]"}
+{"client":"videoadsdk","context":"pixel","macro":"BREAKMINADLENGTH","support":"optional","raw":"[BREAKMINADLENGTH]","outcome":"literal","value":"[BREAKMINADLENGTH]"}
+{"client":"videoadsdk","context":"pixel","macro":"BREAKMAXADLENGTH","support":"optional","raw":"[BREAKMAXADLENGTH]","outcome":"literal","value":"[BREAKMAXADLENGTH]"}
+{"client":"videoadsdk","context":"pixel","macro":"IFA","support":"optional","raw":"[IFA]","outcome":"literal","value":"[IFA]"}
+{"client":"videoadsdk","context":"pixel","macro":"IFATYPE","support":"optional","raw":"[IFATYPE]","outcome":"literal","value":"[IFATYPE]"}
+{"client":"videoadsdk","context":"pixel","macro":"CLIENTUA","support":"optional","raw":"[CLIENTUA]","outcome":"literal","value":"[CLIENTUA]"}
+{"client":"videoadsdk","context":"pixel","macro":"SERVERUA","support":"optional","raw":"[SERVERUA]","outcome":"literal","value":"[SERVERUA]"}
+{"client":"videoadsdk","context":"pixel","macro":"DEVICEUA","support":"optional","raw":"[DEVICEUA]","outcome":"literal","value":"[DEVICEUA]"}
+{"client":"videoadsdk","context":"pixel","macro":"SERVERSIDE","support":"optional","raw":"[SERVERSIDE]","outcome":"literal","value":"[SERVERSIDE]"}
+{"client":"videoadsdk","context":"pixel","macro":"DEVICEIP","support":"optional","raw":"[DEVICEIP]","outcome":"literal","value":"[DEVICEIP]"}
+{"client":"videoadsdk","context":"pixel","macro":"LATLONG","support":"optional","raw":"[LATLONG]","outcome":"literal","value":"[LATLONG]"}
+{"client":"videoadsdk","context":"pixel","macro":"DOMAIN","support":"optional","raw":"[DOMAIN]","outcome":"literal","value":"[DOMAIN]"}
+{"client":"videoadsdk","context":"pixel","macro":"PAGEURL","support":"required-if-OM","raw":"[PAGEURL]","outcome":"literal","value":"[PAGEURL]"}
+{"client":"videoadsdk","context":"pixel","macro":"APPBUNDLE","support":"required-if-OM","raw":"[APPBUNDLE]","outcome":"literal","value":"[APPBUNDLE]"}
+{"client":"videoadsdk","context":"pixel","macro":"OMIDPARTNER","support":"required-if-OM","raw":"[OMIDPARTNER]","outcome":"literal","value":"[OMIDPARTNER]"}
+{"client":"videoadsdk","context":"pixel","macro":"PLAYERCAPABILITIES","support":"optional","raw":"[PLAYERCAPABILITIES]","outcome":"literal","value":"[PLAYERCAPABILITIES]"}
+{"client":"videoadsdk","context":"pixel","macro":"CLICKTYPE","support":"optional","raw":"[CLICKTYPE]","outcome":"literal","value":"[CLICKTYPE]"}
+{"client":"videoadsdk","context":"pixel","macro":"PLAYERSTATE","support":"optional","raw":"[PLAYERSTATE]","outcome":"literal","value":"[PLAYERSTATE]"}
+{"client":"videoadsdk","context":"pixel","macro":"INVENTORYSTATE","support":"optional","raw":"[INVENTORYSTATE]","outcome":"literal","value":"[INVENTORYSTATE]"}
+{"client":"videoadsdk","context":"pixel","macro":"PLAYERSIZE","support":"optional","raw":"[PLAYERSIZE]","outcome":"literal","value":"[PLAYERSIZE]"}
+{"client":"videoadsdk","context":"pixel","macro":"ADPLAYHEAD","support":"optional","raw":"[ADPLAYHEAD]","outcome":"literal","value":"[ADPLAYHEAD]"}
+{"client":"videoadsdk","context":"pixel","macro":"ASSETURI","support":"optional","raw":"[ASSETURI]","outcome":"literal","value":"[ASSETURI]"}
+{"client":"videoadsdk","context":"pixel","macro":"CONTENTID","support":"optional","raw":"[CONTENTID]","outcome":"literal","value":"[CONTENTID]"}
+{"client":"videoadsdk","context":"pixel","macro":"CONTENTURI","support":"optional","raw":"[CONTENTURI]","outcome":"literal","value":"[CONTENTURI]"}
+{"client":"videoadsdk","context":"pixel","macro":"PODSEQUENCE","support":"optional","raw":"[PODSEQUENCE]","outcome":"literal","value":"[PODSEQUENCE]"}
+{"client":"videoadsdk","context":"pixel","macro":"ADSERVINGID","support":"optional","raw":"[ADSERVINGID]","outcome":"literal","value":"[ADSERVINGID]"}
+{"client":"videoadsdk","context":"pixel","macro":"LIMITADTRACKING","support":"required","raw":"[LIMITADTRACKING]","outcome":"literal","value":"[LIMITADTRACKING]"}
+{"client":"videoadsdk","context":"pixel","macro":"REGULATIONS","support":"optional","raw":"[REGULATIONS]","outcome":"literal","value":"[REGULATIONS]"}
+{"client":"videoadsdk","context":"pixel","macro":"GDPRCONSENT","support":"optional","raw":"[GDPRCONSENT]","outcome":"literal","value":"[GDPRCONSENT]"}
+{"client":"videoadsdk","context":"pixel","macro":"STOREID","support":"optional","raw":"[STOREID]","outcome":"literal","value":"[STOREID]"}
+{"client":"videoadsdk","context":"pixel","macro":"STOREURL","support":"optional","raw":"[STOREURL]","outcome":"literal","value":"[STOREURL]"}
+{"client":"videoadsdk","context":"pixel","macro":"PLAYBACKMETHODS","support":"optional","raw":"[PLAYBACKMETHODS]","outcome":"literal","value":"[PLAYBACKMETHODS]"}
+{"client":"videoadsdk","context":"pixel","macro":"GPPSTRING","support":"optional","raw":"[GPPSTRING]","outcome":"literal","value":"[GPPSTRING]"}
+{"client":"videoadsdk","context":"pixel","macro":"GPPSECTIONID","support":"optional","raw":"[GPPSECTIONID]","outcome":"literal","value":"[GPPSECTIONID]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"TIMESTAMP","support":"required","raw":"[TIMESTAMP]","outcome":"literal","value":"[TIMESTAMP]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"CACHEBUSTING","support":"required","raw":"[CACHEBUSTING]","outcome":"literal","value":"[CACHEBUSTING]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"CONTENTPLAYHEAD","support":"deprecated","raw":"[CONTENTPLAYHEAD]","outcome":"literal","value":"[CONTENTPLAYHEAD]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"MEDIAPLAYHEAD","support":"optional","raw":"[MEDIAPLAYHEAD]","outcome":"literal","value":"[MEDIAPLAYHEAD]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"BREAKPOSITION","support":"optional","raw":"[BREAKPOSITION]","outcome":"literal","value":"[BREAKPOSITION]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"BLOCKEDADCATEGORIES","support":"optional","raw":"[BLOCKEDADCATEGORIES]","outcome":"literal","value":"[BLOCKEDADCATEGORIES]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"ADCATEGORIES","support":"optional","raw":"[ADCATEGORIES]","outcome":"literal","value":"[ADCATEGORIES]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"ADCOUNT","support":"optional","raw":"[ADCOUNT]","outcome":"literal","value":"[ADCOUNT]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"TRANSACTIONID","support":"optional","raw":"[TRANSACTIONID]","outcome":"literal","value":"[TRANSACTIONID]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"PLACEMENTTYPE","support":"optional","raw":"[PLACEMENTTYPE]","outcome":"literal","value":"[PLACEMENTTYPE]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"ADTYPE","support":"optional","raw":"[ADTYPE]","outcome":"literal","value":"[ADTYPE]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"BREAKMAXDURATION","support":"optional","raw":"[BREAKMAXDURATION]","outcome":"literal","value":"[BREAKMAXDURATION]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"BREAKMAXADS","support":"optional","raw":"[BREAKMAXADS]","outcome":"literal","value":"[BREAKMAXADS]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"BREAKMINADLENGTH","support":"optional","raw":"[BREAKMINADLENGTH]","outcome":"literal","value":"[BREAKMINADLENGTH]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"BREAKMAXADLENGTH","support":"optional","raw":"[BREAKMAXADLENGTH]","outcome":"literal","value":"[BREAKMAXADLENGTH]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"IFA","support":"optional","raw":"[IFA]","outcome":"literal","value":"[IFA]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"IFATYPE","support":"optional","raw":"[IFATYPE]","outcome":"literal","value":"[IFATYPE]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"CLIENTUA","support":"optional","raw":"[CLIENTUA]","outcome":"literal","value":"[CLIENTUA]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"SERVERUA","support":"optional","raw":"[SERVERUA]","outcome":"literal","value":"[SERVERUA]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"DEVICEUA","support":"optional","raw":"[DEVICEUA]","outcome":"literal","value":"[DEVICEUA]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"SERVERSIDE","support":"optional","raw":"[SERVERSIDE]","outcome":"literal","value":"[SERVERSIDE]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"DEVICEIP","support":"optional","raw":"[DEVICEIP]","outcome":"literal","value":"[DEVICEIP]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"LATLONG","support":"optional","raw":"[LATLONG]","outcome":"literal","value":"[LATLONG]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"DOMAIN","support":"optional","raw":"[DOMAIN]","outcome":"literal","value":"[DOMAIN]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"PAGEURL","support":"required-if-OM","raw":"[PAGEURL]","outcome":"literal","value":"[PAGEURL]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"APPBUNDLE","support":"required-if-OM","raw":"[APPBUNDLE]","outcome":"literal","value":"[APPBUNDLE]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"VASTVERSIONS","support":"optional","raw":"[VASTVERSIONS]","outcome":"literal","value":"[VASTVERSIONS]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"APIFRAMEWORKS","support":"optional","raw":"[APIFRAMEWORKS]","outcome":"literal","value":"[APIFRAMEWORKS]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"EXTENSIONS","support":"optional","raw":"[EXTENSIONS]","outcome":"literal","value":"[EXTENSIONS]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"VERIFICATIONVENDORS","support":"optional","raw":"[VERIFICATIONVENDORS]","outcome":"literal","value":"[VERIFICATIONVENDORS]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"OMIDPARTNER","support":"required-if-OM","raw":"[OMIDPARTNER]","outcome":"literal","value":"[OMIDPARTNER]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"MEDIAMIME","support":"optional","raw":"[MEDIAMIME]","outcome":"literal","value":"[MEDIAMIME]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"PLAYERCAPABILITIES","support":"optional","raw":"[PLAYERCAPABILITIES]","outcome":"literal","value":"[PLAYERCAPABILITIES]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"CLICKTYPE","support":"optional","raw":"[CLICKTYPE]","outcome":"literal","value":"[CLICKTYPE]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"INVENTORYSTATE","support":"optional","raw":"[INVENTORYSTATE]","outcome":"literal","value":"[INVENTORYSTATE]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"PLAYERSIZE","support":"optional","raw":"[PLAYERSIZE]","outcome":"literal","value":"[PLAYERSIZE]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"CONTENTID","support":"optional","raw":"[CONTENTID]","outcome":"literal","value":"[CONTENTID]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"CONTENTURI","support":"optional","raw":"[CONTENTURI]","outcome":"literal","value":"[CONTENTURI]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"LIMITADTRACKING","support":"required","raw":"[LIMITADTRACKING]","outcome":"literal","value":"[LIMITADTRACKING]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"REGULATIONS","support":"optional","raw":"[REGULATIONS]","outcome":"literal","value":"[REGULATIONS]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"GDPRCONSENT","support":"optional","raw":"[GDPRCONSENT]","outcome":"literal","value":"[GDPRCONSENT]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"STOREID","support":"optional","raw":"[STOREID]","outcome":"literal","value":"[STOREID]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"STOREURL","support":"optional","raw":"[STOREURL]","outcome":"literal","value":"[STOREURL]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"PLAYBACKMETHODS","support":"optional","raw":"[PLAYBACKMETHODS]","outcome":"literal","value":"[PLAYBACKMETHODS]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"CONTENTCAT","support":"optional","raw":"[CONTENTCAT]","outcome":"literal","value":"[CONTENTCAT]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"GPPSTRING","support":"optional","raw":"[GPPSTRING]","outcome":"literal","value":"[GPPSTRING]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"GPPSECTIONID","support":"optional","raw":"[GPPSECTIONID]","outcome":"literal","value":"[GPPSECTIONID]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"DSAREQUIRED","support":"optional","raw":"[DSAREQUIRED]","outcome":"literal","value":"[DSAREQUIRED]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"DSAPARAMS","support":"optional","raw":"[DSAPARAMS]","outcome":"literal","value":"[DSAPARAMS]"}
+{"client":"videoadsdk","context":"request (escaped &amp;)","macro":"DSAPUBRENDER","support":"optional","raw":"[DSAPUBRENDER]","outcome":"literal","value":"[DSAPUBRENDER]"}
+{"client":"iabloader","context":"request","macro":"TIMESTAMP","support":"required","raw":"[TIMESTAMP]","outcome":"literal","value":"[TIMESTAMP]"}
+{"client":"iabloader","context":"request","macro":"CACHEBUSTING","support":"required","raw":"[CACHEBUSTING]","outcome":"literal","value":"[CACHEBUSTING]"}
+{"client":"iabloader","context":"request","macro":"CONTENTPLAYHEAD","support":"deprecated","raw":"[CONTENTPLAYHEAD]","outcome":"literal","value":"[CONTENTPLAYHEAD]"}
+{"client":"iabloader","context":"request","macro":"MEDIAPLAYHEAD","support":"optional","raw":"[MEDIAPLAYHEAD]","outcome":"literal","value":"[MEDIAPLAYHEAD]"}
+{"client":"iabloader","context":"request","macro":"BREAKPOSITION","support":"optional","raw":"[BREAKPOSITION]","outcome":"literal","value":"[BREAKPOSITION]"}
+{"client":"iabloader","context":"request","macro":"BLOCKEDADCATEGORIES","support":"optional","raw":"[BLOCKEDADCATEGORIES]","outcome":"literal","value":"[BLOCKEDADCATEGORIES]"}
+{"client":"iabloader","context":"request","macro":"ADCATEGORIES","support":"optional","raw":"[ADCATEGORIES]","outcome":"literal","value":"[ADCATEGORIES]"}
+{"client":"iabloader","context":"request","macro":"ADCOUNT","support":"optional","raw":"[ADCOUNT]","outcome":"literal","value":"[ADCOUNT]"}
+{"client":"iabloader","context":"request","macro":"TRANSACTIONID","support":"optional","raw":"[TRANSACTIONID]","outcome":"literal","value":"[TRANSACTIONID]"}
+{"client":"iabloader","context":"request","macro":"PLACEMENTTYPE","support":"optional","raw":"[PLACEMENTTYPE]","outcome":"literal","value":"[PLACEMENTTYPE]"}
+{"client":"iabloader","context":"request","macro":"ADTYPE","support":"optional","raw":"[ADTYPE]","outcome":"literal","value":"[ADTYPE]"}
+{"client":"iabloader","context":"request","macro":"BREAKMAXDURATION","support":"optional","raw":"[BREAKMAXDURATION]","outcome":"literal","value":"[BREAKMAXDURATION]"}
+{"client":"iabloader","context":"request","macro":"BREAKMAXADS","support":"optional","raw":"[BREAKMAXADS]","outcome":"literal","value":"[BREAKMAXADS]"}
+{"client":"iabloader","context":"request","macro":"BREAKMINADLENGTH","support":"optional","raw":"[BREAKMINADLENGTH]","outcome":"literal","value":"[BREAKMINADLENGTH]"}
+{"client":"iabloader","context":"request","macro":"BREAKMAXADLENGTH","support":"optional","raw":"[BREAKMAXADLENGTH]","outcome":"literal","value":"[BREAKMAXADLENGTH]"}
+{"client":"iabloader","context":"request","macro":"IFA","support":"optional","raw":"[IFA]","outcome":"literal","value":"[IFA]"}
+{"client":"iabloader","context":"request","macro":"IFATYPE","support":"optional","raw":"[IFATYPE]","outcome":"literal","value":"[IFATYPE]"}
+{"client":"iabloader","context":"request","macro":"CLIENTUA","support":"optional","raw":"[CLIENTUA]","outcome":"literal","value":"[CLIENTUA]"}
+{"client":"iabloader","context":"request","macro":"SERVERUA","support":"optional","raw":"[SERVERUA]","outcome":"literal","value":"[SERVERUA]"}
+{"client":"iabloader","context":"request","macro":"DEVICEUA","support":"optional","raw":"[DEVICEUA]","outcome":"literal","value":"[DEVICEUA]"}
+{"client":"iabloader","context":"request","macro":"SERVERSIDE","support":"optional","raw":"[SERVERSIDE]","outcome":"literal","value":"[SERVERSIDE]"}
+{"client":"iabloader","context":"request","macro":"DEVICEIP","support":"optional","raw":"[DEVICEIP]","outcome":"literal","value":"[DEVICEIP]"}
+{"client":"iabloader","context":"request","macro":"LATLONG","support":"optional","raw":"[LATLONG]","outcome":"literal","value":"[LATLONG]"}
+{"client":"iabloader","context":"request","macro":"DOMAIN","support":"optional","raw":"[DOMAIN]","outcome":"literal","value":"[DOMAIN]"}
+{"client":"iabloader","context":"request","macro":"PAGEURL","support":"required-if-OM","raw":"[PAGEURL]","outcome":"literal","value":"[PAGEURL]"}
+{"client":"iabloader","context":"request","macro":"APPBUNDLE","support":"required-if-OM","raw":"[APPBUNDLE]","outcome":"literal","value":"[APPBUNDLE]"}
+{"client":"iabloader","context":"request","macro":"VASTVERSIONS","support":"optional","raw":"[VASTVERSIONS]","outcome":"literal","value":"[VASTVERSIONS]"}
+{"client":"iabloader","context":"request","macro":"APIFRAMEWORKS","support":"optional","raw":"[APIFRAMEWORKS]","outcome":"literal","value":"[APIFRAMEWORKS]"}
+{"client":"iabloader","context":"request","macro":"EXTENSIONS","support":"optional","raw":"[EXTENSIONS]","outcome":"literal","value":"[EXTENSIONS]"}
+{"client":"iabloader","context":"request","macro":"VERIFICATIONVENDORS","support":"optional","raw":"[VERIFICATIONVENDORS]","outcome":"literal","value":"[VERIFICATIONVENDORS]"}
+{"client":"iabloader","context":"request","macro":"OMIDPARTNER","support":"required-if-OM","raw":"[OMIDPARTNER]","outcome":"literal","value":"[OMIDPARTNER]"}
+{"client":"iabloader","context":"request","macro":"MEDIAMIME","support":"optional","raw":"[MEDIAMIME]","outcome":"literal","value":"[MEDIAMIME]"}
+{"client":"iabloader","context":"request","macro":"PLAYERCAPABILITIES","support":"optional","raw":"[PLAYERCAPABILITIES]","outcome":"literal","value":"[PLAYERCAPABILITIES]"}
+{"client":"iabloader","context":"request","macro":"CLICKTYPE","support":"optional","raw":"[CLICKTYPE]","outcome":"literal","value":"[CLICKTYPE]"}
+{"client":"iabloader","context":"request","macro":"INVENTORYSTATE","support":"optional","raw":"[INVENTORYSTATE]","outcome":"literal","value":"[INVENTORYSTATE]"}
+{"client":"iabloader","context":"request","macro":"PLAYERSIZE","support":"optional","raw":"[PLAYERSIZE]","outcome":"literal","value":"[PLAYERSIZE]"}
+{"client":"iabloader","context":"request","macro":"CONTENTID","support":"optional","raw":"[CONTENTID]","outcome":"literal","value":"[CONTENTID]"}
+{"client":"iabloader","context":"request","macro":"CONTENTURI","support":"optional","raw":"[CONTENTURI]","outcome":"literal","value":"[CONTENTURI]"}
+{"client":"iabloader","context":"request","macro":"LIMITADTRACKING","support":"required","raw":"[LIMITADTRACKING]","outcome":"literal","value":"[LIMITADTRACKING]"}
+{"client":"iabloader","context":"request","macro":"REGULATIONS","support":"optional","raw":"[REGULATIONS]","outcome":"literal","value":"[REGULATIONS]"}
+{"client":"iabloader","context":"request","macro":"GDPRCONSENT","support":"optional","raw":"[GDPRCONSENT]","outcome":"literal","value":"[GDPRCONSENT]"}
+{"client":"iabloader","context":"request","macro":"STOREID","support":"optional","raw":"[STOREID]","outcome":"literal","value":"[STOREID]"}
+{"client":"iabloader","context":"request","macro":"STOREURL","support":"optional","raw":"[STOREURL]","outcome":"literal","value":"[STOREURL]"}
+{"client":"iabloader","context":"request","macro":"PLAYBACKMETHODS","support":"optional","raw":"[PLAYBACKMETHODS]","outcome":"literal","value":"[PLAYBACKMETHODS]"}
+{"client":"iabloader","context":"request","macro":"CONTENTCAT","support":"optional","raw":"[CONTENTCAT]","outcome":"literal","value":"[CONTENTCAT]"}
+{"client":"iabloader","context":"request","macro":"GPPSTRING","support":"optional","raw":"[GPPSTRING]","outcome":"literal","value":"[GPPSTRING]"}
+{"client":"iabloader","context":"request","macro":"GPPSECTIONID","support":"optional","raw":"[GPPSECTIONID]","outcome":"literal","value":"[GPPSECTIONID]"}
+{"client":"iabloader","context":"request","macro":"DSAREQUIRED","support":"optional","raw":"[DSAREQUIRED]","outcome":"literal","value":"[DSAREQUIRED]"}
+{"client":"iabloader","context":"request","macro":"DSAPARAMS","support":"optional","raw":"[DSAPARAMS]","outcome":"literal","value":"[DSAPARAMS]"}
+{"client":"iabloader","context":"request","macro":"DSAPUBRENDER","support":"optional","raw":"[DSAPUBRENDER]","outcome":"literal","value":"[DSAPUBRENDER]"}
+{"client":"iabloader","context":"pixel","macro":"TIMESTAMP","support":"required","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"CACHEBUSTING","support":"required","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"CONTENTPLAYHEAD","support":"deprecated","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"MEDIAPLAYHEAD","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"BREAKPOSITION","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"ADCOUNT","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"TRANSACTIONID","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"PLACEMENTTYPE","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"ADTYPE","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"UNIVERSALADID","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"BREAKMAXDURATION","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"BREAKMAXADS","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"BREAKMINADLENGTH","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"BREAKMAXADLENGTH","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"IFA","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"IFATYPE","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"CLIENTUA","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"SERVERUA","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"DEVICEUA","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"SERVERSIDE","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"DEVICEIP","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"LATLONG","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"DOMAIN","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"PAGEURL","support":"required-if-OM","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"APPBUNDLE","support":"required-if-OM","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"OMIDPARTNER","support":"required-if-OM","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"PLAYERCAPABILITIES","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"CLICKTYPE","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"PLAYERSTATE","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"INVENTORYSTATE","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"PLAYERSIZE","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"ADPLAYHEAD","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"ASSETURI","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"CONTENTID","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"CONTENTURI","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"PODSEQUENCE","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"ADSERVINGID","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"LIMITADTRACKING","support":"required","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"REGULATIONS","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"GDPRCONSENT","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"STOREID","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"STOREURL","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"PLAYBACKMETHODS","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"GPPSTRING","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"pixel","macro":"GPPSECTIONID","support":"optional","outcome":"delegated"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"TIMESTAMP","support":"required","raw":"[TIMESTAMP]","outcome":"literal","value":"[TIMESTAMP]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"CACHEBUSTING","support":"required","raw":"[CACHEBUSTING]","outcome":"literal","value":"[CACHEBUSTING]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"CONTENTPLAYHEAD","support":"deprecated","raw":"[CONTENTPLAYHEAD]","outcome":"literal","value":"[CONTENTPLAYHEAD]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"MEDIAPLAYHEAD","support":"optional","raw":"[MEDIAPLAYHEAD]","outcome":"literal","value":"[MEDIAPLAYHEAD]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"BREAKPOSITION","support":"optional","raw":"[BREAKPOSITION]","outcome":"literal","value":"[BREAKPOSITION]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"BLOCKEDADCATEGORIES","support":"optional","raw":"[BLOCKEDADCATEGORIES]","outcome":"literal","value":"[BLOCKEDADCATEGORIES]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"ADCATEGORIES","support":"optional","raw":"[ADCATEGORIES]","outcome":"literal","value":"[ADCATEGORIES]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"ADCOUNT","support":"optional","raw":"[ADCOUNT]","outcome":"literal","value":"[ADCOUNT]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"TRANSACTIONID","support":"optional","raw":"[TRANSACTIONID]","outcome":"literal","value":"[TRANSACTIONID]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"PLACEMENTTYPE","support":"optional","raw":"[PLACEMENTTYPE]","outcome":"literal","value":"[PLACEMENTTYPE]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"ADTYPE","support":"optional","raw":"[ADTYPE]","outcome":"literal","value":"[ADTYPE]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"BREAKMAXDURATION","support":"optional","raw":"[BREAKMAXDURATION]","outcome":"literal","value":"[BREAKMAXDURATION]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"BREAKMAXADS","support":"optional","raw":"[BREAKMAXADS]","outcome":"literal","value":"[BREAKMAXADS]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"BREAKMINADLENGTH","support":"optional","raw":"[BREAKMINADLENGTH]","outcome":"literal","value":"[BREAKMINADLENGTH]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"BREAKMAXADLENGTH","support":"optional","raw":"[BREAKMAXADLENGTH]","outcome":"literal","value":"[BREAKMAXADLENGTH]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"IFA","support":"optional","raw":"[IFA]","outcome":"literal","value":"[IFA]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"IFATYPE","support":"optional","raw":"[IFATYPE]","outcome":"literal","value":"[IFATYPE]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"CLIENTUA","support":"optional","raw":"[CLIENTUA]","outcome":"literal","value":"[CLIENTUA]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"SERVERUA","support":"optional","raw":"[SERVERUA]","outcome":"literal","value":"[SERVERUA]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"DEVICEUA","support":"optional","raw":"[DEVICEUA]","outcome":"literal","value":"[DEVICEUA]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"SERVERSIDE","support":"optional","raw":"[SERVERSIDE]","outcome":"literal","value":"[SERVERSIDE]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"DEVICEIP","support":"optional","raw":"[DEVICEIP]","outcome":"literal","value":"[DEVICEIP]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"LATLONG","support":"optional","raw":"[LATLONG]","outcome":"literal","value":"[LATLONG]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"DOMAIN","support":"optional","raw":"[DOMAIN]","outcome":"literal","value":"[DOMAIN]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"PAGEURL","support":"required-if-OM","raw":"[PAGEURL]","outcome":"literal","value":"[PAGEURL]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"APPBUNDLE","support":"required-if-OM","raw":"[APPBUNDLE]","outcome":"literal","value":"[APPBUNDLE]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"VASTVERSIONS","support":"optional","raw":"[VASTVERSIONS]","outcome":"literal","value":"[VASTVERSIONS]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"APIFRAMEWORKS","support":"optional","raw":"[APIFRAMEWORKS]","outcome":"literal","value":"[APIFRAMEWORKS]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"EXTENSIONS","support":"optional","raw":"[EXTENSIONS]","outcome":"literal","value":"[EXTENSIONS]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"VERIFICATIONVENDORS","support":"optional","raw":"[VERIFICATIONVENDORS]","outcome":"literal","value":"[VERIFICATIONVENDORS]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"OMIDPARTNER","support":"required-if-OM","raw":"[OMIDPARTNER]","outcome":"literal","value":"[OMIDPARTNER]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"MEDIAMIME","support":"optional","raw":"[MEDIAMIME]","outcome":"literal","value":"[MEDIAMIME]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"PLAYERCAPABILITIES","support":"optional","raw":"[PLAYERCAPABILITIES]","outcome":"literal","value":"[PLAYERCAPABILITIES]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"CLICKTYPE","support":"optional","raw":"[CLICKTYPE]","outcome":"literal","value":"[CLICKTYPE]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"INVENTORYSTATE","support":"optional","raw":"[INVENTORYSTATE]","outcome":"literal","value":"[INVENTORYSTATE]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"PLAYERSIZE","support":"optional","raw":"[PLAYERSIZE]","outcome":"literal","value":"[PLAYERSIZE]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"CONTENTID","support":"optional","raw":"[CONTENTID]","outcome":"literal","value":"[CONTENTID]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"CONTENTURI","support":"optional","raw":"[CONTENTURI]","outcome":"literal","value":"[CONTENTURI]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"LIMITADTRACKING","support":"required","raw":"[LIMITADTRACKING]","outcome":"literal","value":"[LIMITADTRACKING]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"REGULATIONS","support":"optional","raw":"[REGULATIONS]","outcome":"literal","value":"[REGULATIONS]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"GDPRCONSENT","support":"optional","raw":"[GDPRCONSENT]","outcome":"literal","value":"[GDPRCONSENT]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"STOREID","support":"optional","raw":"[STOREID]","outcome":"literal","value":"[STOREID]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"STOREURL","support":"optional","raw":"[STOREURL]","outcome":"literal","value":"[STOREURL]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"PLAYBACKMETHODS","support":"optional","raw":"[PLAYBACKMETHODS]","outcome":"literal","value":"[PLAYBACKMETHODS]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"CONTENTCAT","support":"optional","raw":"[CONTENTCAT]","outcome":"literal","value":"[CONTENTCAT]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"GPPSTRING","support":"optional","raw":"[GPPSTRING]","outcome":"literal","value":"[GPPSTRING]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"GPPSECTIONID","support":"optional","raw":"[GPPSECTIONID]","outcome":"literal","value":"[GPPSECTIONID]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"DSAREQUIRED","support":"optional","raw":"[DSAREQUIRED]","outcome":"literal","value":"[DSAREQUIRED]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"DSAPARAMS","support":"optional","raw":"[DSAPARAMS]","outcome":"literal","value":"[DSAPARAMS]"}
+{"client":"iabloader","context":"request (escaped &amp;)","macro":"DSAPUBRENDER","support":"optional","raw":"[DSAPUBRENDER]","outcome":"literal","value":"[DSAPUBRENDER]"}
+{"client":"vastlint","context":"request","macro":"TIMESTAMP","support":"required","raw":"[TIMESTAMP]","outcome":"literal","value":"[TIMESTAMP]"}
+{"client":"vastlint","context":"request","macro":"CACHEBUSTING","support":"required","raw":"[CACHEBUSTING]","outcome":"literal","value":"[CACHEBUSTING]"}
+{"client":"vastlint","context":"request","macro":"CONTENTPLAYHEAD","support":"deprecated","raw":"[CONTENTPLAYHEAD]","outcome":"literal","value":"[CONTENTPLAYHEAD]"}
+{"client":"vastlint","context":"request","macro":"MEDIAPLAYHEAD","support":"optional","raw":"[MEDIAPLAYHEAD]","outcome":"literal","value":"[MEDIAPLAYHEAD]"}
+{"client":"vastlint","context":"request","macro":"BREAKPOSITION","support":"optional","raw":"[BREAKPOSITION]","outcome":"literal","value":"[BREAKPOSITION]"}
+{"client":"vastlint","context":"request","macro":"BLOCKEDADCATEGORIES","support":"optional","raw":"[BLOCKEDADCATEGORIES]","outcome":"literal","value":"[BLOCKEDADCATEGORIES]"}
+{"client":"vastlint","context":"request","macro":"ADCATEGORIES","support":"optional","raw":"[ADCATEGORIES]","outcome":"literal","value":"[ADCATEGORIES]"}
+{"client":"vastlint","context":"request","macro":"ADCOUNT","support":"optional","raw":"[ADCOUNT]","outcome":"literal","value":"[ADCOUNT]"}
+{"client":"vastlint","context":"request","macro":"TRANSACTIONID","support":"optional","raw":"[TRANSACTIONID]","outcome":"literal","value":"[TRANSACTIONID]"}
+{"client":"vastlint","context":"request","macro":"PLACEMENTTYPE","support":"optional","raw":"[PLACEMENTTYPE]","outcome":"literal","value":"[PLACEMENTTYPE]"}
+{"client":"vastlint","context":"request","macro":"ADTYPE","support":"optional","raw":"[ADTYPE]","outcome":"literal","value":"[ADTYPE]"}
+{"client":"vastlint","context":"request","macro":"BREAKMAXDURATION","support":"optional","raw":"[BREAKMAXDURATION]","outcome":"literal","value":"[BREAKMAXDURATION]"}
+{"client":"vastlint","context":"request","macro":"BREAKMAXADS","support":"optional","raw":"[BREAKMAXADS]","outcome":"literal","value":"[BREAKMAXADS]"}
+{"client":"vastlint","context":"request","macro":"BREAKMINADLENGTH","support":"optional","raw":"[BREAKMINADLENGTH]","outcome":"literal","value":"[BREAKMINADLENGTH]"}
+{"client":"vastlint","context":"request","macro":"BREAKMAXADLENGTH","support":"optional","raw":"[BREAKMAXADLENGTH]","outcome":"literal","value":"[BREAKMAXADLENGTH]"}
+{"client":"vastlint","context":"request","macro":"IFA","support":"optional","raw":"[IFA]","outcome":"literal","value":"[IFA]"}
+{"client":"vastlint","context":"request","macro":"IFATYPE","support":"optional","raw":"[IFATYPE]","outcome":"literal","value":"[IFATYPE]"}
+{"client":"vastlint","context":"request","macro":"CLIENTUA","support":"optional","raw":"[CLIENTUA]","outcome":"literal","value":"[CLIENTUA]"}
+{"client":"vastlint","context":"request","macro":"SERVERUA","support":"optional","raw":"[SERVERUA]","outcome":"literal","value":"[SERVERUA]"}
+{"client":"vastlint","context":"request","macro":"DEVICEUA","support":"optional","raw":"[DEVICEUA]","outcome":"literal","value":"[DEVICEUA]"}
+{"client":"vastlint","context":"request","macro":"SERVERSIDE","support":"optional","raw":"[SERVERSIDE]","outcome":"literal","value":"[SERVERSIDE]"}
+{"client":"vastlint","context":"request","macro":"DEVICEIP","support":"optional","raw":"[DEVICEIP]","outcome":"literal","value":"[DEVICEIP]"}
+{"client":"vastlint","context":"request","macro":"LATLONG","support":"optional","raw":"[LATLONG]","outcome":"literal","value":"[LATLONG]"}
+{"client":"vastlint","context":"request","macro":"DOMAIN","support":"optional","raw":"[DOMAIN]","outcome":"literal","value":"[DOMAIN]"}
+{"client":"vastlint","context":"request","macro":"PAGEURL","support":"required-if-OM","raw":"[PAGEURL]","outcome":"literal","value":"[PAGEURL]"}
+{"client":"vastlint","context":"request","macro":"APPBUNDLE","support":"required-if-OM","raw":"[APPBUNDLE]","outcome":"literal","value":"[APPBUNDLE]"}
+{"client":"vastlint","context":"request","macro":"VASTVERSIONS","support":"optional","raw":"[VASTVERSIONS]","outcome":"literal","value":"[VASTVERSIONS]"}
+{"client":"vastlint","context":"request","macro":"APIFRAMEWORKS","support":"optional","raw":"[APIFRAMEWORKS]","outcome":"literal","value":"[APIFRAMEWORKS]"}
+{"client":"vastlint","context":"request","macro":"EXTENSIONS","support":"optional","raw":"[EXTENSIONS]","outcome":"literal","value":"[EXTENSIONS]"}
+{"client":"vastlint","context":"request","macro":"VERIFICATIONVENDORS","support":"optional","raw":"[VERIFICATIONVENDORS]","outcome":"literal","value":"[VERIFICATIONVENDORS]"}
+{"client":"vastlint","context":"request","macro":"OMIDPARTNER","support":"required-if-OM","raw":"[OMIDPARTNER]","outcome":"literal","value":"[OMIDPARTNER]"}
+{"client":"vastlint","context":"request","macro":"MEDIAMIME","support":"optional","raw":"[MEDIAMIME]","outcome":"literal","value":"[MEDIAMIME]"}
+{"client":"vastlint","context":"request","macro":"PLAYERCAPABILITIES","support":"optional","raw":"[PLAYERCAPABILITIES]","outcome":"literal","value":"[PLAYERCAPABILITIES]"}
+{"client":"vastlint","context":"request","macro":"CLICKTYPE","support":"optional","raw":"[CLICKTYPE]","outcome":"literal","value":"[CLICKTYPE]"}
+{"client":"vastlint","context":"request","macro":"INVENTORYSTATE","support":"optional","raw":"[INVENTORYSTATE]","outcome":"literal","value":"[INVENTORYSTATE]"}
+{"client":"vastlint","context":"request","macro":"PLAYERSIZE","support":"optional","raw":"[PLAYERSIZE]","outcome":"literal","value":"[PLAYERSIZE]"}
+{"client":"vastlint","context":"request","macro":"CONTENTID","support":"optional","raw":"[CONTENTID]","outcome":"literal","value":"[CONTENTID]"}
+{"client":"vastlint","context":"request","macro":"CONTENTURI","support":"optional","raw":"[CONTENTURI]","outcome":"literal","value":"[CONTENTURI]"}
+{"client":"vastlint","context":"request","macro":"LIMITADTRACKING","support":"required","raw":"[LIMITADTRACKING]","outcome":"literal","value":"[LIMITADTRACKING]"}
+{"client":"vastlint","context":"request","macro":"REGULATIONS","support":"optional","raw":"[REGULATIONS]","outcome":"literal","value":"[REGULATIONS]"}
+{"client":"vastlint","context":"request","macro":"GDPRCONSENT","support":"optional","raw":"[GDPRCONSENT]","outcome":"literal","value":"[GDPRCONSENT]"}
+{"client":"vastlint","context":"request","macro":"STOREID","support":"optional","raw":"[STOREID]","outcome":"literal","value":"[STOREID]"}
+{"client":"vastlint","context":"request","macro":"STOREURL","support":"optional","raw":"[STOREURL]","outcome":"literal","value":"[STOREURL]"}
+{"client":"vastlint","context":"request","macro":"PLAYBACKMETHODS","support":"optional","raw":"[PLAYBACKMETHODS]","outcome":"literal","value":"[PLAYBACKMETHODS]"}
+{"client":"vastlint","context":"request","macro":"CONTENTCAT","support":"optional","raw":"[CONTENTCAT]","outcome":"literal","value":"[CONTENTCAT]"}
+{"client":"vastlint","context":"request","macro":"GPPSTRING","support":"optional","raw":"[GPPSTRING]","outcome":"literal","value":"[GPPSTRING]"}
+{"client":"vastlint","context":"request","macro":"GPPSECTIONID","support":"optional","raw":"[GPPSECTIONID]","outcome":"literal","value":"[GPPSECTIONID]"}
+{"client":"vastlint","context":"request","macro":"DSAREQUIRED","support":"optional","raw":"[DSAREQUIRED]","outcome":"literal","value":"[DSAREQUIRED]"}
+{"client":"vastlint","context":"request","macro":"DSAPARAMS","support":"optional","raw":"[DSAPARAMS]","outcome":"literal","value":"[DSAPARAMS]"}
+{"client":"vastlint","context":"request","macro":"DSAPUBRENDER","support":"optional","raw":"[DSAPUBRENDER]","outcome":"literal","value":"[DSAPUBRENDER]"}
+{"client":"vastlint","context":"pixel","macro":"TIMESTAMP","support":"required","raw":"2026-10-27T21%3A30%3A42.395Z","outcome":"value","value":"2026-10-27T21:30:42.395Z"}
+{"client":"vastlint","context":"pixel","macro":"CACHEBUSTING","support":"required","raw":"80881764","outcome":"value","value":"80881764"}
+{"client":"vastlint","context":"pixel","macro":"CONTENTPLAYHEAD","support":"deprecated","raw":"[CONTENTPLAYHEAD]","outcome":"literal","value":"[CONTENTPLAYHEAD]"}
+{"client":"vastlint","context":"pixel","macro":"MEDIAPLAYHEAD","support":"optional","raw":"[MEDIAPLAYHEAD]","outcome":"literal","value":"[MEDIAPLAYHEAD]"}
+{"client":"vastlint","context":"pixel","macro":"BREAKPOSITION","support":"optional","raw":"[BREAKPOSITION]","outcome":"literal","value":"[BREAKPOSITION]"}
+{"client":"vastlint","context":"pixel","macro":"ADCOUNT","support":"optional","raw":"[ADCOUNT]","outcome":"literal","value":"[ADCOUNT]"}
+{"client":"vastlint","context":"pixel","macro":"TRANSACTIONID","support":"optional","raw":"[TRANSACTIONID]","outcome":"literal","value":"[TRANSACTIONID]"}
+{"client":"vastlint","context":"pixel","macro":"PLACEMENTTYPE","support":"optional","raw":"[PLACEMENTTYPE]","outcome":"literal","value":"[PLACEMENTTYPE]"}
+{"client":"vastlint","context":"pixel","macro":"ADTYPE","support":"optional","raw":"[ADTYPE]","outcome":"literal","value":"[ADTYPE]"}
+{"client":"vastlint","context":"pixel","macro":"UNIVERSALADID","support":"optional","raw":"[UNIVERSALADID]","outcome":"literal","value":"[UNIVERSALADID]"}
+{"client":"vastlint","context":"pixel","macro":"BREAKMAXDURATION","support":"optional","raw":"[BREAKMAXDURATION]","outcome":"literal","value":"[BREAKMAXDURATION]"}
+{"client":"vastlint","context":"pixel","macro":"BREAKMAXADS","support":"optional","raw":"[BREAKMAXADS]","outcome":"literal","value":"[BREAKMAXADS]"}
+{"client":"vastlint","context":"pixel","macro":"BREAKMINADLENGTH","support":"optional","raw":"[BREAKMINADLENGTH]","outcome":"literal","value":"[BREAKMINADLENGTH]"}
+{"client":"vastlint","context":"pixel","macro":"BREAKMAXADLENGTH","support":"optional","raw":"[BREAKMAXADLENGTH]","outcome":"literal","value":"[BREAKMAXADLENGTH]"}
+{"client":"vastlint","context":"pixel","macro":"IFA","support":"optional","raw":"[IFA]","outcome":"literal","value":"[IFA]"}
+{"client":"vastlint","context":"pixel","macro":"IFATYPE","support":"optional","raw":"[IFATYPE]","outcome":"literal","value":"[IFATYPE]"}
+{"client":"vastlint","context":"pixel","macro":"CLIENTUA","support":"optional","raw":"[CLIENTUA]","outcome":"literal","value":"[CLIENTUA]"}
+{"client":"vastlint","context":"pixel","macro":"SERVERUA","support":"optional","raw":"[SERVERUA]","outcome":"literal","value":"[SERVERUA]"}
+{"client":"vastlint","context":"pixel","macro":"DEVICEUA","support":"optional","raw":"[DEVICEUA]","outcome":"literal","value":"[DEVICEUA]"}
+{"client":"vastlint","context":"pixel","macro":"SERVERSIDE","support":"optional","raw":"[SERVERSIDE]","outcome":"literal","value":"[SERVERSIDE]"}
+{"client":"vastlint","context":"pixel","macro":"DEVICEIP","support":"optional","raw":"[DEVICEIP]","outcome":"literal","value":"[DEVICEIP]"}
+{"client":"vastlint","context":"pixel","macro":"LATLONG","support":"optional","raw":"[LATLONG]","outcome":"literal","value":"[LATLONG]"}
+{"client":"vastlint","context":"pixel","macro":"DOMAIN","support":"optional","raw":"[DOMAIN]","outcome":"literal","value":"[DOMAIN]"}
+{"client":"vastlint","context":"pixel","macro":"PAGEURL","support":"required-if-OM","raw":"[PAGEURL]","outcome":"literal","value":"[PAGEURL]"}
+{"client":"vastlint","context":"pixel","macro":"APPBUNDLE","support":"required-if-OM","raw":"[APPBUNDLE]","outcome":"literal","value":"[APPBUNDLE]"}
+{"client":"vastlint","context":"pixel","macro":"OMIDPARTNER","support":"required-if-OM","raw":"[OMIDPARTNER]","outcome":"literal","value":"[OMIDPARTNER]"}
+{"client":"vastlint","context":"pixel","macro":"PLAYERCAPABILITIES","support":"optional","raw":"[PLAYERCAPABILITIES]","outcome":"literal","value":"[PLAYERCAPABILITIES]"}
+{"client":"vastlint","context":"pixel","macro":"CLICKTYPE","support":"optional","raw":"[CLICKTYPE]","outcome":"literal","value":"[CLICKTYPE]"}
+{"client":"vastlint","context":"pixel","macro":"PLAYERSTATE","support":"optional","raw":"[PLAYERSTATE]","outcome":"literal","value":"[PLAYERSTATE]"}
+{"client":"vastlint","context":"pixel","macro":"INVENTORYSTATE","support":"optional","raw":"[INVENTORYSTATE]","outcome":"literal","value":"[INVENTORYSTATE]"}
+{"client":"vastlint","context":"pixel","macro":"PLAYERSIZE","support":"optional","raw":"[PLAYERSIZE]","outcome":"literal","value":"[PLAYERSIZE]"}
+{"client":"vastlint","context":"pixel","macro":"ADPLAYHEAD","support":"optional","raw":"[ADPLAYHEAD]","outcome":"literal","value":"[ADPLAYHEAD]"}
+{"client":"vastlint","context":"pixel","macro":"ASSETURI","support":"optional","raw":"[ASSETURI]","outcome":"literal","value":"[ASSETURI]"}
+{"client":"vastlint","context":"pixel","macro":"CONTENTID","support":"optional","raw":"[CONTENTID]","outcome":"literal","value":"[CONTENTID]"}
+{"client":"vastlint","context":"pixel","macro":"CONTENTURI","support":"optional","raw":"[CONTENTURI]","outcome":"literal","value":"[CONTENTURI]"}
+{"client":"vastlint","context":"pixel","macro":"PODSEQUENCE","support":"optional","raw":"[PODSEQUENCE]","outcome":"literal","value":"[PODSEQUENCE]"}
+{"client":"vastlint","context":"pixel","macro":"ADSERVINGID","support":"optional","raw":"[ADSERVINGID]","outcome":"literal","value":"[ADSERVINGID]"}
+{"client":"vastlint","context":"pixel","macro":"LIMITADTRACKING","support":"required","raw":"[LIMITADTRACKING]","outcome":"literal","value":"[LIMITADTRACKING]"}
+{"client":"vastlint","context":"pixel","macro":"REGULATIONS","support":"optional","raw":"[REGULATIONS]","outcome":"literal","value":"[REGULATIONS]"}
+{"client":"vastlint","context":"pixel","macro":"GDPRCONSENT","support":"optional","raw":"[GDPRCONSENT]","outcome":"literal","value":"[GDPRCONSENT]"}
+{"client":"vastlint","context":"pixel","macro":"STOREID","support":"optional","raw":"[STOREID]","outcome":"literal","value":"[STOREID]"}
+{"client":"vastlint","context":"pixel","macro":"STOREURL","support":"optional","raw":"[STOREURL]","outcome":"literal","value":"[STOREURL]"}
+{"client":"vastlint","context":"pixel","macro":"PLAYBACKMETHODS","support":"optional","raw":"[PLAYBACKMETHODS]","outcome":"literal","value":"[PLAYBACKMETHODS]"}
+{"client":"vastlint","context":"pixel","macro":"GPPSTRING","support":"optional","raw":"[GPPSTRING]","outcome":"literal","value":"[GPPSTRING]"}
+{"client":"vastlint","context":"pixel","macro":"GPPSECTIONID","support":"optional","raw":"[GPPSECTIONID]","outcome":"literal","value":"[GPPSECTIONID]"}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"TIMESTAMP","support":"required","raw":"[TIMESTAMP]","outcome":"literal","value":"[TIMESTAMP]"}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"CACHEBUSTING","support":"required","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"CONTENTPLAYHEAD","support":"deprecated","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"MEDIAPLAYHEAD","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"BREAKPOSITION","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"BLOCKEDADCATEGORIES","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"ADCATEGORIES","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"ADCOUNT","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"TRANSACTIONID","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"PLACEMENTTYPE","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"ADTYPE","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"BREAKMAXDURATION","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"BREAKMAXADS","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"BREAKMINADLENGTH","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"BREAKMAXADLENGTH","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"IFA","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"IFATYPE","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"CLIENTUA","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"SERVERUA","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"DEVICEUA","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"SERVERSIDE","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"DEVICEIP","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"LATLONG","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"DOMAIN","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"PAGEURL","support":"required-if-OM","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"APPBUNDLE","support":"required-if-OM","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"VASTVERSIONS","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"APIFRAMEWORKS","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"EXTENSIONS","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"VERIFICATIONVENDORS","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"OMIDPARTNER","support":"required-if-OM","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"MEDIAMIME","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"PLAYERCAPABILITIES","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"CLICKTYPE","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"INVENTORYSTATE","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"PLAYERSIZE","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"CONTENTID","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"CONTENTURI","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"LIMITADTRACKING","support":"required","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"REGULATIONS","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"GDPRCONSENT","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"STOREID","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"STOREURL","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"PLAYBACKMETHODS","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"CONTENTCAT","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"GPPSTRING","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"GPPSECTIONID","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"DSAREQUIRED","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"DSAPARAMS","support":"optional","raw":null,"outcome":"missing","value":null}
+{"client":"vastlint","context":"request (escaped &amp;)","macro":"DSAPUBRENDER","support":"optional","raw":null,"outcome":"missing","value":null}

@@ -1,0 +1,12 @@
+{"pkg":"vc500","scenario":"control_wrapper","code":0,"signal":null,"ms":159,"result":{"t":1792165944383,"ev":"result","ok":true,"ads":1,"errorURLTemplates":0},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc500","scenario":"control_wrapper","code":0,"signal":null,"ms":171,"result":{"t":1792165944554,"ev":"result","ok":true,"ads":1,"errorURLTemplates":0},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc500","scenario":"control_wrapper","code":0,"signal":null,"ms":170,"result":{"t":1792165944725,"ev":"result","ok":true,"ads":1,"errorURLTemplates":0},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc500","scenario":"wrapper_hang","code":0,"signal":null,"ms":679,"result":{"t":1792165945405,"ev":"result","ok":true,"ads":0,"errorURLTemplates":0},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc500","scenario":"wrapper_hang","code":0,"signal":null,"ms":729,"result":{"t":1792165946129,"ev":"result","ok":true,"ads":0,"errorURLTemplates":0},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc500","scenario":"wrapper_hang","code":0,"signal":null,"ms":683,"result":{"t":1792165946813,"ev":"result","ok":true,"ads":0,"errorURLTemplates":0},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc500","scenario":"concurrent_50_one_slow","code":0,"signal":null,"ms":2254,"result":{"t":1792165949068,"ev":"result","finished":50},"done":50,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc500","scenario":"concurrent_50_one_slow","code":0,"signal":null,"ms":2258,"result":{"t":1792165951322,"ev":"result","finished":50},"done":50,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc500","scenario":"concurrent_50_one_slow","code":0,"signal":null,"ms":2266,"result":{"t":1792165953592,"ev":"result","finished":50},"done":50,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc500","scenario":"service","code":null,"signal":"SIGTERM","ms":2523,"result":null,"done":0,"unhandled":0,"service":{"ok":20,"failed":[]},"stderr":""}
+{"pkg":"vc500","scenario":"service","code":null,"signal":"SIGTERM","ms":2473,"result":null,"done":0,"unhandled":0,"service":{"ok":20,"failed":[]},"stderr":""}
+{"pkg":"vc500","scenario":"service","code":null,"signal":"SIGTERM","ms":2454,"result":null,"done":0,"unhandled":0,"service":{"ok":20,"failed":[]},"stderr":""}

@@ -1,0 +1,15 @@
+Configuration,Layer,conforms,"deviates, must","deviates, should","deviates, obs.",delegated,n/a
+vast-client-js 6.5.0,Node.js,79,3,2,1,12,11
+vast-client-js 6.5.0,Chromium,79,3,2,1,21,2
+video-ad-sdk 4.0.1,Node.js,68,13,8,0,0,19
+video-ad-sdk 4.0.1,Chromium,71,16,9,0,0,12
+"iab-vast-loader 2.5.1, defaults",Node.js,23,6,1,0,68,10
+"iab-vast-loader 2.5.1, defaults",Chromium,24,5,1,0,77,1
+"iab-vast-loader 2.5.1, noSingleAdPods",Node.js,24,5,1,0,68,10
+"iab-vast-loader 2.5.1, noSingleAdPods",Chromium,25,4,1,0,77,1
+vastlint-client 0.15.0,Node.js,50,11,9,0,22,16
+Shaka Player 5.2.12,Chromium,35,21,8,0,0,44
+Shaka Player 5.3.0,Chromium,44,15,7,0,0,42
+"rmp-vast 17.2.0, defaults",Chromium,80,12,9,1,0,6
+"rmp-vast 17.2.0, omidSupport",Chromium,84,11,8,1,0,4
+Google IMA HTML5 SDK 3.794.0,Chromium,93,4,4,0,0,7

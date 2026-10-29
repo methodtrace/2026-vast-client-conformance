@@ -1,0 +1,287 @@
+diff -ru a/dist/vast-client-node.js b/dist/vast-client-node.js
+--- a/dist/vast-client-node.js
++++ b/dist/vast-client-node.js
+@@ -2686,20 +2686,19 @@
+   return null;
+ }
+ async function get(url, options) {
++  // repro: the src/fetcher/url_handler.js fix applied by hand to this build
++  const timeout = options.timeout || DEFAULT_TIMEOUT;
++  const controller = new AbortController();
++  let timedOut = false;
++  const timer = setTimeout(() => {
++    timedOut = true;
++    controller.abort();
++  }, timeout);
+   try {
+-    // fetch does not have "timeout" option, we are using AbortController
+-    // to abort the request if it reach the timeout.
+-    const controller = new AbortController();
+-    const timer = setTimeout(() => {
+-      controller.abort();
+-      throw new Error("URLHandler: Request timed out after ".concat(options.timeout || DEFAULT_TIMEOUT, " ms (408)"));
+-    }, options.timeout || DEFAULT_TIMEOUT);
+     const response = await fetch(url, {
+       ...options,
+       signal: controller.signal,
+       credentials: options.withCredentials ? 'include' : 'omit'
+-    }).finally(() => {
+-      clearTimeout(timer);
+     });
+     const error = handleError(response);
+     if (error) {
+@@ -2708,12 +2707,20 @@
+         statusCode: response.status
+       };
+     }
+-    return handleResponse(response);
++    return await handleResponse(response);
+   } catch (error) {
++    if (timedOut) {
++      return {
++        error: new Error("URLHandler: Request timed out after ".concat(timeout, " ms (408)")),
++        statusCode: 408
++      };
++    }
+     return {
+       error,
+       statusCode: error.name === 'AbortError' ? 408 : null
+     };
++  } finally {
++    clearTimeout(timer);
+   }
+ }
+ const urlHandler = {
+diff -ru a/spec/fetcher.spec.js b/spec/fetcher.spec.js
+--- a/spec/fetcher.spec.js
++++ b/spec/fetcher.spec.js
+@@ -187,6 +187,165 @@
+     });
+   });
+ 
++  describe('urlHandler.get', () => {
++    const url = 'http://example.com/vast.xml';
++    const timeout = 500;
++    const vastXml = '<VAST version="4.3"></VAST>';
++    let originalFetch;
++
++    // Rejects like fetch does when its signal is aborted.
++    const rejectOnAbort = (signal, reject) =>
++      signal.addEventListener('abort', () => {
++        const error = new Error('The operation was aborted.');
++        error.name = 'AbortError';
++        reject(error);
++      });
++
++    const flushPromises = async () => {
++      for (let i = 0; i < 10; i++) {
++        await Promise.resolve();
++      }
++    };
++
++    beforeEach(() => {
++      originalFetch = global.fetch;
++      jest.useFakeTimers();
++    });
++
++    afterEach(() => {
++      jest.useRealTimers();
++      global.fetch = originalFetch;
++    });
++
++    it('should resolve with xml and details on success', async () => {
++      global.fetch = jest.fn().mockResolvedValue({
++        ok: true,
++        status: 200,
++        url,
++        text: () => Promise.resolve(vastXml),
++      });
++
++      const result = await urlHandler.get(url, { timeout });
++
++      expect(result.xml.documentElement.nodeName).toBe('VAST');
++      expect(result.details).toEqual({
++        byteLength: vastXml.length,
++        statusCode: 200,
++        rawXml: vastXml,
++      });
++      expect(jest.getTimerCount()).toBe(0);
++    });
++
++    it('should resolve with an error and the status code on HTTP error', async () => {
++      global.fetch = jest.fn().mockResolvedValue({
++        ok: false,
++        status: 404,
++        statusText: 'Not Found',
++        url,
++      });
++
++      const result = await urlHandler.get(url, { timeout });
++
++      expect(result).toEqual({
++        error: new Error('URLHandler: Not Found (404)'),
++        statusCode: 404,
++      });
++      expect(jest.getTimerCount()).toBe(0);
++    });
++
++    it('should resolve with the fetch error on network failure', async () => {
++      const networkError = new TypeError('Failed to fetch');
++      global.fetch = jest.fn().mockRejectedValue(networkError);
++
++      const result = await urlHandler.get(url, { timeout });
++
++      expect(result).toEqual({ error: networkError, statusCode: null });
++    });
++
++    it('should pass credentials and an abort signal to fetch', async () => {
++      global.fetch = jest.fn().mockResolvedValue({
++        ok: true,
++        status: 200,
++        url,
++        text: () => Promise.resolve(vastXml),
++      });
++
++      await urlHandler.get(url, { timeout, withCredentials: true });
++      await urlHandler.get(url, { timeout, withCredentials: false });
++
++      expect(global.fetch.mock.calls[0][1].credentials).toBe('include');
++      expect(global.fetch.mock.calls[1][1].credentials).toBe('omit');
++      expect(global.fetch.mock.calls[0][1].signal).toBeDefined();
++    });
++
++    it('should resolve with a 408 error, without throwing, when the response never arrives', async () => {
++      global.fetch = jest.fn(
++        (_, options) =>
++          new Promise((_, reject) => rejectOnAbort(options.signal, reject))
++      );
++
++      const result = urlHandler.get(url, { timeout });
++      // Before the fix, the timer callback threw: in Node.js that is an
++      // uncaught exception that ends the process.
++      expect(() => jest.advanceTimersByTime(timeout)).not.toThrow();
++
++      expect(global.fetch.mock.calls[0][1].signal.aborted).toBe(true);
++      await expect(result).resolves.toEqual({
++        error: new Error(
++          `URLHandler: Request timed out after ${timeout} ms (408)`
++        ),
++        statusCode: 408,
++      });
++    });
++
++    it('should resolve with a 408 error when the body stalls after the headers', async () => {
++      let signal;
++      global.fetch = jest.fn((_, options) => {
++        signal = options.signal;
++        return Promise.resolve({
++          ok: true,
++          status: 200,
++          url,
++          text: () => new Promise((_, reject) => rejectOnAbort(signal, reject)),
++        });
++      });
++
++      let settled = false;
++      const result = urlHandler.get(url, { timeout });
++      result.then(() => {
++        settled = true;
++      });
++      await flushPromises(); // headers received, body pending
++
++      expect(() => jest.advanceTimersByTime(timeout)).not.toThrow();
++      await flushPromises();
++
++      expect(signal.aborted).toBe(true);
++      expect(settled).toBe(true);
++      await expect(result).resolves.toEqual({
++        error: new Error(
++          `URLHandler: Request timed out after ${timeout} ms (408)`
++        ),
++        statusCode: 408,
++      });
++    });
++
++    it('should not time out a response that completes in time', async () => {
++      global.fetch = jest.fn().mockResolvedValue({
++        ok: true,
++        status: 200,
++        url,
++        text: () => Promise.resolve(vastXml),
++      });
++
++      const result = await urlHandler.get(url, { timeout });
++      jest.advanceTimersByTime(timeout * 2);
++
++      expect(result.details.statusCode).toBe(200);
++      expect(global.fetch.mock.calls[0][1].signal.aborted).toBe(false);
++    });
++  });
++
+   describe('setOptions', () => {
+     it('should assign options to properties', () => {
+       const customUrlHandler = jest.fn();
+diff -ru a/src/fetcher/url_handler.js b/src/fetcher/url_handler.js
+--- a/src/fetcher/url_handler.js
++++ b/src/fetcher/url_handler.js
+@@ -50,37 +50,45 @@
+ }
+ 
+ async function get(url, options) {
+-  try {
+-    // fetch does not have "timeout" option, we are using AbortController
+-    // to abort the request if it reach the timeout.
+-    const controller = new AbortController();
+-    const timer = setTimeout(() => {
+-      controller.abort();
+-      throw new Error(
+-        `URLHandler: Request timed out after ${
+-          options.timeout || DEFAULT_TIMEOUT
+-        } ms (408)`
+-      );
+-    }, options.timeout || DEFAULT_TIMEOUT);
++  const timeout = options.timeout || DEFAULT_TIMEOUT;
++  // fetch does not have "timeout" option, we are using AbortController
++  // to abort the request if it reach the timeout.
++  // The timer covers the whole request, body included, and must not throw:
++  // an error thrown in a timer callback cannot be caught by the caller.
++  const controller = new AbortController();
++  let timedOut = false;
++  const timer = setTimeout(() => {
++    timedOut = true;
++    controller.abort();
++  }, timeout);
+ 
++  try {
+     const response = await fetch(url, {
+       ...options,
+       signal: controller.signal,
+       credentials: options.withCredentials ? 'include' : 'omit',
+-    }).finally(() => {
+-      clearTimeout(timer);
+     });
+ 
+     const error = handleError(response);
+     if (error) {
+       return { error: new Error(error), statusCode: response.status };
+     }
+-    return handleResponse(response);
++    return await handleResponse(response);
+   } catch (error) {
++    if (timedOut) {
++      return {
++        error: new Error(
++          `URLHandler: Request timed out after ${timeout} ms (408)`
++        ),
++        statusCode: 408,
++      };
++    }
+     return {
+       error,
+       statusCode: error.name === 'AbortError' ? 408 : null,
+     };
++  } finally {
++    clearTimeout(timer);
+   }
+ }
+ 

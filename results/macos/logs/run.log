@@ -1,0 +1,266 @@
+VAST conformance harness run 20261027T141014
+package: ~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness
+results: ~/vast-conformance-runs/run-20261027T141014
+IMA: included
+cores: 15; parallel lanes (Node layer, Playwright engines, Safari at once): yes
+free disk under $HOME: 305 GB
+
+=== 01-node (14:10:14)
+    01-node | node tarball sha256 expected 5ed4db0fcf1eaf84d91ad12462631d73bf4576c1377e192d222e48026a902640
+    01-node | node tarball sha256 got      5ed4db0fcf1eaf84d91ad12462631d73bf4576c1377e192d222e48026a902640
+    01-node | installed ~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness/.tools/node-v22.22.0-darwin-arm64
+    01-node: exit 0, 2 s
+node: ~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness/.tools/node-v22.22.0-darwin-arm64/bin/node v22.22.0
+
+=== 02-npm-ci (14:10:17)
+    02-npm-ci | added 69 packages in 725ms
+    02-npm-ci | npm notice
+    02-npm-ci | npm notice New major version of npm available! 10.9.4 -> 12.2.1
+    02-npm-ci | npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+    02-npm-ci | npm notice To update run: npm install -g npm@12.2.1
+    02-npm-ci | npm notice
+    02-npm-ci: exit 0, 1 s
+
+=== 02b-libs (14:10:18)
+    02b-libs | iab-vast-loader            2.5.1
+    02b-libs | shaka-player               5.2.12
+    02b-libs | vastlint-client            0.15.0
+    02b-libs | vastlint                   0.15.0
+    02b-libs | playwright                 1.56.1
+    02b-libs | vastlint-client imports (WebAssembly core loaded)
+    02b-libs: exit 0, 0 s
+
+=== 03-build (14:10:18)
+    03-build | 69 vectors, 109 files -> ~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness/code/harness/suite/vectors-browser
+    03-build | page.html 297
+    03-build | rmp-vast.js 571940
+    03-build | shaka-player.compiled.js 831369
+    03-build | vastconf-browser.js 585619
+    03-build | vastconf-browser.js.map 957089
+    03-build: exit 0, 1 s
+
+=== 04-browsers-install (14:10:19)
+    04-browsers-install | |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 70.8 MiB
+    04-browsers-install | |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 70.8 MiB
+    04-browsers-install | |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 70.8 MiB
+    04-browsers-install | |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 70.8 MiB
+    04-browsers-install | |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 70.8 MiB
+    04-browsers-install | Webkit 26.0 (playwright build v2215) downloaded to ~/Library/Caches/ms-playwright/webkit-2215
+    04-browsers-install: exit 0, 11 s
+
+=== 05-env (14:10:30)
+    05-env | node v22.22.0 on darwin/arm64; playwright 1.56.1; browsers {"chromium":"141.0.7390.37","firefox":"142.0.1","webkit":"26.0","chrome":"156.0.8078.48"}
+    05-env: exit 0, 10 s
+
+=== 05b-safari-env (14:10:40)
+    05b-safari-env | safari_version=27.0.1
+    05b-safari-env | safari_build=22625.1.29.11.28
+    05b-safari-env | safaridriver=Included with Safari 27.0.1 (22625.1.29.11.28)
+    05b-safari-env | ProductName:		macOS
+    05b-safari-env | ProductVersion:		27.0.1
+    05b-safari-env | BuildVersion:		26A434
+    05b-safari-env: exit 0, 0 s
+
+
+=== 06-node-suite (14:10:40)
+=== 08a-safari-selftest (14:10:40)
+
+=== 08-browsers (14:10:40)
+    08a-safari-selftest | ok   runner: a hanging run becomes a harness error cell and the run continues (4206 ms)
+    08a-safari-selftest | ok   runner: --isolation window reuses one session (7179 ms)
+    08a-safari-selftest | ok   runner: remote automation disabled -> summary with hint, exit 0 (42 ms)
+    08a-safari-selftest | ok   runner: no driver binary -> recorded, exit 0 (31 ms)
+    08a-safari-selftest | 
+    08a-safari-selftest | 16/16 passed
+    08a-safari-selftest: exit 0, 51 s
+
+=== 08b-safari (14:11:31)
+    06-node-suite | X19  vastlint        deviates   requested with "?a=1"
+    06-node-suite | P07  vastclient      deviates   order p3,p1,p2
+    06-node-suite | P07  videoadsdk      deviates   plays p3 first
+    06-node-suite | P07  iabloader       deviates   fetched the pod and reported no ad (303): VAST error 303: No ads VAST response after one o
+    06-node-suite | P07  iabloader+nsap  deviates   fetched the pod and reported no ad (303): VAST error 303: No ads VAST response after one o
+    06-node-suite | P07  vastlint        conforms   p1,p2,p3
+    06-node-suite: exit 0, 215 s
+
+=== 06c-node-suite-2 (14:14:15)
+    06c-node-suite-2 | X19  vastlint        deviates   requested with "?a=1"
+    06c-node-suite-2 | P07  vastclient      deviates   order p3,p1,p2
+    06c-node-suite-2 | P07  videoadsdk      deviates   plays p3 first
+    06c-node-suite-2 | P07  iabloader       deviates   fetched the pod and reported no ad (303): VAST error 303: No ads VAST response after one o
+    06c-node-suite-2 | P07  iabloader+nsap  deviates   fetched the pod and reported no ad (303): VAST error 303: No ads VAST response after one o
+    06c-node-suite-2 | P07  vastlint        conforms   p1,p2,p3
+    06c-node-suite-2: exit 0, 215 s
+
+=== 06b-grids (14:17:50)
+    06b-grids | videoadsdk escaped: request made
+    06b-grids | iabloader: request made; pixels 0; 
+    06b-grids | iabloader escaped: request made
+    06b-grids | vastlint: request made; pixels 46; 
+    06b-grids | vastlint escaped: request made
+    06b-grids | {"vastclient|request":{"literal":50},"vastclient|pixel":{"value":6,"unknown (-1)":34,"literal":5},"vastclient|request (escaped &amp;)":{"literal":50},"videoadsdk|request":{"literal":50},"videoadsdk|pixel":{"value":2,"literal":43},"videoadsdk|request (escaped &amp;)":{"literal":50},"iabloader|request":{"literal":50},"iabloader|pixel":{"delegated":45},"iabloader|request (escaped &amp;)":{"literal":50},"vastlint|request":{"literal":50},"vastlint|pixel":{"value":2,"literal":43},"vastlint|request (escaped &amp;)":{"literal":1,"missing":49}}
+    06b-grids: exit 0, 773 s
+
+=== 07-gate2-iab-samples (14:30:43)
+    07-gate2-iab-samples | vastclient      49/49
+    07-gate2-iab-samples | videoadsdk      49/49
+    07-gate2-iab-samples | iabloader       37/49
+    07-gate2-iab-samples | iabloader+nsap  43/49
+    07-gate2-iab-samples: exit 0, 96 s
+    08b-safari |    ran sa0490 iabloader       p_pod_wrapper load not-ok 1882 ms VAST error 303: No ads VAST response after one or more Wrappers. Also includes n
+    08b-safari |    ran sa0491 iabloader+nsap  p_pod_wrapper load not-ok 1903 ms VAST error 303: No ads VAST response after one or more Wrappers. Also includes n
+    08b-safari |    ran sa0492 shaka           p_pod_wrapper full not-ok 11583 ms
+    08b-safari |    ran sa0493 rmpvast         p_pod_wrapper full ok 34518 ms
+    08b-safari |    ran sa0494 rmpvast+omid    p_pod_wrapper full ok 34322 ms
+    08b-safari | == safari done: 756 cells, 494 client runs (IMA skipped)
+    08b-safari: exit 0, 3975 s
+    08-browsers |    ran gc2253 rmpvast+omid    p_pod_wrapper full ok 32228 ms
+    08-browsers |    ran we2254 rmpvast+omid    p_pod_wrapper full ok 33399 ms
+    08-browsers |    ran gc2255 ima             p_pod_wrapper full ok 32826 ms
+    08-browsers | == chrome done: 864 cells, 564 client runs
+    08-browsers |    ran we2256 ima             p_pod_wrapper full ok 33437 ms
+    08-browsers | == webkit done: 864 cells, 564 client runs
+    08-browsers: exit 0, 4349 s
+
+=== 09-compare (15:23:09)
+    09-compare | error grid, graded, vs reference               identical (748 cells)
+    09-compare | macro grid vs reference                        identical (580 cells)
+    09-compare | hashes builtBundles   all 7 match
+    09-compare | hashes vectors        all 218 match
+    09-compare | hashes media          all 8 match
+    09-compare | hashes imaArchive     all 13 match
+    09-compare: exit 0, 1 s
+Node suite run 1 vs reference                  identical (540 cells)
+Node suite run 2 vs reference                  identical (540 cells)
+Node suite run 2 vs run 1 (determinism)        identical (540 cells)
+gate 2 parsed (expected/got): vastclient 49/49, videoadsdk 49/49, iabloader 37/37, iabloader+nsap 43/43
+-- chromium
+chromium vs chromium reference                 differs only in known cells (1/864 cells differ: 1 known, 0 unexplained)
+      per configuration: vastclient 0/108, videoadsdk 0/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 0/108, rmpvast+omid 0/108, ima 1/108
+      I01|ima                    expected deviates   got conforms   (known)
+chromium vs Node reference (graded cells)      differs only in known cells (3/382 cells differ: 3 known, 0 unexplained) [not in this result: vastlint; not in reference: shaka, rmpvast, rmpvast+omid, ima]
+      per configuration: vastclient 0/97, videoadsdk 1/89, iabloader 1/98, iabloader+nsap 1/98
+      W11|videoadsdk             expected conforms   got deviates   (known)
+      W11|iabloader              expected deviates   got conforms   (known)
+      W11|iabloader+nsap         expected deviates   got conforms   (known)
+chromium vs macOS reference (same engine)      identical (792 cells)
+    chromium: 564 client runs, 0 harness errors, 2 muted starts, external {"archive":1365,"telemetry stub (204, not sent)":1282}
+-- chrome
+chrome vs chromium reference                   differs only in known cells (4/864 cells differ: 4 known, 0 unexplained)
+      per configuration: vastclient 0/108, videoadsdk 0/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 1/108, rmpvast+omid 1/108, ima 2/108
+      S02|rmpvast                expected n/a        got conforms   (known)
+      S02|rmpvast+omid           expected n/a        got conforms   (known)
+      S02|ima                    expected n/a        got conforms   (known)
+      I01|ima                    expected deviates   got conforms   (known)
+chrome vs Node reference (graded cells)        differs only in known cells (3/382 cells differ: 3 known, 0 unexplained) [not in this result: vastlint; not in reference: shaka, rmpvast, rmpvast+omid, ima]
+      per configuration: vastclient 0/97, videoadsdk 1/89, iabloader 1/98, iabloader+nsap 1/98
+      W11|videoadsdk             expected conforms   got deviates   (known)
+      W11|iabloader              expected deviates   got conforms   (known)
+      W11|iabloader+nsap         expected deviates   got conforms   (known)
+chrome vs macOS reference (same engine)        identical (792 cells)
+    chrome: 564 client runs, 0 harness errors, 2 muted starts, external {"archive":1349,"telemetry stub (204, not sent)":1307}
+-- firefox
+firefox vs firefox reference                   differs only in known cells (1/864 cells differ: 1 known, 0 unexplained)
+      per configuration: vastclient 0/108, videoadsdk 0/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 0/108, rmpvast+omid 0/108, ima 1/108
+      I01|ima                    expected deviates   got conforms   (known)
+firefox vs Chromium reference                  differs only in known cells (8/864 cells differ: 8 known, 0 unexplained)
+      per configuration: vastclient 0/108, videoadsdk 1/108, iabloader 1/108, iabloader+nsap 1/108, shaka 0/108, rmpvast 1/108, rmpvast+omid 1/108, ima 3/108
+      W11|videoadsdk             expected deviates   got conforms   (known)
+      W11|iabloader              expected conforms   got deviates   (known)
+      W11|iabloader+nsap         expected conforms   got deviates   (known)
+      W11|ima                    expected conforms   got deviates   (known)
+      S02|rmpvast                expected n/a        got conforms   (known)
+      S02|rmpvast+omid           expected n/a        got conforms   (known)
+      S02|ima                    expected n/a        got conforms   (known)
+      I01|ima                    expected deviates   got conforms   (known)
+firefox vs Node reference (graded cells)       identical (382 cells) [not in this result: vastlint; not in reference: shaka, rmpvast, rmpvast+omid, ima]
+firefox vs macOS reference (same engine)       identical (792 cells)
+    firefox: 564 client runs, 0 harness errors, 0 muted starts, external {"archive":1353,"telemetry stub (204, not sent)":1271}
+-- webkit
+webkit vs webkit reference                     differs only in known cells (10/864 cells differ: 10 known, 0 unexplained)
+      per configuration: vastclient 0/108, videoadsdk 1/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 4/108, rmpvast+omid 4/108, ima 1/108
+      T05|rmpvast                expected conforms   got deviates   (known)
+      T05|rmpvast+omid           expected conforms   got deviates   (known)
+      T06|rmpvast                expected conforms   got deviates   (known)
+      T06|rmpvast+omid           expected conforms   got deviates   (known)
+      T07|rmpvast                expected conforms   got deviates   (known)
+      T07|rmpvast+omid           expected conforms   got deviates   (known)
+      T19|rmpvast                expected conforms   got n/a        (known)
+      T19|rmpvast+omid           expected conforms   got n/a        (known)
+      S01|videoadsdk             expected deviates   got conforms   (known)
+      I01|ima                    expected deviates   got conforms   (known)
+webkit vs Chromium reference                   differs only in known cells (12/864 cells differ: 12 known, 0 unexplained)
+      per configuration: vastclient 0/108, videoadsdk 0/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 5/108, rmpvast+omid 5/108, ima 2/108
+      T05|rmpvast                expected conforms   got deviates   (known)
+      T05|rmpvast+omid           expected conforms   got deviates   (known)
+      T06|rmpvast                expected conforms   got deviates   (known)
+      T06|rmpvast+omid           expected conforms   got deviates   (known)
+      T07|rmpvast                expected conforms   got deviates   (known)
+      T07|rmpvast+omid           expected conforms   got deviates   (known)
+      T19|rmpvast                expected conforms   got n/a        (known)
+      T19|rmpvast+omid           expected conforms   got n/a        (known)
+      S02|rmpvast                expected n/a        got conforms   (known)
+      S02|rmpvast+omid           expected n/a        got conforms   (known)
+      S02|ima                    expected n/a        got conforms   (known)
+      I01|ima                    expected deviates   got conforms   (known)
+webkit vs Node reference (graded cells)        differs only in known cells (3/382 cells differ: 3 known, 0 unexplained) [not in this result: vastlint; not in reference: shaka, rmpvast, rmpvast+omid, ima]
+      per configuration: vastclient 0/97, videoadsdk 1/89, iabloader 1/98, iabloader+nsap 1/98
+      W11|videoadsdk             expected conforms   got deviates   (known)
+      W11|iabloader              expected deviates   got conforms   (known)
+      W11|iabloader+nsap         expected deviates   got conforms   (known)
+webkit vs macOS reference (same engine)        identical (792 cells)
+    webkit: 564 client runs, 0 harness errors, 0 muted starts, external {"archive":1362,"telemetry stub (204, not sent)":1304}
+-- safari
+safari vs webkit reference                     differs only in known cells (1/756 cells differ: 1 known, 0 unexplained) [not in this result: ima]
+      per configuration: vastclient 0/108, videoadsdk 1/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 0/108, rmpvast+omid 0/108
+      S01|videoadsdk             expected deviates   got conforms   (known)
+safari vs Chromium reference                   differs only in known cells (2/756 cells differ: 2 known, 0 unexplained) [not in this result: ima]
+      per configuration: vastclient 0/108, videoadsdk 0/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 1/108, rmpvast+omid 1/108
+      S02|rmpvast                expected n/a        got conforms   (known)
+      S02|rmpvast+omid           expected n/a        got conforms   (known)
+safari vs Node reference (graded cells)        differs only in known cells (3/382 cells differ: 3 known, 0 unexplained) [not in this result: vastlint; not in reference: shaka, rmpvast, rmpvast+omid]
+      per configuration: vastclient 0/97, videoadsdk 1/89, iabloader 1/98, iabloader+nsap 1/98
+      W11|videoadsdk             expected conforms   got deviates   (known)
+      W11|iabloader              expected deviates   got conforms   (known)
+      W11|iabloader+nsap         expected deviates   got conforms   (known)
+safari vs macOS reference (same engine)        identical (693 cells)
+    safari: 494 client runs, 0 harness errors, 0 muted starts, external {}
+safari: ran 27.0.1; IMA skipped: IMA session refused: session not created: Could not create a session: Capability 'proxy' could not be honored.
+error grid vs reference                        identical (748 cells)
+error grid, graded, vs reference               identical (748 cells)
+macro grid vs reference                        identical (580 cells)
+hashes builtBundles   all 7 match
+hashes vectors        all 218 match
+hashes media          all 8 match
+hashes imaArchive     all 13 match
+
+=== 10-disk (15:23:10)
+    10-disk | package	393176	~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness
+    10-disk | node_runtime	242576	~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness/.tools
+    10-disk | node_modules	140048	~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness/code/harness/node_modules
+    10-disk | sweep_packages	0	~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness/code/harness/sweep/pkgs (absent)
+    10-disk | playwright_browsers	1607800	~/Library/Caches/ms-playwright
+    10-disk | results	24964	~/vast-conformance-runs/run-20261027T141014
+    10-disk: exit 0, 0 s
+
+Stage times (seconds):
+  01-node                     2  exit 0
+  02-npm-ci                   1  exit 0
+  02b-libs                    0  exit 0
+  03-build                    1  exit 0
+  04-browsers-install        11  exit 0
+  05-env                     10  exit 0
+  05b-safari-env              0  exit 0
+  08a-safari-selftest        51  exit 0
+  06-node-suite             215  exit 0
+  06c-node-suite-2          215  exit 0
+  06b-grids                 773  exit 0
+  07-gate2-iab-samples       96  exit 0
+  08b-safari               3975  exit 0
+  08-browsers              4349  exit 0
+  09-compare                  1  exit 0
+  10-disk                     0  exit 0
+
+=== 11-seal (15:23:10)
+    11-seal | sealed 47 files
+    11-seal: exit 0, 0 s

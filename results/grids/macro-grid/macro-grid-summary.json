@@ -1,0 +1,43 @@
+{
+ "vastclient|request": {
+  "literal": 50
+ },
+ "vastclient|pixel": {
+  "value": 6,
+  "unknown (-1)": 34,
+  "literal": 5
+ },
+ "vastclient|request (escaped &amp;)": {
+  "literal": 50
+ },
+ "videoadsdk|request": {
+  "literal": 50
+ },
+ "videoadsdk|pixel": {
+  "value": 2,
+  "literal": 43
+ },
+ "videoadsdk|request (escaped &amp;)": {
+  "literal": 50
+ },
+ "iabloader|request": {
+  "literal": 50
+ },
+ "iabloader|pixel": {
+  "delegated": 45
+ },
+ "iabloader|request (escaped &amp;)": {
+  "literal": 50
+ },
+ "vastlint|request": {
+  "literal": 50
+ },
+ "vastlint|pixel": {
+  "value": 2,
+  "literal": 43
+ },
+ "vastlint|request (escaped &amp;)": {
+  "literal": 1,
+  "missing": 49
+ }
+}

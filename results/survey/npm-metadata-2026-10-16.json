@@ -1,0 +1,321 @@
+{
+ "@ygoto3/omap-vast-parser": {
+  "v": "0.0.3",
+  "lic": "MIT",
+  "repo": "git+https://github.com/ygoto3/omap.git",
+  "deps": [
+   "xml-js"
+  ],
+  "nver": 4,
+  "time": "2024-03-28",
+  "first": "2023-12-13"
+ },
+ "@ygoto3/omap-vmap-parser": {
+  "v": "0.0.1",
+  "lic": "MIT",
+  "repo": "git+https://github.com/ygoto3/omap.git",
+  "deps": [
+   "xml-js"
+  ],
+  "nver": 2,
+  "time": "2023-12-13",
+  "first": "2023-12-13"
+ },
+ "@openplayerjs/ads": {
+  "v": "3.6.5",
+  "lic": "MIT",
+  "repo": "git+https://github.com/openplayerjs/openplayerjs.git",
+  "deps": [
+   "@dailymotion/vast-client",
+   "@dailymotion/vmap",
+   "@openplayerjs/core"
+  ],
+  "nver": 28,
+  "time": "2026-09-01",
+  "first": "2026-03-03"
+ },
+ "rmp-vast": {
+  "v": "6.0.0",
+  "lic": "MIT",
+  "repo": "git+https://github.com/radiantmediaplayer/rmp-vast.git",
+  "deps": [
+   "css-functions-list",
+   "eslint-scope",
+   "eslint-visitor-keys",
+   "espree",
+   "globals",
+   "postcss",
+   "postcss-selector-parser",
+   "signal-exit",
+   "source-map-js",
+   "stylelint-config-recommended",
+   "supports-hyperlinks",
+   "write-file-atomic"
+  ],
+  "nver": 1,
+  "time": "2022-06-24",
+  "first": "2022-06-24"
+ },
+ "@pavloniym/rmp-vast": {
+  "v": "17.0.1-esm-v3",
+  "lic": "MIT",
+  "repo": "git+https://github.com/pavloniym/rmp-vast.git",
+  "deps": [
+   "@babel/runtime",
+   "@types/node",
+   "core-js-pure"
+  ],
+  "nver": 4,
+  "time": "2025-08-07",
+  "first": "2025-08-06"
+ },
+ "vastlint-client": {
+  "v": "0.15.0",
+  "lic": "Apache-2.0",
+  "repo": "git+https://github.com/aleksUIX/vastlint.git",
+  "deps": [
+   "vastlint"
+  ],
+  "nver": 52,
+  "time": "2026-10-13",
+  "first": "2026-06-01"
+ },
+ "@dailymotion/ad-sdk-web": {
+  "v": "2.8.0",
+  "lic": null,
+  "repo": "git+https://github.com/dailymotion/ad-sdk-sample.git",
+  "deps": [
+   "vite-plugin-dts"
+  ],
+  "nver": 39,
+  "time": "2026-09-29",
+  "first": "2025-06-03"
+ },
+ "@arte/videojs-vast": {
+  "v": "1.5.4",
+  "lic": "Apache-2.0",
+  "repo": "git+https://github.com/ArteGEIE/videojs-vast.git",
+  "deps": [
+   "@dailymotion/vast-client",
+   "@dailymotion/vmap",
+   "video.js",
+   "videojs-contrib-ads"
+  ],
+  "nver": 4,
+  "time": "2026-02-06",
+  "first": "2025-06-24"
+ },
+ "videojs-vast-vpaid": {
+  "v": "3.0.0-beta.8",
+  "lic": "MIT",
+  "repo": "git+https://github.com/MailOnline/videojs-vast-vpaid.git",
+  "deps": [
+   "babel-preset-es2015",
+   "babel-preset-stage-2",
+   "karma-cli",
+   "swfobject",
+   "vpaid-flash-client",
+   "vpaid-html5-client"
+  ],
+  "nver": 42,
+  "time": "2017-03-31",
+  "first": "2015-06-16"
+ },
+ "xgplayer-ads": {
+  "v": "3.0.26",
+  "lic": "MIT",
+  "repo": "git+https://github.com/bytedance/xgplayer.git",
+  "deps": [
+   "can-autoplay",
+   "core-js",
+   "eventemitter3",
+   "xgplayer",
+   "xgplayer-streaming-shared"
+  ],
+  "nver": 60,
+  "time": "2026-07-15",
+  "first": "2024-07-05"
+ },
+ "artplayer-plugin-vast": {
+  "v": "1.0.0",
+  "lic": "MIT",
+  "repo": "git+https://github.com/zhw2590582/ArtPlayer.git",
+  "deps": [
+   "@glomex/vast-ima-player"
+  ],
+  "nver": 1,
+  "time": "2024-10-12",
+  "first": "2024-10-12"
+ },
+ "vastacular": {
+  "v": "0.2.0",
+  "lic": "MIT",
+  "repo": "git+https://github.com/cinema6/vastacular.git",
+  "deps": [
+   "cheerio",
+   "lie",
+   "superagent"
+  ],
+  "nver": 3,
+  "time": "2016-02-11",
+  "first": "2015-08-11"
+ },
+ "vast-player": {
+  "v": "0.2.10",
+  "lic": "MIT",
+  "repo": "git+https://github.com/cinema6/vast-player.git",
+  "deps": [
+   "browserify-versionify",
+   "lie",
+   "sort-by",
+   "vastacular"
+  ],
+  "nver": 12,
+  "time": "2017-09-05",
+  "first": "2016-02-25"
+ },
+ "ads-manager": {
+  "v": "1.2.16",
+  "lic": "Apache-2.0",
+  "repo": "git+https://github.com/basil79/ads-manager.git",
+  "deps": [
+   "@dailymotion/vast-client"
+  ],
+  "nver": 29,
+  "time": "2025-02-16",
+  "first": "2022-01-12"
+ },
+ "stormcloud-video-player": {
+  "v": "0.8.79",
+  "lic": "MIT",
+  "repo": null,
+  "deps": [
+   "hls.js",
+   "react",
+   "react-dom",
+   "react-icons"
+  ],
+  "nver": 294,
+  "time": "2026-10-13",
+  "first": "2025-09-08"
+ },
+ "@videointelligence/vast-client": {
+  "v": "4.0.6",
+  "lic": "MIT",
+  "repo": "git+https://github.com/dailymotion/vast-client-js.git",
+  "deps": [
+   "@xmldom/xmldom"
+  ],
+  "nver": 7,
+  "time": "2024-06-21",
+  "first": "2022-06-22"
+ },
+ "videojsx-vast-plugin": {
+  "v": "1.0.4",
+  "lic": "MIT",
+  "repo": "git+https://github.com/edumetz16/videojsx-vast-plugin.git",
+  "deps": [
+   "vast-client",
+   "video.js",
+   "videojs-contrib-ads",
+   "vpaid-html5-client"
+  ],
+  "nver": 5,
+  "time": "2022-04-21",
+  "first": "2022-04-20"
+ },
+ "@glomex/vast-ima-player": {
+  "v": "1.21.2",
+  "lic": "Apache-2.0",
+  "repo": "git+https://github.com/glomex/vast-ima-player.git",
+  "deps": [],
+  "nver": 75,
+  "time": "2024-09-10",
+  "first": "2020-05-18"
+ },
+ "@playkit-js/playkit-js-ima": {
+  "v": "1.7.4",
+  "lic": "AGPL-3.0",
+  "repo": "git+https://github.com/kaltura/playkit-js-ima.git",
+  "deps": [
+   "@playkit-js/kaltura-player-js",
+   "@playkit-js/playkit-js",
+   "javascript-state-machine",
+   "raw-loader"
+  ],
+  "nver": 226,
+  "time": "2026-08-06",
+  "first": "2018-08-22"
+ },
+ "vjs-vast": {
+  "v": "0.0.1",
+  "lic": "MIT",
+  "repo": "git+https://github.com/MailOnline/videojs-vast-vpaid.git",
+  "deps": [],
+  "nver": 2,
+  "time": "2020-06-14",
+  "first": "2020-06-14"
+ },
+ "ts-video-player": {
+  "v": "0.1.10",
+  "lic": "MIT",
+  "repo": "https://github.com/stacksjs/ts-video-player",
+  "deps": [
+   "stx"
+  ],
+  "nver": 11,
+  "time": "2026-10-15",
+  "first": "2026-07-22"
+ },
+ "itube-modern-player": {
+  "v": "0.15.1",
+  "lic": "MIT",
+  "repo": "git+https://bitbucket.org/luckytube/itube-modern-player.git",
+  "deps": [
+   "hls.js"
+  ],
+  "nver": 52,
+  "time": "2026-10-13",
+  "first": "2026-06-16"
+ },
+ "streamit-player": {
+  "v": "1.1.0",
+  "lic": "Apache-2.0",
+  "repo": "git+https://github.com/iqonicdesignofficial/streamit-player.git",
+  "deps": [
+   "dashjs",
+   "hls.js",
+   "lit"
+  ],
+  "nver": 5,
+  "time": "2026-10-15",
+  "first": "2026-09-11"
+ },
+ "@trillboards/ads-sdk": {
+  "v": "2.4.9",
+  "lic": "MIT",
+  "repo": "git+https://github.com/trillboards/packages.git",
+  "deps": [
+   "react",
+   "react-dom",
+   "react-native",
+   "react-native-webview"
+  ],
+  "nver": 14,
+  "time": "2026-09-01",
+  "first": "2026-02-15"
+ },
+ "@getstoryteller/react-native-storyteller-sdk-vast": {
+  "v": "12.1.1",
+  "lic": "SEE LICENSE IN https://github.com/getstoryteller/storyteller-sdk-react-native/blob/master/LICENSE",
+  "repo": null,
+  "deps": [
+   "@getstoryteller/react-native-storyteller-sdk",
+   "react",
+   "react-native"
+  ],
+  "nver": 4,
+  "time": "2026-10-13",
+  "first": "2026-07-16"
+ }
+}

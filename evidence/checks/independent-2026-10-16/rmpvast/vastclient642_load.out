@@ -1,0 +1,44 @@
+== rmp-vast options w_five/start.xml
+  ads: none
+  VAST-error codes emitted: 302; hasRemainingAds: false
+  requests: /doc/chk/w_five/start.xml /doc/chk/w_five/w1.xml /doc/chk/w_five/w2.xml /doc/chk/w_five/w3.xml
+== rmp-vast options w_six/start.xml
+  ads: none
+  VAST-error codes emitted: 302; hasRemainingAds: false
+  requests: /doc/chk/w_six/start.xml /doc/chk/w_six/w1.xml /doc/chk/w_six/w2.xml /doc/chk/w_six/w3.xml
+[xmldom warning]	unclosed xml attribute 
+@#[line:2,col:32]
+[xmldom warning]	unclosed xml attribute 
+@#[line:2,col:40]
+== rmp-vast options w_malformed/start.xml
+  ads: none
+  VAST-error codes emitted: 303; hasRemainingAds: false
+  requests: /doc/chk/w_malformed/start.xml /doc/chk/w_malformed/bad.xml
+== rmp-vast options w_allow_multiple_false/start.xml
+  ads: p2(seq=2,err=-),p1(seq=1,err=-),s1(seq=null,err=-)
+  VAST-error codes emitted: none; hasRemainingAds: false
+  requests: /doc/chk/w_allow_multiple_false/start.xml /doc/chk/w_allow_multiple_false/pod.xml
+== vast-client defaults (no allowMultipleAds override) w_allow_multiple_false/start.xml
+  ads: s1(seq=null,err=-)
+  VAST-error codes emitted: 101,101; hasRemainingAds: false
+  requests: /doc/chk/w_allow_multiple_false/start.xml /doc/chk/w_allow_multiple_false/pod.xml
+== rmp-vast options w_allow_multiple_default/start.xml
+  ads: p2(seq=2,err=-),p1(seq=1,err=-),s1(seq=null,err=-)
+  VAST-error codes emitted: none; hasRemainingAds: false
+  requests: /doc/chk/w_allow_multiple_default/start.xml /doc/chk/w_allow_multiple_default/pod.xml
+== vast-client defaults (no allowMultipleAds override) w_allow_multiple_default/start.xml
+  ads: s1(seq=null,err=-)
+  VAST-error codes emitted: 101,101; hasRemainingAds: false
+  requests: /doc/chk/w_allow_multiple_default/start.xml /doc/chk/w_allow_multiple_default/pod.xml
+== rmp-vast options w_fallback_noad/start.xml
+  ads: none
+  VAST-error codes emitted: 303; hasRemainingAds: true
+  requests: /doc/chk/w_fallback_noad/start.xml /doc/chk/w_fallback_noad/noad.xml
+== rmp-vast options m_request_context/start.xml
+  ads: in(seq=null,err=-)
+  VAST-error codes emitted: none; hasRemainingAds: false
+  requests: /doc/chk/m_request_context/start.xml /doc/chk/m_request_context/inline.xml?cb=[CACHEBUSTING]&ts=[TIMESTAMP]
+== rmp-vast options p_pod_fail/start.xml
+  ads: p1(seq=1,err=-),p2(seq=2,err=-),p3(seq=3,err=-)
+  VAST-error codes emitted: none; hasRemainingAds: true
+  requests: /doc/chk/p_pod_fail/start.xml

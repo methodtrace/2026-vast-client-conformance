@@ -1,0 +1,10 @@
+Script,What the harness does
+load,resolves the tag; no playback
+full,plays the ad to the end
+partial,plays to 60 percent and stops the ad
+click,clicks the ad at 30 percent
+user actions,"pauses, resumes, mutes, unmutes and changes the volume while playing"
+skip,probes for the skip control at 1.5 s and skips at 6 s
+rewind,"seeks back 2 s, from 6 s to 4 s"
+icon,clicks a displayed icon
+pod,plays every ad of a pod

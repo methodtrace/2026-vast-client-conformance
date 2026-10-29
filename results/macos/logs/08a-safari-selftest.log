@@ -1,0 +1,18 @@
+ok   client: session, execute, W3C error mapping (16 ms)
+ok   client: busy driver is retried, refused capability is not (18 ms)
+ok   client: command timeout and dead driver surface as harness errors (5204 ms)
+ok   copies: CONFIGS, TELEMETRY and extKey identical to run-browser.mjs (2 ms)
+ok   proxy: archive, telemetry stub, block, canary, local tunnel and forward (42 ms)
+ok   runner: catalog subset, session per run, frame-click bridge, popup, outputs (3858 ms)
+ok   runner: click-through popup recorded as clickThroughUrl (1916 ms)
+ok   runner: IMA skipped with a reason when acceptInsecureCerts is refused (1020 ms)
+ok   runner: IMA skipped when the proxy capability is silently ignored (canary) (662 ms)
+ok   runner: IMA skipped when the in-frame fetch fails (canary) (8769 ms)
+ok   runner: IMA skipped when the Google host refuses the certificate (HSTS) or the frame is insecure (17539 ms)
+ok   runner: IMA skipped without the archive (360 ms)
+ok   runner: a hanging run becomes a harness error cell and the run continues (4206 ms)
+ok   runner: --isolation window reuses one session (7179 ms)
+ok   runner: remote automation disabled -> summary with hint, exit 0 (42 ms)
+ok   runner: no driver binary -> recorded, exit 0 (31 ms)
+
+16/16 passed

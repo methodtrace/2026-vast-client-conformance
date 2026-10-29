@@ -1,0 +1,24 @@
+### u wloop 2000
+module=code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js timeout=2000 wrapperLimit=default (10) load1=3.82
+ 54134 ms  VAST-error code=302
+get() resolved, ads=0 after 54135 ms
+RESULT {"outcome":"resolved, ads=0","totalMs":54135,"docRequests":10,"uncaught":[],"load1":1.85}
+### u wloop 2000 3
+module=code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js timeout=2000 wrapperLimit=3 load1=1.85
+ 12061 ms  VAST-error code=302
+get() resolved, ads=0 after 12061 ms
+RESULT {"outcome":"resolved, ads=0","totalMs":12061,"docRequests":3,"uncaught":[],"load1":1.64}
+### p wloop 2000
+module=evidence/checks/fuzz-repros/vc-hang/patched/vast-client-6.5.0-fix/dist/vast-client-node.js timeout=2000 wrapperLimit=default (10) load1=1.64
+  2039 ms  VAST-error code=301
+get() resolved, ads=0 after 2040 ms
+RESULT {"outcome":"resolved, ads=0","totalMs":2040,"docRequests":2,"uncaught":[],"load1":1.59}
+### u wone 2000
+module=code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js timeout=2000 wrapperLimit=default (10) load1=1.59
+get() resolved, ads=1 after 6052 ms
+RESULT {"outcome":"resolved, ads=1","totalMs":6052,"docRequests":2,"uncaught":[],"load1":1.46}
+### p wone 2000
+module=evidence/checks/fuzz-repros/vc-hang/patched/vast-client-6.5.0-fix/dist/vast-client-node.js timeout=2000 wrapperLimit=default (10) load1=1.46
+  2039 ms  VAST-error code=301
+get() resolved, ads=0 after 2040 ms
+RESULT {"outcome":"resolved, ads=0","totalMs":2040,"docRequests":2,"uncaught":[],"load1":1.46}

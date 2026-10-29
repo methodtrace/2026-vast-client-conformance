@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="in">
+    <InLine>
+      <AdSystem>harness</AdSystem>
+      <AdTitle>in</AdTitle>
+      <Error><![CDATA[{{BASE}}/t/{{CASE}}/in/err?code=[ERRORCODE]]]></Error>
+      <Impression><![CDATA[{{BASE}}/t/{{CASE}}/in/imp]]></Impression>
+      <Creatives>
+        <Creative>
+          <Linear>
+            <Duration>00:00:10</Duration>
+            <TrackingEvents>
+        <Tracking event="start"><![CDATA[{{BASE}}/t/{{CASE}}/in/start]]></Tracking>
+        <Tracking event="firstQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/in/firstQuartile]]></Tracking>
+        <Tracking event="midpoint"><![CDATA[{{BASE}}/t/{{CASE}}/in/midpoint]]></Tracking>
+        <Tracking event="thirdQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/in/thirdQuartile]]></Tracking>
+        <Tracking event="complete"><![CDATA[{{BASE}}/t/{{CASE}}/in/complete]]></Tracking>
+            </TrackingEvents>
+            <VideoClicks><ClickThrough><![CDATA[{{BASE}}/t/{{CASE}}/in/clickthrough]]></ClickThrough></VideoClicks>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360"><![CDATA[{{BASE}}/m/{{CASE}}/in.mp4]]></MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

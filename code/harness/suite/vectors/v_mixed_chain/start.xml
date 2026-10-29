@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="w0">
+    <Wrapper>
+      <AdSystem>harness</AdSystem>
+      <VASTAdTagURI><![CDATA[{{BASE}}/doc/{{CASE}}/v_mixed_chain/inline.xml]]></VASTAdTagURI>
+      <Error><![CDATA[{{BASE}}/t/{{CASE}}/w0/err?code=[ERRORCODE]]]></Error>
+      <Impression><![CDATA[{{BASE}}/t/{{CASE}}/w0/imp]]></Impression>
+      <Creatives><Creative><Linear><TrackingEvents>
+        <Tracking event="start"><![CDATA[{{BASE}}/t/{{CASE}}/w0/start]]></Tracking>
+        <Tracking event="firstQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/w0/firstQuartile]]></Tracking>
+        <Tracking event="midpoint"><![CDATA[{{BASE}}/t/{{CASE}}/w0/midpoint]]></Tracking>
+        <Tracking event="thirdQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/w0/thirdQuartile]]></Tracking>
+        <Tracking event="complete"><![CDATA[{{BASE}}/t/{{CASE}}/w0/complete]]></Tracking>
+      </TrackingEvents></Linear></Creative></Creatives>
+    </Wrapper>
+  </Ad>
+</VAST>

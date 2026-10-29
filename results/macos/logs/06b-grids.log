@@ -1,0 +1,771 @@
+base_d1              vastclient  conforms  resolved
+base_d1              videoadsdk  conforms  resolved
+base_d1              iabloader   conforms  resolved
+base_d1              vastlint    conforms  resolved
+base_d2              vastclient  conforms  resolved
+base_d2              videoadsdk  conforms  resolved
+base_d2              iabloader   conforms  resolved
+base_d2              vastlint    conforms  resolved
+base_d3              vastclient  conforms  resolved
+base_d3              videoadsdk  conforms  resolved
+base_d3              iabloader   conforms  resolved
+base_d3              vastlint    conforms  resolved
+base_d4              vastclient  conforms  resolved
+base_d4              videoadsdk  conforms  resolved
+base_d4              iabloader   conforms  resolved
+base_d4              vastlint    conforms  resolved
+base_d5              vastclient  conforms  resolved
+base_d5              videoadsdk  conforms  resolved
+base_d5              iabloader   conforms  resolved
+base_d5              vastlint    conforms  resolved
+base_d6              vastclient  conforms  resolved
+base_d6              videoadsdk  conforms  resolved
+base_d6              iabloader   conforms  resolved
+base_d6              vastlint    deviates  not resolved: The current VAST queue item does not resolve to an inline playable ad.
+base_d7              vastclient  conforms  accepted 6 Wrappers (permitted)
+base_d7              videoadsdk  conforms  rejected; codes [["302"],["302"],["302"],["302"],["302"],["302"]]
+base_d7              iabloader   conforms  accepted 6 Wrappers (permitted)
+base_d7              vastlint    deviates  rejected; codes [[],[],[],[],[],[]]
+http404_d2_L2        vastclient  conforms  levels w1:301; client code 
+http404_d2_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+http404_d2_L2        iabloader   deviates  levels w1:-; client code 301
+http404_d2_L2        vastlint    deviates  levels w1:-; client code 
+http500_d2_L2        vastclient  conforms  levels w1:301; client code 
+http500_d2_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+http500_d2_L2        iabloader   deviates  levels w1:-; client code 301
+http500_d2_L2        vastlint    deviates  levels w1:-; client code 
+timeout_d2_L2        vastclient  conforms  levels w1:301; client code 
+timeout_d2_L2        videoadsdk  conforms  levels w1:301; client code 301
+timeout_d2_L2        iabloader   deviates  levels w1:-; client code 301
+timeout_d2_L2        vastlint    deviates  levels w1:-; client code 
+stall_d2_L2          vastclient  deviates  resolved an ad despite the failure
+stall_d2_L2          videoadsdk  conforms  levels w1:301; client code 301
+stall_d2_L2          iabloader   deviates  levels w1:-; client code 301
+stall_d2_L2          vastlint    deviates  levels w1:-; client code 
+refused_d2_L2        vastclient  conforms  levels w1:301; client code 
+refused_d2_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+refused_d2_L2        iabloader   deviates  levels w1:-; client code 301
+refused_d2_L2        vastlint    deviates  levels w1:-; client code 
+empty_d2_L2          vastclient  wrong-code levels w1:301 (wrong code); client code 
+empty_d2_L2          videoadsdk  conforms  levels w1:100; client code 100
+empty_d2_L2          iabloader   deviates  levels w1:-; client code 
+empty_d2_L2          vastlint    deviates  levels w1:-; client code 
+malformed_d2_L2      vastclient  wrong-code levels w1:301 (wrong code); client code 
+malformed_d2_L2      videoadsdk  conforms  levels w1:100; client code 100
+malformed_d2_L2      iabloader   deviates  levels w1:-; client code 303
+malformed_d2_L2      vastlint    deviates  levels w1:-; client code 
+html_d2_L2           vastclient  wrong-code levels w1:301 (wrong code); client code 
+html_d2_L2           videoadsdk  conforms  levels w1:100; client code 100
+html_d2_L2           iabloader   deviates  levels w1:-; client code 101
+html_d2_L2           vastlint    deviates  levels w1:-; client code 
+novast_d2_L2         vastclient  wrong-code levels w1:301 (wrong code); client code 
+novast_d2_L2         videoadsdk  wrong-code levels w1:303 (wrong code); client code 303
+novast_d2_L2         iabloader   deviates  levels w1:-; client code 101
+novast_d2_L2         vastlint    deviates  levels w1:-; client code 
+noad_d2_L2           vastclient  conforms  levels w1:303; client code 
+noad_d2_L2           videoadsdk  conforms  levels w1:303; client code 303
+noad_d2_L2           iabloader   deviates  levels w1:-; client code 303
+noad_d2_L2           vastlint    deviates  levels w1:-; client code 
+noad_err_d2_L2       vastclient  conforms  levels w1:303; client code 
+noad_err_d2_L2       videoadsdk  conforms  levels w1:303; client code 303
+noad_err_d2_L2       iabloader   deviates  VAST-level Error URI not requested; levels w1:-; client code 303
+noad_err_d2_L2       vastlint    deviates  VAST-level Error URI not requested; levels w1:-; client code 
+nouri_d2_L2          vastclient  partial   levels w1:303 w2:-; client code 
+nouri_d2_L2          videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+nouri_d2_L2          iabloader   deviates  levels w1:- w2:-; client code 301
+nouri_d2_L2          vastlint    deviates  levels w1:- w2:-; client code 
+http404_d3_L2        vastclient  conforms  levels w1:301; client code 
+http404_d3_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+http404_d3_L2        iabloader   deviates  levels w1:-; client code 301
+http404_d3_L2        vastlint    deviates  levels w1:-; client code 
+http500_d3_L2        vastclient  conforms  levels w1:301; client code 
+http500_d3_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+http500_d3_L2        iabloader   deviates  levels w1:-; client code 301
+http500_d3_L2        vastlint    deviates  levels w1:-; client code 
+timeout_d3_L2        vastclient  conforms  levels w1:301; client code 
+timeout_d3_L2        videoadsdk  conforms  levels w1:301; client code 301
+timeout_d3_L2        iabloader   deviates  levels w1:-; client code 301
+timeout_d3_L2        vastlint    deviates  levels w1:-; client code 
+stall_d3_L2          vastclient  conforms  levels w1:301; client code 
+stall_d3_L2          videoadsdk  conforms  levels w1:301; client code 301
+stall_d3_L2          iabloader   deviates  levels w1:-; client code 301
+stall_d3_L2          vastlint    deviates  levels w1:-; client code 
+refused_d3_L2        vastclient  conforms  levels w1:301; client code 
+refused_d3_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+refused_d3_L2        iabloader   deviates  levels w1:-; client code 301
+refused_d3_L2        vastlint    deviates  levels w1:-; client code 
+empty_d3_L2          vastclient  wrong-code levels w1:301 (wrong code); client code 
+empty_d3_L2          videoadsdk  conforms  levels w1:100; client code 100
+empty_d3_L2          iabloader   deviates  levels w1:-; client code 
+empty_d3_L2          vastlint    deviates  levels w1:-; client code 
+malformed_d3_L2      vastclient  wrong-code levels w1:301 (wrong code); client code 
+malformed_d3_L2      videoadsdk  conforms  levels w1:100; client code 100
+malformed_d3_L2      iabloader   deviates  levels w1:-; client code 303
+malformed_d3_L2      vastlint    deviates  levels w1:-; client code 
+html_d3_L2           vastclient  wrong-code levels w1:301 (wrong code); client code 
+html_d3_L2           videoadsdk  conforms  levels w1:100; client code 100
+html_d3_L2           iabloader   deviates  levels w1:-; client code 101
+html_d3_L2           vastlint    deviates  levels w1:-; client code 
+novast_d3_L2         vastclient  wrong-code levels w1:301 (wrong code); client code 
+novast_d3_L2         videoadsdk  wrong-code levels w1:303 (wrong code); client code 303
+novast_d3_L2         iabloader   deviates  levels w1:-; client code 101
+novast_d3_L2         vastlint    deviates  levels w1:-; client code 
+noad_d3_L2           vastclient  conforms  levels w1:303; client code 
+noad_d3_L2           videoadsdk  conforms  levels w1:303; client code 303
+noad_d3_L2           iabloader   deviates  levels w1:-; client code 303
+noad_d3_L2           vastlint    deviates  levels w1:-; client code 
+noad_err_d3_L2       vastclient  conforms  levels w1:303; client code 
+noad_err_d3_L2       videoadsdk  conforms  levels w1:303; client code 303
+noad_err_d3_L2       iabloader   deviates  VAST-level Error URI not requested; levels w1:-; client code 303
+noad_err_d3_L2       vastlint    deviates  VAST-level Error URI not requested; levels w1:-; client code 
+nouri_d3_L2          vastclient  partial   levels w1:303 w2:-; client code 
+nouri_d3_L2          videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+nouri_d3_L2          iabloader   deviates  levels w1:- w2:-; client code 301
+nouri_d3_L2          vastlint    deviates  levels w1:- w2:-; client code 
+http404_d3_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+http404_d3_L3        videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+http404_d3_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+http404_d3_L3        vastlint    deviates  levels w1:- w2:-; client code 
+http500_d3_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+http500_d3_L3        videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+http500_d3_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+http500_d3_L3        vastlint    deviates  levels w1:- w2:-; client code 
+timeout_d3_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+timeout_d3_L3        videoadsdk  conforms  levels w1:301 w2:301; client code 301
+timeout_d3_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+timeout_d3_L3        vastlint    deviates  levels w1:- w2:-; client code 
+stall_d3_L3          vastclient  deviates  resolved an ad despite the failure
+stall_d3_L3          videoadsdk  conforms  levels w1:301 w2:301; client code 301
+stall_d3_L3          iabloader   deviates  levels w1:- w2:-; client code 301
+stall_d3_L3          vastlint    deviates  levels w1:- w2:-; client code 
+refused_d3_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+refused_d3_L3        videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+refused_d3_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+refused_d3_L3        vastlint    deviates  levels w1:- w2:-; client code 
+empty_d3_L3          vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+empty_d3_L3          videoadsdk  conforms  levels w1:100 w2:100; client code 100
+empty_d3_L3          iabloader   deviates  levels w1:- w2:-; client code 
+empty_d3_L3          vastlint    deviates  levels w1:- w2:-; client code 
+malformed_d3_L3      vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+malformed_d3_L3      videoadsdk  conforms  levels w1:100 w2:100; client code 100
+malformed_d3_L3      iabloader   deviates  levels w1:- w2:-; client code 303
+malformed_d3_L3      vastlint    deviates  levels w1:- w2:-; client code 
+html_d3_L3           vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+html_d3_L3           videoadsdk  conforms  levels w1:100 w2:100; client code 100
+html_d3_L3           iabloader   deviates  levels w1:- w2:-; client code 101
+html_d3_L3           vastlint    deviates  levels w1:- w2:-; client code 
+novast_d3_L3         vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+novast_d3_L3         videoadsdk  wrong-code levels w1:303 w2:303 (wrong code); client code 303
+novast_d3_L3         iabloader   deviates  levels w1:- w2:-; client code 101
+novast_d3_L3         vastlint    deviates  levels w1:- w2:-; client code 
+noad_d3_L3           vastclient  conforms  levels w1:303 w2:303; client code 
+noad_d3_L3           videoadsdk  conforms  levels w1:303 w2:303; client code 303
+noad_d3_L3           iabloader   deviates  levels w1:- w2:-; client code 303
+noad_d3_L3           vastlint    deviates  levels w1:- w2:-; client code 
+noad_err_d3_L3       vastclient  conforms  levels w1:303 w2:303; client code 
+noad_err_d3_L3       videoadsdk  conforms  levels w1:303 w2:303; client code 303
+noad_err_d3_L3       iabloader   deviates  VAST-level Error URI not requested; levels w1:- w2:-; client code 303
+noad_err_d3_L3       vastlint    deviates  VAST-level Error URI not requested; levels w1:- w2:-; client code 
+nouri_d3_L3          vastclient  partial   levels w1:303 w2:303 w3:-; client code 
+nouri_d3_L3          videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+nouri_d3_L3          iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+nouri_d3_L3          vastlint    deviates  levels w1:- w2:- w3:-; client code 
+http404_d4_L2        vastclient  conforms  levels w1:301; client code 
+http404_d4_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+http404_d4_L2        iabloader   deviates  levels w1:-; client code 301
+http404_d4_L2        vastlint    deviates  levels w1:-; client code 
+http500_d4_L2        vastclient  conforms  levels w1:301; client code 
+http500_d4_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+http500_d4_L2        iabloader   deviates  levels w1:-; client code 301
+http500_d4_L2        vastlint    deviates  levels w1:-; client code 
+timeout_d4_L2        vastclient  conforms  levels w1:301; client code 
+timeout_d4_L2        videoadsdk  conforms  levels w1:301; client code 301
+timeout_d4_L2        iabloader   deviates  levels w1:-; client code 301
+timeout_d4_L2        vastlint    deviates  levels w1:-; client code 
+stall_d4_L2          vastclient  conforms  levels w1:301; client code 
+stall_d4_L2          videoadsdk  conforms  levels w1:301; client code 301
+stall_d4_L2          iabloader   deviates  levels w1:-; client code 301
+stall_d4_L2          vastlint    deviates  levels w1:-; client code 
+refused_d4_L2        vastclient  conforms  levels w1:301; client code 
+refused_d4_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+refused_d4_L2        iabloader   deviates  levels w1:-; client code 301
+refused_d4_L2        vastlint    deviates  levels w1:-; client code 
+empty_d4_L2          vastclient  wrong-code levels w1:301 (wrong code); client code 
+empty_d4_L2          videoadsdk  conforms  levels w1:100; client code 100
+empty_d4_L2          iabloader   deviates  levels w1:-; client code 
+empty_d4_L2          vastlint    deviates  levels w1:-; client code 
+malformed_d4_L2      vastclient  wrong-code levels w1:301 (wrong code); client code 
+malformed_d4_L2      videoadsdk  conforms  levels w1:100; client code 100
+malformed_d4_L2      iabloader   deviates  levels w1:-; client code 303
+malformed_d4_L2      vastlint    deviates  levels w1:-; client code 
+html_d4_L2           vastclient  wrong-code levels w1:301 (wrong code); client code 
+html_d4_L2           videoadsdk  conforms  levels w1:100; client code 100
+html_d4_L2           iabloader   deviates  levels w1:-; client code 101
+html_d4_L2           vastlint    deviates  levels w1:-; client code 
+novast_d4_L2         vastclient  wrong-code levels w1:301 (wrong code); client code 
+novast_d4_L2         videoadsdk  wrong-code levels w1:303 (wrong code); client code 303
+novast_d4_L2         iabloader   deviates  levels w1:-; client code 101
+novast_d4_L2         vastlint    deviates  levels w1:-; client code 
+noad_d4_L2           vastclient  conforms  levels w1:303; client code 
+noad_d4_L2           videoadsdk  conforms  levels w1:303; client code 303
+noad_d4_L2           iabloader   deviates  levels w1:-; client code 303
+noad_d4_L2           vastlint    deviates  levels w1:-; client code 
+noad_err_d4_L2       vastclient  conforms  levels w1:303; client code 
+noad_err_d4_L2       videoadsdk  conforms  levels w1:303; client code 303
+noad_err_d4_L2       iabloader   deviates  VAST-level Error URI not requested; levels w1:-; client code 303
+noad_err_d4_L2       vastlint    deviates  VAST-level Error URI not requested; levels w1:-; client code 
+nouri_d4_L2          vastclient  partial   levels w1:303 w2:-; client code 
+nouri_d4_L2          videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+nouri_d4_L2          iabloader   deviates  levels w1:- w2:-; client code 301
+nouri_d4_L2          vastlint    deviates  levels w1:- w2:-; client code 
+http404_d4_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+http404_d4_L3        videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+http404_d4_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+http404_d4_L3        vastlint    deviates  levels w1:- w2:-; client code 
+http500_d4_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+http500_d4_L3        videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+http500_d4_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+http500_d4_L3        vastlint    deviates  levels w1:- w2:-; client code 
+timeout_d4_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+timeout_d4_L3        videoadsdk  conforms  levels w1:301 w2:301; client code 301
+timeout_d4_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+timeout_d4_L3        vastlint    deviates  levels w1:- w2:-; client code 
+stall_d4_L3          vastclient  conforms  levels w1:301 w2:301; client code 
+stall_d4_L3          videoadsdk  conforms  levels w1:301 w2:301; client code 301
+stall_d4_L3          iabloader   deviates  levels w1:- w2:-; client code 301
+stall_d4_L3          vastlint    deviates  levels w1:- w2:-; client code 
+refused_d4_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+refused_d4_L3        videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+refused_d4_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+refused_d4_L3        vastlint    deviates  levels w1:- w2:-; client code 
+empty_d4_L3          vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+empty_d4_L3          videoadsdk  conforms  levels w1:100 w2:100; client code 100
+empty_d4_L3          iabloader   deviates  levels w1:- w2:-; client code 
+empty_d4_L3          vastlint    deviates  levels w1:- w2:-; client code 
+malformed_d4_L3      vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+malformed_d4_L3      videoadsdk  conforms  levels w1:100 w2:100; client code 100
+malformed_d4_L3      iabloader   deviates  levels w1:- w2:-; client code 303
+malformed_d4_L3      vastlint    deviates  levels w1:- w2:-; client code 
+html_d4_L3           vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+html_d4_L3           videoadsdk  conforms  levels w1:100 w2:100; client code 100
+html_d4_L3           iabloader   deviates  levels w1:- w2:-; client code 101
+html_d4_L3           vastlint    deviates  levels w1:- w2:-; client code 
+novast_d4_L3         vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+novast_d4_L3         videoadsdk  wrong-code levels w1:303 w2:303 (wrong code); client code 303
+novast_d4_L3         iabloader   deviates  levels w1:- w2:-; client code 101
+novast_d4_L3         vastlint    deviates  levels w1:- w2:-; client code 
+noad_d4_L3           vastclient  conforms  levels w1:303 w2:303; client code 
+noad_d4_L3           videoadsdk  conforms  levels w1:303 w2:303; client code 303
+noad_d4_L3           iabloader   deviates  levels w1:- w2:-; client code 303
+noad_d4_L3           vastlint    deviates  levels w1:- w2:-; client code 
+noad_err_d4_L3       vastclient  conforms  levels w1:303 w2:303; client code 
+noad_err_d4_L3       videoadsdk  conforms  levels w1:303 w2:303; client code 303
+noad_err_d4_L3       iabloader   deviates  VAST-level Error URI not requested; levels w1:- w2:-; client code 303
+noad_err_d4_L3       vastlint    deviates  VAST-level Error URI not requested; levels w1:- w2:-; client code 
+nouri_d4_L3          vastclient  partial   levels w1:303 w2:303 w3:-; client code 
+nouri_d4_L3          videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+nouri_d4_L3          iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+nouri_d4_L3          vastlint    deviates  levels w1:- w2:- w3:-; client code 
+http404_d4_L4        vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+http404_d4_L4        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+http404_d4_L4        iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+http404_d4_L4        vastlint    deviates  levels w1:- w2:- w3:-; client code 
+http500_d4_L4        vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+http500_d4_L4        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+http500_d4_L4        iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+http500_d4_L4        vastlint    deviates  levels w1:- w2:- w3:-; client code 
+timeout_d4_L4        vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+timeout_d4_L4        videoadsdk  conforms  levels w1:301 w2:301 w3:301; client code 301
+timeout_d4_L4        iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+timeout_d4_L4        vastlint    deviates  levels w1:- w2:- w3:-; client code 
+stall_d4_L4          vastclient  deviates  resolved an ad despite the failure
+stall_d4_L4          videoadsdk  conforms  levels w1:301 w2:301 w3:301; client code 301
+stall_d4_L4          iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+stall_d4_L4          vastlint    deviates  levels w1:- w2:- w3:-; client code 
+refused_d4_L4        vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+refused_d4_L4        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+refused_d4_L4        iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+refused_d4_L4        vastlint    deviates  levels w1:- w2:- w3:-; client code 
+empty_d4_L4          vastclient  wrong-code levels w1:301 w2:301 w3:301 (wrong code); client code 
+empty_d4_L4          videoadsdk  conforms  levels w1:100 w2:100 w3:100; client code 100
+empty_d4_L4          iabloader   deviates  levels w1:- w2:- w3:-; client code 
+empty_d4_L4          vastlint    deviates  levels w1:- w2:- w3:-; client code 
+malformed_d4_L4      vastclient  wrong-code levels w1:301 w2:301 w3:301 (wrong code); client code 
+malformed_d4_L4      videoadsdk  conforms  levels w1:100 w2:100 w3:100; client code 100
+malformed_d4_L4      iabloader   deviates  levels w1:- w2:- w3:-; client code 303
+malformed_d4_L4      vastlint    deviates  levels w1:- w2:- w3:-; client code 
+html_d4_L4           vastclient  wrong-code levels w1:301 w2:301 w3:301 (wrong code); client code 
+html_d4_L4           videoadsdk  conforms  levels w1:100 w2:100 w3:100; client code 100
+html_d4_L4           iabloader   deviates  levels w1:- w2:- w3:-; client code 101
+html_d4_L4           vastlint    deviates  levels w1:- w2:- w3:-; client code 
+novast_d4_L4         vastclient  wrong-code levels w1:301 w2:301 w3:301 (wrong code); client code 
+novast_d4_L4         videoadsdk  wrong-code levels w1:303 w2:303 w3:303 (wrong code); client code 303
+novast_d4_L4         iabloader   deviates  levels w1:- w2:- w3:-; client code 101
+novast_d4_L4         vastlint    deviates  levels w1:- w2:- w3:-; client code 
+noad_d4_L4           vastclient  conforms  levels w1:303 w2:303 w3:303; client code 
+noad_d4_L4           videoadsdk  conforms  levels w1:303 w2:303 w3:303; client code 303
+noad_d4_L4           iabloader   deviates  levels w1:- w2:- w3:-; client code 303
+noad_d4_L4           vastlint    deviates  levels w1:- w2:- w3:-; client code 
+noad_err_d4_L4       vastclient  conforms  levels w1:303 w2:303 w3:303; client code 
+noad_err_d4_L4       videoadsdk  conforms  levels w1:303 w2:303 w3:303; client code 303
+noad_err_d4_L4       iabloader   deviates  VAST-level Error URI not requested; levels w1:- w2:- w3:-; client code 303
+noad_err_d4_L4       vastlint    deviates  VAST-level Error URI not requested; levels w1:- w2:- w3:-; client code 
+nouri_d4_L4          vastclient  partial   levels w1:303 w2:303 w3:303 w4:-; client code 
+nouri_d4_L4          videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 (wrong code); client code 502
+nouri_d4_L4          iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+nouri_d4_L4          vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+http404_d5_L2        vastclient  conforms  levels w1:301; client code 
+http404_d5_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+http404_d5_L2        iabloader   deviates  levels w1:-; client code 301
+http404_d5_L2        vastlint    deviates  levels w1:-; client code 
+http500_d5_L2        vastclient  conforms  levels w1:301; client code 
+http500_d5_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+http500_d5_L2        iabloader   deviates  levels w1:-; client code 301
+http500_d5_L2        vastlint    deviates  levels w1:-; client code 
+timeout_d5_L2        vastclient  conforms  levels w1:301; client code 
+timeout_d5_L2        videoadsdk  conforms  levels w1:301; client code 301
+timeout_d5_L2        iabloader   deviates  levels w1:-; client code 301
+timeout_d5_L2        vastlint    deviates  levels w1:-; client code 
+stall_d5_L2          vastclient  conforms  levels w1:301; client code 
+stall_d5_L2          videoadsdk  conforms  levels w1:301; client code 301
+stall_d5_L2          iabloader   deviates  levels w1:-; client code 301
+stall_d5_L2          vastlint    deviates  levels w1:-; client code 
+refused_d5_L2        vastclient  conforms  levels w1:301; client code 
+refused_d5_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+refused_d5_L2        iabloader   deviates  levels w1:-; client code 301
+refused_d5_L2        vastlint    deviates  levels w1:-; client code 
+empty_d5_L2          vastclient  wrong-code levels w1:301 (wrong code); client code 
+empty_d5_L2          videoadsdk  conforms  levels w1:100; client code 100
+empty_d5_L2          iabloader   deviates  levels w1:-; client code 
+empty_d5_L2          vastlint    deviates  levels w1:-; client code 
+malformed_d5_L2      vastclient  wrong-code levels w1:301 (wrong code); client code 
+malformed_d5_L2      videoadsdk  conforms  levels w1:100; client code 100
+malformed_d5_L2      iabloader   deviates  levels w1:-; client code 303
+malformed_d5_L2      vastlint    deviates  levels w1:-; client code 
+html_d5_L2           vastclient  wrong-code levels w1:301 (wrong code); client code 
+html_d5_L2           videoadsdk  conforms  levels w1:100; client code 100
+html_d5_L2           iabloader   deviates  levels w1:-; client code 101
+html_d5_L2           vastlint    deviates  levels w1:-; client code 
+novast_d5_L2         vastclient  wrong-code levels w1:301 (wrong code); client code 
+novast_d5_L2         videoadsdk  wrong-code levels w1:303 (wrong code); client code 303
+novast_d5_L2         iabloader   deviates  levels w1:-; client code 101
+novast_d5_L2         vastlint    deviates  levels w1:-; client code 
+noad_d5_L2           vastclient  conforms  levels w1:303; client code 
+noad_d5_L2           videoadsdk  conforms  levels w1:303; client code 303
+noad_d5_L2           iabloader   deviates  levels w1:-; client code 303
+noad_d5_L2           vastlint    deviates  levels w1:-; client code 
+noad_err_d5_L2       vastclient  conforms  levels w1:303; client code 
+noad_err_d5_L2       videoadsdk  conforms  levels w1:303; client code 303
+noad_err_d5_L2       iabloader   deviates  VAST-level Error URI not requested; levels w1:-; client code 303
+noad_err_d5_L2       vastlint    deviates  VAST-level Error URI not requested; levels w1:-; client code 
+nouri_d5_L2          vastclient  partial   levels w1:303 w2:-; client code 
+nouri_d5_L2          videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+nouri_d5_L2          iabloader   deviates  levels w1:- w2:-; client code 301
+nouri_d5_L2          vastlint    deviates  levels w1:- w2:-; client code 
+http404_d5_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+http404_d5_L3        videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+http404_d5_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+http404_d5_L3        vastlint    deviates  levels w1:- w2:-; client code 
+http500_d5_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+http500_d5_L3        videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+http500_d5_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+http500_d5_L3        vastlint    deviates  levels w1:- w2:-; client code 
+timeout_d5_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+timeout_d5_L3        videoadsdk  conforms  levels w1:301 w2:301; client code 301
+timeout_d5_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+timeout_d5_L3        vastlint    deviates  levels w1:- w2:-; client code 
+stall_d5_L3          vastclient  conforms  levels w1:301 w2:301; client code 
+stall_d5_L3          videoadsdk  conforms  levels w1:301 w2:301; client code 301
+stall_d5_L3          iabloader   deviates  levels w1:- w2:-; client code 301
+stall_d5_L3          vastlint    deviates  levels w1:- w2:-; client code 
+refused_d5_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+refused_d5_L3        videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+refused_d5_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+refused_d5_L3        vastlint    deviates  levels w1:- w2:-; client code 
+empty_d5_L3          vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+empty_d5_L3          videoadsdk  conforms  levels w1:100 w2:100; client code 100
+empty_d5_L3          iabloader   deviates  levels w1:- w2:-; client code 
+empty_d5_L3          vastlint    deviates  levels w1:- w2:-; client code 
+malformed_d5_L3      vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+malformed_d5_L3      videoadsdk  conforms  levels w1:100 w2:100; client code 100
+malformed_d5_L3      iabloader   deviates  levels w1:- w2:-; client code 303
+malformed_d5_L3      vastlint    deviates  levels w1:- w2:-; client code 
+html_d5_L3           vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+html_d5_L3           videoadsdk  conforms  levels w1:100 w2:100; client code 100
+html_d5_L3           iabloader   deviates  levels w1:- w2:-; client code 101
+html_d5_L3           vastlint    deviates  levels w1:- w2:-; client code 
+novast_d5_L3         vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+novast_d5_L3         videoadsdk  wrong-code levels w1:303 w2:303 (wrong code); client code 303
+novast_d5_L3         iabloader   deviates  levels w1:- w2:-; client code 101
+novast_d5_L3         vastlint    deviates  levels w1:- w2:-; client code 
+noad_d5_L3           vastclient  conforms  levels w1:303 w2:303; client code 
+noad_d5_L3           videoadsdk  conforms  levels w1:303 w2:303; client code 303
+noad_d5_L3           iabloader   deviates  levels w1:- w2:-; client code 303
+noad_d5_L3           vastlint    deviates  levels w1:- w2:-; client code 
+noad_err_d5_L3       vastclient  conforms  levels w1:303 w2:303; client code 
+noad_err_d5_L3       videoadsdk  conforms  levels w1:303 w2:303; client code 303
+noad_err_d5_L3       iabloader   deviates  VAST-level Error URI not requested; levels w1:- w2:-; client code 303
+noad_err_d5_L3       vastlint    deviates  VAST-level Error URI not requested; levels w1:- w2:-; client code 
+nouri_d5_L3          vastclient  partial   levels w1:303 w2:303 w3:-; client code 
+nouri_d5_L3          videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+nouri_d5_L3          iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+nouri_d5_L3          vastlint    deviates  levels w1:- w2:- w3:-; client code 
+http404_d5_L4        vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+http404_d5_L4        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+http404_d5_L4        iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+http404_d5_L4        vastlint    deviates  levels w1:- w2:- w3:-; client code 
+http500_d5_L4        vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+http500_d5_L4        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+http500_d5_L4        iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+http500_d5_L4        vastlint    deviates  levels w1:- w2:- w3:-; client code 
+timeout_d5_L4        vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+timeout_d5_L4        videoadsdk  conforms  levels w1:301 w2:301 w3:301; client code 301
+timeout_d5_L4        iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+timeout_d5_L4        vastlint    deviates  levels w1:- w2:- w3:-; client code 
+stall_d5_L4          vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+stall_d5_L4          videoadsdk  conforms  levels w1:301 w2:301 w3:301; client code 301
+stall_d5_L4          iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+stall_d5_L4          vastlint    deviates  levels w1:- w2:- w3:-; client code 
+refused_d5_L4        vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+refused_d5_L4        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+refused_d5_L4        iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+refused_d5_L4        vastlint    deviates  levels w1:- w2:- w3:-; client code 
+empty_d5_L4          vastclient  wrong-code levels w1:301 w2:301 w3:301 (wrong code); client code 
+empty_d5_L4          videoadsdk  conforms  levels w1:100 w2:100 w3:100; client code 100
+empty_d5_L4          iabloader   deviates  levels w1:- w2:- w3:-; client code 
+empty_d5_L4          vastlint    deviates  levels w1:- w2:- w3:-; client code 
+malformed_d5_L4      vastclient  wrong-code levels w1:301 w2:301 w3:301 (wrong code); client code 
+malformed_d5_L4      videoadsdk  conforms  levels w1:100 w2:100 w3:100; client code 100
+malformed_d5_L4      iabloader   deviates  levels w1:- w2:- w3:-; client code 303
+malformed_d5_L4      vastlint    deviates  levels w1:- w2:- w3:-; client code 
+html_d5_L4           vastclient  wrong-code levels w1:301 w2:301 w3:301 (wrong code); client code 
+html_d5_L4           videoadsdk  conforms  levels w1:100 w2:100 w3:100; client code 100
+html_d5_L4           iabloader   deviates  levels w1:- w2:- w3:-; client code 101
+html_d5_L4           vastlint    deviates  levels w1:- w2:- w3:-; client code 
+novast_d5_L4         vastclient  wrong-code levels w1:301 w2:301 w3:301 (wrong code); client code 
+novast_d5_L4         videoadsdk  wrong-code levels w1:303 w2:303 w3:303 (wrong code); client code 303
+novast_d5_L4         iabloader   deviates  levels w1:- w2:- w3:-; client code 101
+novast_d5_L4         vastlint    deviates  levels w1:- w2:- w3:-; client code 
+noad_d5_L4           vastclient  conforms  levels w1:303 w2:303 w3:303; client code 
+noad_d5_L4           videoadsdk  conforms  levels w1:303 w2:303 w3:303; client code 303
+noad_d5_L4           iabloader   deviates  levels w1:- w2:- w3:-; client code 303
+noad_d5_L4           vastlint    deviates  levels w1:- w2:- w3:-; client code 
+noad_err_d5_L4       vastclient  conforms  levels w1:303 w2:303 w3:303; client code 
+noad_err_d5_L4       videoadsdk  conforms  levels w1:303 w2:303 w3:303; client code 303
+noad_err_d5_L4       iabloader   deviates  VAST-level Error URI not requested; levels w1:- w2:- w3:-; client code 303
+noad_err_d5_L4       vastlint    deviates  VAST-level Error URI not requested; levels w1:- w2:- w3:-; client code 
+nouri_d5_L4          vastclient  partial   levels w1:303 w2:303 w3:303 w4:-; client code 
+nouri_d5_L4          videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 (wrong code); client code 502
+nouri_d5_L4          iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+nouri_d5_L4          vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+http404_d5_L5        vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 
+http404_d5_L5        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 (wrong code); client code 502
+http404_d5_L5        iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+http404_d5_L5        vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+http500_d5_L5        vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 
+http500_d5_L5        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 (wrong code); client code 502
+http500_d5_L5        iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+http500_d5_L5        vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+timeout_d5_L5        vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 
+timeout_d5_L5        videoadsdk  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 301
+timeout_d5_L5        iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+timeout_d5_L5        vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+stall_d5_L5          vastclient  deviates  resolved an ad despite the failure
+stall_d5_L5          videoadsdk  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 301
+stall_d5_L5          iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+stall_d5_L5          vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+refused_d5_L5        vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 
+refused_d5_L5        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 (wrong code); client code 502
+refused_d5_L5        iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+refused_d5_L5        vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+empty_d5_L5          vastclient  wrong-code levels w1:301 w2:301 w3:301 w4:301 (wrong code); client code 
+empty_d5_L5          videoadsdk  conforms  levels w1:100 w2:100 w3:100 w4:100; client code 100
+empty_d5_L5          iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 
+empty_d5_L5          vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+malformed_d5_L5      vastclient  wrong-code levels w1:301 w2:301 w3:301 w4:301 (wrong code); client code 
+malformed_d5_L5      videoadsdk  conforms  levels w1:100 w2:100 w3:100 w4:100; client code 100
+malformed_d5_L5      iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 303
+malformed_d5_L5      vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+html_d5_L5           vastclient  wrong-code levels w1:301 w2:301 w3:301 w4:301 (wrong code); client code 
+html_d5_L5           videoadsdk  conforms  levels w1:100 w2:100 w3:100 w4:100; client code 100
+html_d5_L5           iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 101
+html_d5_L5           vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+novast_d5_L5         vastclient  wrong-code levels w1:301 w2:301 w3:301 w4:301 (wrong code); client code 
+novast_d5_L5         videoadsdk  wrong-code levels w1:303 w2:303 w3:303 w4:303 (wrong code); client code 303
+novast_d5_L5         iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 101
+novast_d5_L5         vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+noad_d5_L5           vastclient  conforms  levels w1:303 w2:303 w3:303 w4:303; client code 
+noad_d5_L5           videoadsdk  conforms  levels w1:303 w2:303 w3:303 w4:303; client code 303
+noad_d5_L5           iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 303
+noad_d5_L5           vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+noad_err_d5_L5       vastclient  conforms  levels w1:303 w2:303 w3:303 w4:303; client code 
+noad_err_d5_L5       videoadsdk  conforms  levels w1:303 w2:303 w3:303 w4:303; client code 303
+noad_err_d5_L5       iabloader   deviates  VAST-level Error URI not requested; levels w1:- w2:- w3:- w4:-; client code 303
+noad_err_d5_L5       vastlint    deviates  VAST-level Error URI not requested; levels w1:- w2:- w3:- w4:-; client code 
+nouri_d5_L5          vastclient  partial   levels w1:303 w2:303 w3:303 w4:303 w5:-; client code 
+nouri_d5_L5          videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 w5:502 (wrong code); client code 502
+nouri_d5_L5          iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 301
+nouri_d5_L5          vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+http404_d6_L2        vastclient  conforms  levels w1:301; client code 
+http404_d6_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+http404_d6_L2        iabloader   deviates  levels w1:-; client code 301
+http404_d6_L2        vastlint    deviates  levels w1:-; client code 
+http500_d6_L2        vastclient  conforms  levels w1:301; client code 
+http500_d6_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+http500_d6_L2        iabloader   deviates  levels w1:-; client code 301
+http500_d6_L2        vastlint    deviates  levels w1:-; client code 
+timeout_d6_L2        vastclient  conforms  levels w1:301; client code 
+timeout_d6_L2        videoadsdk  conforms  levels w1:301; client code 301
+timeout_d6_L2        iabloader   deviates  levels w1:-; client code 301
+timeout_d6_L2        vastlint    deviates  levels w1:-; client code 
+stall_d6_L2          vastclient  conforms  levels w1:301; client code 
+stall_d6_L2          videoadsdk  conforms  levels w1:301; client code 301
+stall_d6_L2          iabloader   deviates  levels w1:-; client code 301
+stall_d6_L2          vastlint    deviates  levels w1:-; client code 
+refused_d6_L2        vastclient  conforms  levels w1:301; client code 
+refused_d6_L2        videoadsdk  wrong-code levels w1:502 (wrong code); client code 502
+refused_d6_L2        iabloader   deviates  levels w1:-; client code 301
+refused_d6_L2        vastlint    deviates  levels w1:-; client code 
+empty_d6_L2          vastclient  wrong-code levels w1:301 (wrong code); client code 
+empty_d6_L2          videoadsdk  conforms  levels w1:100; client code 100
+empty_d6_L2          iabloader   deviates  levels w1:-; client code 
+empty_d6_L2          vastlint    deviates  levels w1:-; client code 
+malformed_d6_L2      vastclient  wrong-code levels w1:301 (wrong code); client code 
+malformed_d6_L2      videoadsdk  conforms  levels w1:100; client code 100
+malformed_d6_L2      iabloader   deviates  levels w1:-; client code 303
+malformed_d6_L2      vastlint    deviates  levels w1:-; client code 
+html_d6_L2           vastclient  wrong-code levels w1:301 (wrong code); client code 
+html_d6_L2           videoadsdk  conforms  levels w1:100; client code 100
+html_d6_L2           iabloader   deviates  levels w1:-; client code 101
+html_d6_L2           vastlint    deviates  levels w1:-; client code 
+novast_d6_L2         vastclient  wrong-code levels w1:301 (wrong code); client code 
+novast_d6_L2         videoadsdk  wrong-code levels w1:303 (wrong code); client code 303
+novast_d6_L2         iabloader   deviates  levels w1:-; client code 101
+novast_d6_L2         vastlint    deviates  levels w1:-; client code 
+noad_d6_L2           vastclient  conforms  levels w1:303; client code 
+noad_d6_L2           videoadsdk  conforms  levels w1:303; client code 303
+noad_d6_L2           iabloader   deviates  levels w1:-; client code 303
+noad_d6_L2           vastlint    deviates  levels w1:-; client code 
+noad_err_d6_L2       vastclient  conforms  levels w1:303; client code 
+noad_err_d6_L2       videoadsdk  conforms  levels w1:303; client code 303
+noad_err_d6_L2       iabloader   deviates  VAST-level Error URI not requested; levels w1:-; client code 303
+noad_err_d6_L2       vastlint    deviates  VAST-level Error URI not requested; levels w1:-; client code 
+nouri_d6_L2          vastclient  partial   levels w1:303 w2:-; client code 
+nouri_d6_L2          videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+nouri_d6_L2          iabloader   deviates  levels w1:- w2:-; client code 301
+nouri_d6_L2          vastlint    deviates  levels w1:- w2:-; client code 
+http404_d6_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+http404_d6_L3        videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+http404_d6_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+http404_d6_L3        vastlint    deviates  levels w1:- w2:-; client code 
+http500_d6_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+http500_d6_L3        videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+http500_d6_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+http500_d6_L3        vastlint    deviates  levels w1:- w2:-; client code 
+timeout_d6_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+timeout_d6_L3        videoadsdk  conforms  levels w1:301 w2:301; client code 301
+timeout_d6_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+timeout_d6_L3        vastlint    deviates  levels w1:- w2:-; client code 
+stall_d6_L3          vastclient  conforms  levels w1:301 w2:301; client code 
+stall_d6_L3          videoadsdk  conforms  levels w1:301 w2:301; client code 301
+stall_d6_L3          iabloader   deviates  levels w1:- w2:-; client code 301
+stall_d6_L3          vastlint    deviates  levels w1:- w2:-; client code 
+refused_d6_L3        vastclient  conforms  levels w1:301 w2:301; client code 
+refused_d6_L3        videoadsdk  wrong-code levels w1:502 w2:502 (wrong code); client code 502
+refused_d6_L3        iabloader   deviates  levels w1:- w2:-; client code 301
+refused_d6_L3        vastlint    deviates  levels w1:- w2:-; client code 
+empty_d6_L3          vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+empty_d6_L3          videoadsdk  conforms  levels w1:100 w2:100; client code 100
+empty_d6_L3          iabloader   deviates  levels w1:- w2:-; client code 
+empty_d6_L3          vastlint    deviates  levels w1:- w2:-; client code 
+malformed_d6_L3      vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+malformed_d6_L3      videoadsdk  conforms  levels w1:100 w2:100; client code 100
+malformed_d6_L3      iabloader   deviates  levels w1:- w2:-; client code 303
+malformed_d6_L3      vastlint    deviates  levels w1:- w2:-; client code 
+html_d6_L3           vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+html_d6_L3           videoadsdk  conforms  levels w1:100 w2:100; client code 100
+html_d6_L3           iabloader   deviates  levels w1:- w2:-; client code 101
+html_d6_L3           vastlint    deviates  levels w1:- w2:-; client code 
+novast_d6_L3         vastclient  wrong-code levels w1:301 w2:301 (wrong code); client code 
+novast_d6_L3         videoadsdk  wrong-code levels w1:303 w2:303 (wrong code); client code 303
+novast_d6_L3         iabloader   deviates  levels w1:- w2:-; client code 101
+novast_d6_L3         vastlint    deviates  levels w1:- w2:-; client code 
+noad_d6_L3           vastclient  conforms  levels w1:303 w2:303; client code 
+noad_d6_L3           videoadsdk  conforms  levels w1:303 w2:303; client code 303
+noad_d6_L3           iabloader   deviates  levels w1:- w2:-; client code 303
+noad_d6_L3           vastlint    deviates  levels w1:- w2:-; client code 
+noad_err_d6_L3       vastclient  conforms  levels w1:303 w2:303; client code 
+noad_err_d6_L3       videoadsdk  conforms  levels w1:303 w2:303; client code 303
+noad_err_d6_L3       iabloader   deviates  VAST-level Error URI not requested; levels w1:- w2:-; client code 303
+noad_err_d6_L3       vastlint    deviates  VAST-level Error URI not requested; levels w1:- w2:-; client code 
+nouri_d6_L3          vastclient  partial   levels w1:303 w2:303 w3:-; client code 
+nouri_d6_L3          videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+nouri_d6_L3          iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+nouri_d6_L3          vastlint    deviates  levels w1:- w2:- w3:-; client code 
+http404_d6_L4        vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+http404_d6_L4        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+http404_d6_L4        iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+http404_d6_L4        vastlint    deviates  levels w1:- w2:- w3:-; client code 
+http500_d6_L4        vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+http500_d6_L4        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+http500_d6_L4        iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+http500_d6_L4        vastlint    deviates  levels w1:- w2:- w3:-; client code 
+timeout_d6_L4        vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+timeout_d6_L4        videoadsdk  conforms  levels w1:301 w2:301 w3:301; client code 301
+timeout_d6_L4        iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+timeout_d6_L4        vastlint    deviates  levels w1:- w2:- w3:-; client code 
+stall_d6_L4          vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+stall_d6_L4          videoadsdk  conforms  levels w1:301 w2:301 w3:301; client code 301
+stall_d6_L4          iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+stall_d6_L4          vastlint    deviates  levels w1:- w2:- w3:-; client code 
+refused_d6_L4        vastclient  conforms  levels w1:301 w2:301 w3:301; client code 
+refused_d6_L4        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 (wrong code); client code 502
+refused_d6_L4        iabloader   deviates  levels w1:- w2:- w3:-; client code 301
+refused_d6_L4        vastlint    deviates  levels w1:- w2:- w3:-; client code 
+empty_d6_L4          vastclient  wrong-code levels w1:301 w2:301 w3:301 (wrong code); client code 
+empty_d6_L4          videoadsdk  conforms  levels w1:100 w2:100 w3:100; client code 100
+empty_d6_L4          iabloader   deviates  levels w1:- w2:- w3:-; client code 
+empty_d6_L4          vastlint    deviates  levels w1:- w2:- w3:-; client code 
+malformed_d6_L4      vastclient  wrong-code levels w1:301 w2:301 w3:301 (wrong code); client code 
+malformed_d6_L4      videoadsdk  conforms  levels w1:100 w2:100 w3:100; client code 100
+malformed_d6_L4      iabloader   deviates  levels w1:- w2:- w3:-; client code 303
+malformed_d6_L4      vastlint    deviates  levels w1:- w2:- w3:-; client code 
+html_d6_L4           vastclient  wrong-code levels w1:301 w2:301 w3:301 (wrong code); client code 
+html_d6_L4           videoadsdk  conforms  levels w1:100 w2:100 w3:100; client code 100
+html_d6_L4           iabloader   deviates  levels w1:- w2:- w3:-; client code 101
+html_d6_L4           vastlint    deviates  levels w1:- w2:- w3:-; client code 
+novast_d6_L4         vastclient  wrong-code levels w1:301 w2:301 w3:301 (wrong code); client code 
+novast_d6_L4         videoadsdk  wrong-code levels w1:303 w2:303 w3:303 (wrong code); client code 303
+novast_d6_L4         iabloader   deviates  levels w1:- w2:- w3:-; client code 101
+novast_d6_L4         vastlint    deviates  levels w1:- w2:- w3:-; client code 
+noad_d6_L4           vastclient  conforms  levels w1:303 w2:303 w3:303; client code 
+noad_d6_L4           videoadsdk  conforms  levels w1:303 w2:303 w3:303; client code 303
+noad_d6_L4           iabloader   deviates  levels w1:- w2:- w3:-; client code 303
+noad_d6_L4           vastlint    deviates  levels w1:- w2:- w3:-; client code 
+noad_err_d6_L4       vastclient  conforms  levels w1:303 w2:303 w3:303; client code 
+noad_err_d6_L4       videoadsdk  conforms  levels w1:303 w2:303 w3:303; client code 303
+noad_err_d6_L4       iabloader   deviates  VAST-level Error URI not requested; levels w1:- w2:- w3:-; client code 303
+noad_err_d6_L4       vastlint    deviates  VAST-level Error URI not requested; levels w1:- w2:- w3:-; client code 
+nouri_d6_L4          vastclient  partial   levels w1:303 w2:303 w3:303 w4:-; client code 
+nouri_d6_L4          videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 (wrong code); client code 502
+nouri_d6_L4          iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+nouri_d6_L4          vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+http404_d6_L5        vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 
+http404_d6_L5        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 (wrong code); client code 502
+http404_d6_L5        iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+http404_d6_L5        vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+http500_d6_L5        vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 
+http500_d6_L5        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 (wrong code); client code 502
+http500_d6_L5        iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+http500_d6_L5        vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+timeout_d6_L5        vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 
+timeout_d6_L5        videoadsdk  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 301
+timeout_d6_L5        iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+timeout_d6_L5        vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+stall_d6_L5          vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 
+stall_d6_L5          videoadsdk  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 301
+stall_d6_L5          iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+stall_d6_L5          vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+refused_d6_L5        vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301; client code 
+refused_d6_L5        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 (wrong code); client code 502
+refused_d6_L5        iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 301
+refused_d6_L5        vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+empty_d6_L5          vastclient  wrong-code levels w1:301 w2:301 w3:301 w4:301 (wrong code); client code 
+empty_d6_L5          videoadsdk  conforms  levels w1:100 w2:100 w3:100 w4:100; client code 100
+empty_d6_L5          iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 
+empty_d6_L5          vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+malformed_d6_L5      vastclient  wrong-code levels w1:301 w2:301 w3:301 w4:301 (wrong code); client code 
+malformed_d6_L5      videoadsdk  conforms  levels w1:100 w2:100 w3:100 w4:100; client code 100
+malformed_d6_L5      iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 303
+malformed_d6_L5      vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+html_d6_L5           vastclient  wrong-code levels w1:301 w2:301 w3:301 w4:301 (wrong code); client code 
+html_d6_L5           videoadsdk  conforms  levels w1:100 w2:100 w3:100 w4:100; client code 100
+html_d6_L5           iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 101
+html_d6_L5           vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+novast_d6_L5         vastclient  wrong-code levels w1:301 w2:301 w3:301 w4:301 (wrong code); client code 
+novast_d6_L5         videoadsdk  wrong-code levels w1:303 w2:303 w3:303 w4:303 (wrong code); client code 303
+novast_d6_L5         iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 101
+novast_d6_L5         vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+noad_d6_L5           vastclient  conforms  levels w1:303 w2:303 w3:303 w4:303; client code 
+noad_d6_L5           videoadsdk  conforms  levels w1:303 w2:303 w3:303 w4:303; client code 303
+noad_d6_L5           iabloader   deviates  levels w1:- w2:- w3:- w4:-; client code 303
+noad_d6_L5           vastlint    deviates  levels w1:- w2:- w3:- w4:-; client code 
+noad_err_d6_L5       vastclient  conforms  levels w1:303 w2:303 w3:303 w4:303; client code 
+noad_err_d6_L5       videoadsdk  conforms  levels w1:303 w2:303 w3:303 w4:303; client code 303
+noad_err_d6_L5       iabloader   deviates  VAST-level Error URI not requested; levels w1:- w2:- w3:- w4:-; client code 303
+noad_err_d6_L5       vastlint    deviates  VAST-level Error URI not requested; levels w1:- w2:- w3:- w4:-; client code 
+nouri_d6_L5          vastclient  partial   levels w1:303 w2:303 w3:303 w4:303 w5:-; client code 
+nouri_d6_L5          videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 w5:502 (wrong code); client code 502
+nouri_d6_L5          iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 301
+nouri_d6_L5          vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+http404_d6_L6        vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301 w5:301; client code 
+http404_d6_L6        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 w5:502 (wrong code); client code 502
+http404_d6_L6        iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 301
+http404_d6_L6        vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+http500_d6_L6        vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301 w5:301; client code 
+http500_d6_L6        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 w5:502 (wrong code); client code 502
+http500_d6_L6        iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 301
+http500_d6_L6        vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+timeout_d6_L6        vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301 w5:301; client code 
+timeout_d6_L6        videoadsdk  conforms  levels w1:301 w2:301 w3:301 w4:301 w5:301; client code 301
+timeout_d6_L6        iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 301
+timeout_d6_L6        vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+stall_d6_L6          vastclient  deviates  resolved an ad despite the failure
+stall_d6_L6          videoadsdk  conforms  levels w1:301 w2:301 w3:301 w4:301 w5:301; client code 301
+stall_d6_L6          iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 301
+stall_d6_L6          vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+refused_d6_L6        vastclient  conforms  levels w1:301 w2:301 w3:301 w4:301 w5:301; client code 
+refused_d6_L6        videoadsdk  wrong-code levels w1:502 w2:502 w3:502 w4:502 w5:502 (wrong code); client code 502
+refused_d6_L6        iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 301
+refused_d6_L6        vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+empty_d6_L6          vastclient  wrong-code levels w1:301 w2:301 w3:301 w4:301 w5:301 (wrong code); client code 
+empty_d6_L6          videoadsdk  conforms  levels w1:100 w2:100 w3:100 w4:100 w5:100; client code 100
+empty_d6_L6          iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+empty_d6_L6          vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+malformed_d6_L6      vastclient  wrong-code levels w1:301 w2:301 w3:301 w4:301 w5:301 (wrong code); client code 
+malformed_d6_L6      videoadsdk  conforms  levels w1:100 w2:100 w3:100 w4:100 w5:100; client code 100
+malformed_d6_L6      iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 303
+malformed_d6_L6      vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+html_d6_L6           vastclient  wrong-code levels w1:301 w2:301 w3:301 w4:301 w5:301 (wrong code); client code 
+html_d6_L6           videoadsdk  conforms  levels w1:100 w2:100 w3:100 w4:100 w5:100; client code 100
+html_d6_L6           iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 101
+html_d6_L6           vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+novast_d6_L6         vastclient  wrong-code levels w1:301 w2:301 w3:301 w4:301 w5:301 (wrong code); client code 
+novast_d6_L6         videoadsdk  wrong-code levels w1:303 w2:303 w3:303 w4:303 w5:303 (wrong code); client code 303
+novast_d6_L6         iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 101
+novast_d6_L6         vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+noad_d6_L6           vastclient  conforms  levels w1:303 w2:303 w3:303 w4:303 w5:303; client code 
+noad_d6_L6           videoadsdk  conforms  levels w1:303 w2:303 w3:303 w4:303 w5:303; client code 303
+noad_d6_L6           iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 303
+noad_d6_L6           vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:-; client code 
+noad_err_d6_L6       vastclient  conforms  levels w1:303 w2:303 w3:303 w4:303 w5:303; client code 
+noad_err_d6_L6       videoadsdk  conforms  levels w1:303 w2:303 w3:303 w4:303 w5:303; client code 303
+noad_err_d6_L6       iabloader   deviates  VAST-level Error URI not requested; levels w1:- w2:- w3:- w4:- w5:-; client code 303
+noad_err_d6_L6       vastlint    deviates  VAST-level Error URI not requested; levels w1:- w2:- w3:- w4:- w5:-; client code 
+nouri_d6_L6          vastclient  partial   levels w1:303 w2:303 w3:303 w4:303 w5:303 w6:-; client code 
+nouri_d6_L6          videoadsdk  wrong-code levels w1:302 w2:302 w3:302 w4:302 w5:302 w6:302 (wrong code); client code 302
+nouri_d6_L6          iabloader   deviates  levels w1:- w2:- w3:- w4:- w5:- w6:-; client code 301
+nouri_d6_L6          vastlint    deviates  levels w1:- w2:- w3:- w4:- w5:- w6:-; client code 
+failure	accepted codes	iabloader	vastclient	vastlint	videoadsdk
+(none)	resolve d<=6; d=7 may 302	conforms 7	conforms 7	conforms 5, deviates 2	conforms 7
+http404	301	conforms 15 [determined]	conforms 15 [301]	delegated 15 [no]	wrong-code 15 [502]
+http500	301	conforms 15 [determined]	conforms 15 [301]	delegated 15 [no]	wrong-code 15 [502]
+timeout	301	conforms 15 [determined]	conforms 15 [301] +uncaught	delegated 15 [no]	conforms 15 [301]
+stall	301	conforms 15 [determined]	deviates 5, conforms 10 [resolved / 301]	delegated 15 [no]	conforms 15 [301]
+refused	301	conforms 15 [determined]	conforms 15 [301]	delegated 15 [no]	wrong-code 15 [502]
+empty	100/303	no-code 15 [determined] +internal	wrong-code 15 [301]	delegated 15 [no]	conforms 15 [100]
+html	100/303	wrong-code 15 [determined] +internal	wrong-code 15 [301]	delegated 15 [no]	conforms 15 [100]
+malformed	100	wrong-code 15 [determined]	wrong-code 15 [301]	delegated 15 [no]	conforms 15 [100]
+novast	101/100/303	conforms 15 [determined] +internal	wrong-code 15 [301]	delegated 15 [no]	conforms 15 [303]
+noad	303	conforms 15 [determined]	conforms 15 [303]	delegated 15 [no]	conforms 15 [303]
+noad_err	303	conforms 15 [determined]	conforms 15 [303]	delegated 15 [no]	conforms 15 [303]
+nouri	101/100/301/303	conforms 15 [determined]	partial 15 [303]	delegated 15 [no]	wrong-code 15 [502 / 302]
+vastclient: request made; pixels 46; 
+vastclient escaped: request made
+videoadsdk: request made; pixels 46; 
+videoadsdk escaped: request made
+iabloader: request made; pixels 0; 
+iabloader escaped: request made
+vastlint: request made; pixels 46; 
+vastlint escaped: request made
+{"vastclient|request":{"literal":50},"vastclient|pixel":{"value":6,"unknown (-1)":34,"literal":5},"vastclient|request (escaped &amp;)":{"literal":50},"videoadsdk|request":{"literal":50},"videoadsdk|pixel":{"value":2,"literal":43},"videoadsdk|request (escaped &amp;)":{"literal":50},"iabloader|request":{"literal":50},"iabloader|pixel":{"delegated":45},"iabloader|request (escaped &amp;)":{"literal":50},"vastlint|request":{"literal":50},"vastlint|pixel":{"value":2,"literal":43},"vastlint|request (escaped &amp;)":{"literal":1,"missing":49}}

@@ -1,0 +1,14 @@
+Failure,Accepted codes,vast-client-js,video-ad-sdk,iab-vast-loader (code determined),vastlint-client
+(none),resolve d ≤ 6; d = 7 may 302,conforms,conforms,conforms,deviates at d = 6; rejects d = 7 with no code
+http404,301,301; conforms,502; wrong code,301; conforms,delegated (no code)
+http500,301,301; conforms,502; wrong code,301; conforms,delegated (no code)
+timeout,301,301; conforms; uncaught exception,301; conforms,301; conforms,delegated (no code)
+stall,301,ad accepted or 301; deviates or conforms,301; conforms,301; conforms,delegated (no code)
+refused,301,301; conforms,502; wrong code,301; conforms,delegated (no code)
+empty,100/303,301; wrong code,100; conforms,none; no code; internal error,delegated (no code)
+html,100/303,301; wrong code,100; conforms,101; wrong code; internal error,delegated (no code)
+malformed,100,301; wrong code,100; conforms,303; wrong code,delegated (no code)
+novast,101/100/303,301; wrong code,303; conforms,101; conforms; internal error,delegated (no code)
+noad,303,303; conforms,303; conforms,303; conforms,delegated (no code)
+noad_err,303,303; conforms,303; conforms,303; conforms,delegated (no code)
+nouri,101/100/301/303,303; partial,502 or 302; wrong code,301; conforms,delegated (no code)

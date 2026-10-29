@@ -1,0 +1,9 @@
+Decision,Count,Packages
+"Tested, or tested under another distribution",2,vastlint-client; rmp-vast (the npm name; the tested code is the GitHub 17.2.0 distribution)
+"Eligible, not tested",4,"itube-modern-player, streamit-player, ts-video-player, stormcloud-video-player"
+Excluded: wrapper of the IMA SDK (condition 2),4,"@glomex/vast-ima-player, artplayer-plugin-vast, xgplayer-ads, @playkit-js/playkit-js-ima"
+Excluded: derivative of vast-client-js (condition 2),5,"@openplayerjs/ads, @arte/videojs-vast, ads-manager, videojsx-vast-plugin, @videointelligence/vast-client"
+Excluded: closed or unlicensed (condition 1),2,"@dailymotion/ad-sdk-web, @getstoryteller/react-native-storyteller-sdk-vast"
+Excluded: parser only or no release in 24 months (conditions 3 and 4),4,"@ygoto3/omap-vast-parser, videojs-vast-vpaid, vastacular, vast-player"
+Not assigned a decision in the survey,4,"@ygoto3/omap-vmap-parser, @pavloniym/rmp-vast, vjs-vast, @trillboards/ads-sdk"
+Total,25,

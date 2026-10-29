@@ -1,0 +1,12 @@
+{"pkg":"vc650p","scenario":"control_wrapper","code":0,"signal":null,"ms":185,"result":{"t":1792166010282,"ev":"result","ok":true,"ads":1,"errorURLTemplates":0},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc650p","scenario":"control_wrapper","code":0,"signal":null,"ms":170,"result":{"t":1792166010456,"ev":"result","ok":true,"ads":1,"errorURLTemplates":0},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc650p","scenario":"control_wrapper","code":0,"signal":null,"ms":150,"result":{"t":1792166010607,"ev":"result","ok":true,"ads":1,"errorURLTemplates":0},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc650p","scenario":"wrapper_hang","code":0,"signal":null,"ms":664,"result":{"t":1792166011271,"ev":"result","ok":true,"ads":0,"errorURLTemplates":0},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc650p","scenario":"wrapper_hang","code":0,"signal":null,"ms":664,"result":{"t":1792166011935,"ev":"result","ok":true,"ads":0,"errorURLTemplates":0},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc650p","scenario":"wrapper_hang","code":0,"signal":null,"ms":707,"result":{"t":1792166012642,"ev":"result","ok":true,"ads":0,"errorURLTemplates":0},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc650p","scenario":"concurrent_50_one_slow","code":0,"signal":null,"ms":2268,"result":{"t":1792166014910,"ev":"result","finished":50},"done":50,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc650p","scenario":"concurrent_50_one_slow","code":0,"signal":null,"ms":2246,"result":{"t":1792166017156,"ev":"result","finished":50},"done":50,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc650p","scenario":"concurrent_50_one_slow","code":0,"signal":null,"ms":2244,"result":{"t":1792166019397,"ev":"result","finished":50},"done":50,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc650p","scenario":"service","code":null,"signal":"SIGTERM","ms":2498,"result":null,"done":0,"unhandled":0,"service":{"ok":20,"failed":[]},"stderr":""}
+{"pkg":"vc650p","scenario":"service","code":null,"signal":"SIGTERM","ms":2456,"result":null,"done":0,"unhandled":0,"service":{"ok":20,"failed":[]},"stderr":""}
+{"pkg":"vc650p","scenario":"service","code":null,"signal":"SIGTERM","ms":2489,"result":null,"done":0,"unhandled":0,"service":{"ok":20,"failed":[]},"stderr":""}

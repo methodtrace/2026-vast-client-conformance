@@ -1,0 +1,18 @@
+client	version	requirement	sweep_2026-10-16	rerun_2026-10-21	sweep_detail	rerun_detail
+vastclient	3.3.0	W05	conforms	conforms	ended after 1 fetches	ended after 1 fetches
+vastclient	3.3.0	W06	n/a	conforms	the client does not follow Wrappers (see W01)	code 302
+vastclient	4.0.1	W05	conforms	conforms	ended after 1 fetches	ended after 1 fetches
+vastclient	4.0.1	W06	n/a	conforms	the client does not follow Wrappers (see W01)	code 302
+vastclient	5.0.0	W05	conforms	conforms	ended after 10 fetches	ended after 10 fetches
+vastclient	5.0.0	W06	conforms	conforms	code 302,302,302,302,302,302,302,302,302,302	code 302,302,302,302,302,302,302,302,302,302
+vastclient	6.5.0	W05	conforms	conforms	ended after 10 fetches	ended after 10 fetches
+vastclient	6.5.0	W06	conforms	conforms	code 302,302,302,302,302,302,302,302,302,302	code 302,302,302,302,302,302,302,302,302,302
+videoadsdk	2.1.0	X13	deviates	conforms	not requested	requested
+videoadsdk	2.2.1	X13	deviates	conforms	not requested	requested
+videoadsdk	2.3.0	X13	deviates	conforms	not requested	requested
+videoadsdk	2.4.3	X13	deviates	conforms	not requested	requested
+videoadsdk	2.5.1	X13	deviates	conforms	not requested	requested
+videoadsdk	2.6.3	X13	deviates	conforms	not requested	requested
+videoadsdk	2.7.2	X13	deviates	conforms	not requested	requested
+videoadsdk	3.0.0	X13	conforms	conforms	requested	requested
+videoadsdk	4.0.1	X13	conforms	conforms	requested	requested

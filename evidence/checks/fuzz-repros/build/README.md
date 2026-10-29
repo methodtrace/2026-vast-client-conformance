@@ -1,0 +1,1 @@
+esbuild bundles of iab-vast-loader 2.5.1 and video-ad-sdk 4.0.1 from the same entries as code/harness/build/build.sh but with --sourcemap, so stacks under node --enable-source-maps name node_modules/<pkg>/lib|dist files (rebuild: ./build.sh). Mapped paths may print with a doubled directory prefix; the tail is the real path.

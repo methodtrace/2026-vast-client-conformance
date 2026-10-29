@@ -1,0 +1,1871 @@
+{
+ "@ygoto3/omap-vast-parser": {
+  "desc": "Open Media Ad Player Vast Parser",
+  "date": "2024-03-28",
+  "ver": "0.0.3",
+  "repo": "git+https://github.com/ygoto3/omap.git",
+  "dl": 23042
+ },
+ "iab-vast-parser": {
+  "desc": "Parses IAB VAST tags into iab-vast-model objects.",
+  "date": "2021-02-25",
+  "ver": "1.2.1",
+  "repo": "https://github.com/zentrick/iab-vast-parser.git",
+  "dl": 12815
+ },
+ "@dailymotion/vast-client": {
+  "desc": "JavaScript VAST Client",
+  "date": "2026-09-30",
+  "ver": "6.5.0",
+  "repo": "git+https://github.com/dailymotion/vast-client-js.git",
+  "dl": 253377
+ },
+ "vast-parser-components": {
+  "desc": "structural components for vast parser",
+  "date": "2016-08-03",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/eugenelavr/test-parser-structures.git",
+  "dl": 11
+ },
+ "iab-vast-model": {
+  "desc": "Base classes for IAB VAST handling.",
+  "date": "2021-02-25",
+  "ver": "1.0.2",
+  "repo": "https://github.com/zentrick/iab-vast-model.git",
+  "dl": 12564
+ },
+ "@glomex/vast-ima-player": {
+  "desc": "Convenience wrapper for advertising video/audio content with Google IMA",
+  "date": "2024-09-10",
+  "ver": "1.21.2",
+  "repo": "git+https://github.com/glomex/vast-ima-player.git",
+  "dl": 18746
+ },
+ "vast-parser": {
+  "desc": "[![JavaScript Style Guide][js-standard-image]][js-standard-url] [![NPM version][npm-image]",
+  "date": "2017-03-29",
+  "ver": "1.0.1",
+  "repo": "git+https://github.com/kyungw00k/vast-parser.git",
+  "dl": 30
+ },
+ "@types/vast-client": {
+  "desc": "TypeScript definitions for vast-client",
+  "date": "2023-11-07",
+  "ver": "3.0.4",
+  "repo": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+  "dl": 25721
+ },
+ "vast": {
+  "desc": "Vast is a tiny state container inspired by React's `useState`, designed for libraries that",
+  "date": "2026-10-03",
+  "ver": "2.0.18",
+  "repo": "git+https://github.com/ealush/vest.git",
+  "dl": 85042
+ },
+ "vast-builder": {
+  "desc": "An intuitive standard IAB Vast XML generation API. Complient with specifications Vast 2.0 ",
+  "date": "2019-03-20",
+  "ver": "4.0.1",
+  "repo": "git+https://github.com/DavidBabel/vast-builder.git",
+  "dl": 3182
+ },
+ "@game-buster/gbsdk": {
+  "desc": "Production-ready, zero-dependency in-game ads SDK with VAST 4.x + Google IMA HTML5 support",
+  "date": "2025-12-09",
+  "ver": "1.1.1",
+  "repo": "git+https://github.com/game-buster/gbsdk.git",
+  "dl": 14
+ },
+ "videojs-vast-vpaid": {
+  "desc": "VAST plugin to use with video.js",
+  "date": "2017-03-31",
+  "ver": "3.0.0-beta.8",
+  "repo": "git+https://github.com/MailOnline/videojs-vast-vpaid.git",
+  "dl": 1264
+ },
+ "vast-ai-provisioner": {
+  "desc": "Deploy a ComfyUI instance to Vast.ai with one click",
+  "date": "2026-10-09",
+  "ver": "1.2.1",
+  "repo": "git+https://github.com/ayan4m1/vast-ai-provisioner.git",
+  "dl": 4569
+ },
+ "openplayerjs": {
+  "desc": "HTML5 video and audio player",
+  "date": "2026-02-01",
+  "ver": "2.14.12",
+  "repo": "git+https://github.com/openplayerjs/openplayerjs.git",
+  "dl": 16208
+ },
+ "vast-xml": {
+  "desc": "VAST XML responses for online video advertisers.",
+  "date": "2015-02-02",
+  "ver": "1.3.0",
+  "repo": "https://github.com/tbuchok/vast-xml.git",
+  "dl": 618
+ },
+ "vastlint": {
+  "desc": "Validate VAST 2.0\u20134.4, VMAP 1.0, and DAAST 1.0 ad tags against IAB specs. 246 rules. Rust/",
+  "date": "2026-10-13",
+  "ver": "0.15.0",
+  "repo": "git+https://github.com/aleksUIX/vastlint.git",
+  "dl": 2908
+ },
+ "vast-player": {
+  "desc": "Playback VAST creatives in a web browser.",
+  "date": "2017-09-05",
+  "ver": "0.2.10",
+  "repo": "git+https://github.com/cinema6/vast-player.git",
+  "dl": 632
+ },
+ "react-native-vast-client": {
+  "desc": "JavaScript VAST Client",
+  "date": "2019-12-16",
+  "ver": "2.5.1",
+  "repo": "git+https://github.com/sina-moammar/vast-client-js.git",
+  "dl": 386
+ },
+ "vastacular": {
+  "desc": "Fetches/parses IAB VAST 2.0/3.0 XML.",
+  "date": "2016-02-11",
+  "ver": "0.2.0",
+  "repo": "git+https://github.com/cinema6/vastacular.git",
+  "dl": 558
+ },
+ "@pavloniym/rmp-vast": {
+  "desc": "A client-side JavaScript solution to load, parse and display VAST resources (advertising)",
+  "date": "2025-08-07",
+  "ver": "17.0.1-esm-v3",
+  "repo": "git+https://github.com/pavloniym/rmp-vast.git",
+  "dl": 530
+ },
+ "@openplayerjs/ads": {
+  "desc": "VAST/VMAP/Non-linear/companions ad-serving plugin for OpenPlayerJS",
+  "date": "2026-09-01",
+  "ver": "3.6.5",
+  "repo": "git+https://github.com/openplayerjs/openplayerjs.git",
+  "dl": 1123
+ },
+ "@fontsource/vast-shadow": {
+  "desc": "Self-host the Vast Shadow font in a neatly bundled NPM package.",
+  "date": "2026-07-19",
+  "ver": "5.3.0",
+  "repo": "git+https://github.com/fontsource/font-files.git",
+  "dl": 723
+ },
+ "eslint-config-vast": {
+  "desc": "ESLint shareable config for Vast's JavaScript coding standards",
+  "date": "2019-04-08",
+  "ver": "2.0.1",
+  "repo": "git+https://github.com/vast-engineering/eslint-config-vast.git",
+  "dl": 191
+ },
+ "vjs-vast": {
+  "desc": "VAST plugin to use with video.js",
+  "date": "2020-06-14",
+  "ver": "0.0.1",
+  "repo": "git+https://github.com/MailOnline/videojs-vast-vpaid.git",
+  "dl": 137
+ },
+ "@geoshar/videojs-vast-vpaid": {
+  "desc": "VAST plugin to use with video.js",
+  "date": "2018-07-14",
+  "ver": "3.0.0-beta.17",
+  "repo": "git+https://github.com/MailOnline/videojs-vast-vpaid.git",
+  "dl": 133
+ },
+ "vast-player-react": {
+  "desc": "A React Component That Plays an Inline VAST 4.0 Ad",
+  "date": "2016-12-28",
+  "ver": "0.4.1",
+  "repo": "git+ssh://git@github.com/shibbybird/vast-player-react.git",
+  "dl": 129
+ },
+ "@arte/videojs-vast": {
+  "desc": "Open Source VAST plugin for VideoJS",
+  "date": "2026-02-06",
+  "ver": "1.5.4",
+  "repo": "git+https://github.com/ArteGEIE/videojs-vast.git",
+  "dl": 245
+ },
+ "vpaid-html5-client": {
+  "desc": "VPAID HTML5",
+  "date": "2016-05-13",
+  "ver": "0.1.14",
+  "repo": "git+https://github.com/MailOnline/VPAIDHTML5Client.git",
+  "dl": 1758
+ },
+ "rmp-vast": {
+  "desc": "A client-side JavaScript solution to load, parse and display VAST resources (advertising)",
+  "date": "2022-06-24",
+  "ver": "6.0.0",
+  "repo": "git+https://github.com/radiantmediaplayer/rmp-vast.git",
+  "dl": 183
+ },
+ "ts-video-player": {
+  "desc": "A modern, framework-agnostic video player with deep stx integration",
+  "date": "2026-10-15",
+  "ver": "0.1.10",
+  "repo": "https://github.com/stacksjs/ts-video-player",
+  "dl": 23336
+ },
+ "@videointelligence/vast-client": {
+  "desc": "JavaScript VAST Client",
+  "date": "2024-06-21",
+  "ver": "4.0.6",
+  "repo": "git+https://github.com/dailymotion/vast-client-js.git",
+  "dl": 144
+ },
+ "iab-vast-loader": {
+  "desc": "Loads and parses IAB VAST tags, resolving wrapped tags along the way.",
+  "date": "2021-02-25",
+  "ver": "2.5.1",
+  "repo": "https://github.com/zentrick/iab-vast-loader.git",
+  "dl": 276
+ },
+ "@mixpeek/iab-mapper": {
+  "desc": "Local IAB Content Taxonomy 2.x -> 3.0 mapper with vectors, SCD, OpenRTB/VAST exporters for",
+  "date": "2025-10-09",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/mixpeek/iab-mapper.git",
+  "dl": 934
+ },
+ "artplayer-plugin-vast": {
+  "desc": "vast plugin for ArtPlayer",
+  "date": "2024-10-12",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/zhw2590582/ArtPlayer.git",
+  "dl": 233
+ },
+ "iab-vast-error": {
+  "desc": "Error class that describes VAST errors.",
+  "date": "2017-09-11",
+  "ver": "0.2.0",
+  "repo": "git+https://github.com/zentrick/iab-vast-error.git",
+  "dl": 110
+ },
+ "stylelint-config-vast": {
+  "desc": "Stylelint shareable config for Vast's CSS coding standards",
+  "date": "2022-01-12",
+  "ver": "2.0.0",
+  "repo": "git+https://github.com/vast-engineering/stylelint-config-vast.git",
+  "dl": 142
+ },
+ "ads-manager": {
+  "desc": "HTML5 Video Ads Manager based on @dailymotion/vast-client",
+  "date": "2025-02-16",
+  "ver": "1.2.16",
+  "repo": "git+https://github.com/basil79/ads-manager.git",
+  "dl": 400
+ },
+ "@muppy/videojsx-vast-plugin": {
+  "desc": "VAST plugin for Video.js",
+  "date": "2026-08-19",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/philipwatson/videojsx-vast-plugin.git",
+  "dl": 127
+ },
+ "adgent-sdk": {
+  "desc": "Lightweight, framework-agnostic VAST Player SDK for Smart TV platforms",
+  "date": "2026-08-14",
+  "ver": "0.2.2",
+  "repo": "",
+  "dl": 84
+ },
+ "vpaid-flash-client": {
+  "desc": "VPAID Flash for JS",
+  "date": "2016-05-13",
+  "ver": "1.0.2",
+  "repo": "git+https://github.com/MailOnline/VPAIDFLASHClient.git",
+  "dl": 740
+ },
+ "vastlint-client": {
+  "desc": "Headless VAST session/runtime package built on top of VASTlint.",
+  "date": "2026-10-13",
+  "ver": "0.15.0",
+  "repo": "git+https://github.com/aleksUIX/vastlint.git",
+  "dl": 2293
+ },
+ "eslint-config-vast-react": {
+  "desc": "ESLint shareable config for React and react-a11y to be used with eslint-config-vast",
+  "date": "2016-11-08",
+  "ver": "1.0.6",
+  "repo": "git+https://github.com/vast-engineering/eslint-config-vast-react.git",
+  "dl": 80
+ },
+ "@trillboards/ads-sdk": {
+  "desc": "DOOH advertising SDK \u2014 add ads to vending machines, kiosks, billboards, and digital signag",
+  "date": "2026-09-01",
+  "ver": "2.4.9",
+  "repo": "git+https://github.com/trillboards/packages.git",
+  "dl": 2256
+ },
+ "videojsx-vast-plugin": {
+  "desc": "HTML5 video player with VAST support",
+  "date": "2022-04-21",
+  "ver": "1.0.4",
+  "repo": "git+https://github.com/edumetz16/videojsx-vast-plugin.git",
+  "dl": 249
+ },
+ "@adxact/rmp-vast": {
+  "desc": "Fork of rmp-vast to load, parse and display VAST resources (advertising)",
+  "date": "2023-05-03",
+  "ver": "11.0.0",
+  "repo": "",
+  "dl": 95
+ },
+ "dompurify": {
+  "desc": "DOMPurify is a DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG.",
+  "date": "2026-10-12",
+  "ver": "3.4.17",
+  "repo": "git://github.com/cure53/DOMPurify.git",
+  "dl": 305809021
+ },
+ "vast-bad-web3-whatever": {
+  "desc": "vast-bad-web3-whatever",
+  "date": "2024-03-18",
+  "ver": "3.7.485",
+  "repo": "git+https://github.com/vast-bad-web3-whatever/vast-bad-web3-whatever.git",
+  "dl": 102
+ },
+ "typeface-vast-shadow": {
+  "desc": "Vast Shadow typeface",
+  "date": "2020-10-06",
+  "ver": "1.1.13",
+  "repo": "https://github.com/KyleAMathews/typefaces/tree/master/packages/vast-shadow",
+  "dl": 61
+ },
+ "@getstoryteller/react-native-storyteller-sdk-vast": {
+  "desc": "React Native wrapper for VAST ads integration with the Storyteller SDK",
+  "date": "2026-10-13",
+  "ver": "12.1.1",
+  "repo": "",
+  "dl": 471
+ },
+ "@tomesch/vast-client": {
+  "desc": "Javascript VAST Client",
+  "date": "2018-04-12",
+  "ver": "1.8.0",
+  "repo": "git+https://github.com/dailymotion/vast-client-js.git",
+  "dl": 40
+ },
+ "vast-inliner": {
+  "desc": "vast-inliner is written as a challenge. The aim of this is to turn VAST documents with wra",
+  "date": "2017-06-14",
+  "ver": "1.1.0",
+  "repo": "git+https://github.com/kahwee/vast-inliner.git",
+  "dl": 48
+ },
+ "flowplayer-vast": {
+  "desc": "VAST 2.0 support within Flowplayer 6 HTML",
+  "date": "2019-09-20",
+  "ver": "1.1.11",
+  "repo": "git+https://github.com/mantisadnetwork/flowplayer-vast.git",
+  "dl": 49
+ },
+ "vast-client-proxy": {
+  "desc": "JavaScript VAST Client",
+  "date": "2020-06-13",
+  "ver": "3.0.0",
+  "repo": "git+https://github.com/dailymotion/vast-client-js.git",
+  "dl": 35
+ },
+ "peertube-plugin-vast-ads": {
+  "desc": "Display vast ads in peertube",
+  "date": "2024-10-07",
+  "ver": "1.0.0",
+  "repo": "",
+  "dl": 46
+ },
+ "vast-client-fork": {
+  "desc": "JavaScript VAST Client",
+  "date": "2020-10-19",
+  "ver": "2.5.3",
+  "repo": "git+https://github.com/dailymotion/vast-client-js.git",
+  "dl": 33
+ },
+ "vast-xml-4": {
+  "desc": "A library for parsing and creating VAST 4.0 XML",
+  "date": "2016-05-22",
+  "ver": "0.1.0",
+  "repo": "git+https://github.com/shibbybird/vast-xml-4.git",
+  "dl": 52
+ },
+ "@openfonts/vast-shadow_latin": {
+  "desc": "Vast Shadow latin typeface",
+  "date": "2026-07-26",
+  "ver": "1.44.3",
+  "repo": "git+https://github.com/bedlaj/openfonts.git",
+  "dl": 12
+ },
+ "@bygd/opus-vast-hl": {
+  "desc": "## Introduction `@bygd/opus-vast-hl` is a tool designed to facilitate the integration of v",
+  "date": "2024-10-14",
+  "ver": "0.1.29",
+  "repo": "",
+  "dl": 62
+ },
+ "@expo-google-fonts/vast-shadow": {
+  "desc": "Use the Vast Shadow font family from Google Fonts in your Expo app",
+  "date": "2025-09-11",
+  "ver": "0.4.1",
+  "repo": "git+https://github.com/expo/google-fonts.git",
+  "dl": 74
+ },
+ "@filmgardi/videojs-vast": {
+  "desc": "A Video.js plugin to allow the player to sarve adverts using VAST",
+  "date": "2023-12-31",
+  "ver": "1.1.7",
+  "repo": "",
+  "dl": 57
+ },
+ "vastjs": {
+  "desc": "VAST Manager",
+  "date": "2018-08-30",
+  "ver": "0.1.1",
+  "repo": "",
+  "dl": 46
+ },
+ "vastmanka": {
+  "desc": "VAST player for Zaycev.net React App.",
+  "date": "2020-02-21",
+  "ver": "1.2.1",
+  "repo": "git+https://github.com/zaycev-net/vastmanka.git",
+  "dl": 83
+ },
+ "@aaadesh/vast-player": {
+  "desc": "VAST compliant Player allows to rich interactive media ad playback in a web browsers.",
+  "date": "2018-04-07",
+  "ver": "0.1.0",
+  "repo": "",
+  "dl": 50
+ },
+ "vast-client-saat": {
+  "desc": "JavaScript VAST Client. vast-client package might be a bit old. so re-forked from the mast",
+  "date": "2021-06-14",
+  "ver": "3.1.1",
+  "repo": "git+https://github.com/dailymotion/vast-client-js.git",
+  "dl": 31
+ },
+ "video-ad-sdk": {
+  "desc": "VAST/VPAID SDK that allows video ads to be played on top of any player",
+  "date": "2024-04-22",
+  "ver": "4.0.1",
+  "repo": "git+https://github.com/rambler-digital-solutions/video-ad-sdk.git",
+  "dl": 379
+ },
+ "vast-daast-client": {
+  "desc": "JavaScript VAST Client",
+  "date": "2019-03-26",
+  "ver": "2.2.3",
+  "repo": "git+https://github.com/mstfsnc/vast-client-js.git",
+  "dl": 20
+ },
+ "@tomesch/vast-xml": {
+  "desc": "VAST XML responses for online video advertisers.",
+  "date": "2019-02-25",
+  "ver": "1.3.9",
+  "repo": "git+https://github.com/tbuchok/vast-xml.git",
+  "dl": 30
+ },
+ "react-vast-player": {
+  "desc": "Mode-agnostic React video engine with first-class VAST support. No plugins.",
+  "date": "2026-07-06",
+  "ver": "1.0.1",
+  "repo": "git+https://github.com/rwndy/react-vast-player.git",
+  "dl": 38
+ },
+ "@hello-worlds/planets": {
+  "desc": "A Typescript library to add vast planets to your [`three.js`](threejs.org/) scene",
+  "date": "2024-06-17",
+  "ver": "0.0.25",
+  "repo": "",
+  "dl": 130
+ },
+ "sw-vast-errors": {
+  "desc": "Vast Error handler",
+  "date": "2016-10-26",
+  "ver": "1.1.0",
+  "repo": "git+https://github.com/Strangerware/sw-vast-errors.git",
+  "dl": 17
+ },
+ "@mailonline/vast-xml2js": {
+  "desc": "MOL VAST xml2js method",
+  "date": "2018-08-09",
+  "ver": "0.3.0",
+  "repo": "",
+  "dl": 19
+ },
+ "iab": {
+  "desc": "IAB's VAST & VMAP formats parser for Node.js",
+  "date": "2017-02-24",
+  "ver": "1.0.2",
+  "repo": "git+ssh://git@github.com/etf1/IAB.git",
+  "dl": 71
+ },
+ "elisif": {
+  "desc": "A powerful Discord Bot container, command handler, and vast extension of discord.js. Suppo",
+  "date": "2023-02-02",
+  "ver": "2.0.1",
+  "repo": "git+https://github.com/Cannicide/node-elisif.git",
+  "dl": 558
+ },
+ "ys_2021": {
+  "desc": "vast test project",
+  "date": "2021-05-17",
+  "ver": "1.6.0",
+  "repo": "",
+  "dl": 40
+ },
+ "soap-vast-web3-broad": {
+  "desc": "soap-vast-web3-broad",
+  "date": "2024-04-08",
+  "ver": "44.9.58",
+  "repo": "git+https://github.com/soap-vast-web3-broad/soap-vast-web3-broad.git",
+  "dl": 21
+ },
+ "@mailonline/videojs-vast-vpaid": {
+  "desc": "VAST plugin to use with video.js",
+  "date": "2018-08-09",
+  "ver": "0.3.0",
+  "repo": "",
+  "dl": 20
+ },
+ "@anora.dev/videostream-pro-nextjs": {
+  "desc": "VideoStream Pro SDK for Next.js - Professional video player with VAST ads",
+  "date": "2025-10-03",
+  "ver": "1.0.1",
+  "repo": "git+https://github.com/videostream-pro/nextjs-sdk.git",
+  "dl": 84
+ },
+ "co.vire.vast-client": {
+  "desc": "Javascript VAST Client",
+  "date": "2017-05-29",
+  "ver": "1.7.1-vire-0.0.3",
+  "repo": "git+https://github.com/dailymotion/vast-client-js.git",
+  "dl": 18
+ },
+ "@compai/font-vast-shadow": {
+  "desc": "[**Read the docs &rarr;**](https://components.ai/docs/typefaces/vast-shadow)",
+  "date": "2022-05-17",
+  "ver": "0.0.3",
+  "repo": "git+https://github.com/components-ai/typefaces.git#main",
+  "dl": 20
+ },
+ "@electron-fonts/vast-shadow": {
+  "desc": "Vast Shadow font injector to electron aplications.",
+  "date": "2024-02-18",
+  "ver": "1.2.0",
+  "repo": "git+https://github.com/ArthurLobopro/electron-fonts.git",
+  "dl": 17
+ },
+ "@adbutler/mcp-server": {
+  "desc": "MCP server for the AdButler ad management API. Manage advertisers, campaigns, zones, creat",
+  "date": "2026-09-02",
+  "ver": "2.7.0",
+  "repo": "git+https://github.com/adbutler/mcp-server.git",
+  "dl": 516
+ },
+ "streamit-player": {
+  "desc": "Enterprise-grade HTML5 video player with adaptive streaming (HLS/DASH), multi-DRM, VAST/VM",
+  "date": "2026-10-15",
+  "ver": "1.1.0",
+  "repo": "git+https://github.com/iqonicdesignofficial/streamit-player.git",
+  "dl": 255
+ },
+ "vast-thirty-thrown-bigger": {
+  "desc": "vast-thirty-thrown-bigger",
+  "date": "2024-03-21",
+  "ver": "79.63.617",
+  "repo": "git+https://github.com/vast-thirty-thrown-bigger/vast-thirty-thrown-bigger.git",
+  "dl": 14
+ },
+ "boblox.js": {
+  "desc": "Wrapper for the vast roblox api.",
+  "date": "2021-11-18",
+  "ver": "1.4.3",
+  "repo": "",
+  "dl": 39
+ },
+ "video-ad-sdk-lexankh": {
+  "desc": "VAST/VPAID SDK that allows video ads to be played on top of any player",
+  "date": "2023-02-16",
+  "ver": "3.0.3-beta",
+  "repo": "git@git.involta.ru:a.xoroshavin/video-ad-sdk.git",
+  "dl": 92
+ },
+ "multy-video-1275": {
+  "desc": "Vast multy player",
+  "date": "2017-09-21",
+  "ver": "1.1.2",
+  "repo": "",
+  "dl": 37
+ },
+ "vast-lib": {
+  "desc": "This package is deprecated, instead use https://www.npmjs.com/package/vast-library",
+  "date": "2019-04-29",
+  "ver": "4.1.1",
+  "repo": "",
+  "dl": 20
+ },
+ "vast-mobile-check": {
+  "desc": "Check vast url for mobile compatability",
+  "date": "2018-01-04",
+  "ver": "1.0.3",
+  "repo": "",
+  "dl": 22
+ },
+ "@azury/utilities": {
+  "desc": "Vast Suite of Utilities",
+  "date": "2022-04-28",
+  "ver": "0.0.0",
+  "repo": "git+https://github.com/azurydev/utilities.git",
+  "dl": 39
+ },
+ "itube-modern-player": {
+  "desc": "Lightweight, framework-agnostic HTML5 video player: HLS streams, playlists, chapters, VTT ",
+  "date": "2026-10-13",
+  "ver": "0.15.1",
+  "repo": "git+https://bitbucket.org/luckytube/itube-modern-player.git",
+  "dl": 413
+ },
+ "maestro-videojs-vast": {
+  "desc": "### Usage ```jsx import videojs from 'maestro-videojs-vast';",
+  "date": "2018-06-13",
+  "ver": "0.0.7-alpha",
+  "repo": "",
+  "dl": 16
+ },
+ "eslint-config-vast-vue": {
+  "desc": "ESLint shareable config for Vue to be used with eslint-config-vast",
+  "date": "2019-02-26",
+  "ver": "1.4.1",
+  "repo": "git+https://github.com/vast-engineering/eslint-config-vast-vue.git",
+  "dl": 18
+ },
+ "vast2json": {
+  "desc": "VAST\u306eXML\u3092JSON\u306b\u5909\u63db",
+  "date": "2017-12-14",
+  "ver": "1.0.8",
+  "repo": "git+https://github.com/inkenkun/vast2json.git",
+  "dl": 29
+ },
+ "@bevry/nodejs-versions": {
+  "desc": "Filter the absolute or significant Node.js versions by vast amounts of criteria, such as L",
+  "date": "2023-12-29",
+  "ver": "3.5.0",
+  "repo": "git+https://github.com/bevry/nodejs-versions.git",
+  "dl": 215
+ },
+ "vast-halfway-web3-lying": {
+  "desc": "vast-halfway-web3-lying",
+  "date": "2024-04-05",
+  "ver": "47.27.78",
+  "repo": "git+https://github.com/vast-halfway-web3-lying/vast-halfway-web3-lying.git",
+  "dl": 9
+ },
+ "@apollo/icons": {
+  "desc": "This package contains a vast collection of SVG icons for use in websites that we develop. ",
+  "date": "2025-09-17",
+  "ver": "0.9.0",
+  "repo": "",
+  "dl": 1433
+ },
+ "vst-nodejs": {
+  "desc": "Simple node js vast client",
+  "date": "2019-06-05",
+  "ver": "3.0.1",
+  "repo": "git+https://github.com/stk-dmitry/vst-nodejs.git",
+  "dl": 19
+ },
+ "vast-parse": {
+  "desc": "This package is deprecated, instead use https://www.npmjs.com/package/vast-library",
+  "date": "2019-04-29",
+  "ver": "4.1.1",
+  "repo": "",
+  "dl": 15
+ },
+ "react-easy-button": {
+  "desc": "Implement easily customize out of the box. Work with a vast number of pre-maid react butto",
+  "date": "2022-12-01",
+  "ver": "1.0.15",
+  "repo": "git+https://github.com/astryi/react-easy-button.git",
+  "dl": 124
+ },
+ "@unruly/vast-parser": {
+  "desc": "Parses VAST files into plain javascript objects",
+  "date": "2019-05-01",
+  "ver": "2.0.14",
+  "repo": "git+https://github.com/unruly/vast-parser.git",
+  "dl": 12
+ },
+ "minerals-vast-curve6": {
+  "desc": "minerals-vast-curve6",
+  "date": "2024-04-06",
+  "ver": "9.8.926",
+  "repo": "git+https://github.com/minerals-vast-curve6/minerals-vast-curve6.git",
+  "dl": 7
+ },
+ "zoo-age-web3-vast": {
+  "desc": "zoo-age-web3-vast",
+  "date": "2024-03-28",
+  "ver": "31.42.70",
+  "repo": "git+https://github.com/zoo-age-web3-vast/zoo-age-web3-vast.git",
+  "dl": 10
+ },
+ "willing-vast-web3-wolf": {
+  "desc": "willing-vast-web3-wolf",
+  "date": "2024-03-25",
+  "ver": "76.23.64",
+  "repo": "git+https://github.com/willing-vast-web3-wolf/willing-vast-web3-wolf.git",
+  "dl": 10
+ },
+ "vast-stretch-fallen9": {
+  "desc": "vast-stretch-fallen9",
+  "date": "2024-04-06",
+  "ver": "57.7.976",
+  "repo": "git+https://github.com/vast-stretch-fallen9/vast-stretch-fallen9.git",
+  "dl": 7
+ },
+ "vast-perhaps-settlers": {
+  "desc": "vast-perhaps-settlers",
+  "date": "2024-03-25",
+  "ver": "4.5.56",
+  "repo": "git+https://github.com/vast-perhaps-settlers/vast-perhaps-settlers.git",
+  "dl": 9
+ },
+ "@denis-krivosheev/eslint-config-vast": {
+  "desc": "ESLint config for Vue-based VAST projects",
+  "date": "2023-02-01",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/dkrivosheev/eslint-config-vast.git",
+  "dl": 18
+ },
+ "rough-vast-butter": {
+  "desc": "rough-vast-butter",
+  "date": "2024-03-21",
+  "ver": "89.59.88",
+  "repo": "git+https://github.com/rough-vast-butter/rough-vast-butter.git",
+  "dl": 8
+ },
+ "stage-smallest-vast-atmosphere": {
+  "desc": "stage-smallest-vast-atmosphere",
+  "date": "2024-03-25",
+  "ver": "9.52.455",
+  "repo": "git+https://github.com/stage-smallest-vast-atmosphere/stage-smallest-vast-atmosphere.git",
+  "dl": 9
+ },
+ "stylib": {
+  "desc": "stylib - Vast Library For Style Manipulations",
+  "date": "2017-12-06",
+  "ver": "2.0.0",
+  "repo": "git+https://github.com/weizman/stylib.git",
+  "dl": 26
+ },
+ "kolbeinsson-utility": {
+  "desc": "Utility library for vast variety of tasks",
+  "date": "2020-02-11",
+  "ver": "1.1.7",
+  "repo": "",
+  "dl": 27
+ },
+ "byplay-vast": {
+  "desc": "vast\u8aad\u307f\u8fbc\u307f",
+  "date": "2019-06-11",
+  "ver": "1.0.3",
+  "repo": "git+https://github.com/tsumikiinc/byplay-vast.git",
+  "dl": 5
+ },
+ "cactive": {
+  "desc": "Link in to the vast and epic CactiveNetwork ecosystem.",
+  "date": "2022-03-26",
+  "ver": "2.2.8",
+  "repo": "",
+  "dl": 23
+ },
+ "enrollment-vast-swam-managed": {
+  "desc": "Enrollment Vast Swam Managed - This function is used to convert multiple words into an int",
+  "date": "2024-06-05",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/npmtea2024/enrollment-vast-swam-managed.git",
+  "dl": 11
+ },
+ "xgplayer-ads": {
+  "desc": "The `Ads` plugin mainly used to provide users with the ability to quickly integrate advert",
+  "date": "2026-07-15",
+  "ver": "3.0.26",
+  "repo": "git+https://github.com/bytedance/xgplayer.git",
+  "dl": 527
+ },
+ "lucky-vast-chest": {
+  "desc": "lucky-vast-chest",
+  "date": "2024-03-21",
+  "ver": "8.12.51",
+  "repo": "git+https://github.com/lucky-vast-chest/lucky-vast-chest.git",
+  "dl": 7
+ },
+ "robloxapiwrapper.js": {
+  "desc": "Wrapper for the vast roblox api.",
+  "date": "2021-08-09",
+  "ver": "1.0.6",
+  "repo": "",
+  "dl": 29
+ },
+ "adsplayer.js": {
+  "desc": "Plugin for hasplayer.js used to handle ad-insertion in MAST/VAST format",
+  "date": "2022-01-12",
+  "ver": "1.8.0",
+  "repo": "github.com:Orange-OpenSource/adsplayer.js.git",
+  "dl": 33
+ },
+ "tea-vast-poetry-center": {
+  "desc": "(tea-vast-poetry-center) - This function is used to convert multiple words into an interes",
+  "date": "2024-04-25",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/ehxyla/tea-oss-liquidroject.git",
+  "dl": 10
+ },
+ "taxsense-vast-play": {
+  "desc": "(taxsense-vast-play) - This function is used to convert multiple words into an interesting",
+  "date": "2024-05-01",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/ehxyla/tea-oss-liquidroject.git",
+  "dl": 10
+ },
+ "swinggrass-vast-mice": {
+  "desc": "(swinggrass-vast-mice) - This function is used to convert multiple words into an interesti",
+  "date": "2024-04-30",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/tjahbergas/idcloudserv.git",
+  "dl": 9
+ },
+ "tea-vast-dark-meat": {
+  "desc": "(tea-vast-dark-meat) - This function is used to convert multiple words into an interesting",
+  "date": "2024-04-27",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/ehxyla/tea-oss-liquidroject.git",
+  "dl": 10
+ },
+ "tea-vast-teeth-source": {
+  "desc": "(tea-vast-teeth-source) - This function is used to convert multiple words into an interest",
+  "date": "2024-04-25",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/ehxyla/tea-oss-liquidroject.git",
+  "dl": 10
+ },
+ "web3tx-vast-mother": {
+  "desc": "(web3tx-vast-mother) - This function is used to convert multiple words into an interesting",
+  "date": "2024-05-01",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/dragonknftcommunity/testnet_tea.git",
+  "dl": 9
+ },
+ "vast-validator": {
+  "desc": "This package is deprecated, instead use https://www.npmjs.com/package/vast-library",
+  "date": "2019-04-29",
+  "ver": "4.1.1",
+  "repo": "",
+  "dl": 10
+ },
+ "@adbutler/skills": {
+  "desc": "Reusable AI-agent skills for AdButler ad management workflows \u2014 campaign launch, VAST vide",
+  "date": "2026-04-14",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/adbutler/skills.git",
+  "dl": 48
+ },
+ "kaltura-ad-server": {
+  "desc": "VAST ad-server, based on media and metadata from Kaltura server",
+  "date": "2014-04-22",
+  "ver": "0.1.3",
+  "repo": "https://github.com/tan-tan-kanarek/kaltura-ad-server",
+  "dl": 37
+ },
+ "vast-azure-horse": {
+  "desc": "This is package vast-azure-horse",
+  "date": "2024-05-27",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/muhamadluthfiam/to-rupiah.git",
+  "dl": 8
+ },
+ "vast-core": {
+  "desc": "Core package for VAST (Video Ad Serving Template) handling",
+  "date": "2025-01-28",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/sourabh-garg/vast-core.git",
+  "dl": 8
+ },
+ "ehxyla-becoming-vast-independent": {
+  "desc": "(ehxyla-becoming-vast-independent) - This function is used to convert multiple words into ",
+  "date": "2024-04-21",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/ehxyla/tea-oss-liquidroject.git",
+  "dl": 9
+ },
+ "tea-son-vast-quickly": {
+  "desc": "(tea-son-vast-quickly) - This function is used to convert multiple words into an interesti",
+  "date": "2024-04-25",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/ehxyla/tea-oss-liquidroject.git",
+  "dl": 9
+ },
+ "tea-card-vast-bottom": {
+  "desc": "(tea-card-vast-bottom) - This function is used to convert multiple words into an interesti",
+  "date": "2024-04-20",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/ehxyla/tea-oss-liquidroject.git",
+  "dl": 9
+ },
+ "tea-pair-still-vast": {
+  "desc": "(tea-pair-still-vast) - This function is used to convert multiple words into an interestin",
+  "date": "2024-04-25",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/ehxyla/tea-oss-liquidroject.git",
+  "dl": 9
+ },
+ "@fnet/vast-sample": {
+  "desc": "This project, `@fnet/vast-sample`, is designed to provide sample VAST (Video Ad Serving Te",
+  "date": "2024-10-14",
+  "ver": "0.1.4",
+  "repo": "",
+  "dl": 12
+ },
+ "expo-google-fonts-vast-shadow": {
+  "desc": "Use the Vast Shadow font family from Google Fonts in your Expo app",
+  "date": "2025-03-08",
+  "ver": "0.3.0",
+  "repo": "https://github.com/freeboub/google-fonts/google-fonts.git",
+  "dl": 10
+ },
+ "ngx-prime-color-picker": {
+  "desc": "Our tool offers a vast palette of hues at your fingertips. Easily select the perfect color",
+  "date": "2024-08-08",
+  "ver": "0.0.17",
+  "repo": "git+https://github.com/manoj10101996/ngx-packages.git",
+  "dl": 64
+ },
+ "survival-vast-flag-whose": {
+  "desc": "Survival Vast Flag Whose - This function is used to convert multiple words into an interes",
+  "date": "2024-05-24",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/npmtea2024/survival-vast-flag-whose.git",
+  "dl": 8
+ },
+ "vast-samples": {
+  "desc": "A comprehensive collection of VAST (Video Ad Serving Template) XML samples implementing va",
+  "date": "2025-01-28",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/yourusername/vast-samples.git",
+  "dl": 9
+ },
+ "detail-vast-storm-fast": {
+  "desc": "detail-vast-storm-fast",
+  "date": "2024-03-28",
+  "ver": "38.42.714",
+  "repo": "git+https://github.com/detail-vast-storm-fast/detail-vast-storm-fast.git",
+  "dl": 6
+ },
+ "tea-until-use-vast": {
+  "desc": "(tea-until-use-vast) - This function is used to convert multiple words into an interesting",
+  "date": "2024-04-27",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/ehxyla/tea-oss-liquidroject.git",
+  "dl": 8
+ },
+ "@frameset/plex-player": {
+  "desc": "Ultra-performant React video player with VAST ads support, Picture-in-Picture, and advance",
+  "date": "2026-01-27",
+  "ver": "2.0.7",
+  "repo": "git+https://github.com/deadseti/plex-player.git",
+  "dl": 23
+ },
+ "videojs-nonlin-vast": {
+  "desc": "The plugin enables to show nonlinear VAST ads.",
+  "date": "2018-08-02",
+  "ver": "0.1.0",
+  "repo": "",
+  "dl": 8
+ },
+ "tea-tongue-camp-vast": {
+  "desc": "(tea-tongue-camp-vast) - This function is used to convert multiple words into an interesti",
+  "date": "2024-04-25",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/ehxyla/tea-oss-liquidroject.git",
+  "dl": 8
+ },
+ "football-care-vast-listen": {
+  "desc": "football-care-vast-listen",
+  "date": "2024-04-05",
+  "ver": "21.8.603",
+  "repo": "git+https://github.com/football-care-vast-listen/football-care-vast-listen.git",
+  "dl": 5
+ },
+ "bloodoff-card-vast": {
+  "desc": "(bloodoff-card-vast) - This function is used to convert multiple words into an interesting",
+  "date": "2024-04-29",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/tjahbergas/eth-crypto.git",
+  "dl": 6
+ },
+ "@sschepis/vast-node": {
+  "desc": "Node.js client for Vast.ai API - Rent GPUs for machine learning and AI workloads",
+  "date": "2025-07-16",
+  "ver": "0.1.6",
+  "repo": "git+https://github.com/sschepis/vast-node.git",
+  "dl": 187
+ },
+ "concert-vast": {
+  "desc": "Simple Vast Parsing for Concert Video Ads",
+  "date": "2023-08-03",
+  "ver": "1.3.1",
+  "repo": "",
+  "dl": 5
+ },
+ "afterend-saddle-vast-powerful": {
+  "desc": "Afterend Saddle Vast Powerful - This function is used to convert multiple words into an in",
+  "date": "2024-05-24",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/npmtea2024/afterend-saddle-vast-powerful.git",
+  "dl": 7
+ },
+ "survival-decide-seems-vast": {
+  "desc": "Survival Decide Seems Vast - This function is used to convert multiple words into an inter",
+  "date": "2024-05-24",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/npmtea2024/survival-decide-seems-vast.git",
+  "dl": 7
+ },
+ "vast-tools": {
+  "desc": "a develop tools for web sync files",
+  "date": "2014-02-20",
+  "ver": "0.1.4",
+  "repo": "https://github.com/vastwu/vast.git",
+  "dl": 65
+ },
+ "vod-ssai": {
+  "desc": "Server-guided ad insertion (SGAI) proof of concept: Eyevinn sgai-ad-proxy, VAST bridge, HL",
+  "date": "2026-04-26",
+  "ver": "1.0.8",
+  "repo": "",
+  "dl": 46
+ },
+ "giphycomponentlg": {
+  "desc": "Elevate your Adalo app with GiphyComponentLG, seamlessly integrating Giphy's vast GIF libr",
+  "date": "2025-01-22",
+  "ver": "1.7.5",
+  "repo": "",
+  "dl": 87
+ },
+ "extra-ruler-neck-vast": {
+  "desc": "Extra Ruler Neck Vast - This function is used to convert multiple words into an interestin",
+  "date": "2024-05-24",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/npmtea2024/extra-ruler-neck-vast.git",
+  "dl": 6
+ },
+ "@fnet/vast-vmap": {
+  "desc": "This project is designed to facilitate the generation of VMAP (Video Multiple Ad Playlist)",
+  "date": "2024-10-14",
+  "ver": "0.1.2",
+  "repo": "",
+  "dl": 11
+ },
+ "@cppay/mvc-server": {
+  "desc": "A Simple Yet Powerfull \ud83d\udcaa Server with vast capabilities \ud83c\udf7a",
+  "date": "2022-06-24",
+  "ver": "1.0.5",
+  "repo": "",
+  "dl": 18
+ },
+ "@getvast/nest-schematics": {
+  "desc": "A collection of Angular schematics designed for use with Vast Studio.",
+  "date": "2024-09-16",
+  "ver": "0.3.2",
+  "repo": "",
+  "dl": 8
+ },
+ "@adhese/sdk-vast-url": {
+  "desc": "Adhese SDK",
+  "date": "2024-06-06",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/adhese/sdk_typescript.git",
+  "dl": 52
+ },
+ "embracing-nature-sand-vast": {
+  "desc": "Embracing Nature Sand Vast - This function is used to convert multiple words into an inter",
+  "date": "2024-06-05",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/npmtea2024/embracing-nature-sand-vast.git",
+  "dl": 5
+ },
+ "faker-json": {
+  "desc": "Create JSON files with vast amounts of random test data with unique IDs based on your sche",
+  "date": "2019-11-09",
+  "ver": "0.7.0",
+  "repo": "git+ssh://git@github.com/mikeebowen/faker-json.git",
+  "dl": 20
+ },
+ "advalidation": {
+  "desc": "Validate display ads, video, and VAST tags against ad specifications",
+  "date": "2026-02-19",
+  "ver": "1.3.0",
+  "repo": "git+https://github.com/advalidation/sdk.git",
+  "dl": 9
+ },
+ "vast-maxmind": {
+  "desc": "Looks up an IP asynchronously using the maxmind database.  Be sure to install maxmind C AP",
+  "date": "2013-05-22",
+  "ver": "1.0.1",
+  "repo": "git@github.com:tommydudebreaux/vast-maxmind.git",
+  "dl": 33
+ },
+ "vast-project": {
+  "desc": "a persion fe project builder",
+  "date": "2015-07-01",
+  "ver": "0.2.0",
+  "repo": "https://github.com/vastwu/vast-project.git",
+  "dl": 26
+ },
+ "space-adventure-game": {
+  "desc": "Embark on an epic journey across the vast reaches of space in \"Galactic Conquest.\" Assume ",
+  "date": "2024-05-04",
+  "ver": "1.0.1",
+  "repo": "git+https://github.com/jameseer/Space-Adventure-Game.git",
+  "dl": 30
+ },
+ "@sekizlipenguen/react-native-soul-player": {
+  "desc": "Polished React Native video player UI on react-native-video: gestures, HLS quality, audio/",
+  "date": "2026-10-13",
+  "ver": "1.1.3",
+  "repo": "git+https://github.com/sekizlipenguen/react-native-soul-player.git",
+  "dl": 40
+ },
+ "vast-element-ui": {
+  "desc": "\u4e3a\u4e03\u5929\u9879\u76ee \u4fee\u6539elment-ui\u4ee3\u7801",
+  "date": "2020-04-13",
+  "ver": "1.0.1",
+  "repo": "git+ssh://git@github.com/ElemeFE/element.git",
+  "dl": 202
+ },
+ "capybara-images": {
+  "desc": "An npm package with a vast collection of capybara images.",
+  "date": "2023-09-10",
+  "ver": "1.0.3",
+  "repo": "",
+  "dl": 10
+ },
+ "@jaafarkrayem/mvc-server": {
+  "desc": "A Simple Yet Powerful \ud83d\udcaa Server with vast capabilities",
+  "date": "2024-02-16",
+  "ver": "1.0.6",
+  "repo": "",
+  "dl": 9
+ },
+ "@jaafarkrayem/mvc-passport-server": {
+  "desc": "A Simple Yet Powerfull \ud83d\udcaa Server with vast capabilities",
+  "date": "2024-06-28",
+  "ver": "1.0.9",
+  "repo": "",
+  "dl": 9
+ },
+ "em-web-ads-sdk": {
+  "desc": "The engage media web ads sdk for displaying VAST ads on any web-based platform.",
+  "date": "2024-08-18",
+  "ver": "1.0.1-alpha",
+  "repo": "",
+  "dl": 14
+ },
+ "wroom-wroom": {
+  "desc": "Ever wished you could cruise through the vast expanse of the internet in your own virtual ",
+  "date": "2024-01-21",
+  "ver": "0.0.7",
+  "repo": "",
+  "dl": 26
+ },
+ "tea-arboretum-indexer": {
+  "desc": "Explore the vast tea-related data universe with Arboretum Indexer, a comprehensive indexin",
+  "date": "2024-03-15",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/42omega42/tea-arboretum-indexer.git",
+  "dl": 11
+ },
+ "@dokja620/qwik-animate": {
+  "desc": "An animated on-scroll library for QwikJS! With a vast array of animations, it seamlessly i",
+  "date": "2024-05-19",
+  "ver": "1.1.1",
+  "repo": "",
+  "dl": 16
+ },
+ "@dig-platform/dig-app": {
+  "desc": "The vast majority of apps have the same basic platform dependencies. DigApps creates a lig",
+  "date": "2021-01-26",
+  "ver": "0.2.1",
+  "repo": "",
+  "dl": 16
+ },
+ "@mailonline/react-vast-vpaid": {
+  "desc": "React component that loads video-ads using @mailonline/video-ad-sdk",
+  "date": "2018-08-09",
+  "ver": "0.3.0",
+  "repo": "",
+  "dl": 14
+ },
+ "count-soap-modern-vast": {
+  "desc": "",
+  "date": "2024-02-26",
+  "ver": "87.9.299",
+  "repo": "git+https://github.com/count-soap-modern-vast/count-soap-modern-vast.git",
+  "dl": 17
+ },
+ "@openpets/internet-archive": {
+  "desc": "Access the Internet Archive's vast digital library including the Wayback Machine, millions",
+  "date": "2026-05-05",
+  "ver": "1.0.0",
+  "repo": "https://github.com/raggle-ai/pets/pets/internet-archive",
+  "dl": 16
+ },
+ "dataherd-raika": {
+  "desc": "\"Dataherd-Raika is a library designed to simulate large-scale user behavior datasets. It t",
+  "date": "2024-01-12",
+  "ver": "1.3.0",
+  "repo": "github.com/cobluestars/dataherd-raika",
+  "dl": 19
+ },
+ "@vast-api/t-clash": {
+  "desc": "types and utils to help you build clash config",
+  "date": "2022-06-17",
+  "ver": "0.0.8",
+  "repo": "git@github.com:vast-api/t-clash.git",
+  "dl": 99
+ },
+ "vast-designer": {
+  "desc": "\u57fa\u4e8evue3\u7684\u8bbe\u8ba1\u5668,\u53ef\u89c6\u5316\u5f00\u53d1\u9875\u9762\u8868\u5355",
+  "date": "2023-11-03",
+  "ver": "0.8.8",
+  "repo": "git+https://github.com/Kchengz/vast-designer.git",
+  "dl": 9
+ },
+ "@tecnocapital/celestial-codex": {
+  "desc": "Welcome, interstellar traveler, to a celestial codex that allows you to commune with the v",
+  "date": "2023-11-20",
+  "ver": "1.0.4",
+  "repo": "",
+  "dl": 18
+ },
+ "vast-parser-ts": {
+  "desc": "common scripts for ad templates ui",
+  "date": "2025-02-22",
+  "ver": "1.0.1",
+  "repo": "git+https://github.com/sourabh-garg/vast-parser.git",
+  "dl": 9
+ },
+ "another-string-builder": {
+  "desc": "Performance improvement for creating strings in loops, better memory management, less reso",
+  "date": "2019-03-22",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/ekarischcsi/nodestringbuilder.git",
+  "dl": 12
+ },
+ "vast-utils": {
+  "desc": "A JavaScript utils tool library using Rollup",
+  "date": "2020-12-16",
+  "ver": "0.1.1",
+  "repo": "git+https://github.com/yayxs/vast-utils.git",
+  "dl": 9
+ },
+ "a3_os_cooking_recipes": {
+  "desc": "A3 OS Cooking Recipes is an open-source library that provides easy access to a vast collec",
+  "date": "2024-07-09",
+  "ver": "1.6.0",
+  "repo": "git+https://github.com/Aliibraabbas/os-Cooking_Recipes.git",
+  "dl": 17
+ },
+ "stormcloud-video-player": {
+  "desc": "Ad-first HLS video player with SCTE-35 support and Google IMA integration for precise ad b",
+  "date": "2026-10-13",
+  "ver": "0.8.79",
+  "repo": "",
+  "dl": 5055
+ },
+ "smockit-data-engine": {
+  "desc": "SmockIt-Data-Engine is a powerful data library that serves as the primary source for gener",
+  "date": "2025-06-24",
+  "ver": "0.0.3",
+  "repo": "",
+  "dl": 29
+ },
+ "vast-api": {
+  "desc": "This library provides three types of rate limiting algorithms: Fixed Window, Sliding Windo",
+  "date": "2025-02-14",
+  "ver": "1.0.0",
+  "repo": "",
+  "dl": 8
+ },
+ "@sschepis/vast-ai": {
+  "desc": "A vast.ai OpenClaw skill",
+  "date": "2026-02-05",
+  "ver": "1.0.0",
+  "repo": "",
+  "dl": 16
+ },
+ "n8n-nodes-vast-ai": {
+  "desc": "Using the Vast.AI API in an n8n environment.",
+  "date": "2025-10-01",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/TruongHaiDang/n8n-nodes-vast.ai.git",
+  "dl": 32
+ },
+ "typescript-vast-parser": {
+  "desc": "",
+  "date": "2019-10-25",
+  "ver": "0.0.1",
+  "repo": "",
+  "dl": 7
+ },
+ "@onlinewebnovel/thesacredruins": {
+  "desc": "To rise from defeat; to revive amidst the dissipation. \r As the vast oceans turn to dust a",
+  "date": "2020-10-19",
+  "ver": "1.0.2",
+  "repo": "",
+  "dl": 8
+ },
+ "vast-mobile-vue": {
+  "desc": "Vue3 \u79fb\u52a8\u7aef\u7ec4\u4ef6\u5e93\uff0c\u5305\u542b\u5f39\u7a97\u3001\u62bd\u5c49\u3001\u5f00\u5173\u7b49\u5e38\u7528\u7ec4\u4ef6",
+  "date": "2025-11-06",
+  "ver": "1.0.0",
+  "repo": "",
+  "dl": 8
+ },
+ "@dailymotion/vmap": {
+  "desc": "Javascript VMAP Parser",
+  "date": "2025-06-30",
+  "ver": "3.3.3",
+  "repo": "git+https://github.com/dailymotion/vmap-js.git",
+  "dl": 35958
+ },
+ "@ygoto3/omap-vmap-parser": {
+  "desc": "Open Media Ad Player VMAP Parser",
+  "date": "2023-12-13",
+  "ver": "0.0.1",
+  "repo": "git+https://github.com/ygoto3/omap.git",
+  "dl": 23077
+ },
+ "@types/vmap": {
+  "desc": "TypeScript definitions for vmap",
+  "date": "2023-11-07",
+  "ver": "2.2.4",
+  "repo": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+  "dl": 2610
+ },
+ "@vmap/map": {
+  "desc": "vmap",
+  "date": "2023-07-17",
+  "ver": "0.1.2",
+  "repo": "git+https://github.com/parselife/vmap.git",
+  "dl": 66
+ },
+ "vmap-kit": {
+  "desc": "VMAP Parser, JwPlayer and VideoJs plugin.",
+  "date": "2018-06-03",
+  "ver": "1.0.18",
+  "repo": "git+https://github.com/clickyab/vmap.git",
+  "dl": 124
+ },
+ "@vmap/ui": {
+  "desc": "@vmap/ui",
+  "date": "2023-07-17",
+  "ver": "0.1.2",
+  "repo": "git+https://github.com/parselife/vmap/vmap.git",
+  "dl": 47
+ },
+ "pjs-vmap-parser": {
+  "desc": "Take a VMAP JSON object and make it into something useable.",
+  "date": "2014-12-03",
+  "ver": "0.10.1",
+  "repo": "https://mtvn-player@github.com/vmap-parser/vmap-parser.git",
+  "dl": 40
+ },
+ "@vmap/vite-plugin-vmap": {
+  "desc": "<!--  * @Author: Alex  * @Date: 2023-03-24 10:52:52  * @Description:   --> # @vmap/vite-pl",
+  "date": "2023-03-24",
+  "ver": "0.0.2",
+  "repo": "git+https://github.com/parselife/vmap.git",
+  "dl": 23
+ },
+ "@vmap/core": {
+  "desc": "@vmap/core",
+  "date": "2022-12-05",
+  "ver": "0.0.3",
+  "repo": "git+https://github.com/parselife/vmap/issues.git",
+  "dl": 18
+ },
+ "@vmap/scene": {
+  "desc": "@vmap/scene",
+  "date": "2023-03-13",
+  "ver": "0.0.6",
+  "repo": "git+https://github.com/parselife/vmap/vmap.git",
+  "dl": 14
+ },
+ "vmap-parser": {
+  "desc": "Take a VMAP JSON object and make it into something useable.",
+  "date": "2014-03-03",
+  "ver": "0.1.0",
+  "repo": "https://mtvn-player@github.com/vmap-parser/vmap-parser.git",
+  "dl": 24
+ },
+ "qm-vmap": {
+  "desc": "qm-vmap \u662f\u4e00\u6b3e\u57fa\u4e8e React\u3001Mapboxgl \u7684\u5730\u56fe\u7ec4\u4ef6",
+  "date": "2024-09-20",
+  "ver": "0.1.0",
+  "repo": "",
+  "dl": 16
+ },
+ "@geoway/vmap-legend": {
+  "desc": "Generate a legend from vmap style",
+  "date": "2021-01-22",
+  "ver": "1.0.3",
+  "repo": "",
+  "dl": 13
+ },
+ "@xingm/vmap-cesium-toolbar": {
+  "desc": "A powerful Cesium map toolbar plugin with drawing, measurement, and interaction features",
+  "date": "2026-07-14",
+  "ver": "1.0.5",
+  "repo": "git+https://github.com/BenXueYou/vmap-cesium-tool.git",
+  "dl": 226
+ },
+ "vmap-cesium": {
+  "desc": "Vue Cesium based map visualization package",
+  "date": "2025-11-04",
+  "ver": "1.2.2",
+  "repo": "",
+  "dl": 42
+ },
+ "@xingm/vmap-video": {
+  "desc": "Drone video timing, OSD normalization, projection geometry, and Cesium overlay SDK.",
+  "date": "2026-07-07",
+  "ver": "0.0.4",
+  "repo": "http://192.168.1.100:8090/basic/frontend/tool/vmap-video-demo.git",
+  "dl": 44
+ },
+ "@thcloud/vmap": {
+  "desc": "\u57fa\u4e8eantv-l7\u7684\u4e13\u9898\u5730\u56fe\u6e32\u67d3\u5f15\u64ce\r ## \u4f7f\u7528\u65b9\u6cd5",
+  "date": "2023-03-21",
+  "ver": "2.0.3",
+  "repo": "git+ssh://git@gitlab.com/th-cloud/vmap-js.git",
+  "dl": 18
+ },
+ "vmap-svg": {
+  "desc": "formform module to visualize vmaps in SVG format",
+  "date": "2021-06-19",
+  "ver": "0.1.2",
+  "repo": "git+https://github.com/formsandlines/vmap-svg.git",
+  "dl": 16
+ },
+ "@geoway/vmap": {
+  "desc": "A thematic map engine based on antv-l7",
+  "date": "2021-08-14",
+  "ver": "1.1.6",
+  "repo": "",
+  "dl": 18
+ },
+ "@vita2333/vmap": {
+  "desc": "vue + \u9ad8\u5fb7\u5730\u56feamap2.0",
+  "date": "2020-10-30",
+  "ver": "0.1.5",
+  "repo": "",
+  "dl": 13
+ },
+ "airmap": {
+  "desc": "``` npm install airmap ``` ## 2 \u5f15\u5165 ``` import airmap from 'airmap' import 'airmap/airmap.c",
+  "date": "2024-04-11",
+  "ver": "0.9.4",
+  "repo": "",
+  "dl": 26
+ },
+ "vue-vmap": {
+  "desc": "A vue plugin for AMap",
+  "date": "2019-12-11",
+  "ver": "1.0.0",
+  "repo": "",
+  "dl": 14
+ },
+ "@dailymotion/ad-sdk-web": {
+  "desc": "JavaScript Ad SDK API by Dailymotion",
+  "date": "2026-09-29",
+  "ver": "2.8.0",
+  "repo": "git+https://github.com/dailymotion/ad-sdk-sample.git",
+  "dl": 968
+ },
+ "cs2-vmap-tools": {
+  "desc": "The CLI is written for Bun. The parseVmap library will work with either Bun or Node.",
+  "date": "2024-03-25",
+  "ver": "1.0.0",
+  "repo": "",
+  "dl": 8
+ },
+ "vmap-js": {
+  "desc": "A components of zmap base on vue2.X",
+  "date": "2020-10-22",
+  "ver": "1.0.0",
+  "repo": "",
+  "dl": 13
+ },
+ "vmap-api": {
+  "desc": "A components of zmap base on vue2.X",
+  "date": "2020-10-22",
+  "ver": "1.0.0",
+  "repo": "",
+  "dl": 11
+ },
+ "kv3-js": {
+  "desc": "Parse and stringify Valve KeyValues3 (KV3) format for Source 2 assets in Node.js.",
+  "date": "2026-08-02",
+  "ver": "1.0.0",
+  "repo": "git+https://github.com/AcaroMan/kv3-js.git",
+  "dl": 41
+ },
+ "@vmap/vite-plugin-cesium": {
+  "desc": "",
+  "date": "2023-03-15",
+  "ver": "0.0.5",
+  "repo": "https://github.com/parselife/vmap.git",
+  "dl": 16
+ },
+ "chorki-player-sdk": {
+  "desc": "React video player for Chorki Bytes: Shaka Player (HLS/DASH) with Google IMA advertisement",
+  "date": "2026-10-04",
+  "ver": "1.0.2",
+  "repo": "",
+  "dl": 512
+ },
+ "zenith-player": {
+  "desc": "Enterprise React Video Player",
+  "date": "2026-07-22",
+  "ver": "1.1.2",
+  "repo": "git+https://github.com/arunkumarbrahmaniyaa/zenith-player.git",
+  "dl": 38
+ },
+ "@video-js/ad-schedule-plugin": {
+  "desc": "A VideoJS plugin for ad scheduling, open-source and available to schedule any advertisemen",
+  "date": "2023-08-31",
+  "ver": "2.2.0",
+  "repo": "git+https://github.com/aviral-zype/videojs-vast-plugins.git",
+  "dl": 36
+ },
+ "apc-jqvmap": {
+  "desc": "jQuery Vector Map Library",
+  "date": "2023-08-18",
+  "ver": "1.0.0",
+  "repo": "git+ssh://git@github.com/akhilesh-sirvi92/jqvmap.git",
+  "dl": 78
+ },
+ "@vita2333/vmap2.0": {
+  "desc": "vue3 + \u9ad8\u5fb7\u5730\u56feamap2.0",
+  "date": "2020-12-15",
+  "ver": "0.0.13",
+  "repo": "",
+  "dl": 16
+ },
+ "@playkit-js/playkit-js-ima": {
+  "desc": "[![Build Status](https://github.com/kaltura/playkit-js-ima/actions/workflows/run_canary_fu",
+  "date": "2026-08-06",
+  "ver": "1.7.4",
+  "repo": "git+https://github.com/kaltura/playkit-js-ima.git",
+  "dl": 934
+ },
+ "@plyvorastream/player": {
+  "desc": "Production-ready video player SDK for PlyvoraStream: Shaka Player core, CSAI/SSAI ads, mul",
+  "date": "2026-10-03",
+  "ver": "0.1.2",
+  "repo": "git+https://github.com/krishnapoddar504/PlyvoraStriming.git",
+  "dl": 522
+ },
+ "@playkit-js/playkit-js-ima-dai": {
+  "desc": "[![Build Status](https://github.com/kaltura/playkit-js-ima-dai/actions/workflows/run_canar",
+  "date": "2026-07-30",
+  "ver": "1.4.3",
+  "repo": "git+https://github.com/kaltura/playkit-js-ima-dai.git",
+  "dl": 383
+ },
+ "@ngxsplayer/ngx-smart-player-ima": {
+  "desc": "Google IMA CSAI integration for ngx-smart-player (separate package).",
+  "date": "2026-10-11",
+  "ver": "0.3.0",
+  "repo": "",
+  "dl": 504
+ },
+ "ima-wrapper": {
+  "desc": "Wrapper for IMA SDK. IMA Wrapper is a convenience layer around Google Interactive Media Ad",
+  "date": "2023-02-20",
+  "ver": "1.0.8",
+  "repo": "git+https://github.com/basil79/ima-wrapper.git",
+  "dl": 139
+ },
+ "veeplay": {
+  "desc": "Veeplay HTML5 Media Player",
+  "date": "2023-07-20",
+  "ver": "1.3.2",
+  "repo": "git+https://github.com/veeplay/veeplay-web-standalone.git",
+  "dl": 94
+ },
+ "@tycoonsystems/tycoon-modules": {
+  "desc": "www.tv.tycoon.systems/documentation",
+  "date": "2025-01-05",
+  "ver": "0.9.32",
+  "repo": "git+https://github.com/Tycoon-Systems-Corp/video-streaming-client.git",
+  "dl": 35
+ },
+ "@pakhshkit-js/pakhshkit-js-ima": {
+  "desc": "[![Build Status](https://travis-ci.org/kontorol/pakhshkit-js-ima.svg?branch=master)](https",
+  "date": "2021-02-23",
+  "ver": "1.2.0",
+  "repo": "git+https://gitlab.com/kontorol/pakhshkit-js-ima.git",
+  "dl": 8
+ },
+ "double-player-dream": {
+  "desc": "React <Player />: JW Player untuk content, video.js + IMA untuk ads (overlay / split), SSR",
+  "date": "2026-10-13",
+  "ver": "0.4.0",
+  "repo": "",
+  "dl": 469
+ },
+ "@types/iab-vpaid": {
+  "desc": "TypeScript definitions for iab-vpaid",
+  "date": "2023-11-07",
+  "ver": "2.0.5",
+  "repo": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+  "dl": 3601
+ },
+ "metagetta": {
+  "desc": "Library for fetching content metadata from around the web.",
+  "date": "2016-05-18",
+  "ver": "0.4.1",
+  "repo": "git+https://github.com/cinema6/metagetta.git",
+  "dl": 43
+ },
+ "@castlabs/prestoads": {
+  "desc": "PRESTOads ad signaling and beaconing SDK for the web",
+  "date": "2026-08-26",
+  "ver": "1.4.0-beta.1",
+  "repo": "git+https://github.com/castlabs/prestoads.git",
+  "dl": 103
+ },
+ "@ima/plugin-analytic": {
+  "desc": "Seznam IMA.js abstract analytic plugin",
+  "date": "2025-12-15",
+  "ver": "7.0.0",
+  "repo": "git+https://github.com/seznam/IMA.js-plugins.git",
+  "dl": 40
+ },
+ "cx-audio-sdk": {
+  "desc": "React Native bindings for the CX audio ad SDK.",
+  "date": "2026-08-13",
+  "ver": "0.1.2",
+  "repo": "",
+  "dl": 44
+ },
+ "flowplayer-vpaid": {
+  "desc": "VPAID 2.0 (Flash/JS) support within Flowplayer 6 HTML",
+  "date": "2017-02-03",
+  "ver": "1.3.0",
+  "repo": "git+https://github.com/mantisadnetwork/flowplayer-vpaid.git",
+  "dl": 63
+ },
+ "@fnet/ima": {
+  "desc": "This project, `@fnet/ima`, is designed to manage and display video advertisements on a web",
+  "date": "2025-08-25",
+  "ver": "0.1.57",
+  "repo": "",
+  "dl": 34
+ },
+ "@bitmovin/player-react-native-google-dai": {
+  "desc": "Optional Google IMA DAI companion package for Bitmovin Player React Native.",
+  "date": "2026-08-14",
+  "ver": "0.3.0",
+  "repo": "git+https://github.com/bitmovin/bitmovin-player-react-native-integrations-google-dai.git",
+  "dl": 484
+ },
+ "@mailonline/video-ad-sdk": {
+  "desc": "Video ad SDK to load and play video ads",
+  "date": "2019-02-01",
+  "ver": "1.4.0",
+  "repo": "git+https://github.com/MailOnline/mol-video-ad-sdk.git",
+  "dl": 146
+ },
+ "awscdk-construct-ad-decision-server": {
+  "desc": "AWS CDK Construct to upload local files to S3 and make them publicly available via CloudFr",
+  "date": "2024-09-01",
+  "ver": "0.0.6",
+  "repo": "git+https://github.com/kuu/awscdk-construct-ad-decision-server.git",
+  "dl": 53
+ },
+ "vpaid-ad-inspector": {
+  "desc": "Simple VPAID ad to inspect",
+  "date": "2017-08-06",
+  "ver": "1.1.1",
+  "repo": "git+https://github.com/kahwee/vpaid-ad-inspector.git",
+  "dl": 46
+ },
+ "@infernetprotocol/deploy-providers": {
+  "desc": "Adapters for deploying Infernet provider nodes to cloud GPU services (RunPod, vast.ai, Lam",
+  "date": "2026-10-14",
+  "ver": "0.1.61",
+  "repo": "git+https://github.com/InfernetProtocol/infernet-protocol.git",
+  "dl": 998
+ },
+ "ima-ad-player": {
+  "desc": "Yet another Google IMA video ad player.",
+  "date": "2024-10-27",
+  "ver": "0.5.7",
+  "repo": "git+https://github.com/kslimani/ima-ad-player.git",
+  "dl": 640
+ },
+ "video-ad-sdk-fork": {
+  "desc": "Video ad SDK to load and play video ads",
+  "date": "2021-02-20",
+  "ver": "0.0.2-development",
+  "repo": "https://github.com/MailOnline/mol-video-ad-sdk.git",
+  "dl": 92
+ },
+ "mol-video-ad-sdk": {
+  "desc": "Video ad SDK to load and play video ads",
+  "date": "2022-01-16",
+  "ver": "0.0.6",
+  "repo": "git+https://github.com/MailOnline/mol-video-ad-sdk.git",
+  "dl": 16
+ },
+ "videojs-ima-player": {
+  "desc": "[IMA SDK](https://developers.google.com/interactive-media-ads/docs/sdks/html5/v3/apis) int",
+  "date": "2026-07-20",
+  "ver": "0.6.9",
+  "repo": "git+https://github.com/mysuf/videojs-ima-player.git",
+  "dl": 8536
+ },
+ "@mux/mux-data-google-ima": {
+  "desc": "Mux Data SDK extension for monitoring Google IMA Ads with mux-embed",
+  "date": "2026-10-05",
+  "ver": "0.3.18",
+  "repo": "",
+  "dl": 9379379
+ },
+ "vpaid-ad": {
+  "desc": "VPAID ad class for extending purposes.",
+  "date": "2018-10-17",
+  "ver": "4.0.4",
+  "repo": "git+https://github.com/kahwee/vpaid-ad.git",
+  "dl": 241
+ },
+ "vpaid-html5-client-postmessage": {
+  "desc": "vpaid html5 client postmessage",
+  "date": "2019-04-25",
+  "ver": "1.0.8",
+  "repo": "",
+  "dl": 56
+ },
+ "vpaid-html5-client-override-loadadunit": {
+  "desc": "VPAID HTML5",
+  "date": "2022-08-05",
+  "ver": "1.0.9",
+  "repo": "",
+  "dl": 28
+ },
+ "@shackijj/vpaid-html5-client": {
+  "desc": "VPAID HTML5",
+  "date": "2019-05-31",
+  "ver": "0.1.19",
+  "repo": "git+https://github.com/MailOnline/VPAIDHTML5Client.git",
+  "dl": 20
+ },
+ "animate-vpaid-bridge": {
+  "desc": "Bridges between Adobe Animate CC and VPAID advertisements. Open issues to give your commen",
+  "date": "2016-08-26",
+  "ver": "1.0.1",
+  "repo": "git+https://github.com/kahwee/animate-vpaid-bridge.git",
+  "dl": 31
+ },
+ "perferendisnihil": {
+  "desc": "VPAID HTML5",
+  "date": "2024-04-02",
+  "ver": "1.1.0",
+  "repo": "git+https://github.com/LorenzZiemann/perferendisnihil.git",
+  "dl": 8
+ },
+ "vpaid-plugin": {
+  "desc": "",
+  "date": "2018-08-30",
+  "ver": "0.1.9",
+  "repo": "git+ssh://git@bitbucket.org/realeyesmedia/vpaid-plugin.git",
+  "dl": 74
+ },
+ "@trillboards/edge-ads": {
+  "desc": "Browser lifecycle, display management, and ad delivery for Trillboards Edge AI SDK",
+  "date": "2026-08-13",
+  "ver": "0.2.2",
+  "repo": "git+https://github.com/trillboards/packages.git",
+  "dl": 84
+ },
+ "react-brid-player": {
+  "desc": "A react component for the BridTV player",
+  "date": "2019-07-31",
+  "ver": "1.0.3",
+  "repo": "https://bitbucket.org/igor_damic/react-brid-player/src/master/",
+  "dl": 24
+ },
+ "vidazoo-vpaid-connection-js-new": {
+  "desc": "",
+  "date": "",
+  "ver": null,
+  "repo": "",
+  "dl": 0
+ },
+ "onomondo-traffic": {
+  "desc": "Fetch your organization's traffic based on ip, iccid, or simid",
+  "date": "2022-03-24",
+  "ver": "3.2.2",
+  "repo": "git+ssh://git@github.com/onomondo/onomondo-traffic.git",
+  "dl": 150
+ },
+ "onomondo-traffic-fetcher": {
+  "desc": "Fetch your organization's traffic based on ip, iccid, or simid",
+  "date": "2020-12-11",
+  "ver": "1.3.1",
+  "repo": "git+ssh://git@github.com/onomondo/onomondo-traffic-fetcher.git",
+  "dl": 29
+ },
+ "@vynce/simid": {
+  "desc": "The SIMID implementation used by Vynce.",
+  "date": "2023-07-27",
+  "ver": "0.0.6",
+  "repo": "git+https://github.com/VideoNoise/sdk.git",
+  "dl": 13
+ },
+ "@bygd/gd-simid": {
+  "desc": "",
+  "date": "2022-03-28",
+  "ver": "0.0.12",
+  "repo": "",
+  "dl": 44
+ },
+ "loaguo__1270.simid": {
+  "desc": "",
+  "date": "2017-11-27",
+  "ver": "10.0.1",
+  "repo": "",
+  "dl": 9
+ },
+ "nativescript-sim-info": {
+  "desc": "A Nativescript plugin for getting info from the sim card.",
+  "date": "2020-09-26",
+  "ver": "2.0.0",
+  "repo": "git+https://github.com/erodriguezh/nativescript-sim-info.git",
+  "dl": 25
+ },
+ "videojs-ima": {
+  "desc": "[![Build Status](https://travis-ci.org/googleads/videojs-ima.svg?branch=main)](https://tra",
+  "date": "2026-02-06",
+  "ver": "2.6.0",
+  "repo": "git+https://github.com/googleads/videojs-ima.git",
+  "dl": 171277
+ }
+}

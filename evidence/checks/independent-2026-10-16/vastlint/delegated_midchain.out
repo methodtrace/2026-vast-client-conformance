@@ -1,0 +1,4 @@
+resolve() threw: Failed to load VAST URL: 404 Not Found
+snapshot.wrapperChain urls: [ '/x/d0.xml' ]
+snapshot.tracking.plan.errors: [ '/t/chk/w0/err?code=[ERRORCODE]' ]
+resolve:hop event urls (no XML attached): [ '/x/d0.xml', '/x/d1.xml', '/x/d2.xml' ]

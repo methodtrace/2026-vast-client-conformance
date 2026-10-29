@@ -1,0 +1,13 @@
+class_key	unique_cases	rounds_hit	first_case	raised_by_unmutated_seed
+iabloader|internal|Cannot read properties of null (reading 'length')	36	1,2,3,4,5	f00006	yes
+iabloader|internal|Cannot read properties of undefined (reading 'map')	32	1,2,3,4,5	f00016	yes
+videoadsdk|unhandled|unhandled rejection: Failed to execute 'dispatchEvent' on 'EventTarget': parameter N is not of type 'Event'.	30	1,2,3,4,5	f00056	yes
+vastclient|uncaught|URLHandler: Request timed out after N ms (N)	24	1,2,3,4,5	f00155	yes
+vastclient|internal|Cannot read properties of undefined (reading 'ad')	21	1,2,3,4,5	f00093	no
+videoadsdk|unhandled|unhandled rejection: VastChain does not contain a supported vpaid creative	18	1,2,3,4,5	f00045	yes
+iabloader|internal|Cannot read properties of undefined (reading 'documentElement')	7	1,2,3,4,5	f00018	no
+iabloader|internal|$impl.creatives.creative.forEach is not a function	7	2,3,5	f00453	no
+iabloader|internal|$impl.impression.filter is not a function	4	3,5	f00633	no
+iabloader|internal|$impl.extensions.extension.map is not a function	1	1	f00027	no
+vastclient|hang|no result within 30 s	1	2	f00361	no
+iabloader|internal|Cannot read properties of undefined (reading 'forEach')	1	4	f01061	no

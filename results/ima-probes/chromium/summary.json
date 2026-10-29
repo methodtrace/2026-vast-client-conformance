@@ -1,0 +1,25 @@
+{
+ "started": "2026-10-21T02:14:57.150Z",
+ "host": {
+  "platform": "linux",
+  "arch": "x64",
+  "release": "6.18.44-fc-v139",
+  "cpus": 2
+ },
+ "browsers": {
+  "chromium": {
+   "launched": true,
+   "version": "141.0.7390.37",
+   "startedAt": "2026-10-21T02:14:57.151Z",
+   "finishedAt": "2026-10-21T02:16:06.165Z",
+   "parallel": false,
+   "cells": 6,
+   "runs": 6,
+   "verdicts": {
+    "deviates": 5,
+    "conforms": 1
+   }
+  }
+ },
+ "finished": "2026-10-21T02:16:06.166Z"
+}

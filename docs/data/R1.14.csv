@@ -1,0 +1,7 @@
+Package,Version,Last release,Relationship to vast-client-js
+@openplayerjs/ads,3.6.5,2026-09-01,depends on @dailymotion/vast-client and @dailymotion/vmap
+@arte/videojs-vast,1.5.4,2026-02-06,depends on @dailymotion/vast-client and @dailymotion/vmap
+ads-manager,1.2.16,2025-02-16,depends on @dailymotion/vast-client
+videojsx-vast-plugin,1.0.4,2022-04-21,depends on the old npm package vast-client
+@videointelligence/vast-client,4.0.6,2024-06-21,repository field points to dailymotion/vast-client-js; a fork of an old release
+react-native-vast-client,2.5.1,2019-12-16,not in the metadata file; repository sina-moammar/vast-client-js; a fork of an old release

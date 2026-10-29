@@ -1,0 +1,749 @@
+Case,Failure,Depth d,Level,Client,Verdict,Detail,Uncaught exception,Internal error
+base_d1,(none),1,,vast-client-js 6.5.0,conforms,resolved,no,no
+base_d1,(none),1,,video-ad-sdk 4.0.1,conforms,resolved,no,no
+base_d1,(none),1,,iab-vast-loader 2.5.1,conforms,resolved,no,no
+base_d1,(none),1,,vastlint-client 0.15.0,conforms,resolved,no,no
+base_d2,(none),2,,vast-client-js 6.5.0,conforms,resolved,no,no
+base_d2,(none),2,,video-ad-sdk 4.0.1,conforms,resolved,no,no
+base_d2,(none),2,,iab-vast-loader 2.5.1,conforms,resolved,no,no
+base_d2,(none),2,,vastlint-client 0.15.0,conforms,resolved,no,no
+base_d3,(none),3,,vast-client-js 6.5.0,conforms,resolved,no,no
+base_d3,(none),3,,video-ad-sdk 4.0.1,conforms,resolved,no,no
+base_d3,(none),3,,iab-vast-loader 2.5.1,conforms,resolved,no,no
+base_d3,(none),3,,vastlint-client 0.15.0,conforms,resolved,no,no
+base_d4,(none),4,,vast-client-js 6.5.0,conforms,resolved,no,no
+base_d4,(none),4,,video-ad-sdk 4.0.1,conforms,resolved,no,no
+base_d4,(none),4,,iab-vast-loader 2.5.1,conforms,resolved,no,no
+base_d4,(none),4,,vastlint-client 0.15.0,conforms,resolved,no,no
+base_d5,(none),5,,vast-client-js 6.5.0,conforms,resolved,no,no
+base_d5,(none),5,,video-ad-sdk 4.0.1,conforms,resolved,no,no
+base_d5,(none),5,,iab-vast-loader 2.5.1,conforms,resolved,no,no
+base_d5,(none),5,,vastlint-client 0.15.0,conforms,resolved,no,no
+base_d6,(none),6,,vast-client-js 6.5.0,conforms,resolved,no,no
+base_d6,(none),6,,video-ad-sdk 4.0.1,conforms,resolved,no,no
+base_d6,(none),6,,iab-vast-loader 2.5.1,conforms,resolved,no,no
+base_d6,(none),6,,vastlint-client 0.15.0,deviates,not resolved: The current VAST queue item does not resolve to an inline playable ad.,no,no
+base_d7,(none),7,,vast-client-js 6.5.0,conforms,accepted 6 Wrappers (permitted),no,no
+base_d7,(none),7,,video-ad-sdk 4.0.1,conforms,"rejected; codes [[""302""],[""302""],[""302""],[""302""],[""302""],[""302""]]",no,no
+base_d7,(none),7,,iab-vast-loader 2.5.1,conforms,accepted 6 Wrappers (permitted),no,no
+base_d7,(none),7,,vastlint-client 0.15.0,deviates,"rejected; codes [[],[],[],[],[],[]]",no,no
+http404_d2_L2,http404,2,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+http404_d2_L2,http404,2,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+http404_d2_L2,http404,2,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d2_L2,http404,2,2,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d2_L2,http500,2,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+http500_d2_L2,http500,2,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+http500_d2_L2,http500,2,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d2_L2,http500,2,2,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d2_L2,timeout,2,2,vast-client-js 6.5.0,conforms,w1:301,yes,no
+timeout_d2_L2,timeout,2,2,video-ad-sdk 4.0.1,conforms,w1:301,no,no
+timeout_d2_L2,timeout,2,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d2_L2,timeout,2,2,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d2_L2,stall,2,2,vast-client-js 6.5.0,deviates,resolved an ad despite the failure,no,no
+stall_d2_L2,stall,2,2,video-ad-sdk 4.0.1,conforms,w1:301,no,no
+stall_d2_L2,stall,2,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d2_L2,stall,2,2,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d2_L2,refused,2,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+refused_d2_L2,refused,2,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+refused_d2_L2,refused,2,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d2_L2,refused,2,2,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d2_L2,empty,2,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+empty_d2_L2,empty,2,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+empty_d2_L2,empty,2,2,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d2_L2,empty,2,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d2_L2,malformed,2,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+malformed_d2_L2,malformed,2,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+malformed_d2_L2,malformed,2,2,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d2_L2,malformed,2,2,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d2_L2,html,2,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+html_d2_L2,html,2,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+html_d2_L2,html,2,2,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d2_L2,html,2,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d2_L2,novast,2,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+novast_d2_L2,novast,2,2,video-ad-sdk 4.0.1,conforms,w1:303,no,no
+novast_d2_L2,novast,2,2,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d2_L2,novast,2,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d2_L2,noad,2,2,vast-client-js 6.5.0,conforms,w1:303,no,no
+noad_d2_L2,noad,2,2,video-ad-sdk 4.0.1,conforms,w1:303,no,no
+noad_d2_L2,noad,2,2,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d2_L2,noad,2,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d2_L2,noad_err,2,2,vast-client-js 6.5.0,conforms,w1:303 vast:303,no,no
+noad_err_d2_L2,noad_err,2,2,video-ad-sdk 4.0.1,conforms,w1:303 vast:303,no,no
+noad_err_d2_L2,noad_err,2,2,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d2_L2,noad_err,2,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d2_L2,nouri,2,2,vast-client-js 6.5.0,partial,w1:303 w2:-,no,no
+nouri_d2_L2,nouri,2,2,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+nouri_d2_L2,nouri,2,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d2_L2,nouri,2,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d3_L2,http404,3,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+http404_d3_L2,http404,3,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+http404_d3_L2,http404,3,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d3_L2,http404,3,2,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d3_L2,http500,3,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+http500_d3_L2,http500,3,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+http500_d3_L2,http500,3,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d3_L2,http500,3,2,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d3_L2,timeout,3,2,vast-client-js 6.5.0,conforms,w1:301,yes,no
+timeout_d3_L2,timeout,3,2,video-ad-sdk 4.0.1,conforms,w1:301,no,no
+timeout_d3_L2,timeout,3,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d3_L2,timeout,3,2,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d3_L2,stall,3,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+stall_d3_L2,stall,3,2,video-ad-sdk 4.0.1,conforms,w1:301,no,no
+stall_d3_L2,stall,3,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d3_L2,stall,3,2,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d3_L2,refused,3,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+refused_d3_L2,refused,3,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+refused_d3_L2,refused,3,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d3_L2,refused,3,2,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d3_L2,empty,3,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+empty_d3_L2,empty,3,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+empty_d3_L2,empty,3,2,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d3_L2,empty,3,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d3_L2,malformed,3,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+malformed_d3_L2,malformed,3,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+malformed_d3_L2,malformed,3,2,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d3_L2,malformed,3,2,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d3_L2,html,3,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+html_d3_L2,html,3,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+html_d3_L2,html,3,2,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d3_L2,html,3,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d3_L2,novast,3,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+novast_d3_L2,novast,3,2,video-ad-sdk 4.0.1,conforms,w1:303,no,no
+novast_d3_L2,novast,3,2,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d3_L2,novast,3,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d3_L2,noad,3,2,vast-client-js 6.5.0,conforms,w1:303,no,no
+noad_d3_L2,noad,3,2,video-ad-sdk 4.0.1,conforms,w1:303,no,no
+noad_d3_L2,noad,3,2,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d3_L2,noad,3,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d3_L2,noad_err,3,2,vast-client-js 6.5.0,conforms,w1:303 vast:303,no,no
+noad_err_d3_L2,noad_err,3,2,video-ad-sdk 4.0.1,conforms,w1:303 vast:303,no,no
+noad_err_d3_L2,noad_err,3,2,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d3_L2,noad_err,3,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d3_L2,nouri,3,2,vast-client-js 6.5.0,partial,w1:303 w2:-,no,no
+nouri_d3_L2,nouri,3,2,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+nouri_d3_L2,nouri,3,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d3_L2,nouri,3,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d3_L3,http404,3,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+http404_d3_L3,http404,3,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+http404_d3_L3,http404,3,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d3_L3,http404,3,3,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d3_L3,http500,3,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+http500_d3_L3,http500,3,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+http500_d3_L3,http500,3,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d3_L3,http500,3,3,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d3_L3,timeout,3,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,yes,no
+timeout_d3_L3,timeout,3,3,video-ad-sdk 4.0.1,conforms,w1:301 w2:301,no,no
+timeout_d3_L3,timeout,3,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d3_L3,timeout,3,3,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d3_L3,stall,3,3,vast-client-js 6.5.0,deviates,resolved an ad despite the failure,no,no
+stall_d3_L3,stall,3,3,video-ad-sdk 4.0.1,conforms,w1:301 w2:301,no,no
+stall_d3_L3,stall,3,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d3_L3,stall,3,3,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d3_L3,refused,3,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+refused_d3_L3,refused,3,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+refused_d3_L3,refused,3,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d3_L3,refused,3,3,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d3_L3,empty,3,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+empty_d3_L3,empty,3,3,video-ad-sdk 4.0.1,conforms,w1:100 w2:100,no,no
+empty_d3_L3,empty,3,3,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d3_L3,empty,3,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d3_L3,malformed,3,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+malformed_d3_L3,malformed,3,3,video-ad-sdk 4.0.1,conforms,w1:100 w2:100,no,no
+malformed_d3_L3,malformed,3,3,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d3_L3,malformed,3,3,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d3_L3,html,3,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+html_d3_L3,html,3,3,video-ad-sdk 4.0.1,conforms,w1:100 w2:100,no,no
+html_d3_L3,html,3,3,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d3_L3,html,3,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d3_L3,novast,3,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+novast_d3_L3,novast,3,3,video-ad-sdk 4.0.1,conforms,w1:303 w2:303,no,no
+novast_d3_L3,novast,3,3,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d3_L3,novast,3,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d3_L3,noad,3,3,vast-client-js 6.5.0,conforms,w1:303 w2:303,no,no
+noad_d3_L3,noad,3,3,video-ad-sdk 4.0.1,conforms,w1:303 w2:303,no,no
+noad_d3_L3,noad,3,3,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d3_L3,noad,3,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d3_L3,noad_err,3,3,vast-client-js 6.5.0,conforms,w1:303 w2:303 vast:303,no,no
+noad_err_d3_L3,noad_err,3,3,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 vast:303,no,no
+noad_err_d3_L3,noad_err,3,3,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d3_L3,noad_err,3,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d3_L3,nouri,3,3,vast-client-js 6.5.0,partial,w1:303 w2:303 w3:-,no,no
+nouri_d3_L3,nouri,3,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+nouri_d3_L3,nouri,3,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d3_L3,nouri,3,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d4_L2,http404,4,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+http404_d4_L2,http404,4,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+http404_d4_L2,http404,4,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d4_L2,http404,4,2,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d4_L2,http500,4,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+http500_d4_L2,http500,4,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+http500_d4_L2,http500,4,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d4_L2,http500,4,2,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d4_L2,timeout,4,2,vast-client-js 6.5.0,conforms,w1:301,yes,no
+timeout_d4_L2,timeout,4,2,video-ad-sdk 4.0.1,conforms,w1:301,no,no
+timeout_d4_L2,timeout,4,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d4_L2,timeout,4,2,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d4_L2,stall,4,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+stall_d4_L2,stall,4,2,video-ad-sdk 4.0.1,conforms,w1:301,no,no
+stall_d4_L2,stall,4,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d4_L2,stall,4,2,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d4_L2,refused,4,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+refused_d4_L2,refused,4,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+refused_d4_L2,refused,4,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d4_L2,refused,4,2,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d4_L2,empty,4,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+empty_d4_L2,empty,4,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+empty_d4_L2,empty,4,2,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d4_L2,empty,4,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d4_L2,malformed,4,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+malformed_d4_L2,malformed,4,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+malformed_d4_L2,malformed,4,2,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d4_L2,malformed,4,2,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d4_L2,html,4,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+html_d4_L2,html,4,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+html_d4_L2,html,4,2,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d4_L2,html,4,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d4_L2,novast,4,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+novast_d4_L2,novast,4,2,video-ad-sdk 4.0.1,conforms,w1:303,no,no
+novast_d4_L2,novast,4,2,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d4_L2,novast,4,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d4_L2,noad,4,2,vast-client-js 6.5.0,conforms,w1:303,no,no
+noad_d4_L2,noad,4,2,video-ad-sdk 4.0.1,conforms,w1:303,no,no
+noad_d4_L2,noad,4,2,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d4_L2,noad,4,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d4_L2,noad_err,4,2,vast-client-js 6.5.0,conforms,w1:303 vast:303,no,no
+noad_err_d4_L2,noad_err,4,2,video-ad-sdk 4.0.1,conforms,w1:303 vast:303,no,no
+noad_err_d4_L2,noad_err,4,2,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d4_L2,noad_err,4,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d4_L2,nouri,4,2,vast-client-js 6.5.0,partial,w1:303 w2:-,no,no
+nouri_d4_L2,nouri,4,2,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+nouri_d4_L2,nouri,4,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d4_L2,nouri,4,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d4_L3,http404,4,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+http404_d4_L3,http404,4,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+http404_d4_L3,http404,4,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d4_L3,http404,4,3,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d4_L3,http500,4,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+http500_d4_L3,http500,4,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+http500_d4_L3,http500,4,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d4_L3,http500,4,3,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d4_L3,timeout,4,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,yes,no
+timeout_d4_L3,timeout,4,3,video-ad-sdk 4.0.1,conforms,w1:301 w2:301,no,no
+timeout_d4_L3,timeout,4,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d4_L3,timeout,4,3,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d4_L3,stall,4,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+stall_d4_L3,stall,4,3,video-ad-sdk 4.0.1,conforms,w1:301 w2:301,no,no
+stall_d4_L3,stall,4,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d4_L3,stall,4,3,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d4_L3,refused,4,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+refused_d4_L3,refused,4,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+refused_d4_L3,refused,4,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d4_L3,refused,4,3,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d4_L3,empty,4,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+empty_d4_L3,empty,4,3,video-ad-sdk 4.0.1,conforms,w1:100 w2:100,no,no
+empty_d4_L3,empty,4,3,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d4_L3,empty,4,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d4_L3,malformed,4,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+malformed_d4_L3,malformed,4,3,video-ad-sdk 4.0.1,conforms,w1:100 w2:100,no,no
+malformed_d4_L3,malformed,4,3,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d4_L3,malformed,4,3,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d4_L3,html,4,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+html_d4_L3,html,4,3,video-ad-sdk 4.0.1,conforms,w1:100 w2:100,no,no
+html_d4_L3,html,4,3,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d4_L3,html,4,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d4_L3,novast,4,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+novast_d4_L3,novast,4,3,video-ad-sdk 4.0.1,conforms,w1:303 w2:303,no,no
+novast_d4_L3,novast,4,3,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d4_L3,novast,4,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d4_L3,noad,4,3,vast-client-js 6.5.0,conforms,w1:303 w2:303,no,no
+noad_d4_L3,noad,4,3,video-ad-sdk 4.0.1,conforms,w1:303 w2:303,no,no
+noad_d4_L3,noad,4,3,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d4_L3,noad,4,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d4_L3,noad_err,4,3,vast-client-js 6.5.0,conforms,w1:303 w2:303 vast:303,no,no
+noad_err_d4_L3,noad_err,4,3,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 vast:303,no,no
+noad_err_d4_L3,noad_err,4,3,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d4_L3,noad_err,4,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d4_L3,nouri,4,3,vast-client-js 6.5.0,partial,w1:303 w2:303 w3:-,no,no
+nouri_d4_L3,nouri,4,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+nouri_d4_L3,nouri,4,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d4_L3,nouri,4,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d4_L4,http404,4,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,no,no
+http404_d4_L4,http404,4,4,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+http404_d4_L4,http404,4,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d4_L4,http404,4,4,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d4_L4,http500,4,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,no,no
+http500_d4_L4,http500,4,4,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+http500_d4_L4,http500,4,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d4_L4,http500,4,4,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d4_L4,timeout,4,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,yes,no
+timeout_d4_L4,timeout,4,4,video-ad-sdk 4.0.1,conforms,w1:301 w2:301 w3:301,no,no
+timeout_d4_L4,timeout,4,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d4_L4,timeout,4,4,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d4_L4,stall,4,4,vast-client-js 6.5.0,deviates,resolved an ad despite the failure,no,no
+stall_d4_L4,stall,4,4,video-ad-sdk 4.0.1,conforms,w1:301 w2:301 w3:301,no,no
+stall_d4_L4,stall,4,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d4_L4,stall,4,4,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d4_L4,refused,4,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,no,no
+refused_d4_L4,refused,4,4,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+refused_d4_L4,refused,4,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d4_L4,refused,4,4,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d4_L4,empty,4,4,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301,no,no
+empty_d4_L4,empty,4,4,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100,no,no
+empty_d4_L4,empty,4,4,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d4_L4,empty,4,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d4_L4,malformed,4,4,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301,no,no
+malformed_d4_L4,malformed,4,4,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100,no,no
+malformed_d4_L4,malformed,4,4,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d4_L4,malformed,4,4,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d4_L4,html,4,4,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301,no,no
+html_d4_L4,html,4,4,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100,no,no
+html_d4_L4,html,4,4,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d4_L4,html,4,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d4_L4,novast,4,4,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301,no,no
+novast_d4_L4,novast,4,4,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303,no,no
+novast_d4_L4,novast,4,4,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d4_L4,novast,4,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d4_L4,noad,4,4,vast-client-js 6.5.0,conforms,w1:303 w2:303 w3:303,no,no
+noad_d4_L4,noad,4,4,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303,no,no
+noad_d4_L4,noad,4,4,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d4_L4,noad,4,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d4_L4,noad_err,4,4,vast-client-js 6.5.0,conforms,w1:303 w2:303 w3:303 vast:303,no,no
+noad_err_d4_L4,noad_err,4,4,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303 vast:303,no,no
+noad_err_d4_L4,noad_err,4,4,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d4_L4,noad_err,4,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d4_L4,nouri,4,4,vast-client-js 6.5.0,partial,w1:303 w2:303 w3:303 w4:-,no,no
+nouri_d4_L4,nouri,4,4,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502,no,no
+nouri_d4_L4,nouri,4,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d4_L4,nouri,4,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d5_L2,http404,5,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+http404_d5_L2,http404,5,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+http404_d5_L2,http404,5,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d5_L2,http404,5,2,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d5_L2,http500,5,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+http500_d5_L2,http500,5,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+http500_d5_L2,http500,5,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d5_L2,http500,5,2,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d5_L2,timeout,5,2,vast-client-js 6.5.0,conforms,w1:301,yes,no
+timeout_d5_L2,timeout,5,2,video-ad-sdk 4.0.1,conforms,w1:301,no,no
+timeout_d5_L2,timeout,5,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d5_L2,timeout,5,2,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d5_L2,stall,5,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+stall_d5_L2,stall,5,2,video-ad-sdk 4.0.1,conforms,w1:301,no,no
+stall_d5_L2,stall,5,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d5_L2,stall,5,2,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d5_L2,refused,5,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+refused_d5_L2,refused,5,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+refused_d5_L2,refused,5,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d5_L2,refused,5,2,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d5_L2,empty,5,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+empty_d5_L2,empty,5,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+empty_d5_L2,empty,5,2,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d5_L2,empty,5,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d5_L2,malformed,5,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+malformed_d5_L2,malformed,5,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+malformed_d5_L2,malformed,5,2,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d5_L2,malformed,5,2,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d5_L2,html,5,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+html_d5_L2,html,5,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+html_d5_L2,html,5,2,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d5_L2,html,5,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d5_L2,novast,5,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+novast_d5_L2,novast,5,2,video-ad-sdk 4.0.1,conforms,w1:303,no,no
+novast_d5_L2,novast,5,2,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d5_L2,novast,5,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d5_L2,noad,5,2,vast-client-js 6.5.0,conforms,w1:303,no,no
+noad_d5_L2,noad,5,2,video-ad-sdk 4.0.1,conforms,w1:303,no,no
+noad_d5_L2,noad,5,2,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d5_L2,noad,5,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d5_L2,noad_err,5,2,vast-client-js 6.5.0,conforms,w1:303 vast:303,no,no
+noad_err_d5_L2,noad_err,5,2,video-ad-sdk 4.0.1,conforms,w1:303 vast:303,no,no
+noad_err_d5_L2,noad_err,5,2,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d5_L2,noad_err,5,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d5_L2,nouri,5,2,vast-client-js 6.5.0,partial,w1:303 w2:-,no,no
+nouri_d5_L2,nouri,5,2,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+nouri_d5_L2,nouri,5,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d5_L2,nouri,5,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d5_L3,http404,5,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+http404_d5_L3,http404,5,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+http404_d5_L3,http404,5,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d5_L3,http404,5,3,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d5_L3,http500,5,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+http500_d5_L3,http500,5,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+http500_d5_L3,http500,5,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d5_L3,http500,5,3,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d5_L3,timeout,5,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,yes,no
+timeout_d5_L3,timeout,5,3,video-ad-sdk 4.0.1,conforms,w1:301 w2:301,no,no
+timeout_d5_L3,timeout,5,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d5_L3,timeout,5,3,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d5_L3,stall,5,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+stall_d5_L3,stall,5,3,video-ad-sdk 4.0.1,conforms,w1:301 w2:301,no,no
+stall_d5_L3,stall,5,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d5_L3,stall,5,3,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d5_L3,refused,5,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+refused_d5_L3,refused,5,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+refused_d5_L3,refused,5,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d5_L3,refused,5,3,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d5_L3,empty,5,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+empty_d5_L3,empty,5,3,video-ad-sdk 4.0.1,conforms,w1:100 w2:100,no,no
+empty_d5_L3,empty,5,3,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d5_L3,empty,5,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d5_L3,malformed,5,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+malformed_d5_L3,malformed,5,3,video-ad-sdk 4.0.1,conforms,w1:100 w2:100,no,no
+malformed_d5_L3,malformed,5,3,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d5_L3,malformed,5,3,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d5_L3,html,5,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+html_d5_L3,html,5,3,video-ad-sdk 4.0.1,conforms,w1:100 w2:100,no,no
+html_d5_L3,html,5,3,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d5_L3,html,5,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d5_L3,novast,5,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+novast_d5_L3,novast,5,3,video-ad-sdk 4.0.1,conforms,w1:303 w2:303,no,no
+novast_d5_L3,novast,5,3,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d5_L3,novast,5,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d5_L3,noad,5,3,vast-client-js 6.5.0,conforms,w1:303 w2:303,no,no
+noad_d5_L3,noad,5,3,video-ad-sdk 4.0.1,conforms,w1:303 w2:303,no,no
+noad_d5_L3,noad,5,3,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d5_L3,noad,5,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d5_L3,noad_err,5,3,vast-client-js 6.5.0,conforms,w1:303 w2:303 vast:303,no,no
+noad_err_d5_L3,noad_err,5,3,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 vast:303,no,no
+noad_err_d5_L3,noad_err,5,3,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d5_L3,noad_err,5,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d5_L3,nouri,5,3,vast-client-js 6.5.0,partial,w1:303 w2:303 w3:-,no,no
+nouri_d5_L3,nouri,5,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+nouri_d5_L3,nouri,5,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d5_L3,nouri,5,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d5_L4,http404,5,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,no,no
+http404_d5_L4,http404,5,4,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+http404_d5_L4,http404,5,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d5_L4,http404,5,4,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d5_L4,http500,5,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,no,no
+http500_d5_L4,http500,5,4,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+http500_d5_L4,http500,5,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d5_L4,http500,5,4,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d5_L4,timeout,5,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,yes,no
+timeout_d5_L4,timeout,5,4,video-ad-sdk 4.0.1,conforms,w1:301 w2:301 w3:301,no,no
+timeout_d5_L4,timeout,5,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d5_L4,timeout,5,4,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d5_L4,stall,5,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,no,no
+stall_d5_L4,stall,5,4,video-ad-sdk 4.0.1,conforms,w1:301 w2:301 w3:301,no,no
+stall_d5_L4,stall,5,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d5_L4,stall,5,4,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d5_L4,refused,5,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,no,no
+refused_d5_L4,refused,5,4,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+refused_d5_L4,refused,5,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d5_L4,refused,5,4,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d5_L4,empty,5,4,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301,no,no
+empty_d5_L4,empty,5,4,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100,no,no
+empty_d5_L4,empty,5,4,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d5_L4,empty,5,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d5_L4,malformed,5,4,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301,no,no
+malformed_d5_L4,malformed,5,4,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100,no,no
+malformed_d5_L4,malformed,5,4,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d5_L4,malformed,5,4,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d5_L4,html,5,4,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301,no,no
+html_d5_L4,html,5,4,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100,no,no
+html_d5_L4,html,5,4,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d5_L4,html,5,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d5_L4,novast,5,4,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301,no,no
+novast_d5_L4,novast,5,4,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303,no,no
+novast_d5_L4,novast,5,4,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d5_L4,novast,5,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d5_L4,noad,5,4,vast-client-js 6.5.0,conforms,w1:303 w2:303 w3:303,no,no
+noad_d5_L4,noad,5,4,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303,no,no
+noad_d5_L4,noad,5,4,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d5_L4,noad,5,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d5_L4,noad_err,5,4,vast-client-js 6.5.0,conforms,w1:303 w2:303 w3:303 vast:303,no,no
+noad_err_d5_L4,noad_err,5,4,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303 vast:303,no,no
+noad_err_d5_L4,noad_err,5,4,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d5_L4,noad_err,5,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d5_L4,nouri,5,4,vast-client-js 6.5.0,partial,w1:303 w2:303 w3:303 w4:-,no,no
+nouri_d5_L4,nouri,5,4,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502,no,no
+nouri_d5_L4,nouri,5,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d5_L4,nouri,5,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d5_L5,http404,5,5,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301,no,no
+http404_d5_L5,http404,5,5,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502,no,no
+http404_d5_L5,http404,5,5,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d5_L5,http404,5,5,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d5_L5,http500,5,5,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301,no,no
+http500_d5_L5,http500,5,5,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502,no,no
+http500_d5_L5,http500,5,5,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d5_L5,http500,5,5,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d5_L5,timeout,5,5,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301,yes,no
+timeout_d5_L5,timeout,5,5,video-ad-sdk 4.0.1,conforms,w1:301 w2:301 w3:301 w4:301,no,no
+timeout_d5_L5,timeout,5,5,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d5_L5,timeout,5,5,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d5_L5,stall,5,5,vast-client-js 6.5.0,deviates,resolved an ad despite the failure,no,no
+stall_d5_L5,stall,5,5,video-ad-sdk 4.0.1,conforms,w1:301 w2:301 w3:301 w4:301,no,no
+stall_d5_L5,stall,5,5,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d5_L5,stall,5,5,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d5_L5,refused,5,5,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301,no,no
+refused_d5_L5,refused,5,5,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502,no,no
+refused_d5_L5,refused,5,5,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d5_L5,refused,5,5,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d5_L5,empty,5,5,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301 w4:301,no,no
+empty_d5_L5,empty,5,5,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100 w4:100,no,no
+empty_d5_L5,empty,5,5,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d5_L5,empty,5,5,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d5_L5,malformed,5,5,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301 w4:301,no,no
+malformed_d5_L5,malformed,5,5,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100 w4:100,no,no
+malformed_d5_L5,malformed,5,5,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d5_L5,malformed,5,5,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d5_L5,html,5,5,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301 w4:301,no,no
+html_d5_L5,html,5,5,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100 w4:100,no,no
+html_d5_L5,html,5,5,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d5_L5,html,5,5,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d5_L5,novast,5,5,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301 w4:301,no,no
+novast_d5_L5,novast,5,5,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303 w4:303,no,no
+novast_d5_L5,novast,5,5,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d5_L5,novast,5,5,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d5_L5,noad,5,5,vast-client-js 6.5.0,conforms,w1:303 w2:303 w3:303 w4:303,no,no
+noad_d5_L5,noad,5,5,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303 w4:303,no,no
+noad_d5_L5,noad,5,5,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d5_L5,noad,5,5,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d5_L5,noad_err,5,5,vast-client-js 6.5.0,conforms,w1:303 w2:303 w3:303 w4:303 vast:303,no,no
+noad_err_d5_L5,noad_err,5,5,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303 w4:303 vast:303,no,no
+noad_err_d5_L5,noad_err,5,5,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d5_L5,noad_err,5,5,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d5_L5,nouri,5,5,vast-client-js 6.5.0,partial,w1:303 w2:303 w3:303 w4:303 w5:-,no,no
+nouri_d5_L5,nouri,5,5,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502 w5:502,no,no
+nouri_d5_L5,nouri,5,5,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d5_L5,nouri,5,5,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d6_L2,http404,6,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+http404_d6_L2,http404,6,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+http404_d6_L2,http404,6,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d6_L2,http404,6,2,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d6_L2,http500,6,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+http500_d6_L2,http500,6,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+http500_d6_L2,http500,6,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d6_L2,http500,6,2,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d6_L2,timeout,6,2,vast-client-js 6.5.0,conforms,w1:301,yes,no
+timeout_d6_L2,timeout,6,2,video-ad-sdk 4.0.1,conforms,w1:301,no,no
+timeout_d6_L2,timeout,6,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d6_L2,timeout,6,2,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d6_L2,stall,6,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+stall_d6_L2,stall,6,2,video-ad-sdk 4.0.1,conforms,w1:301,no,no
+stall_d6_L2,stall,6,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d6_L2,stall,6,2,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d6_L2,refused,6,2,vast-client-js 6.5.0,conforms,w1:301,no,no
+refused_d6_L2,refused,6,2,video-ad-sdk 4.0.1,wrong-code,w1:502,no,no
+refused_d6_L2,refused,6,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d6_L2,refused,6,2,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d6_L2,empty,6,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+empty_d6_L2,empty,6,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+empty_d6_L2,empty,6,2,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d6_L2,empty,6,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d6_L2,malformed,6,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+malformed_d6_L2,malformed,6,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+malformed_d6_L2,malformed,6,2,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d6_L2,malformed,6,2,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d6_L2,html,6,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+html_d6_L2,html,6,2,video-ad-sdk 4.0.1,conforms,w1:100,no,no
+html_d6_L2,html,6,2,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d6_L2,html,6,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d6_L2,novast,6,2,vast-client-js 6.5.0,wrong-code,w1:301,no,no
+novast_d6_L2,novast,6,2,video-ad-sdk 4.0.1,conforms,w1:303,no,no
+novast_d6_L2,novast,6,2,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d6_L2,novast,6,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d6_L2,noad,6,2,vast-client-js 6.5.0,conforms,w1:303,no,no
+noad_d6_L2,noad,6,2,video-ad-sdk 4.0.1,conforms,w1:303,no,no
+noad_d6_L2,noad,6,2,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d6_L2,noad,6,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d6_L2,noad_err,6,2,vast-client-js 6.5.0,conforms,w1:303 vast:303,no,no
+noad_err_d6_L2,noad_err,6,2,video-ad-sdk 4.0.1,conforms,w1:303 vast:303,no,no
+noad_err_d6_L2,noad_err,6,2,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d6_L2,noad_err,6,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d6_L2,nouri,6,2,vast-client-js 6.5.0,partial,w1:303 w2:-,no,no
+nouri_d6_L2,nouri,6,2,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+nouri_d6_L2,nouri,6,2,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d6_L2,nouri,6,2,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d6_L3,http404,6,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+http404_d6_L3,http404,6,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+http404_d6_L3,http404,6,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d6_L3,http404,6,3,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d6_L3,http500,6,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+http500_d6_L3,http500,6,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+http500_d6_L3,http500,6,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d6_L3,http500,6,3,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d6_L3,timeout,6,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,yes,no
+timeout_d6_L3,timeout,6,3,video-ad-sdk 4.0.1,conforms,w1:301 w2:301,no,no
+timeout_d6_L3,timeout,6,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d6_L3,timeout,6,3,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d6_L3,stall,6,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+stall_d6_L3,stall,6,3,video-ad-sdk 4.0.1,conforms,w1:301 w2:301,no,no
+stall_d6_L3,stall,6,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d6_L3,stall,6,3,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d6_L3,refused,6,3,vast-client-js 6.5.0,conforms,w1:301 w2:301,no,no
+refused_d6_L3,refused,6,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502,no,no
+refused_d6_L3,refused,6,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d6_L3,refused,6,3,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d6_L3,empty,6,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+empty_d6_L3,empty,6,3,video-ad-sdk 4.0.1,conforms,w1:100 w2:100,no,no
+empty_d6_L3,empty,6,3,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d6_L3,empty,6,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d6_L3,malformed,6,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+malformed_d6_L3,malformed,6,3,video-ad-sdk 4.0.1,conforms,w1:100 w2:100,no,no
+malformed_d6_L3,malformed,6,3,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d6_L3,malformed,6,3,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d6_L3,html,6,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+html_d6_L3,html,6,3,video-ad-sdk 4.0.1,conforms,w1:100 w2:100,no,no
+html_d6_L3,html,6,3,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d6_L3,html,6,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d6_L3,novast,6,3,vast-client-js 6.5.0,wrong-code,w1:301 w2:301,no,no
+novast_d6_L3,novast,6,3,video-ad-sdk 4.0.1,conforms,w1:303 w2:303,no,no
+novast_d6_L3,novast,6,3,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d6_L3,novast,6,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d6_L3,noad,6,3,vast-client-js 6.5.0,conforms,w1:303 w2:303,no,no
+noad_d6_L3,noad,6,3,video-ad-sdk 4.0.1,conforms,w1:303 w2:303,no,no
+noad_d6_L3,noad,6,3,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d6_L3,noad,6,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d6_L3,noad_err,6,3,vast-client-js 6.5.0,conforms,w1:303 w2:303 vast:303,no,no
+noad_err_d6_L3,noad_err,6,3,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 vast:303,no,no
+noad_err_d6_L3,noad_err,6,3,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d6_L3,noad_err,6,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d6_L3,nouri,6,3,vast-client-js 6.5.0,partial,w1:303 w2:303 w3:-,no,no
+nouri_d6_L3,nouri,6,3,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+nouri_d6_L3,nouri,6,3,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d6_L3,nouri,6,3,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d6_L4,http404,6,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,no,no
+http404_d6_L4,http404,6,4,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+http404_d6_L4,http404,6,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d6_L4,http404,6,4,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d6_L4,http500,6,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,no,no
+http500_d6_L4,http500,6,4,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+http500_d6_L4,http500,6,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d6_L4,http500,6,4,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d6_L4,timeout,6,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,yes,no
+timeout_d6_L4,timeout,6,4,video-ad-sdk 4.0.1,conforms,w1:301 w2:301 w3:301,no,no
+timeout_d6_L4,timeout,6,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d6_L4,timeout,6,4,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d6_L4,stall,6,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,no,no
+stall_d6_L4,stall,6,4,video-ad-sdk 4.0.1,conforms,w1:301 w2:301 w3:301,no,no
+stall_d6_L4,stall,6,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d6_L4,stall,6,4,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d6_L4,refused,6,4,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301,no,no
+refused_d6_L4,refused,6,4,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502,no,no
+refused_d6_L4,refused,6,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d6_L4,refused,6,4,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d6_L4,empty,6,4,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301,no,no
+empty_d6_L4,empty,6,4,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100,no,no
+empty_d6_L4,empty,6,4,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d6_L4,empty,6,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d6_L4,malformed,6,4,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301,no,no
+malformed_d6_L4,malformed,6,4,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100,no,no
+malformed_d6_L4,malformed,6,4,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d6_L4,malformed,6,4,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d6_L4,html,6,4,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301,no,no
+html_d6_L4,html,6,4,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100,no,no
+html_d6_L4,html,6,4,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d6_L4,html,6,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d6_L4,novast,6,4,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301,no,no
+novast_d6_L4,novast,6,4,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303,no,no
+novast_d6_L4,novast,6,4,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d6_L4,novast,6,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d6_L4,noad,6,4,vast-client-js 6.5.0,conforms,w1:303 w2:303 w3:303,no,no
+noad_d6_L4,noad,6,4,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303,no,no
+noad_d6_L4,noad,6,4,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d6_L4,noad,6,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d6_L4,noad_err,6,4,vast-client-js 6.5.0,conforms,w1:303 w2:303 w3:303 vast:303,no,no
+noad_err_d6_L4,noad_err,6,4,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303 vast:303,no,no
+noad_err_d6_L4,noad_err,6,4,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d6_L4,noad_err,6,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d6_L4,nouri,6,4,vast-client-js 6.5.0,partial,w1:303 w2:303 w3:303 w4:-,no,no
+nouri_d6_L4,nouri,6,4,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502,no,no
+nouri_d6_L4,nouri,6,4,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d6_L4,nouri,6,4,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d6_L5,http404,6,5,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301,no,no
+http404_d6_L5,http404,6,5,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502,no,no
+http404_d6_L5,http404,6,5,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d6_L5,http404,6,5,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 404 Not Found),no,no
+http500_d6_L5,http500,6,5,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301,no,no
+http500_d6_L5,http500,6,5,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502,no,no
+http500_d6_L5,http500,6,5,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d6_L5,http500,6,5,vastlint-client 0.15.0,delegated,no code determined (Failed to load VAST URL: 500 Internal Server Error),no,no
+timeout_d6_L5,timeout,6,5,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301,yes,no
+timeout_d6_L5,timeout,6,5,video-ad-sdk 4.0.1,conforms,w1:301 w2:301 w3:301 w4:301,no,no
+timeout_d6_L5,timeout,6,5,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d6_L5,timeout,6,5,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+stall_d6_L5,stall,6,5,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301,no,no
+stall_d6_L5,stall,6,5,video-ad-sdk 4.0.1,conforms,w1:301 w2:301 w3:301 w4:301,no,no
+stall_d6_L5,stall,6,5,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d6_L5,stall,6,5,vastlint-client 0.15.0,delegated,no code determined (Timed out fetching VAST URL after 2000 ms),no,no
+refused_d6_L5,refused,6,5,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301,no,no
+refused_d6_L5,refused,6,5,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502,no,no
+refused_d6_L5,refused,6,5,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d6_L5,refused,6,5,vastlint-client 0.15.0,delegated,no code determined (fetch failed),no,no
+empty_d6_L5,empty,6,5,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301 w4:301,no,no
+empty_d6_L5,empty,6,5,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100 w4:100,no,no
+empty_d6_L5,empty,6,5,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d6_L5,empty,6,5,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+malformed_d6_L5,malformed,6,5,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301 w4:301,no,no
+malformed_d6_L5,malformed,6,5,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100 w4:100,no,no
+malformed_d6_L5,malformed,6,5,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d6_L5,malformed,6,5,vastlint-client 0.15.0,delegated,no code determined (resolved),no,no
+html_d6_L5,html,6,5,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301 w4:301,no,no
+html_d6_L5,html,6,5,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100 w4:100,no,no
+html_d6_L5,html,6,5,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d6_L5,html,6,5,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+novast_d6_L5,novast,6,5,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301 w4:301,no,no
+novast_d6_L5,novast,6,5,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303 w4:303,no,no
+novast_d6_L5,novast,6,5,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d6_L5,novast,6,5,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_d6_L5,noad,6,5,vast-client-js 6.5.0,conforms,w1:303 w2:303 w3:303 w4:303,no,no
+noad_d6_L5,noad,6,5,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303 w4:303,no,no
+noad_d6_L5,noad,6,5,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d6_L5,noad,6,5,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+noad_err_d6_L5,noad_err,6,5,vast-client-js 6.5.0,conforms,w1:303 w2:303 w3:303 w4:303 vast:303,no,no
+noad_err_d6_L5,noad_err,6,5,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303 w4:303 vast:303,no,no
+noad_err_d6_L5,noad_err,6,5,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d6_L5,noad_err,6,5,vastlint-client 0.15.0,delegated,no code determined (parse_error: Could not determine ad type),no,no
+nouri_d6_L5,nouri,6,5,vast-client-js 6.5.0,partial,w1:303 w2:303 w3:303 w4:303 w5:-,no,no
+nouri_d6_L5,nouri,6,5,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502 w5:502,no,no
+nouri_d6_L5,nouri,6,5,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d6_L5,nouri,6,5,vastlint-client 0.15.0,delegated,no code determined (parse_error: Wrapper has no VASTAdTagURI),no,no
+http404_d6_L6,http404,6,6,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301 w5:301,no,no
+http404_d6_L6,http404,6,6,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502 w5:502,no,no
+http404_d6_L6,http404,6,6,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http404_d6_L6,http404,6,6,vastlint-client 0.15.0,delegated,no code determined (max_depth),no,no
+http500_d6_L6,http500,6,6,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301 w5:301,no,no
+http500_d6_L6,http500,6,6,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502 w5:502,no,no
+http500_d6_L6,http500,6,6,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+http500_d6_L6,http500,6,6,vastlint-client 0.15.0,delegated,no code determined (max_depth),no,no
+timeout_d6_L6,timeout,6,6,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301 w5:301,yes,no
+timeout_d6_L6,timeout,6,6,video-ad-sdk 4.0.1,conforms,w1:301 w2:301 w3:301 w4:301 w5:301,no,no
+timeout_d6_L6,timeout,6,6,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+timeout_d6_L6,timeout,6,6,vastlint-client 0.15.0,delegated,no code determined (max_depth),no,no
+stall_d6_L6,stall,6,6,vast-client-js 6.5.0,deviates,resolved an ad despite the failure,no,no
+stall_d6_L6,stall,6,6,video-ad-sdk 4.0.1,conforms,w1:301 w2:301 w3:301 w4:301 w5:301,no,no
+stall_d6_L6,stall,6,6,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+stall_d6_L6,stall,6,6,vastlint-client 0.15.0,delegated,no code determined (max_depth),no,no
+refused_d6_L6,refused,6,6,vast-client-js 6.5.0,conforms,w1:301 w2:301 w3:301 w4:301 w5:301,no,no
+refused_d6_L6,refused,6,6,video-ad-sdk 4.0.1,wrong-code,w1:502 w2:502 w3:502 w4:502 w5:502,no,no
+refused_d6_L6,refused,6,6,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+refused_d6_L6,refused,6,6,vastlint-client 0.15.0,delegated,no code determined (max_depth),no,no
+empty_d6_L6,empty,6,6,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301 w4:301 w5:301,no,no
+empty_d6_L6,empty,6,6,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100 w4:100 w5:100,no,no
+empty_d6_L6,empty,6,6,iab-vast-loader 2.5.1,no-code,determined none; Cannot read properties of undefined (reading 'documentElement'),no,yes
+empty_d6_L6,empty,6,6,vastlint-client 0.15.0,delegated,no code determined (max_depth),no,no
+malformed_d6_L6,malformed,6,6,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301 w4:301 w5:301,no,no
+malformed_d6_L6,malformed,6,6,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100 w4:100 w5:100,no,no
+malformed_d6_L6,malformed,6,6,iab-vast-loader 2.5.1,wrong-code,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+malformed_d6_L6,malformed,6,6,vastlint-client 0.15.0,delegated,no code determined (max_depth),no,no
+html_d6_L6,html,6,6,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301 w4:301 w5:301,no,no
+html_d6_L6,html,6,6,video-ad-sdk 4.0.1,conforms,w1:100 w2:100 w3:100 w4:100 w5:100,no,no
+html_d6_L6,html,6,6,iab-vast-loader 2.5.1,wrong-code,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+html_d6_L6,html,6,6,vastlint-client 0.15.0,delegated,no code determined (max_depth),no,no
+novast_d6_L6,novast,6,6,vast-client-js 6.5.0,wrong-code,w1:301 w2:301 w3:301 w4:301 w5:301,no,no
+novast_d6_L6,novast,6,6,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303 w4:303 w5:303,no,no
+novast_d6_L6,novast,6,6,iab-vast-loader 2.5.1,conforms,determined 101; Cannot read properties of undefined (reading 'map'),no,yes
+novast_d6_L6,novast,6,6,vastlint-client 0.15.0,delegated,no code determined (max_depth),no,no
+noad_d6_L6,noad,6,6,vast-client-js 6.5.0,conforms,w1:303 w2:303 w3:303 w4:303 w5:303,no,no
+noad_d6_L6,noad,6,6,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303 w4:303 w5:303,no,no
+noad_d6_L6,noad,6,6,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_d6_L6,noad,6,6,vastlint-client 0.15.0,delegated,no code determined (max_depth),no,no
+noad_err_d6_L6,noad_err,6,6,vast-client-js 6.5.0,conforms,w1:303 w2:303 w3:303 w4:303 w5:303 vast:303,no,no
+noad_err_d6_L6,noad_err,6,6,video-ad-sdk 4.0.1,conforms,w1:303 w2:303 w3:303 w4:303 w5:303 vast:303,no,no
+noad_err_d6_L6,noad_err,6,6,iab-vast-loader 2.5.1,conforms,determined 303; VAST error 303: No ads VAST response after one or more Wrappers. Also includes n,no,no
+noad_err_d6_L6,noad_err,6,6,vastlint-client 0.15.0,delegated,no code determined (max_depth),no,no
+nouri_d6_L6,nouri,6,6,vast-client-js 6.5.0,partial,w1:303 w2:303 w3:303 w4:303 w5:303 w6:-,no,no
+nouri_d6_L6,nouri,6,6,video-ad-sdk 4.0.1,wrong-code,w1:302 w2:302 w3:302 w4:302 w5:302 w6:302,no,no
+nouri_d6_L6,nouri,6,6,iab-vast-loader 2.5.1,conforms,"determined 301; VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI",no,no
+nouri_d6_L6,nouri,6,6,vastlint-client 0.15.0,delegated,no code determined (max_depth),no,no

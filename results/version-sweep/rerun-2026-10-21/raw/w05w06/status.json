@@ -1,0 +1,38 @@
+[
+ {
+  "client": "vastclient",
+  "version": "3.3.0",
+  "pkg": "@dailymotion/vast-client",
+  "only": "^(W05|W06)$",
+  "module": "sweep/pkgs/vastclient-3.3.0/node_modules/@dailymotion/vast-client/dist/vast-client-node.min.js",
+  "exit": 0,
+  "cells": 2
+ },
+ {
+  "client": "vastclient",
+  "version": "4.0.1",
+  "pkg": "@dailymotion/vast-client",
+  "only": "^(W05|W06)$",
+  "module": "sweep/pkgs/vastclient-4.0.1/node_modules/@dailymotion/vast-client/dist/vast-client-node.min.js",
+  "exit": 0,
+  "cells": 2
+ },
+ {
+  "client": "vastclient",
+  "version": "5.0.0",
+  "pkg": "@dailymotion/vast-client",
+  "only": "^(W05|W06)$",
+  "module": "sweep/pkgs/vastclient-5.0.0/node_modules/@dailymotion/vast-client/dist/vast-client-node.min.js",
+  "exit": 0,
+  "cells": 2
+ },
+ {
+  "client": "vastclient",
+  "version": "6.5.0",
+  "pkg": "@dailymotion/vast-client",
+  "only": "^(W05|W06)$",
+  "module": "sweep/pkgs/vastclient-6.5.0/node_modules/@dailymotion/vast-client/dist/vast-client-node.min.js",
+  "exit": 0,
+  "cells": 2
+ }
+]

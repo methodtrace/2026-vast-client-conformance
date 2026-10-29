@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.3" xmlns="http://www.iab.com/VAST">
+  <Ad id="in">
+    <InLine>
+      <AdSystem>harness</AdSystem>
+      <Error><![CDATA[{{BASE}}/t/{{CASE}}/in/err?code=[ERRORCODE]]]></Error>
+      <Impression id="in"><![CDATA[{{BASE}}/t/{{CASE}}/in/imp]]></Impression>
+      <AdServingId>in-serving</AdServingId>
+      <AdTitle>in</AdTitle>
+      <Creatives>
+        <Creative id="in-c">
+          <NonLinearAds>
+            <TrackingEvents>
+              <Tracking event="creativeView"><![CDATA[{{BASE}}/t/{{CASE}}/in/nl-view]]></Tracking>
+            </TrackingEvents>
+            <NonLinear width="300" height="50" minSuggestedDuration="00:00:05">
+              <StaticResource creativeType="image/gif"><![CDATA[{{BASE}}/t/{{CASE}}/in/nl-img]]></StaticResource>
+              <NonLinearClickThrough><![CDATA[{{BASE}}/t/{{CASE}}/in/nl-click]]></NonLinearClickThrough>
+            </NonLinear>
+          </NonLinearAds>
+          <UniversalAdId idRegistry="unknown">unknown</UniversalAdId>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

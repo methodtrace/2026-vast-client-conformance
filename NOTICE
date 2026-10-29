@@ -1,0 +1,13 @@
+Copyright 2026 Prashant Chaudhary
+
+Source code: Apache License 2.0 (LICENSE).
+Result files, test vectors, synthetic test media and Online Resources: Creative Commons Attribution 4.0 (LICENSE-DATA).
+
+Third-party material in this repository keeps its own license:
+- rmp-vast 17.2.0 (Radiant Media Player), vendored under its MIT license:
+  code/harness/vendor/rmp-vast-17.2.0/LICENSE.
+- Literata and Inter Tight fonts, embedded in the Online Resources pages under the SIL Open Font License 1.1:
+  docs/fonts/ (license texts beside the font files).
+Third-party material that is not redistributed: the IAB Tech Lab VAST specification, XSDs, macro list and sample
+tags (fetched by code/tools/fetch-sources.sh against pinned hashes) and the Google IMA HTML5 SDK (hashes only).
+The npm dependencies are installed from the registry at the versions pinned in code/harness/package-lock.json.

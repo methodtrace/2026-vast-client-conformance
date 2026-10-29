@@ -1,0 +1,9 @@
+wrapperLimit=4 chain of 3 wrappers -> ads in; docs fetched 4; errors none
+wrapperLimit=4 chain of 4 wrappers -> ads none; docs fetched 4; errors none
+wrapperLimit=4 chain of 5 wrappers -> ads none; docs fetched 4; errors none
+wrapperLimit=5 chain of 3 wrappers -> ads in; docs fetched 4; errors none
+wrapperLimit=5 chain of 4 wrappers -> ads in; docs fetched 5; errors none
+wrapperLimit=5 chain of 5 wrappers -> ads none; docs fetched 5; errors none
+wrapperLimit=6 chain of 3 wrappers -> ads in; docs fetched 4; errors none
+wrapperLimit=6 chain of 4 wrappers -> ads in; docs fetched 5; errors none
+wrapperLimit=6 chain of 5 wrappers -> ads in; docs fetched 6; errors none

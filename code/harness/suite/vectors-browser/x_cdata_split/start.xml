@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.3" xmlns="http://www.iab.com/VAST">
+  <Ad id="in">
+    <InLine>
+      <AdSystem>harness</AdSystem>
+      <Error><![CDATA[{{BASE}}/t/{{CASE}}/in/err?code=[ERRORCODE]]]></Error>
+      <Impression id="in"><![CDATA[{{BASE}}/t/{{CASE}}/in/imp?s=x]]]]><![CDATA[>x]]></Impression>
+      <AdServingId>in-serving</AdServingId>
+      <AdTitle>in</AdTitle>
+      <Creatives>
+        <Creative id="in-c" adId="in-c">
+          <Linear>
+            <TrackingEvents>
+        <Tracking event="start"><![CDATA[{{BASE}}/t/{{CASE}}/in/start]]></Tracking>
+        <Tracking event="firstQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/in/firstQuartile]]></Tracking>
+        <Tracking event="midpoint"><![CDATA[{{BASE}}/t/{{CASE}}/in/midpoint]]></Tracking>
+        <Tracking event="thirdQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/in/thirdQuartile]]></Tracking>
+        <Tracking event="complete"><![CDATA[{{BASE}}/t/{{CASE}}/in/complete]]></Tracking>
+            </TrackingEvents>
+            <Duration>00:00:10</Duration>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/webm" width="640" height="360"><![CDATA[{{BASE}}/media/ad-10s.webm?case={{CASE}}&ad=in]]></MediaFile>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360"><![CDATA[{{BASE}}/media/ad-10s.mp4?case={{CASE}}&ad=in]]></MediaFile>
+            </MediaFiles>
+            <VideoClicks>
+              <ClickTracking><![CDATA[{{BASE}}/t/{{CASE}}/in/clicktracking]]></ClickTracking>
+              <ClickThrough><![CDATA[{{BASE}}/t/{{CASE}}/in/clickthrough]]></ClickThrough>
+            </VideoClicks>
+          </Linear>
+          <UniversalAdId idRegistry="unknown">unknown</UniversalAdId>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

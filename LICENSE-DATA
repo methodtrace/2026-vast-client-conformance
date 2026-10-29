@@ -1,0 +1,26 @@
+# Data license
+
+The data in this repository are licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+This covers `results/`, the test vectors (`code/harness/suite/vectors/`, `code/harness/suite/vectors-browser/`), the synthetic test media
+(`code/harness/browser/media/`),
+`online-resources/`, `docs/` and the outputs stored under `evidence/`.
+
+Attribution: Prashant Chaudhary, "Do Open-Source Video Ad Clients Follow VAST 4.3? An Empirical Study of Player
+Conformance", harness, test vectors and results, https://doi.org/10.5281/zenodo.23581408
+
+The code (everything else, including the scripts under `evidence/`) is licensed under the Apache License 2.0
+(`LICENSE`).
+
+Not covered, and not redistributed here:
+
+- IAB Tech Lab material: the VAST specification text and XSDs, the IAB macro list and the VAST_Samples tags. They are
+  under IAB Tech Lab's own terms (the specification is CC BY 3.0) and are fetched from their original repositories
+  by `code/tools/fetch-sources.sh`, which checks each file against a pinned sha256. Only the hash manifest
+  (`sources/iab-vast-samples/MANIFEST.tsv`) is included.
+- Google IMA HTML5 SDK 3.794.0: proprietary. Only the URL and sha256 of each archived file
+  (`sources/ima-html5/2026-10-16/index.tsv`) are included.
+- rmp-vast 17.2.0 (`code/harness/vendor/rmp-vast-17.2.0/`): vendored under its own MIT license (LICENSE there).
+- The results record the requests and outputs of third-party libraries under test; those libraries keep their own
+  licenses.

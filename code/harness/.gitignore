@@ -1,0 +1,6 @@
+node_modules/
+scratch/
+build/dist/
+browser/dist/
+sweep/pkgs/*/bundle.mjs
+sweep/pkgs/*/entry.mjs

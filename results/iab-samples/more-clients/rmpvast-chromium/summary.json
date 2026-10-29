@@ -1,0 +1,20 @@
+{
+ "samples": 49,
+ "browser": "chromium 141.0.7390.37",
+ "finished": "2026-10-21T02:14:29.078Z",
+ "clients": {
+  "rmpvast": {
+   "config": "rmpvast",
+   "client": {
+    "id": "rmpvast",
+    "name": "rmp-vast",
+    "version": "17.2.0 (bundles @dailymotion/vast-client 6.4.2)",
+    "language": "JavaScript"
+   },
+   "samples": 49,
+   "started": 49,
+   "completed": 46,
+   "failed": []
+  }
+ }
+}

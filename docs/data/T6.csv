@@ -1,0 +1,18 @@
+Req.,Strength,Configuration,Node.js (jsdom),Chromium 141 (Linux),Chrome 156 (macOS),Firefox 142 (Linux),WebKit 26 (Linux),WebKit 26 (macOS),Safari 27.0.1 (macOS)
+W11,must,video-ad-sdk 4.0.1,conforms (100),deviates (ad accepted),deviates (ad accepted),conforms (100),deviates (ad accepted),deviates (ad accepted),deviates (ad accepted)
+W11,must,"iab-vast-loader 2.5.1, defaults",deviates (ad accepted),conforms (100),conforms (100),deviates (101),conforms (100),conforms (100),conforms (100)
+W11,must,"iab-vast-loader 2.5.1, noSingleAdPods",deviates (ad accepted),conforms (100),conforms (100),deviates (101),conforms (100),conforms (100),conforms (100)
+W11,must,Google IMA HTML5 3.794.0,-,conforms (100),conforms (100),deviates (303),conforms (100),conforms (100),-
+T05,must,"rmp-vast 17.2.0, defaults",-,conforms,conforms,conforms,conforms,deviates,conforms
+T05,must,"rmp-vast 17.2.0, omidSupport",-,conforms,conforms,conforms,conforms,deviates,conforms
+T06,must,"rmp-vast 17.2.0, defaults",-,conforms,conforms,conforms,conforms,deviates,conforms
+T06,must,"rmp-vast 17.2.0, omidSupport",-,conforms,conforms,conforms,conforms,deviates,conforms
+T07,must,"rmp-vast 17.2.0, defaults",-,conforms,conforms,conforms,conforms,deviates,conforms
+T07,must,"rmp-vast 17.2.0, omidSupport",-,conforms,conforms,conforms,conforms,deviates,conforms
+T19,should,"rmp-vast 17.2.0, defaults",-,conforms,conforms,conforms,conforms,n/a,conforms
+T19,should,"rmp-vast 17.2.0, omidSupport",-,conforms,conforms,conforms,conforms,n/a,conforms
+S01,should,video-ad-sdk 4.0.1,conforms,conforms,conforms,conforms,deviates (FLV chosen),conforms,conforms
+S02,may,"rmp-vast 17.2.0, defaults",-,n/a (401),conforms,conforms,conforms,conforms,conforms
+S02,may,"rmp-vast 17.2.0, omidSupport",-,n/a (401),conforms,conforms,conforms,conforms,conforms
+S02,may,Google IMA HTML5 3.794.0,-,n/a (400),conforms,conforms,conforms,conforms,-
+I01,must,Google IMA HTML5 3.794.0,-,deviates,conforms (-10 ms after start),deviates,deviates,conforms (-27 ms after start),-

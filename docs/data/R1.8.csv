@@ -1,0 +1,7 @@
+Package,Version in file,License,Last release,"Downloads, last month",In 25-package metadata file,Decision,Reason
+@openplayerjs/ads,3.6.5,MIT,2026-09-01,"1,123",yes,"excluded, listed",depends on @dailymotion/vast-client (metadata file)
+@arte/videojs-vast,1.5.4,Apache-2.0,2026-02-06,245,yes,"excluded, listed",depends on @dailymotion/vast-client (metadata file)
+ads-manager,1.2.16,Apache-2.0,2025-02-16,400,yes,"excluded, listed",depends on @dailymotion/vast-client (metadata file)
+videojsx-vast-plugin,1.0.4,MIT,2022-04-21,249,yes,"excluded, listed",depends on the old npm package vast-client (metadata file)
+@videointelligence/vast-client,4.0.6,MIT,2024-06-21,144,yes,"excluded, listed",fork of an old vast-client-js release (repository field points to dailymotion/vast-client-js)
+react-native-vast-client,2.5.1,not in metadata file,2019-12-16,386,no,"excluded, listed",fork of an old release (repository sina-moammar/vast-client-js); not in the 25-package metadata file

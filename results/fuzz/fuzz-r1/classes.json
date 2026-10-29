@@ -1,0 +1,119 @@
+[
+ {
+  "client": "vastclient",
+  "kind": "internal",
+  "msg": "Cannot read properties of undefined (reading 'ad')",
+  "key": "vastclient|internal|Cannot read properties of undefined (reading 'ad')",
+  "firstCase": "f00001",
+  "round": 1,
+  "seed": "vec:x_empty_impression",
+  "mutations": [
+   "start.xml: rename <TrackingEvents> case",
+   "start.xml: delete <InLine>",
+   "start.xml: comment in <Ad>"
+  ]
+ },
+ {
+  "client": "iabloader",
+  "kind": "internal",
+  "msg": "Cannot read properties of null (reading 'length')",
+  "key": "iabloader|internal|Cannot read properties of null (reading 'length')",
+  "firstCase": "f00009",
+  "round": 1,
+  "seed": "iab:VAST 1-2.0 Samples/Tremor-Video-Samples/vast_wrapper_linear_1.xml",
+  "mutations": [
+   "start.xml: no XML declaration",
+   "net start.xml ?stall=6000"
+  ]
+ },
+ {
+  "client": "iabloader",
+  "kind": "internal",
+  "msg": "Cannot read properties of undefined (reading 'map')",
+  "key": "iabloader|internal|Cannot read properties of undefined (reading 'map')",
+  "firstCase": "f00023",
+  "round": 1,
+  "seed": "iab:VAST 1-2.0 Samples/vast1Nonlinear.xml",
+  "mutations": [
+   "start.xml: attr Ad@id=\"video/mp4\"",
+   "start.xml: text <AdSystem>=\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\""
+  ]
+ },
+ {
+  "client": "videoadsdk",
+  "kind": "unhandled",
+  "msg": "unhandled rejection: VastChain does not contain a supported vpaid creative",
+  "key": "videoadsdk|unhandled|unhandled rejection: VastChain does not contain a supported vpaid creative",
+  "firstCase": "f00025",
+  "round": 1,
+  "seed": "iab:VAST 1-2.0 Samples/Inline_LinearVAST2vpaid.xml",
+  "mutations": [
+   "start.xml: move <Creatives> before <Error>"
+  ]
+ },
+ {
+  "client": "vastclient",
+  "kind": "uncaught",
+  "msg": "URLHandler: Request timed out after N ms (N)",
+  "key": "vastclient|uncaught|URLHandler: Request timed out after N ms (N)",
+  "firstCase": "f00061",
+  "round": 1,
+  "seed": "vec:w_timeout",
+  "mutations": [
+   "start.xml: cdata->text <Tracking>"
+  ]
+ },
+ {
+  "client": "videoadsdk",
+  "kind": "unhandled",
+  "msg": "unhandled rejection: Failed to execute 'dispatchEvent' on 'EventTarget': parameter N is not of type 'Event'.",
+  "key": "videoadsdk|unhandled|unhandled rejection: Failed to execute 'dispatchEvent' on 'EventTarget': parameter N is not of type 'Event'.",
+  "firstCase": "f00082",
+  "round": 1,
+  "seed": "iab:VAST 4.2 Samples/IconClickFallbacks.xml",
+  "mutations": [
+   "start.xml: duplicate <Tracking>",
+   "start.xml: add AdTitle@delivery=\"NaN\"",
+   "start.xml: rename <TrackingEvents> case"
+  ]
+ },
+ {
+  "client": "iabloader",
+  "kind": "internal",
+  "msg": "Cannot read properties of undefined (reading 'documentElement')",
+  "key": "iabloader|internal|Cannot read properties of undefined (reading 'documentElement')",
+  "firstCase": "f00093",
+  "round": 1,
+  "seed": "vec:a_verification",
+  "mutations": [
+   "net start.xml ?status=204",
+   "inline.xml: truncate at 508/2148"
+  ]
+ },
+ {
+  "client": "iabloader",
+  "kind": "internal",
+  "msg": "$impl.creatives.creative.forEach is not a function",
+  "key": "iabloader|internal|$impl.creatives.creative.forEach is not a function",
+  "firstCase": "f00164",
+  "round": 2,
+  "seed": "vec:e_media_timeout",
+  "mutations": [
+   "start.xml: rename <Creatives> case",
+   "start.xml: encoding decl"
+  ]
+ },
+ {
+  "client": "iabloader",
+  "kind": "internal",
+  "msg": "$impl.impression.filter is not a function",
+  "key": "iabloader|internal|$impl.impression.filter is not a function",
+  "firstCase": "f00195",
+  "round": 2,
+  "seed": "vec:w_follow_false",
+  "mutations": [
+   "w1.xml: rename <Wrapper> case",
+   "start.xml: copy <Creative> into <Impression>"
+  ]
+ }
+]

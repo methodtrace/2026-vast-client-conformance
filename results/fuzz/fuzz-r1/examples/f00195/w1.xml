@@ -1,0 +1,26 @@
+<VAST version="4.3" xmlns="http://www.iab.com/VAST">
+  <Ad id="w1">
+    <wrapper xmlns="">
+      <AdSystem xmlns="http://www.iab.com/VAST">harness</AdSystem>
+      <Error xmlns="http://www.iab.com/VAST"><![CDATA[{{BASE}}/t/{{CASE}}/w1/err?code=[ERRORCODE]]]></Error>
+      <Impression xmlns="http://www.iab.com/VAST" id="w1"><![CDATA[{{BASE}}/t/{{CASE}}/w1/imp]]></Impression>
+      <Creatives xmlns="http://www.iab.com/VAST">
+        <Creative>
+          <Linear>
+            <TrackingEvents>
+        <Tracking event="start"><![CDATA[{{BASE}}/t/{{CASE}}/w1/start]]></Tracking>
+        <Tracking event="firstQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/w1/firstQuartile]]></Tracking>
+        <Tracking event="midpoint"><![CDATA[{{BASE}}/t/{{CASE}}/w1/midpoint]]></Tracking>
+        <Tracking event="thirdQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/w1/thirdQuartile]]></Tracking>
+        <Tracking event="complete"><![CDATA[{{BASE}}/t/{{CASE}}/w1/complete]]></Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickTracking><![CDATA[{{BASE}}/t/{{CASE}}/w1/clicktracking]]></ClickTracking>
+            </VideoClicks>
+          </Linear>
+        </Creative>
+      </Creatives>
+      <VASTAdTagURI xmlns="http://www.iab.com/VAST"><![CDATA[{{BASE}}/doc/{{CASE}}/w_follow_false/inline.xml]]></VASTAdTagURI>
+    </wrapper>
+  </Ad>
+</VAST>

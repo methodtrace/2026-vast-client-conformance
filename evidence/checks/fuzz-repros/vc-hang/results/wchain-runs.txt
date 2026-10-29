@@ -1,0 +1,11 @@
+module=code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js timeout=2000 wrapperLimit=default (10) load1=0.39
+    44 ms  resolved  depth=0 duration=43 ms status=200 error=null
+  3055 ms  resolved  depth=1 duration=3009 ms status=200 error=null
+  6061 ms  resolved  depth=2 duration=3004 ms status=200 error=null
+  9067 ms  resolved  depth=3 duration=3006 ms status=200 error=null
+RESULT {"outcome":"resolved, ads=1","totalMs":9069,"docRequests":4,"uncaught":[],"load1":0.33}
+module=evidence/checks/fuzz-repros/vc-hang/patched/vast-client-6.5.0-fix/dist/vast-client-node.js timeout=2000 wrapperLimit=default (10) load1=0.33
+    36 ms  resolved  depth=0 duration=36 ms status=200 error=null
+  2042 ms  resolved  depth=1 duration=2005 ms status=408 error=URLHandler: Request timed out after 2000 ms (408)
+  2043 ms  VAST-error code=301
+RESULT {"outcome":"resolved, ads=0","totalMs":2043,"docRequests":2,"uncaught":[],"load1":0.33}

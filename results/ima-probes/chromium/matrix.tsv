@@ -1,0 +1,7 @@
+id	area	strength	ima
+W17	wrappers	must	deviates
+A03	verification	should	deviates
+A05	verification	must	deviates
+PRB1	probe	probe	conforms
+PRB2	probe	probe	deviates
+PRB3	probe	probe	deviates

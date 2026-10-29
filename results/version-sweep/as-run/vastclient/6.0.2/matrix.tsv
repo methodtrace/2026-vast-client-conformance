@@ -1,0 +1,103 @@
+id	area	strength	spec	claim	vastclient
+W01	wrappers	must	§2.2; §2.3.5	Follows a Wrapper to its InLine ad.	conforms
+W02	wrappers	must	§2.2; The Ad Element (sequence); Ad Pods	Follows a lone Wrapper that carries sequence="1" (a one-ad pod) to its InLine ad, or declines it with an error (pod support is optional).	conforms
+W03	wrappers	must	§3.19.1	Accepts a chain of five Wrappers before the InLine ad (players are required to accept five).	conforms
+W04	wrappers	should	§2.3.5.1; §3.19.1	With six Wrappers the player may reject; if it does, it determines 302 (and, with a tracker, reports it to every Wrapper Error URI).	conforms
+W05	wrappers	must	§2.3.5.1	Terminates a Wrapper that points to itself (stops requesting it).	conforms
+W06	wrappers	should	§2.3.5.1; Error Reporting table (302)	Reports 302 (wrapper limit) for a self-referencing Wrapper loop.	conforms
+W07	wrappers	must	Error Reporting (Media Player Details; table 301)	When the VASTAdTagURI is unavailable (HTTP 404), determines error 301.	conforms
+W08	wrappers	must	Error Reporting (table 301)	When the VASTAdTagURI times out, determines error 301.	conforms
+W09	wrappers	should	Error Reporting (No Ad Response); Error (VAST)	When a Wrapper leads to a no-ad response and the player determines a code, the code is 303.	conforms
+W10	wrappers	must	§3.1 Error (VAST); Error Reporting (No Ad Response)	Requests the VAST-level Error URI of a no-ad response reached through a Wrapper (with 303 for [ERRORCODE]).	conforms
+W11	wrappers	should	Error Reporting (table 100); §2.3.2 (well-formed XML)	When the Wrapper target is not well-formed XML, determines error 100 (and does not use an ad from it).	deviates
+W12	wrappers	must	Error Reporting (Media Player Details)	Requests the Wrapper Error URI when its VASTAdTagURI fails.	conforms
+W13	wrappers	must	Error Reporting (Media Player Details); §3.4.11	An InLine error after a chain of Wrappers is reported to the InLine and to every Wrapper Error URI, with the same code (403 here).	conforms
+W14	wrappers	must	§3.4.4; §2.3.4	At impression time, requests the Impression URIs of the InLine ad and of every Wrapper before it.	conforms
+W15	wrappers	must	§3.19 (tracking elements in Wrappers)	Fires the Wrapper's Linear tracking events (start, quartiles, complete) together with the InLine ones.	conforms
+W16	wrappers	must	§2.3.5.2	When both the InLine and a Wrapper carry a ClickThrough, the InLine one is used.	conforms
+W17	wrappers	must	§2.3.5.2	When the InLine has no ClickThrough (no VideoClicks), the ClickThrough of the Wrapper closest to the InLine is used.	conforms
+W18	wrappers	must	§3.10.2 ClickTracking; §3.19	On a click, requests the ClickTracking URIs of the InLine and of every Wrapper.	conforms
+W19	wrappers	should	§3.19 (followAdditionalWrappers)	With followAdditionalWrappers="false", a Wrapper received next is ignored rather than followed.	conforms
+W20	wrappers	should	§3.19 (allowMultipleAds)	With allowMultipleAds="false", only the first stand-alone Ad of the response is used (pod ads are dropped).	conforms
+W21	wrappers	should	§3.19 (allowMultipleAds default false)	Without the attribute, allowMultipleAds defaults to false, so only the first stand-alone Ad is used.	conforms
+W22	wrappers	may	§3.19.2 BlockedAdCategories	Optional: rejects an InLine whose Category is blocked upstream; a player that does reject it must report 205.	n/a
+E01	errors	must	§3.1 Error (VAST)	For a no-ad response, requests the VAST-level Error URI.	conforms
+E02	errors	must	§3.1 Error (VAST), bounded 0+	Requests every VAST-level Error URI when several are given.	conforms
+E03	errors	must	§3.4.11; Error Reporting (table 403)	With no supported MediaFile, requests every InLine Error URI with 403.	delegated
+E04	errors	must	Error Reporting (Media Player Details); macro list ERRORCODE	Replaces [ERRORCODE] in Error URIs with a numeric code.	conforms
+T01	tracking	must	§2.3.4; §3.4.4	Requests every Impression URI of the ad.	conforms
+T02	tracking	should	§3.4.4 (about:blank)	Does not dispatch an Impression whose URI is about:blank.	conforms
+T03	tracking	must	§3.14.1 (Linear metrics)	Fires start, firstQuartile, midpoint, thirdQuartile and complete exactly once each, in that order.	conforms
+T04	tracking	must	§3.14.3 (multiple Tracking elements per event)	Fires every Tracking element for the same event (two start trackers for two parties).	conforms
+T05	tracking	must	§3.14.1 (progress, HH:MM:SS offset)	Fires a progress tracker with an HH:MM:SS offset.	conforms
+T06	tracking	must	§3.14.1 (progress, HH:MM:SS.mmm offset)	Fires a progress tracker with an HH:MM:SS.mmm offset.	conforms
+T07	tracking	must	§3.14.1 (progress, n% offset)	Fires progress trackers with percentage offsets (10% and 80%).	conforms
+T08	tracking	must	§3.14.1 (thirdQuartile, complete definitions)	Stopping at 60% fires midpoint but neither thirdQuartile nor complete.	conforms
+T09	tracking	observation	§2.3.4; §3.4.4 (same time)	Spread between the first and last Impression request at impression time (ms, measured at the server).	n/a
+M01	macros	must	IAB macro list: CACHEBUSTING (required)	Replaces [CACHEBUSTING] with a random 8-digit integer.	conforms
+M02	macros	must	IAB macro list: TIMESTAMP (required)	Replaces [TIMESTAMP] with an ISO 8601 date-time (milliseconds and zone as in the macro list example 2016-01-17T8:15:07.127-05).	conforms
+M03	macros	must	IAB macro list: LIMITADTRACKING (required)	Replaces [LIMITADTRACKING] with 0 or 1 (the harness also accepts -1/-2, since a browser has no device advertising ID; see detail).	conforms
+M04	macros	must	§6.1 (encodeURIComponent on values)	Percent-encodes macro values (the colons in TIMESTAMP).	conforms
+M05	macros	should	§6.1 (do not replace unknown macros with -1)	Does not write -1 into a macro it does not know ([NOTAREALMACRO]).	conforms
+X01	xml	should	§2.3.3 (whitespace around a CDATA-wrapped URI)	Trims the whitespace around a CDATA-wrapped Impression URI before handing it to the network (checked on the client side, since URL parsers also strip it).	conforms
+X02	xml	must	§2.2 (XML comments)	Ignores XML comments inside an element when reading its URI.	conforms
+X03	xml	should	§2.3.2 (character entities should be honored)	Decodes character entities (&amp;) in a URI given as plain text (a document that breaks §2.3.3's CDATA rule, which real tags still do).	conforms
+X04	xml	observation	(robustness; a 4.x document without the VAST namespace is not schema-valid)	Parses a document that omits xmlns="http://www.iab.com/VAST".	n/a
+X05	xml	must	§3.7.1 (UniversalAdId 1+; 4.2 XSD unbounded)	Accepts a Creative with two UniversalAdId elements.	conforms
+X06	xml	must	§2.2 (play the ad in a VAST response); §3.9.5 (ClosedCaptionFile 0+)	Accepts two ClosedCaptionFile elements.	conforms
+P01	pods	must	Ad Pods and Stand-Alone Ads	Orders pod ads by their sequence attribute (document order is 3, 1, 2): the ad with sequence 1 comes first (or the pod is declined with an error; pod support is optional).	deviates
+R01	robustness	observation	(engineering; not a VAST clause)	A timed-out Wrapper request does not escape as an uncaught exception (which terminates a Node process).	deviates
+R02	robustness	observation	(engineering; not a VAST clause)	A failed Wrapper request does not escape as an uncaught exception.	conforms
+W23	wrappers	should	§3.19 (fallbackOnNoAd)	With fallbackOnNoAd="true", when the Wrapper's target returns no ad, a stand-alone ad from the response is used.	delegated
+E05	errors	must	Error Reporting (table 401)	When the MediaFile URI returns HTTP 404, requests the InLine Error URI with 401 (file not found).	n/a
+E06	errors	must	Error Reporting (table 405)	When a MediaFile of a supported type cannot be decoded, requests the InLine Error URI with 405.	n/a
+E07	errors	must	Error Reporting (table 402)	When the MediaFile URI answers only after 30 s, requests the InLine Error URI with 402 (media timeout).	n/a
+E08	errors	should	§3.4.11 (Error is for ads that cannot be served)	Does not request the Error URI when the ad plays without a problem.	conforms
+E09	errors	should	§2.3.1; Error Reporting (table 200, 201)	Given a NonLinear-only ad, either displays it (impression or creativeView) or reports 200/201 (unexpected ad type or linearity).	delegated
+T10	tracking	should	§2.3.4 (IAB Digital Video Measurement Guidelines); §3.4.4	Does not request the Impression of an ad whose media never plays (no supported MediaFile).	delegated
+T11	tracking	should	§3.4.4 (notify when the impression occurs); §2.3.4	Requests the Impression exactly once across pause, resume, mute and unmute.	conforms
+T12	tracking	must	§3.14.1 (pause)	Fires the pause tracker once when the user pauses.	conforms
+T13	tracking	must	§3.14.1 (resume)	Fires the resume tracker once when the user resumes.	conforms
+T14	tracking	must	§3.14.1 (mute)	Fires the mute tracker once when the user mutes.	conforms
+T15	tracking	must	§3.14.1 (unmute)	Fires the unmute tracker when the user unmutes.	conforms
+T23	tracking	should	§3.14.1 (unmute: the user unmuted)	A volume change that is not an unmute (0.5 while unmuted) does not fire unmute.	delegated
+T20	tracking	should	§3.14.1 (loaded)	Fires the loaded tracker once when the media is ready to play.	conforms
+T16	tracking	must	§2.3.1 (Skippable Linear); §3.8 skipoffset; §3.14.1 (skip)	Skipping at 6 s (skipoffset 00:00:03) fires skip and neither thirdQuartile nor complete (skippable support is an optional ad type).	conforms
+T17	tracking	should	§3.8 (skipoffset: when skip controls are made available)	The skip control is not available at 1.5 s and is available at 6 s (skipoffset 00:00:03).	conforms
+T18	tracking	should	§3.8 skipoffset; VAST 4.2 XSD (skipoffset pattern allows n%)	A percentage skipoffset (30% of 10 s) makes skip available at 3 s, and skipping fires skip.	conforms
+T19	tracking	should	§3.14.3 (progress counts a view even if the ad is skipped)	Progress offsets passed before the skip (2 s and 5 s) are fired.	conforms
+T21	tracking	must	§3.14.1 (rewind)	Fires the rewind tracker when the user seeks back 2 s (from 60% to 40%).	conforms
+T22	tracking	should	§3.14.1 (quartiles: played continuously)	After rewinding from 6 s to 4 s, midpoint and the 5 s progress tracker are not fired a second time when playback passes them again.	conforms
+A01	verification	must	§3.17; §3.17.4 (verificationNotExecuted)	When it does not execute the InLine's verification resource, requests its verificationNotExecuted URI.	delegated
+A02	verification	must	§3.17.4 [REASON]; IAB macro list: REASON (required)	Fills [REASON] in verificationNotExecuted with a reason code (1, 2 or 3).	delegated
+A03	verification	should	Viewability with Ad Verification Services (resources from intermediary Wrappers)	Handles the Wrapper's verification too: requests its verificationNotExecuted URI.	conforms
+S01	media	should	MediaFiles (choose by attributes, not document order)	Skips a MediaFile of an unsupported type listed first (video/x-flv) and plays a supported one.	delegated
+S02	media	may	§1.4; §3.4 (adType="audio")	Optional: plays an audio ad (adType="audio", Opus WebM and AAC files).	n/a
+M06	macros	must	§6.1 (unprovided optional macros must become -1 or -2)	Replaces each of eight listed optional macros ([ADPLAYHEAD], [ADSERVINGID], [UNIVERSALADID], [PODSEQUENCE], [ASSETURI], [BREAKPOSITION], [IFA], [CLIENTUA]) with a plausible value or -1/-2; none left as macro or empty.	conforms
+M07	macros	should	§3.4.3 (player fills [ADSERVINGID] from AdServingId)	Fills [ADSERVINGID] with the ad's AdServingId (in-serving).	conforms
+M08	macros	should	IAB macro list: ADPLAYHEAD (HH:MM:SS.mmm)	When it fills [ADPLAYHEAD], the midpoint value is HH:MM:SS.mmm and about 5 s.	conforms
+M09	macros	should	§6.1 (Array values: encode each value, commas unencoded); IAB macro list: UNIVERSALADID	Fills [UNIVERSALADID] for two IDs as "registry value" pairs, each percent-encoded, joined by a raw comma.	deviates
+M10	macros	should	IAB macro list: ASSETURI (the media file being played)	When it fills [ASSETURI], the value is the MediaFile actually chosen (an unsupported FLV is listed first).	deviates
+M11	macros	must	IAB macro list: CACHEBUSTING, TIMESTAMP (contexts: all tracking pixels, including Error)	Replaces [CACHEBUSTING] and [TIMESTAMP] in an Error URI as in any other tracking URI.	conforms
+M12	macros	must	IAB macro list: CACHEBUSTING, TIMESTAMP (contexts: VAST request URIs)	Replaces [CACHEBUSTING] and [TIMESTAMP] in a Wrapper's VASTAdTagURI before requesting it.	deviates
+P06	pods	should	Ad Pods (play the pod in sequence; play as many ads as possible)	Plays all three ads of a pod.	delegated
+P03	pods	must	§2.3.4 (fire each tracker at the appropriate time); Ad Pods	Playing a three-ad pod, each ad gets one impression and one complete, fired between its own impression and the next ad's.	delegated
+P02	pods	should	Ad Pods (an ad fails: move on)	When the second pod ad cannot play, playback continues with another ad (the stand-alone ad or the third pod ad).	n/a
+P05	pods	should	Ad Pods (substitute an un-played stand-alone ad)	The failed pod ad is replaced by the stand-alone ad from the response, after the first pod ad and before the third.	n/a
+I01	icons	must	Industry Icon Support; §3.11.2 IconViewTracking	Displays the Icon after the ad starts and requests its IconViewTracking URI.	n/a
+I03	icons	must	§3.11.1 Icon (offset, duration)	Displays an Icon with offset 00:00:01 and duration 00:00:08 once playback passes 1 s, requesting its IconViewTracking URI.	n/a
+I02	icons	must	§3.11.5 IconClickTracking	On a click on the Icon, requests its IconClickTracking URI.	n/a
+X07	xml	observation	§2.3.3; §3.19.1 VASTAdTagURI	Follows a VASTAdTagURI whose CDATA is surrounded by whitespace and line breaks (on the wire; URL parsers also strip the whitespace).	conforms
+X08	xml	should	§3.14.3 (event values are an enumeration)	Never requests a Tracking element whose event name is not a VAST event (notARealEvent).	conforms
+X09	xml	should	§3.18 Extensions (custom XML for the publisher, not VAST elements)	Does not request Impression or Tracking URIs that appear inside an Extension.	conforms
+X10	xml	must	§2.3.2 (XML 1.0: a UTF-8 byte order mark is allowed)	Parses a document that starts with a UTF-8 byte order mark.	conforms
+X11	xml	must	§2.3.3 (a URI containing "]]>" split across CDATA sections)	Reassembles an Impression URI split across two CDATA sections (query s=x]]>x).	conforms
+X12	xml	should	§3.7.1 (VAST 4.0 idValue attribute: players should not fail)	Accepts a UniversalAdId that still carries the VAST 4.0 idValue attribute.	conforms
+X13	xml	should	§3.4.4 (Impression)	An empty Impression element does not stop the other Impression from being requested.	conforms
+X14	xml	should	§4.3 Media Players (accept older VAST versions)	Accepts a VAST 3.0 InLine document.	conforms
+X15	xml	should	§4.3 Media Players (accept older VAST versions)	Accepts a VAST 2.0 InLine document.	conforms
+X16	xml	should	§4.3 Media Players (accept older VAST versions)	Follows a VAST 3.0 Wrapper to a VAST 4.3 InLine.	conforms
+R03	robustness	observation	(HTTP; not a VAST clause)	Follows an HTTP 302 redirect on a VASTAdTagURI.	conforms
+R04	robustness	observation	(HTTP; not a VAST clause)	Parses a VAST response sent with Content-Encoding: gzip.	conforms
+R05	robustness	observation	(HTTP; not a VAST clause)	Parses a VAST response served as text/plain rather than an XML media type.	conforms
+R06	robustness	observation	(HTTP; not a VAST clause)	A tracking URI that answers HTTP 500 does not stop later trackers (quartiles, complete).	conforms

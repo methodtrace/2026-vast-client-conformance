@@ -1,0 +1,28 @@
+== w_http404 (1 wrapper -> 404)
+  thrown: Failed to load VAST URL: 404 Not Found
+  stoppedReason: null
+  status: error; any numeric code field in snapshot: false
+  requests by library alone: /doc/chk/w_http404/start.xml /doc/chk/w_http404/inline.xml?status=404
+  wrapperChain hops in snapshot: 1; tracking.plan.errors: 1; resolvedAds: 1
+  integrator-dispatched: /t/chk/w0/err?code=301 /t/chk/w0/err?code=302
+== 3 wrappers deep -> 404
+  thrown: Failed to load VAST URL: 404 Not Found
+  stoppedReason: null
+  status: error; any numeric code field in snapshot: false
+  requests by library alone: /x/d0.xml /x/d1.xml /x/d2.xml /x/missing.xml?status=404
+  wrapperChain hops in snapshot: 1; tracking.plan.errors: 1; resolvedAds: 1
+  integrator-dispatched: /t/chk/w0/err?code=301 /t/chk/w0/err?code=302
+== w_six (max_depth)
+  thrown: null
+  stoppedReason: max_depth
+  status: resolved; any numeric code field in snapshot: false
+  requests by library alone: /doc/chk/w_six/start.xml /doc/chk/w_six/w1.xml /doc/chk/w_six/w2.xml /doc/chk/w_six/w3.xml /doc/chk/w_six/w4.xml
+  wrapperChain hops in snapshot: 5; tracking.plan.errors: 5; resolvedAds: 1
+  integrator-dispatched: /t/chk/w0/err?code=301 /t/chk/w1/err?code=301 /t/chk/w2/err?code=301 /t/chk/w3/err?code=301 /t/chk/w4/err?code=301 /t/chk/w0/err?code=302 /t/chk/w1/err?code=302 /t/chk/w2/err?code=302 /t/chk/w3/err?code=302 /t/chk/w4/err?code=302
+== e_noad_root
+  thrown: null
+  stoppedReason: parse_error: Could not determine ad type
+  status: resolved; any numeric code field in snapshot: false
+  requests by library alone: /doc/chk/e_noad_root/start.xml
+  wrapperChain hops in snapshot: 1; tracking.plan.errors: 2; resolvedAds: 0
+  integrator-dispatched: /t/chk/root/err1?code=301 /t/chk/root/err2?code=301

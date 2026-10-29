@@ -1,0 +1,5 @@
+Package,Version in file,License,Last release,"Downloads, last month",In 25-package metadata file,Decision,Reason
+@dailymotion/vast-client,6.5.0,not in metadata file,2026-09-30,"253,377",no,tested (vast-client-js),"established independent library, chosen before the survey"
+video-ad-sdk,4.0.1,not in metadata file,2024-04-22,379,no,tested,"established independent library, chosen before the survey; fails condition 4 today (last release 2024-04-22, before 2024-10-16); kept because it remains installed in players"
+iab-vast-loader,2.5.1,not in metadata file,2021-02-25,276,no,tested (two configurations),"established independent library, chosen before the survey, and the library behind IAB Tech Lab's VAST tester; fails condition 4 today (last release 2021-02-25); kept because it remains installed in players"
+shaka-player,5.2.12 (tested release),not in the survey files,not in the survey files,not in 267-package file,not in file,tested (browser layer only),added by hand: a widely used media player with its own VAST parser; not selected through the four conditions; the npm queries did not return it

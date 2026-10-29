@@ -1,0 +1,3 @@
+Package,Version in file,License,Last release,"Downloads, last month",In 25-package metadata file,Decision,Reason
+@dailymotion/ad-sdk-web,2.8.0,none declared,2026-09-29,968,yes,excluded,no license field
+@getstoryteller/react-native-storyteller-sdk-vast,12.1.1,custom (see package),2026-10-13,471,yes,excluded,"license field points to a custom license text, not an OSI license"

@@ -1,0 +1,9 @@
+== escaped.xml
+  vastlint.inspectDocument().wrapperUri = "http://127.0.0.1:39149/x/in.xml?a=1"
+  requests: /x/escaped.xml  /x/in.xml?a=1  /t/chk/w0/imp?a=1&b=2  /t/chk/in/imp
+== cdata.xml
+  vastlint.inspectDocument().wrapperUri = "http://127.0.0.1:39149/x/in.xml?a=1&b=2&c=3"
+  requests: /x/cdata.xml  /x/in.xml?a=1&b=2&c=3  /t/chk/w0/imp?a=1&b=2  /t/chk/in/imp
+== numeric.xml
+  vastlint.inspectDocument().wrapperUri = "http://127.0.0.1:39149/x/in.xml?a=1"
+  requests: /x/numeric.xml  /x/in.xml?a=1  /t/chk/w0/imp?a=1&b=2  /t/chk/in/imp

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.3" xmlns="http://www.iab.com/VAST">
+  <Ad id="in">
+    <InLine>
+      <AdSystem>harness</AdSystem>
+      <Error><![CDATA[{{BASE}}/t/{{CASE}}/in/err?code=[ERRORCODE]]]></Error>
+      <Impression id="in"><![CDATA[{{BASE}}/t/{{CASE}}/in/imp-a]]></Impression>
+      <Impression id="in"><![CDATA[{{BASE}}/t/{{CASE}}/in/imp-b]]></Impression>
+      <Impression id="in">about:blank</Impression>
+      <AdServingId>in-serving</AdServingId>
+      <AdTitle>in</AdTitle>
+      <creatives>
+        <Creative id="in-c" adId="in-c">
+          <Linear>
+            <TrackingEvents>
+        <Tracking event="start"><![CDATA[{{BASE}}/t/{{CASE}}/in/start]]></Tracking>
+        <Tracking event="firstQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/in/firstQuartile]]></Tracking>
+        <Tracking event="midpoint"><![CDATA[{{BASE}}/t/{{CASE}}/in/midpoint]]></Tracking>
+        <Tracking event="thirdQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/in/thirdQuartile]]></Tracking>
+        <Tracking event="complete"><![CDATA[{{BASE}}/t/{{CASE}}/in/complete]]></Tracking>
+        <Tracking event="start"><![CDATA[{{BASE}}/t/{{CASE}}/in/start-2]]></Tracking>
+        <Tracking event="progress" offset="00:00:05"><![CDATA[{{BASE}}/t/{{CASE}}/in/p-5s]]></Tracking>
+        <Tracking event="progress" offset="00:00:02.500"><![CDATA[{{BASE}}/t/{{CASE}}/in/p-2.5s]]></Tracking>
+        <Tracking event="progress" offset="80%"><![CDATA[{{BASE}}/t/{{CASE}}/in/p-80pct]]></Tracking>
+        <Tracking event="progress" offset="10%"><![CDATA[{{BASE}}/t/{{CASE}}/in/p-10pct]]></Tracking>
+            </TrackingEvents>
+            <Duration>00:00:10</Duration>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360"><![CDATA[{{BASE}}/m/{{CASE}}/in.mp4]]></MediaFile>
+            </MediaFiles>
+            <VideoClicks>
+              <ClickTracking><![CDATA[{{BASE}}/t/{{CASE}}/in/clicktracking]]></ClickTracking>
+              <ClickThrough><![CDATA[{{BASE}}/t/{{CASE}}/in/clickthrough]]></ClickThrough>
+            </VideoClicks>
+          </Linear>
+          <UniversalAdId idRegistry="unknown">unknown</UniversalAdId>
+        </Creative>
+      </creatives>
+    </InLine>
+  </Ad>
+</VAST>

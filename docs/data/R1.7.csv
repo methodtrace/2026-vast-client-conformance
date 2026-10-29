@@ -1,0 +1,9 @@
+Package,Version in file,License,Last release,"Downloads, last month",In 25-package metadata file,Decision,Reason
+videojs-ima,2.6.0,not in metadata file,2026-02-06,"171,277",no,excluded,IMA wrapper; covered by testing IMA itself
+@glomex/vast-ima-player,1.21.2,Apache-2.0,2024-09-10,"18,746",yes,excluded,IMA wrapper; also last release 2024-09-10 (condition 4)
+artplayer-plugin-vast,1.0.0,MIT,2024-10-12,233,yes,excluded,"IMA wrapper, via @glomex/vast-ima-player; also last release 2024-10-12 (condition 4)"
+xgplayer-ads,3.0.26,MIT,2026-07-15,527,yes,excluded,IMA wrapper
+@playkit-js/playkit-js-ima,1.7.4,AGPL-3.0,2026-08-06,934,yes,excluded,IMA wrapper
+videojs-ima-player,0.6.9,not in metadata file,2026-07-20,"8,536",no,excluded,IMA wrapper
+ima-ad-player,0.5.7,not in metadata file,2024-10-27,640,no,excluded,IMA wrapper
+ima-wrapper,1.0.8,not in metadata file,2023-02-20,139,no,excluded,IMA wrapper

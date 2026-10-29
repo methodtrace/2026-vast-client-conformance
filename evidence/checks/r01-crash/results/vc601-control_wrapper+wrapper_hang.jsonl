@@ -1,0 +1,4 @@
+{"pkg":"vc601","scenario":"control_wrapper","code":0,"signal":null,"ms":145,"result":{"t":1792166034484,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc601","scenario":"control_wrapper","code":0,"signal":null,"ms":135,"result":{"t":1792166034620,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc601","scenario":"wrapper_hang","code":0,"signal":null,"ms":130,"result":{"t":1792166034748,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc601","scenario":"wrapper_hang","code":0,"signal":null,"ms":169,"result":{"t":1792166034920,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}

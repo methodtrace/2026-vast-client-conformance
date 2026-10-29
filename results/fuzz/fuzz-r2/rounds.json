@@ -1,0 +1,42 @@
+{
+ "seeds": 134,
+ "perRound": 300,
+ "minRounds": 3,
+ "hours": 2.5,
+ "clients": [
+  "vastclient",
+  "videoadsdk",
+  "iabloader",
+  "vastlint"
+ ],
+ "rounds": [
+  {
+   "round": 1,
+   "ran": 276,
+   "newClasses": 8,
+   "totalClasses": 8,
+   "minutes": 17
+  },
+  {
+   "round": 2,
+   "ran": 284,
+   "newClasses": 0,
+   "totalClasses": 8,
+   "minutes": 34
+  },
+  {
+   "round": 3,
+   "ran": 278,
+   "newClasses": 2,
+   "totalClasses": 10,
+   "minutes": 50
+  },
+  {
+   "round": 4,
+   "ran": 289,
+   "newClasses": 0,
+   "totalClasses": 10,
+   "minutes": 63
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+Node suite run 1 vs reference                  identical (540 cells)
+Node suite run 2 vs reference                  identical (540 cells)
+Node suite run 2 vs run 1 (determinism)        identical (540 cells)
+gate 2 parsed (expected/got): vastclient 49/49, videoadsdk 49/49, iabloader 37/37, iabloader+nsap 43/43
+-- chromium
+chromium vs chromium reference                 differs only in known cells (1/864 cells differ: 1 known, 0 unexplained)
+      per configuration: vastclient 0/108, videoadsdk 0/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 0/108, rmpvast+omid 0/108, ima 1/108
+      I01|ima                    expected deviates   got conforms   (known)
+chromium vs Node reference (graded cells)      differs only in known cells (3/382 cells differ: 3 known, 0 unexplained) [not in this result: vastlint; not in reference: shaka, rmpvast, rmpvast+omid, ima]
+      per configuration: vastclient 0/97, videoadsdk 1/89, iabloader 1/98, iabloader+nsap 1/98
+      W11|videoadsdk             expected conforms   got deviates   (known)
+      W11|iabloader              expected deviates   got conforms   (known)
+      W11|iabloader+nsap         expected deviates   got conforms   (known)
+chromium vs macOS reference (same engine)      identical (792 cells)
+    chromium: 564 client runs, 0 harness errors, 2 muted starts, external {"archive":1365,"telemetry stub (204, not sent)":1282}
+-- chrome
+chrome vs chromium reference                   differs only in known cells (4/864 cells differ: 4 known, 0 unexplained)
+      per configuration: vastclient 0/108, videoadsdk 0/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 1/108, rmpvast+omid 1/108, ima 2/108
+      S02|rmpvast                expected n/a        got conforms   (known)
+      S02|rmpvast+omid           expected n/a        got conforms   (known)
+      S02|ima                    expected n/a        got conforms   (known)
+      I01|ima                    expected deviates   got conforms   (known)
+chrome vs Node reference (graded cells)        differs only in known cells (3/382 cells differ: 3 known, 0 unexplained) [not in this result: vastlint; not in reference: shaka, rmpvast, rmpvast+omid, ima]
+      per configuration: vastclient 0/97, videoadsdk 1/89, iabloader 1/98, iabloader+nsap 1/98
+      W11|videoadsdk             expected conforms   got deviates   (known)
+      W11|iabloader              expected deviates   got conforms   (known)
+      W11|iabloader+nsap         expected deviates   got conforms   (known)
+chrome vs macOS reference (same engine)        identical (792 cells)
+    chrome: 564 client runs, 0 harness errors, 2 muted starts, external {"archive":1349,"telemetry stub (204, not sent)":1307}
+-- firefox
+firefox vs firefox reference                   differs only in known cells (1/864 cells differ: 1 known, 0 unexplained)
+      per configuration: vastclient 0/108, videoadsdk 0/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 0/108, rmpvast+omid 0/108, ima 1/108
+      I01|ima                    expected deviates   got conforms   (known)
+firefox vs Chromium reference                  differs only in known cells (8/864 cells differ: 8 known, 0 unexplained)
+      per configuration: vastclient 0/108, videoadsdk 1/108, iabloader 1/108, iabloader+nsap 1/108, shaka 0/108, rmpvast 1/108, rmpvast+omid 1/108, ima 3/108
+      W11|videoadsdk             expected deviates   got conforms   (known)
+      W11|iabloader              expected conforms   got deviates   (known)
+      W11|iabloader+nsap         expected conforms   got deviates   (known)
+      W11|ima                    expected conforms   got deviates   (known)
+      S02|rmpvast                expected n/a        got conforms   (known)
+      S02|rmpvast+omid           expected n/a        got conforms   (known)
+      S02|ima                    expected n/a        got conforms   (known)
+      I01|ima                    expected deviates   got conforms   (known)
+firefox vs Node reference (graded cells)       identical (382 cells) [not in this result: vastlint; not in reference: shaka, rmpvast, rmpvast+omid, ima]
+firefox vs macOS reference (same engine)       identical (792 cells)
+    firefox: 564 client runs, 0 harness errors, 0 muted starts, external {"archive":1353,"telemetry stub (204, not sent)":1271}
+-- webkit
+webkit vs webkit reference                     differs only in known cells (10/864 cells differ: 10 known, 0 unexplained)
+      per configuration: vastclient 0/108, videoadsdk 1/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 4/108, rmpvast+omid 4/108, ima 1/108
+      T05|rmpvast                expected conforms   got deviates   (known)
+      T05|rmpvast+omid           expected conforms   got deviates   (known)
+      T06|rmpvast                expected conforms   got deviates   (known)
+      T06|rmpvast+omid           expected conforms   got deviates   (known)
+      T07|rmpvast                expected conforms   got deviates   (known)
+      T07|rmpvast+omid           expected conforms   got deviates   (known)
+      T19|rmpvast                expected conforms   got n/a        (known)
+      T19|rmpvast+omid           expected conforms   got n/a        (known)
+      S01|videoadsdk             expected deviates   got conforms   (known)
+      I01|ima                    expected deviates   got conforms   (known)
+webkit vs Chromium reference                   differs only in known cells (12/864 cells differ: 12 known, 0 unexplained)
+      per configuration: vastclient 0/108, videoadsdk 0/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 5/108, rmpvast+omid 5/108, ima 2/108
+      T05|rmpvast                expected conforms   got deviates   (known)
+      T05|rmpvast+omid           expected conforms   got deviates   (known)
+      T06|rmpvast                expected conforms   got deviates   (known)
+      T06|rmpvast+omid           expected conforms   got deviates   (known)
+      T07|rmpvast                expected conforms   got deviates   (known)
+      T07|rmpvast+omid           expected conforms   got deviates   (known)
+      T19|rmpvast                expected conforms   got n/a        (known)
+      T19|rmpvast+omid           expected conforms   got n/a        (known)
+      S02|rmpvast                expected n/a        got conforms   (known)
+      S02|rmpvast+omid           expected n/a        got conforms   (known)
+      S02|ima                    expected n/a        got conforms   (known)
+      I01|ima                    expected deviates   got conforms   (known)
+webkit vs Node reference (graded cells)        differs only in known cells (3/382 cells differ: 3 known, 0 unexplained) [not in this result: vastlint; not in reference: shaka, rmpvast, rmpvast+omid, ima]
+      per configuration: vastclient 0/97, videoadsdk 1/89, iabloader 1/98, iabloader+nsap 1/98
+      W11|videoadsdk             expected conforms   got deviates   (known)
+      W11|iabloader              expected deviates   got conforms   (known)
+      W11|iabloader+nsap         expected deviates   got conforms   (known)
+webkit vs macOS reference (same engine)        identical (792 cells)
+    webkit: 564 client runs, 0 harness errors, 0 muted starts, external {"archive":1362,"telemetry stub (204, not sent)":1304}
+-- safari
+safari vs webkit reference                     differs only in known cells (1/756 cells differ: 1 known, 0 unexplained) [not in this result: ima]
+      per configuration: vastclient 0/108, videoadsdk 1/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 0/108, rmpvast+omid 0/108
+      S01|videoadsdk             expected deviates   got conforms   (known)
+safari vs Chromium reference                   differs only in known cells (2/756 cells differ: 2 known, 0 unexplained) [not in this result: ima]
+      per configuration: vastclient 0/108, videoadsdk 0/108, iabloader 0/108, iabloader+nsap 0/108, shaka 0/108, rmpvast 1/108, rmpvast+omid 1/108
+      S02|rmpvast                expected n/a        got conforms   (known)
+      S02|rmpvast+omid           expected n/a        got conforms   (known)
+safari vs Node reference (graded cells)        differs only in known cells (3/382 cells differ: 3 known, 0 unexplained) [not in this result: vastlint; not in reference: shaka, rmpvast, rmpvast+omid]
+      per configuration: vastclient 0/97, videoadsdk 1/89, iabloader 1/98, iabloader+nsap 1/98
+      W11|videoadsdk             expected conforms   got deviates   (known)
+      W11|iabloader              expected deviates   got conforms   (known)
+      W11|iabloader+nsap         expected deviates   got conforms   (known)
+safari vs macOS reference (same engine)        identical (693 cells)
+    safari: 494 client runs, 0 harness errors, 0 muted starts, external {}
+safari: ran 27.0.1; IMA skipped: IMA session refused: session not created: Could not create a session: Capability 'proxy' could not be honored.
+error grid vs reference                        identical (748 cells)
+error grid, graded, vs reference               identical (748 cells)
+macro grid vs reference                        identical (580 cells)
+hashes builtBundles   all 7 match
+hashes vectors        all 218 match
+hashes media          all 8 match
+hashes imaArchive     all 13 match

@@ -1,0 +1,4 @@
+t_interact/start.xml: controller methods = initialize,start,pause,resume,updateProgress,completeCurrent,next,setMuted,setFullscreen,setViewability,click,skip,signalError,getSnapshot,subscribe,dispose
+  session.trackAd(0,'loaded') -> /t/chk/in/loaded
+t_rewind/start.xml: controller methods = initialize,start,pause,resume,updateProgress,completeCurrent,next,setMuted,setFullscreen,setViewability,click,skip,signalError,getSnapshot,subscribe,dispose
+  session.trackAd(0,'rewind') -> /t/chk/in/rewind

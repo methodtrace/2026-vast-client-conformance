@@ -1,0 +1,540 @@
+W01  vastclient      conforms   resolved
+W01  videoadsdk      conforms   resolved
+W01  iabloader       conforms   resolved
+W01  iabloader+nsap  conforms   resolved
+W01  vastlint        conforms   resolved
+W02  vastclient      conforms   resolved
+W02  videoadsdk      conforms   resolved
+W02  iabloader       deviates   fetched start.xml; resolved 0; no ad and no error
+W02  iabloader+nsap  conforms   resolved
+W02  vastlint        conforms   resolved
+W03  vastclient      conforms   resolved through 5 wrappers
+W03  videoadsdk      conforms   resolved through 5 wrappers
+W03  iabloader       conforms   resolved through 5 wrappers
+W03  iabloader+nsap  conforms   resolved through 5 wrappers
+W03  vastlint        deviates   stopped after 5 documents; codes none
+W04  vastclient      conforms   accepted 6 (permitted)
+W04  videoadsdk      conforms   rejected; 302 to all 6 wrappers received
+W04  iabloader       conforms   accepted 6 (permitted)
+W04  iabloader+nsap  conforms   accepted 6 (permitted)
+W04  vastlint        delegated  load-time error reporting: the library fires no Error URI and determines no VAST error cod
+W05  vastclient      conforms   ended after 10 fetches
+W05  videoadsdk      conforms   ended after 6 fetches
+W05  iabloader       conforms   ended after 9 fetches
+W05  iabloader+nsap  conforms   ended after 9 fetches
+W05  vastlint        conforms   ended after 1 fetches
+W06  vastclient      conforms   code 302,302,302,302,302,302,302,302,302,302
+W06  videoadsdk      conforms   code 302,302,302,302,302,302
+W06  iabloader       conforms   code 302
+W06  iabloader+nsap  conforms   code 302
+W06  vastlint        delegated  load-time error reporting: the library fires no Error URI and determines no VAST error cod
+W07  vastclient      conforms   code 301
+W07  videoadsdk      deviates   code 502
+W07  iabloader       conforms   code 301
+W07  iabloader+nsap  conforms   code 301
+W07  vastlint        delegated  load-time error reporting: the library fires no Error URI and determines no VAST error cod
+W08  vastclient      conforms   code 301
+W08  videoadsdk      conforms   code 301
+W08  iabloader       conforms   code 301
+W08  iabloader+nsap  conforms   code 301
+W08  vastlint        delegated  load-time error reporting: the library fires no Error URI and determines no VAST error cod
+W09  vastclient      conforms   code 303
+W09  videoadsdk      conforms   code 303
+W09  iabloader       conforms   code 303
+W09  iabloader+nsap  conforms   code 303
+W09  vastlint        delegated  load-time error reporting: the library fires no Error URI and determines no VAST error cod
+W10  vastclient      conforms   requested with 303
+W10  videoadsdk      conforms   requested with 303
+W10  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W10  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W10  vastlint        delegated  load-time error reporting: the library fires no Error URI and determines no VAST error cod
+W11  vastclient      deviates   code 301
+W11  videoadsdk      conforms   code 100
+W11  iabloader       deviates   accepted an ad from non-well-formed XML (x)
+W11  iabloader+nsap  deviates   accepted an ad from non-well-formed XML (x)
+W11  vastlint        deviates   accepted an ad from non-well-formed XML (x)
+W12  vastclient      conforms   requested (301)
+W12  videoadsdk      conforms   requested (502)
+W12  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W12  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W12  vastlint        delegated  load-time error reporting: the library fires no Error URI and determines no VAST error cod
+W13  vastclient      conforms   403 to inline and both wrappers (code chosen by the integrator through tracker.error; libr
+W13  videoadsdk      n/a        fanned out 401 to inline and both wrappers; the code is graded by E03 (G2)
+W13  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W13  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W13  vastlint        conforms   403 to inline and both wrappers
+W14  vastclient      conforms   inline and wrapper impressions
+W14  videoadsdk      conforms   inline and wrapper impressions
+W14  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W14  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W14  vastlint        conforms   inline and wrapper impressions
+W15  vastclient      conforms   all wrapper events fired (and progress)
+W15  videoadsdk      conforms   all wrapper events fired (and progress)
+W15  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W15  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W15  vastlint        conforms   all wrapper events fired
+W16  vastclient      conforms   inline ClickThrough
+W16  videoadsdk      conforms   inline ClickThrough
+W16  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W16  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W16  vastlint        conforms   inline ClickThrough
+W17  vastclient      conforms   closest wrapper ClickThrough
+W17  videoadsdk      deviates   no click-through used
+W17  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W17  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W17  vastlint        conforms   closest wrapper ClickThrough
+W18  vastclient      conforms   all ClickTracking
+W18  videoadsdk      conforms   all ClickTracking
+W18  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W18  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W18  vastlint        conforms   all ClickTracking
+W19  vastclient      conforms   stopped; fetched start.xml,w1.xml
+W19  videoadsdk      conforms   stopped; fetched start.xml,w1.xml
+W19  iabloader       deviates   followed the second wrapper to the InLine
+W19  iabloader+nsap  deviates   followed the second wrapper to the InLine
+W19  vastlint        deviates   followed the second wrapper to the InLine
+W20  vastclient      conforms   only s1
+W20  videoadsdk      deviates   resolved none
+W20  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W20  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W20  vastlint        deviates   resolved p1,p2,s1
+W21  vastclient      conforms   only s1
+W21  videoadsdk      deviates   resolved p2
+W21  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W21  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W21  vastlint        deviates   resolved p1,p2,s1
+W22  vastclient      n/a        not implemented (optional): ad accepted
+W22  videoadsdk      n/a        not implemented (optional): ad accepted
+W22  iabloader       n/a        not implemented (optional): ad accepted
+W22  iabloader+nsap  n/a        not implemented (optional): ad accepted
+W22  vastlint        n/a        not implemented (optional): ad accepted
+E01  vastclient      conforms   requested (code 303)
+E01  videoadsdk      conforms   requested (code 303)
+E01  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+E01  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+E01  vastlint        delegated  load-time error reporting: the library fires no Error URI and determines no VAST error cod
+E02  vastclient      conforms   both
+E02  videoadsdk      conforms   both
+E02  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+E02  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+E02  vastlint        delegated  load-time error reporting: the library fires no Error URI and determines no VAST error cod
+E03  vastclient      delegated  parser + VASTTracker; VASTClient.get() applies the ad-selection rules; media selection, pl
+E03  videoadsdk      deviates   err1 401; err2 401
+E03  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+E03  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+E03  vastlint        delegated  headless session and playback queue controller: resolves the chain, selects media and disp
+E04  vastclient      conforms   ?code=301
+E04  videoadsdk      conforms   ?code=502
+E04  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+E04  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+E04  vastlint        delegated  load-time error reporting: the library fires no Error URI and determines no VAST error cod
+T01  vastclient      conforms   both impressions
+T01  videoadsdk      conforms   both impressions
+T01  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T01  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T01  vastlint        conforms   both impressions
+T02  vastclient      conforms   not dispatched
+T02  videoadsdk      deviates   dispatched about:blank
+T02  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T02  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T02  vastlint        conforms   not dispatched
+T03  vastclient      conforms   each once, in order
+T03  videoadsdk      conforms   each once, in order
+T03  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T03  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T03  vastlint        conforms   each once, in order
+T04  vastclient      conforms   both start trackers
+T04  videoadsdk      conforms   both start trackers
+T04  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T04  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T04  vastlint        conforms   both start trackers
+T05  vastclient      conforms   fired once
+T05  videoadsdk      conforms   fired once
+T05  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T05  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T05  vastlint        deviates   fired 0 times
+T06  vastclient      conforms   fired once
+T06  videoadsdk      conforms   fired once
+T06  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T06  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T06  vastlint        deviates   fired 0 times
+T07  vastclient      conforms   both fired once
+T07  videoadsdk      deviates   10%: 0, 80%: 0
+T07  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T07  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T07  vastlint        deviates   10%: 0, 80%: 0
+T08  vastclient      conforms   midpoint only
+T08  videoadsdk      conforms   midpoint only
+T08  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T08  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T08  vastlint        conforms   midpoint only
+T09  vastclient      n/a        1 ms
+T09  videoadsdk      n/a        1 ms
+T09  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T09  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T09  vastlint        n/a        1 ms
+M01  vastclient      conforms   50344392
+M01  videoadsdk      deviates   "9561371749" (10 chars)
+M01  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M01  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M01  vastlint        conforms   52376216
+M02  vastclient      conforms   2026-10-27T21:15:28.924Z
+M02  videoadsdk      conforms   2026-10-27T21:15:29.517Z
+M02  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M02  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M02  vastlint        conforms   2026-10-27T21:15:31.207Z
+M03  vastclient      conforms   -1 (unknown/withheld; outside the 0/1 definition)
+M03  videoadsdk      deviates   "[LIMITADTRACKING]"
+M03  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M03  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M03  vastlint        deviates   "[LIMITADTRACKING]"
+M04  vastclient      conforms   2026-10-27T21%3A15%3A28.924Z
+M04  videoadsdk      conforms   2026-10-27T21%3A15%3A29.517Z
+M04  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M04  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M04  vastlint        conforms   2026-10-27T21%3A15%3A31.207Z
+M05  vastclient      conforms   "[NOTAREALMACRO]"
+M05  videoadsdk      conforms   "[NOTAREALMACRO]"
+M05  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M05  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M05  vastlint        conforms   "[NOTAREALMACRO]"
+X01  vastclient      conforms   trimmed
+X01  videoadsdk      conforms   trimmed
+X01  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X01  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X01  vastlint        n/a        requested, but the client-side URL was not observable
+X02  vastclient      conforms   requested
+X02  videoadsdk      conforms   requested
+X02  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X02  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X02  vastlint        deviates   impression not requested
+X03  vastclient      conforms   ?a=1&b=2
+X03  videoadsdk      conforms   ?a=1&b=2
+X03  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X03  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X03  vastlint        conforms   ?a=1&b=2
+X04  vastclient      conforms   parsed
+X04  videoadsdk      conforms   parsed
+X04  iabloader       conforms   parsed
+X04  iabloader+nsap  conforms   parsed
+X04  vastlint        conforms   parsed
+X05  vastclient      conforms   accepted
+X05  videoadsdk      conforms   accepted
+X05  iabloader       deviates   rejected: Multiple values for Creative.UniversalAdId
+X05  iabloader+nsap  deviates   rejected: Multiple values for Creative.UniversalAdId
+X05  vastlint        conforms   accepted
+X06  vastclient      conforms   accepted
+X06  videoadsdk      conforms   accepted
+X06  iabloader       deviates   rejected: Multiple values for ClosedCaptionFiles.ClosedCaptionFile
+X06  iabloader+nsap  deviates   rejected: Multiple values for ClosedCaptionFiles.ClosedCaptionFile
+X06  vastlint        conforms   accepted
+P01  vastclient      conforms   p1,p2,p3
+P01  videoadsdk      deviates   plays p3 first
+P01  iabloader       conforms   p1,p2,p3
+P01  iabloader+nsap  conforms   p1,p2,p3
+P01  vastlint        conforms   p1,p2,p3
+R01  vastclient      deviates   uncaught: URLHandler: Request timed out after 2000 ms (408)
+R01  videoadsdk      conforms   none
+R01  iabloader       conforms   none
+R01  iabloader+nsap  conforms   none
+R01  vastlint        conforms   none
+R02  vastclient      conforms   none
+R02  videoadsdk      conforms   none
+R02  iabloader       conforms   none
+R02  iabloader+nsap  conforms   none
+R02  vastlint        conforms   none
+W23  vastclient      delegated  the fallback is the integrator's, through hasRemainingAds() and getNextAds() (the harness 
+W23  videoadsdk      conforms   used s1 (s1)
+W23  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W23  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+W23  vastlint        deviates   resolved s1; fetched start.xml; error none
+E05  vastclient      n/a        needs real media decoding (browser layer only)
+E05  videoadsdk      n/a        needs real media decoding (browser layer only)
+E05  iabloader       n/a        needs real media decoding (browser layer only)
+E05  iabloader+nsap  n/a        needs real media decoding (browser layer only)
+E05  vastlint        n/a        needs real media decoding (browser layer only)
+E06  vastclient      n/a        needs real media decoding (browser layer only)
+E06  videoadsdk      n/a        needs real media decoding (browser layer only)
+E06  iabloader       n/a        needs real media decoding (browser layer only)
+E06  iabloader+nsap  n/a        needs real media decoding (browser layer only)
+E06  vastlint        n/a        needs real media decoding (browser layer only)
+E07  vastclient      n/a        needs real media decoding (browser layer only)
+E07  videoadsdk      n/a        needs real media decoding (browser layer only)
+E07  iabloader       n/a        needs real media decoding (browser layer only)
+E07  iabloader+nsap  n/a        needs real media decoding (browser layer only)
+E07  vastlint        n/a        needs real media decoding (browser layer only)
+E08  vastclient      conforms   no error request
+E08  videoadsdk      conforms   no error request
+E08  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+E08  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+E08  vastlint        conforms   no error request
+E09  vastclient      delegated  parser + VASTTracker; VASTClient.get() applies the ad-selection rules; media selection, pl
+E09  videoadsdk      deviates   code 401
+E09  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+E09  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+E09  vastlint        delegated  headless session and playback queue controller: resolves the chain, selects media and disp
+T10  vastclient      delegated  parser + VASTTracker; VASTClient.get() applies the ad-selection rules; media selection, pl
+T10  videoadsdk      conforms   no impression
+T10  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T10  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T10  vastlint        delegated  headless session and playback queue controller: resolves the chain, selects media and disp
+T11  vastclient      conforms   once
+T11  videoadsdk      conforms   once
+T11  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T11  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T11  vastlint        conforms   once
+T12  vastclient      conforms   once
+T12  videoadsdk      conforms   once
+T12  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T12  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T12  vastlint        conforms   once
+T13  vastclient      conforms   once
+T13  videoadsdk      conforms   once
+T13  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T13  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T13  vastlint        conforms   once
+T14  vastclient      conforms   once
+T14  videoadsdk      conforms   once
+T14  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T14  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T14  vastlint        conforms   once
+T15  vastclient      conforms   1 time(s)
+T15  videoadsdk      conforms   1 time(s)
+T15  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T15  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T15  vastlint        conforms   1 time(s)
+T23  vastclient      delegated  volume changes are reported by the integrator (setMuted); the library sees none
+T23  videoadsdk      conforms   unmute once
+T23  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T23  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T23  vastlint        conforms   unmute once
+T20  vastclient      conforms   once
+T20  videoadsdk      deviates   0 times
+T20  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T20  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T20  vastlint        deviates   0 times
+T16  vastclient      conforms   skip only
+T16  videoadsdk      conforms   skip only
+T16  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T16  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T16  vastlint        conforms   skip only
+T17  vastclient      conforms   offered after the offset only
+T17  videoadsdk      conforms   offered after the offset only
+T17  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T17  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T17  vastlint        delegated  skip availability is the integrator's: the library exposes skipOffset as raw text and no a
+T18  vastclient      conforms   available after 30%; skip fired
+T18  videoadsdk      deviates   before false, after false, skip 0
+T18  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T18  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T18  vastlint        delegated  skip availability is the integrator's: the library exposes skipOffset as raw text and no a
+T19  vastclient      conforms   both fired once
+T19  videoadsdk      conforms   both fired once
+T19  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T19  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T19  vastlint        n/a        no progress tracker fired (see T05)
+T21  vastclient      conforms   1 time(s)
+T21  videoadsdk      conforms   1 time(s)
+T21  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T21  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T21  vastlint        deviates   not fired
+T22  vastclient      conforms   not repeated (midpoint 1, p-5s 1)
+T22  videoadsdk      conforms   not repeated (midpoint 1, p-5s 1)
+T22  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T22  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+T22  vastlint        conforms   not repeated (midpoint 1, p-5s 0; progress unsupported, see T05)
+A01  vastclient      delegated  whether to execute the resource, and so whether to report it, is the integrator's (tracker
+A01  videoadsdk      deviates   not requested
+A01  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+A01  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+A01  vastlint        delegated  whether to execute the resource, and so whether to report it, is the integrator's (no veri
+A02  vastclient      delegated  the REASON value is passed in by the integrator (tracker.verificationNotExecuted(vendor, {
+A02  videoadsdk      n/a        not requested (see A01)
+A02  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+A02  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+A02  vastlint        delegated  the REASON value is passed in by the integrator (session.trackAd(i, 'verificationNotExecut
+A03  vastclient      conforms   requested
+A03  videoadsdk      deviates   not requested
+A03  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+A03  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+A03  vastlint        conforms   requested
+A04  vastclient      delegated  the REASON value is passed in by the integrator (tracker.verificationNotExecuted(vendor, {
+A04  videoadsdk      n/a        not requested (see A01)
+A04  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+A04  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+A04  vastlint        delegated  the REASON value is passed in by the integrator (session.trackAd(i, 'verificationNotExecut
+A05  vastclient      delegated  the REASON value is passed in by the integrator (tracker.verificationNotExecuted(vendor, {
+A05  videoadsdk      n/a        resource neither fetched nor reported (see A01)
+A05  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+A05  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+A05  vastlint        delegated  the REASON value is passed in by the integrator (session.trackAd(i, 'verificationNotExecut
+S01  vastclient      delegated  parser + VASTTracker; VASTClient.get() applies the ad-selection rules; media selection, pl
+S01  videoadsdk      conforms   chose in.mp4
+S01  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+S01  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+S01  vastlint        delegated  headless session and playback queue controller: resolves the chain, selects media and disp
+S02  vastclient      n/a        needs real media decoding (browser layer only)
+S02  videoadsdk      n/a        needs real media decoding (browser layer only)
+S02  iabloader       n/a        needs real media decoding (browser layer only)
+S02  iabloader+nsap  n/a        needs real media decoding (browser layer only)
+S02  vastlint        n/a        needs real media decoding (browser layer only)
+M06  vastclient      conforms   all replaced
+M06  videoadsdk      deviates   not replaced or implausible: ah="[ADPLAYHEAD]", asi="[ADSERVINGID]", ua="[UNIVERSALADID]",
+M06  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M06  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M06  vastlint        deviates   not replaced or implausible: ah="[ADPLAYHEAD]", asi="[ADSERVINGID]", ua="[UNIVERSALADID]",
+M07  vastclient      conforms   in-serving
+M07  videoadsdk      deviates   "[ADSERVINGID]"
+M07  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M07  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M07  vastlint        deviates   "[ADSERVINGID]"
+M08  vastclient      conforms   00:00:04.500
+M08  videoadsdk      n/a        left as macro (see M06)
+M08  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M08  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M08  vastlint        n/a        left as macro (see M06)
+M09  vastclient      deviates   raw "ad-id.org%20ABCD%201234%2Cclearcast.co.uk%20CC%2FABC%2F123"
+M09  videoadsdk      n/a        left as macro (see M06)
+M09  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M09  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M09  vastlint        n/a        left as macro (see M06)
+M10  vastclient      deviates   ASSETURI in.flv; played in.mp4
+M10  videoadsdk      n/a        left as macro (see M06)
+M10  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M10  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M10  vastlint        n/a        left as macro (see M06)
+M11  vastclient      conforms   cb 77365298, ts 2026-10-27T21:16:38.044Z
+M11  videoadsdk      conforms   cb 5226877156, ts 2026-10-27T21:16:38.591Z
+M11  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M11  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+M11  vastlint        conforms   cb 22505263, ts 2026-10-27T21:16:40.204Z
+M12  vastclient      deviates   cb "[CACHEBUSTING]", ts "[TIMESTAMP]"
+M12  videoadsdk      deviates   cb "[CACHEBUSTING]", ts "[TIMESTAMP]"
+M12  iabloader       deviates   cb "[CACHEBUSTING]", ts "[TIMESTAMP]"
+M12  iabloader+nsap  deviates   cb "[CACHEBUSTING]", ts "[TIMESTAMP]"
+M12  vastlint        deviates   cb "[CACHEBUSTING]", ts "[TIMESTAMP]"
+P06  vastclient      delegated  parser + VASTTracker; VASTClient.get() applies the ad-selection rules; media selection, pl
+P06  videoadsdk      deviates   played p1
+P06  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+P06  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+P06  vastlint        delegated  headless session and playback queue controller: resolves the chain, selects media and disp
+P03  vastclient      delegated  parser + VASTTracker; VASTClient.get() applies the ad-selection rules; media selection, pl
+P03  videoadsdk      n/a        plays 1 of 3 pod ads (see P06)
+P03  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+P03  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+P03  vastlint        delegated  headless session and playback queue controller: resolves the chain, selects media and disp
+P02  vastclient      n/a        needs real media decoding (browser layer only)
+P02  videoadsdk      n/a        needs real media decoding (browser layer only)
+P02  iabloader       n/a        needs real media decoding (browser layer only)
+P02  iabloader+nsap  n/a        needs real media decoding (browser layer only)
+P02  vastlint        n/a        needs real media decoding (browser layer only)
+P05  vastclient      n/a        needs real media decoding (browser layer only)
+P05  videoadsdk      n/a        needs real media decoding (browser layer only)
+P05  iabloader       n/a        needs real media decoding (browser layer only)
+P05  iabloader+nsap  n/a        needs real media decoding (browser layer only)
+P05  vastlint        n/a        needs real media decoding (browser layer only)
+I01  vastclient      n/a        needs real media decoding (browser layer only)
+I01  videoadsdk      n/a        needs real media decoding (browser layer only)
+I01  iabloader       n/a        needs real media decoding (browser layer only)
+I01  iabloader+nsap  n/a        needs real media decoding (browser layer only)
+I01  vastlint        n/a        needs real media decoding (browser layer only)
+I03  vastclient      n/a        needs real media decoding (browser layer only)
+I03  videoadsdk      n/a        needs real media decoding (browser layer only)
+I03  iabloader       n/a        needs real media decoding (browser layer only)
+I03  iabloader+nsap  n/a        needs real media decoding (browser layer only)
+I03  vastlint        n/a        needs real media decoding (browser layer only)
+I02  vastclient      n/a        needs real media decoding (browser layer only)
+I02  videoadsdk      n/a        needs real media decoding (browser layer only)
+I02  iabloader       n/a        needs real media decoding (browser layer only)
+I02  iabloader+nsap  n/a        needs real media decoding (browser layer only)
+I02  vastlint        n/a        needs real media decoding (browser layer only)
+X07  vastclient      conforms   followed
+X07  videoadsdk      conforms   followed
+X07  iabloader       conforms   followed
+X07  iabloader+nsap  conforms   followed
+X07  vastlint        conforms   followed
+X08  vastclient      conforms   ignored
+X08  videoadsdk      conforms   ignored
+X08  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X08  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X08  vastlint        conforms   ignored
+X09  vastclient      conforms   ignored
+X09  videoadsdk      conforms   ignored
+X09  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X09  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X09  vastlint        deviates   requested ext/imp,ext/start
+X10  vastclient      conforms   parsed
+X10  videoadsdk      conforms   parsed
+X10  iabloader       conforms   parsed
+X10  iabloader+nsap  conforms   parsed
+X10  vastlint        conforms   parsed
+X11  vastclient      conforms   x]]>x
+X11  videoadsdk      deviates   s="x]]"
+X11  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X11  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X11  vastlint        conforms   x]]>x
+X12  vastclient      conforms   accepted
+X12  videoadsdk      conforms   accepted
+X12  iabloader       conforms   accepted
+X12  iabloader+nsap  conforms   accepted
+X12  vastlint        conforms   accepted
+X13  vastclient      conforms   requested
+X13  videoadsdk      conforms   requested
+X13  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X13  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X13  vastlint        conforms   requested
+X14  vastclient      conforms   accepted
+X14  videoadsdk      conforms   accepted
+X14  iabloader       conforms   accepted
+X14  iabloader+nsap  conforms   accepted
+X14  vastlint        conforms   accepted
+X15  vastclient      conforms   accepted
+X15  videoadsdk      conforms   accepted
+X15  iabloader       conforms   accepted
+X15  iabloader+nsap  conforms   accepted
+X15  vastlint        conforms   accepted
+X16  vastclient      conforms   resolved
+X16  videoadsdk      conforms   resolved
+X16  iabloader       conforms   resolved
+X16  iabloader+nsap  conforms   resolved
+X16  vastlint        conforms   resolved
+R03  vastclient      conforms   followed
+R03  videoadsdk      conforms   followed
+R03  iabloader       conforms   followed
+R03  iabloader+nsap  conforms   followed
+R03  vastlint        conforms   followed
+R04  vastclient      conforms   parsed
+R04  videoadsdk      conforms   parsed
+R04  iabloader       conforms   parsed
+R04  iabloader+nsap  conforms   parsed
+R04  vastlint        conforms   parsed
+R05  vastclient      conforms   parsed
+R05  videoadsdk      conforms   parsed
+R05  iabloader       conforms   parsed
+R05  iabloader+nsap  conforms   parsed
+R05  vastlint        conforms   parsed
+R06  vastclient      conforms   all later trackers fired
+R06  videoadsdk      conforms   all later trackers fired
+R06  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+R06  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+R06  vastlint        conforms   all later trackers fired
+X17  vastclient      conforms   ignored
+X17  videoadsdk      conforms   ignored
+X17  iabloader       delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X17  iabloader+nsap  delegated  loader only: returns the parsed chain; no tracker, no pixel firing, no ad selection, no pl
+X17  vastlint        deviates   requested the commented-out Impression
+X18  vastclient      conforms   ?a=1&b=2&c=3
+X18  videoadsdk      conforms   ?a=1&b=2&c=3
+X18  iabloader       conforms   ?a=1&b=2&c=3
+X18  iabloader+nsap  conforms   ?a=1&b=2&c=3
+X18  vastlint        deviates   requested with "?a=1"
+X19  vastclient      conforms   ?a=1&b=2&c=3
+X19  videoadsdk      conforms   ?a=1&b=2&c=3
+X19  iabloader       conforms   ?a=1&b=2&c=3
+X19  iabloader+nsap  conforms   ?a=1&b=2&c=3
+X19  vastlint        deviates   requested with "?a=1"
+P07  vastclient      deviates   order p3,p1,p2
+P07  videoadsdk      deviates   plays p3 first
+P07  iabloader       deviates   fetched the pod and reported no ad (303): VAST error 303: No ads VAST response after one o
+P07  iabloader+nsap  deviates   fetched the pod and reported no ad (303): VAST error 303: No ads VAST response after one o
+P07  vastlint        conforms   p1,p2,p3

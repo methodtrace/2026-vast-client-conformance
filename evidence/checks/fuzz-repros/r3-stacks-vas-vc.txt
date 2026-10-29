@@ -1,0 +1,92 @@
+### f00093 vastclient-parse-stack run 1
+VAST-warning: <inline> must be written <InLine>
+REJECTED TypeError Cannot read properties of undefined (reading 'ad')
+    at VASTParser.parseVastXml (<repo>/code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js:2267:20)
+    at VASTParser.parse (<repo>/code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js:2317:18)
+### f00155 vastclient-timeout-stack run 1
+UNCAUGHT EXCEPTION: Error: URLHandler: Request timed out after 2000 ms (408)
+    at Timeout._onTimeout (<repo>/code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js:2695:13)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+get() resolved, ads: 0
+log: ["/doc/x/f00155/start.xml","/doc/x/f00155/inline.xml?ctype=text/plain&delay=4500"]
+### f00093 vastclient-parse-stack run 2
+VAST-warning: <inline> must be written <InLine>
+REJECTED TypeError Cannot read properties of undefined (reading 'ad')
+    at VASTParser.parseVastXml (<repo>/code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js:2267:20)
+    at VASTParser.parse (<repo>/code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js:2317:18)
+### f00155 vastclient-timeout-stack run 2
+UNCAUGHT EXCEPTION: Error: URLHandler: Request timed out after 2000 ms (408)
+    at Timeout._onTimeout (<repo>/code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js:2695:13)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+get() resolved, ads: 0
+log: ["/doc/x/f00155/start.xml","/doc/x/f00155/inline.xml?ctype=text/plain&delay=4500"]
+### f00093 vastclient-parse-stack run 3
+VAST-warning: <inline> must be written <InLine>
+REJECTED TypeError Cannot read properties of undefined (reading 'ad')
+    at VASTParser.parseVastXml (<repo>/code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js:2267:20)
+    at VASTParser.parse (<repo>/code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js:2317:18)
+### f00155 vastclient-timeout-stack run 3
+UNCAUGHT EXCEPTION: Error: URLHandler: Request timed out after 2000 ms (408)
+    at Timeout._onTimeout (<repo>/code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js:2695:13)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+get() resolved, ads: 0
+log: ["/doc/x/f00155/start.xml","/doc/x/f00155/inline.xml?ctype=text/plain&delay=4500"]
+### f00045 videoadsdk-stack env-as-is
+UNHANDLED REJECTION: TypeError: VastChain does not contain a supported vpaid creative
+    at loadCreative (video-ad-sdk/dist/adUnit/helpers/vpaid/loadCreative.js:7:15)
+    at new VpaidAdUnit (video-ad-sdk/dist/adUnit/VpaidAdUnit.js:249:46)
+    at createVideoAdUnit (video-ad-sdk/dist/adUnit/createVideoAdUnit.js:7:11)
+    at tryToStartVpaidAd (video-ad-sdk/dist/runner/helpers/startVideoAd.js:42:20)
+    at startVideoAd (video-ad-sdk/dist/runner/helpers/startVideoAd.js:52:22)
+    at run (video-ad-sdk/dist/runner/run.js:18:29)
+### f00045 videoadsdk-stack env-as-is
+UNHANDLED REJECTION: TypeError: VastChain does not contain a supported vpaid creative
+    at loadCreative (video-ad-sdk/dist/adUnit/helpers/vpaid/loadCreative.js:7:15)
+    at new VpaidAdUnit (video-ad-sdk/dist/adUnit/VpaidAdUnit.js:249:46)
+    at createVideoAdUnit (video-ad-sdk/dist/adUnit/createVideoAdUnit.js:7:11)
+    at tryToStartVpaidAd (video-ad-sdk/dist/runner/helpers/startVideoAd.js:42:20)
+    at startVideoAd (video-ad-sdk/dist/runner/helpers/startVideoAd.js:52:22)
+    at run (video-ad-sdk/dist/runner/run.js:18:29)
+### f00045 videoadsdk-stack env-as-is
+UNHANDLED REJECTION: TypeError: VastChain does not contain a supported vpaid creative
+    at loadCreative (video-ad-sdk/dist/adUnit/helpers/vpaid/loadCreative.js:7:15)
+    at new VpaidAdUnit (video-ad-sdk/dist/adUnit/VpaidAdUnit.js:249:46)
+    at createVideoAdUnit (video-ad-sdk/dist/adUnit/createVideoAdUnit.js:7:11)
+    at tryToStartVpaidAd (video-ad-sdk/dist/runner/helpers/startVideoAd.js:42:20)
+    at startVideoAd (video-ad-sdk/dist/runner/helpers/startVideoAd.js:52:22)
+    at run (video-ad-sdk/dist/runner/run.js:18:29)
+### f00045 videoadsdk-stack jsdom-events
+UNHANDLED REJECTION: TypeError: VastChain does not contain a supported vpaid creative
+    at loadCreative (video-ad-sdk/dist/adUnit/helpers/vpaid/loadCreative.js:7:15)
+    at new VpaidAdUnit (video-ad-sdk/dist/adUnit/VpaidAdUnit.js:249:46)
+    at createVideoAdUnit (video-ad-sdk/dist/adUnit/createVideoAdUnit.js:7:11)
+    at tryToStartVpaidAd (video-ad-sdk/dist/runner/helpers/startVideoAd.js:42:20)
+    at startVideoAd (video-ad-sdk/dist/runner/helpers/startVideoAd.js:52:22)
+    at run (video-ad-sdk/dist/runner/run.js:18:29)
+### f00056 videoadsdk-stack env-as-is
+UNHANDLED REJECTION: TypeError: Failed to execute 'dispatchEvent' on 'EventTarget': parameter 1 is not of type 'Event'.
+    at Object.drawIcons (video-ad-sdk/dist/adUnit/helpers/icons/addIcons.js:31:17)
+    at async Object.drawIcons (video-ad-sdk/dist/adUnit/VastAdUnit.js:64:17)
+    at async VastAdUnit.start (video-ad-sdk/dist/adUnit/VastAdUnit.js:100:17)
+onError: Timeout while starting the ad undefined
+outcome: finished
+### f00056 videoadsdk-stack env-as-is
+UNHANDLED REJECTION: TypeError: Failed to execute 'dispatchEvent' on 'EventTarget': parameter 1 is not of type 'Event'.
+    at Object.drawIcons (video-ad-sdk/dist/adUnit/helpers/icons/addIcons.js:31:17)
+    at async Object.drawIcons (video-ad-sdk/dist/adUnit/VastAdUnit.js:64:17)
+    at async VastAdUnit.start (video-ad-sdk/dist/adUnit/VastAdUnit.js:100:17)
+onError: Timeout while starting the ad undefined
+outcome: finished
+### f00056 videoadsdk-stack env-as-is
+UNHANDLED REJECTION: TypeError: Failed to execute 'dispatchEvent' on 'EventTarget': parameter 1 is not of type 'Event'.
+    at Object.drawIcons (video-ad-sdk/dist/adUnit/helpers/icons/addIcons.js:31:17)
+    at async Object.drawIcons (video-ad-sdk/dist/adUnit/VastAdUnit.js:64:17)
+    at async VastAdUnit.start (video-ad-sdk/dist/adUnit/VastAdUnit.js:100:17)
+onError: Timeout while starting the ad undefined
+outcome: finished
+### f00056 videoadsdk-stack jsdom-events
+onAdStart
+outcome: started

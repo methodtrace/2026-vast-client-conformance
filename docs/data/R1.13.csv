@@ -1,0 +1,5 @@
+Client,Version,License,Last release,Notes,Last-month downloads (npm-candidates file)
+itube-modern-player,0.15.1,MIT,2026-10-13,"VAST 2 to 4, InLine and Wrapper, quartile pixels; Bitbucket repository",413
+streamit-player,1.1.0,Apache-2.0,2026-10-15,"VAST 2.0 to 4.2, VMAP, SIMID; also an IMA path",255
+ts-video-player,0.1.10,MIT,2026-10-15,small VAST module,"23,336"
+stormcloud-video-player,0.8.79,MIT,2026-10-13,own VAST path plus IMA; no repository listed,"5,055"

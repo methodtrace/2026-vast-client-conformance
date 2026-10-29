@@ -1,0 +1,8 @@
+@dailymotion/vast-client   6.5.0
+video-ad-sdk               4.0.1
+iab-vast-loader            2.5.1
+shaka-player               5.2.12
+vastlint-client            0.15.0
+vastlint                   0.15.0
+playwright                 1.56.1
+vastlint-client imports (WebAssembly core loaded)

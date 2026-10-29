@@ -1,0 +1,2 @@
+w_noad/start.xml: ads=0; response.errorURLTemplates=["/t/chk/noad/err?code=[ERRORCODE]"]; vast-client VAST-error (=Image ping in browser) codes: 303
+w_fallback_noad/start.xml: ads=0; response.errorURLTemplates=["/t/chk/noad/err?code=[ERRORCODE]"]; vast-client VAST-error (=Image ping in browser) codes: 303

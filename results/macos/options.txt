@@ -1,0 +1,2 @@
+browsers=chromium,firefox,webkit,chrome,safari playwright=chromium,firefox,webkit,chrome safari=1 skip_node=0 skip_gate2=0 skip_grids=0 skip_browsers=0 only= serial=0 cores=15 parallel_lanes=1 with_ima=1 ima_archive=present with_sweep=0 fuzz_hours=
+free_kb_home=320789240

@@ -1,0 +1,1 @@
+{"name":"sweep-iabloader-2.5.1","private":true,"type":"module","dependencies":{"iab-vast-loader":"2.5.1","node-fetch":"2.7.0"}}

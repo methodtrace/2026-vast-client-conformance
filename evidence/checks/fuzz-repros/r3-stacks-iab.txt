@@ -1,0 +1,223 @@
+### f00006 run 1
+(node:23496) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[xmldom error]	entity not found:&a; 
+@#[line:1,col:62]
+[xmldom error]	entity not found:&a; 
+@#[line:1,col:62]
+[xmldom error]	entity not found:&a; 
+@#[line:1,col:62]
+### f00006 run 2
+(node:23505) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[xmldom error]	entity not found:&a; 
+@#[line:1,col:62]
+[xmldom error]	entity not found:&a; 
+@#[line:1,col:62]
+[xmldom error]	entity not found:&a; 
+@#[line:1,col:62]
+### f00006 run 3
+(node:23514) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[xmldom error]	entity not found:&a; 
+@#[line:1,col:62]
+[xmldom error]	entity not found:&a; 
+@#[line:1,col:62]
+[xmldom error]	entity not found:&a; 
+@#[line:1,col:62]
+### f00006 rawstack
+no error
+### f00016 run 1
+(node:23539) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[xmldom warning]	attribute space is required"xmlns:xs"!! 
+@#[line:1,col:1]
+[xmldom warning]	attribute value must after "=" 
+@#[line:1,col:1]
+[xmldom error]	element parse error: Error: invalid attribute:3.org/2001/XMLSchema 
+@#[line:1,col:1]
+### f00016 run 2
+(node:23548) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[xmldom warning]	attribute space is required"xmlns:xs"!! 
+@#[line:1,col:1]
+[xmldom warning]	attribute value must after "=" 
+@#[line:1,col:1]
+[xmldom error]	element parse error: Error: invalid attribute:3.org/2001/XMLSchema 
+@#[line:1,col:1]
+### f00016 run 3
+(node:23557) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[xmldom warning]	attribute space is required"xmlns:xs"!! 
+@#[line:1,col:1]
+[xmldom warning]	attribute value must after "=" 
+@#[line:1,col:1]
+[xmldom error]	element parse error: Error: invalid attribute:3.org/2001/XMLSchema 
+@#[line:1,col:1]
+### f00016 rawstack
+TypeError: Cannot read properties of undefined (reading 'map')
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/vast.js:38:88)
+    at Object.<anonymous> (<repo>/evidence/checks/fuzz-repros/iab-parse-rawstack.cjs:15:3)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+### f00018 run 1
+(node:23574) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[xmldom error]	invalid doc source 
+@#[line:0,col:undefined]
+REJECTED TypeError code=undefined message=Cannot read properties of undefined (reading 'documentElement')
+TypeError: Cannot read properties of undefined (reading 'documentElement')
+    at toElement2 (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:39:11)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:53:17)
+### f00018 run 2
+(node:23590) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[xmldom error]	invalid doc source 
+@#[line:0,col:undefined]
+REJECTED TypeError code=undefined message=Cannot read properties of undefined (reading 'documentElement')
+TypeError: Cannot read properties of undefined (reading 'documentElement')
+    at toElement2 (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:39:11)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:53:17)
+### f00018 run 3
+(node:23599) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[xmldom error]	invalid doc source 
+@#[line:0,col:undefined]
+REJECTED TypeError code=undefined message=Cannot read properties of undefined (reading 'documentElement')
+TypeError: Cannot read properties of undefined (reading 'documentElement')
+    at toElement2 (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:39:11)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:53:17)
+### f00018 rawstack
+no error
+### f00027 run 1
+(node:23616) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+REJECTED VASTParserError2 code=101 message=$impl.extensions.extension.map is not a function
+VASTParserError: $impl.extensions.extension.map is not a function
+    at ErrorHandler2.failWithErrorCode (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:34:13)
+    at ErrorHandler2.fail (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:39:12)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:59:26)
+    at parse (<repo>/code/harness/node_modules/iab-vast-parser/lib/index.js:21:22)
+### f00027 run 2
+(node:23632) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+REJECTED VASTParserError2 code=101 message=$impl.extensions.extension.map is not a function
+VASTParserError: $impl.extensions.extension.map is not a function
+    at ErrorHandler2.failWithErrorCode (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:34:13)
+    at ErrorHandler2.fail (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:39:12)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:59:26)
+    at parse (<repo>/code/harness/node_modules/iab-vast-parser/lib/index.js:21:22)
+### f00027 run 3
+(node:23641) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+REJECTED VASTParserError2 code=101 message=$impl.extensions.extension.map is not a function
+VASTParserError: $impl.extensions.extension.map is not a function
+    at ErrorHandler2.failWithErrorCode (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:34:13)
+    at ErrorHandler2.fail (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:39:12)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:59:26)
+    at parse (<repo>/code/harness/node_modules/iab-vast-parser/lib/index.js:21:22)
+### f00027 rawstack
+TypeError: $impl.extensions.extension.map is not a function
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/inherit/ad.js:85:111)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/in-line.js:28:20)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/ad.js:19:33)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/vast.js:60:35)
+### f00453 run 1
+(node:23658) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+REJECTED VASTParserError2 code=101 message=$impl.creatives.creative.forEach is not a function
+VASTParserError: $impl.creatives.creative.forEach is not a function
+    at ErrorHandler2.failWithErrorCode (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:34:13)
+    at ErrorHandler2.fail (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:39:12)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:59:26)
+    at parse (<repo>/code/harness/node_modules/iab-vast-parser/lib/index.js:21:22)
+### f00453 run 2
+(node:23674) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+REJECTED VASTParserError2 code=101 message=$impl.creatives.creative.forEach is not a function
+VASTParserError: $impl.creatives.creative.forEach is not a function
+    at ErrorHandler2.failWithErrorCode (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:34:13)
+    at ErrorHandler2.fail (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:39:12)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:59:26)
+    at parse (<repo>/code/harness/node_modules/iab-vast-parser/lib/index.js:21:22)
+### f00453 run 3
+(node:23683) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+REJECTED VASTParserError2 code=101 message=$impl.creatives.creative.forEach is not a function
+VASTParserError: $impl.creatives.creative.forEach is not a function
+    at ErrorHandler2.failWithErrorCode (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:34:13)
+    at ErrorHandler2.fail (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:39:12)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:59:26)
+    at parse (<repo>/code/harness/node_modules/iab-vast-parser/lib/index.js:21:22)
+### f00453 rawstack
+TypeError: $impl.creatives.creative.forEach is not a function
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/inherit/ad.js:88:30)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/in-line.js:28:20)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/ad.js:19:33)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/vast.js:60:35)
+### f00633 run 1
+(node:23700) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+REJECTED VASTParserError2 code=101 message=$impl.impression.filter is not a function
+VASTParserError: $impl.impression.filter is not a function
+    at ErrorHandler2.failWithErrorCode (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:34:13)
+    at ErrorHandler2.fail (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:39:12)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:59:26)
+    at parse (<repo>/code/harness/node_modules/iab-vast-parser/lib/index.js:21:22)
+### f00633 run 2
+(node:23716) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+REJECTED VASTParserError2 code=101 message=$impl.impression.filter is not a function
+VASTParserError: $impl.impression.filter is not a function
+    at ErrorHandler2.failWithErrorCode (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:34:13)
+    at ErrorHandler2.fail (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:39:12)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:59:26)
+    at parse (<repo>/code/harness/node_modules/iab-vast-parser/lib/index.js:21:22)
+### f00633 run 3
+(node:23725) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+REJECTED VASTParserError2 code=101 message=$impl.impression.filter is not a function
+VASTParserError: $impl.impression.filter is not a function
+    at ErrorHandler2.failWithErrorCode (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:34:13)
+    at ErrorHandler2.fail (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:39:12)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/parse.js:59:26)
+    at parse (<repo>/code/harness/node_modules/iab-vast-parser/lib/index.js:21:22)
+### f00633 rawstack
+TypeError: $impl.impression.filter is not a function
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/inherit/ad.js:57:104)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/wrapper.js:18:20)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/ad.js:21:34)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/vast.js:55:45)
+### f01061 run 1
+(node:23742) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[xmldom warning]	unclosed xml attribute 
+@#[line:7,col:7]
+REJECTED VASTParserError2 code=101 message=Cannot read properties of undefined (reading 'forEach')
+VASTParserError: Cannot read properties of undefined (reading 'forEach')
+    at ErrorHandler2.failWithErrorCode (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:34:13)
+    at ErrorHandler2.fail (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:39:12)
+### f01061 run 2
+(node:23752) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[xmldom warning]	unclosed xml attribute 
+@#[line:7,col:7]
+REJECTED VASTParserError2 code=101 message=Cannot read properties of undefined (reading 'forEach')
+VASTParserError: Cannot read properties of undefined (reading 'forEach')
+    at ErrorHandler2.failWithErrorCode (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:34:13)
+    at ErrorHandler2.fail (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:39:12)
+### f01061 run 3
+(node:23767) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[xmldom warning]	unclosed xml attribute 
+@#[line:7,col:7]
+REJECTED VASTParserError2 code=101 message=Cannot read properties of undefined (reading 'forEach')
+VASTParserError: Cannot read properties of undefined (reading 'forEach')
+    at ErrorHandler2.failWithErrorCode (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:34:13)
+    at ErrorHandler2.fail (<repo>/code/harness/node_modules/iab-vast-parser/lib/errors/error-handler.js:39:12)
+### f01061 rawstack
+TypeError: Cannot read properties of undefined (reading 'forEach')
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/inherit/ad.js:88:30)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/wrapper.js:18:20)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/ad.js:21:34)
+    at exports.default (<repo>/code/harness/node_modules/iab-vast-parser/lib/factory/vast.js:60:35)

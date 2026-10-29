@@ -1,0 +1,22 @@
+{
+  "name": "vast-conformance-harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Conformance harness: runs open-source VAST clients against IAB samples and crafted test vectors",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@dailymotion/vast-client": "6.5.0",
+    "iab-vast-loader": "2.5.1",
+    "iab-vast-model": "1.0.2",
+    "iab-vast-parser": "1.2.1",
+    "jsdom": "26.1.0",
+    "shaka-player": "5.2.12",
+    "vastlint-client": "0.15.0",
+    "video-ad-sdk": "4.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10",
+    "playwright": "1.56.1"
+  }
+}

@@ -1,0 +1,42 @@
+{
+ "what": "Shaka Player 5.3.0, shaka configuration, browser layer, Playwright Chromium; full 108-requirement run with the working-tree harness",
+ "client": {
+  "name": "shaka-player",
+  "version": "5.3.0",
+  "reported": "v5.3.0",
+  "integrity": "sha512-bZ5MiKQcs+CBtAHFGUqHW4Q+2U3oXGVmXY+gdrSOoVmHzcilvNp+jEsqhd3/4cGhL4j4+Z66Jisq42U4jOfY1g=="
+ },
+ "harness": "copy of code/harness (working tree) with only shaka-player changed to 5.3.0 (package.json, package-lock.json, node_modules; browser/dist rebuilt); adapter unchanged",
+ "command": "VASTCONF_EXT_ARCHIVE=sources/ima-html5/2026-10-16 node browser/run-browser.mjs --out <dir> --browsers chromium --clients shaka",
+ "strength": "from code/harness/suite/requirements.mjs",
+ "run": {
+  "started": "2026-10-22T03:05:09.525Z",
+  "host": {
+   "platform": "linux",
+   "arch": "x64",
+   "release": "6.18.44-fc-v140",
+   "cpus": 2
+  },
+  "browsers": {
+   "chromium": {
+    "launched": true,
+    "version": "141.0.7390.37",
+    "startedAt": "2026-10-22T03:05:09.525Z",
+    "finishedAt": "2026-10-22T03:20:44.924Z",
+    "parallel": false,
+    "cells": 108,
+    "runs": 70,
+    "verdicts": {
+     "deviates": 22,
+     "n/a": 42,
+     "conforms": 44
+    }
+   }
+  },
+  "ima": {
+   "requested": false,
+   "included": false
+  },
+  "finished": "2026-10-22T03:20:44.924Z"
+ }
+}

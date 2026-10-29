@@ -1,0 +1,76 @@
+{
+ "built": "2026-10-21T23:51:47.733Z",
+ "layer": "browser",
+ "cells": 864,
+ "configurations": [
+  "vastclient",
+  "videoadsdk",
+  "iabloader",
+  "iabloader+nsap",
+  "shaka",
+  "rmpvast",
+  "rmpvast+omid",
+  "ima"
+ ],
+ "verdicts": {
+  "conforms": 491,
+  "deviates": 121,
+  "n/a": 77,
+  "delegated": 175
+ },
+ "base": {
+  "file": "results/reference/first-run/chromium-run2/results.jsonl",
+  "cells": 864,
+  "regraded": 792,
+  "regradedChanged": 13
+ },
+ "rerun": {
+  "file": "rerun 2026-10-21 (chromium, run 2)",
+  "cells": 72,
+  "verdictChangedFromBase": 3,
+  "requirements": [
+   "A01",
+   "A02",
+   "A04",
+   "M06",
+   "M07",
+   "M08",
+   "M09",
+   "R04",
+   "R05"
+  ],
+  "runSummary": {
+   "started": "2026-10-21T23:44:49.666Z",
+   "host": {
+    "platform": "linux",
+    "arch": "x64",
+    "release": "6.18.44-fc-v140",
+    "cpus": 2
+   },
+   "browsers": {
+    "chromium": {
+     "launched": true,
+     "version": "141.0.7390.37",
+     "startedAt": "2026-10-21T23:44:49.667Z",
+     "finishedAt": "2026-10-21T23:49:07.078Z",
+     "parallel": false,
+     "cells": 72,
+     "runs": 32,
+     "verdicts": {
+      "delegated": 17,
+      "deviates": 12,
+      "conforms": 33,
+      "n/a": 10
+     }
+    }
+   },
+   "ima": {
+    "requested": true,
+    "included": true
+   },
+   "finished": "2026-10-21T23:49:07.079Z"
+  }
+ },
+ "browser": "chromium",
+ "browserVersion": "141.0.7390.37"
+}

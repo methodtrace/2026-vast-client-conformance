@@ -1,0 +1,2633 @@
+{
+ "comparedAt": "2026-10-27T22:23:10.010Z",
+ "knownDifferences": [
+  {
+   "kind": "ownEngine",
+   "engines": [
+    "webkit",
+    "safari"
+   ],
+   "cells": [
+    "S01|videoadsdk"
+   ],
+   "reason": "the Linux WebKit reference (GStreamer) reports video/x-flv as playable, so video-ad-sdk picks the FLV file listed first and deviates; on macOS WebKit and Safari it skips the FLV file and S01 conforms"
+  },
+  {
+   "kind": "ownEngine",
+   "engines": [
+    "webkit"
+   ],
+   "cells": [
+    "T05|rmpvast",
+    "T05|rmpvast+omid",
+    "T06|rmpvast",
+    "T06|rmpvast+omid",
+    "T07|rmpvast",
+    "T07|rmpvast+omid",
+    "T19|rmpvast",
+    "T19|rmpvast+omid"
+   ],
+   "reason": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+  },
+  {
+   "kind": "ownEngine",
+   "engines": [
+    "chrome"
+   ],
+   "cells": [
+    "S02|rmpvast",
+    "S02|rmpvast+omid",
+    "S02|ima"
+   ],
+   "reason": "Google Chrome ships AAC, the Chromium reference does not: the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+  },
+  {
+   "kind": "ownEngine",
+   "engines": [
+    "chromium",
+    "chrome",
+    "firefox",
+    "webkit",
+    "safari"
+   ],
+   "cells": [
+    "I01|ima"
+   ],
+   "reason": "IMA requests the icon view before the ad start request on every engine and platform; how far before varies from run to run and by platform, and the 50 ms tolerance falls inside that spread on some engines, so this cell can conform in one run and deviate in the next"
+  },
+  {
+   "kind": "chromium",
+   "engines": [
+    "firefox",
+    "webkit",
+    "safari",
+    "chrome"
+   ],
+   "cells": [
+    "S02|rmpvast",
+    "S02|rmpvast+omid",
+    "S02|ima"
+   ],
+   "reason": "the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+  },
+  {
+   "kind": "chromium",
+   "engines": [
+    "firefox"
+   ],
+   "cells": [
+    "W11|videoadsdk",
+    "W11|iabloader",
+    "W11|iabloader+nsap",
+    "W11|ima"
+   ],
+   "reason": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+  },
+  {
+   "kind": "chromium",
+   "engines": [
+    "webkit"
+   ],
+   "cells": [
+    "T05|rmpvast",
+    "T05|rmpvast+omid",
+    "T06|rmpvast",
+    "T06|rmpvast+omid",
+    "T07|rmpvast",
+    "T07|rmpvast+omid",
+    "T19|rmpvast",
+    "T19|rmpvast+omid"
+   ],
+   "reason": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+  },
+  {
+   "kind": "chromium",
+   "engines": [
+    "chromium",
+    "chrome",
+    "firefox",
+    "webkit",
+    "safari"
+   ],
+   "cells": [
+    "I01|ima"
+   ],
+   "reason": "IMA requests the icon view before the ad start request on every engine and platform; how far before varies from run to run and by platform, and the 50 ms tolerance falls inside that spread on some engines, so this cell can conform in one run and deviate in the next"
+  },
+  {
+   "kind": "node",
+   "engines": [
+    "chromium",
+    "chrome",
+    "webkit",
+    "safari"
+   ],
+   "cells": [
+    "W11|videoadsdk",
+    "W11|iabloader",
+    "W11|iabloader+nsap"
+   ],
+   "reason": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+  },
+  {
+   "kind": "macos",
+   "engines": [
+    "chromium",
+    "chrome",
+    "firefox",
+    "webkit",
+    "safari"
+   ],
+   "cells": [
+    "I01|ima"
+   ],
+   "reason": "IMA requests the icon view before the ad start request on every engine and platform; how far before varies from run to run and by platform, and the 50 ms tolerance falls inside that spread on some engines, so this cell can conform in one run and deviate in the next"
+  }
+ ],
+ "node": {
+  "run1VsReference": {
+   "reference": "expected/node/matrix.tsv",
+   "status": "identical",
+   "cells": 540,
+   "differing": 0,
+   "known": 0,
+   "unexplained": 0,
+   "configs": [
+    "vastclient",
+    "videoadsdk",
+    "iabloader",
+    "iabloader+nsap",
+    "vastlint"
+   ],
+   "missingConfigs": [],
+   "newConfigs": [],
+   "idsNotRun": 0,
+   "newIds": [],
+   "perConfig": {
+    "vastclient": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "videoadsdk": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "iabloader": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "iabloader+nsap": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "vastlint": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    }
+   },
+   "changed": [],
+   "knownNotSeen": []
+  },
+  "run2VsReference": {
+   "reference": "expected/node/matrix.tsv",
+   "status": "identical",
+   "cells": 540,
+   "differing": 0,
+   "known": 0,
+   "unexplained": 0,
+   "configs": [
+    "vastclient",
+    "videoadsdk",
+    "iabloader",
+    "iabloader+nsap",
+    "vastlint"
+   ],
+   "missingConfigs": [],
+   "newConfigs": [],
+   "idsNotRun": 0,
+   "newIds": [],
+   "perConfig": {
+    "vastclient": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "videoadsdk": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "iabloader": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "iabloader+nsap": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "vastlint": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    }
+   },
+   "changed": [],
+   "knownNotSeen": []
+  },
+  "run2VsRun1": {
+   "reference": "node/matrix.tsv (this run)",
+   "status": "identical",
+   "cells": 540,
+   "differing": 0,
+   "known": 0,
+   "unexplained": 0,
+   "configs": [
+    "vastclient",
+    "videoadsdk",
+    "iabloader",
+    "iabloader+nsap",
+    "vastlint"
+   ],
+   "missingConfigs": [],
+   "newConfigs": [],
+   "idsNotRun": 0,
+   "newIds": [],
+   "perConfig": {
+    "vastclient": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "videoadsdk": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "iabloader": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "iabloader+nsap": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "vastlint": {
+     "cells": 108,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    }
+   },
+   "changed": [],
+   "knownNotSeen": []
+  }
+ },
+ "browsers": {
+  "chromium": {
+   "againstOwnEngineReference": {
+    "reference": "expected/browser/chromium-matrix.tsv",
+    "status": "differs only in known cells",
+    "cells": 864,
+    "differing": 1,
+    "known": 1,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "ima": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "I01|ima",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "IMA requests the icon view before the ad start request on every engine and platform; how far before varies from run to run and by platform, and the 50 ms tolerance falls inside that spread on some engines, so this cell can conform in one run and deviate in the next"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstChromiumReference": {
+    "reference": "expected/browser/chromium-matrix.tsv",
+    "status": "differs only in known cells",
+    "cells": 864,
+    "differing": 1,
+    "known": 1,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "ima": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "I01|ima",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "IMA requests the icon view before the ad start request on every engine and platform; how far before varies from run to run and by platform, and the 50 ms tolerance falls inside that spread on some engines, so this cell can conform in one run and deviate in the next"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstNodeReference": {
+    "reference": "expected/node/matrix.tsv (graded cells)",
+    "status": "differs only in known cells",
+    "cells": 382,
+    "differing": 3,
+    "known": 3,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap"
+    ],
+    "missingConfigs": [
+     "vastlint"
+    ],
+    "newConfigs": [
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 97,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 89,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 98,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 98,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "W11|videoadsdk",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     },
+     {
+      "cell": "W11|iabloader",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     },
+     {
+      "cell": "W11|iabloader+nsap",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstMacosReference": {
+    "reference": "expected/macos/chromium-matrix.tsv",
+    "status": "identical",
+    "cells": 792,
+    "differing": 0,
+    "known": 0,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [
+     "A01",
+     "A02",
+     "A04",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "R04",
+     "R05"
+    ],
+    "perConfig": {
+     "vastclient": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "ima": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     }
+    },
+    "changed": [],
+    "knownNotSeen": [
+     "I01|ima"
+    ]
+   },
+   "runs": {
+    "clientRuns": 564,
+    "harnessErrors": 0,
+    "mutedStarts": 2,
+    "external": {
+     "archive": 1365,
+     "telemetry stub (204, not sent)": 1282
+    },
+    "perConfig": {
+     "vastclient": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 73
+     },
+     "videoadsdk": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 2,
+      "wallSeconds": 406
+     },
+     "iabloader": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 73
+     },
+     "iabloader+nsap": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 73
+     },
+     "shaka": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 851
+     },
+     "rmpvast": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 903
+     },
+     "rmpvast+omid": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 903
+     },
+     "ima": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 769
+     }
+    },
+    "harnessErrorCases": []
+   }
+  },
+  "chrome": {
+   "againstOwnEngineReference": {
+    "reference": "expected/browser/chromium-matrix.tsv",
+    "status": "differs only in known cells",
+    "cells": 864,
+    "differing": 4,
+    "known": 4,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "ima": {
+      "cells": 108,
+      "differing": 2,
+      "known": 2,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "S02|rmpvast",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "Google Chrome ships AAC, the Chromium reference does not: the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "S02|rmpvast+omid",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "Google Chrome ships AAC, the Chromium reference does not: the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "S02|ima",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "Google Chrome ships AAC, the Chromium reference does not: the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "I01|ima",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "IMA requests the icon view before the ad start request on every engine and platform; how far before varies from run to run and by platform, and the 50 ms tolerance falls inside that spread on some engines, so this cell can conform in one run and deviate in the next"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstChromiumReference": {
+    "reference": "expected/browser/chromium-matrix.tsv",
+    "status": "differs only in known cells",
+    "cells": 864,
+    "differing": 4,
+    "known": 4,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "ima": {
+      "cells": 108,
+      "differing": 2,
+      "known": 2,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "S02|rmpvast",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "S02|rmpvast+omid",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "S02|ima",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "I01|ima",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "IMA requests the icon view before the ad start request on every engine and platform; how far before varies from run to run and by platform, and the 50 ms tolerance falls inside that spread on some engines, so this cell can conform in one run and deviate in the next"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstNodeReference": {
+    "reference": "expected/node/matrix.tsv (graded cells)",
+    "status": "differs only in known cells",
+    "cells": 382,
+    "differing": 3,
+    "known": 3,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap"
+    ],
+    "missingConfigs": [
+     "vastlint"
+    ],
+    "newConfigs": [
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 97,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 89,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 98,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 98,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "W11|videoadsdk",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     },
+     {
+      "cell": "W11|iabloader",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     },
+     {
+      "cell": "W11|iabloader+nsap",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstMacosReference": {
+    "reference": "expected/macos/chrome-matrix.tsv",
+    "status": "identical",
+    "cells": 792,
+    "differing": 0,
+    "known": 0,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [
+     "A01",
+     "A02",
+     "A04",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "R04",
+     "R05"
+    ],
+    "perConfig": {
+     "vastclient": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "ima": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     }
+    },
+    "changed": [],
+    "knownNotSeen": [
+     "I01|ima"
+    ]
+   },
+   "runs": {
+    "clientRuns": 564,
+    "harnessErrors": 0,
+    "mutedStarts": 2,
+    "external": {
+     "archive": 1349,
+     "telemetry stub (204, not sent)": 1307
+    },
+    "perConfig": {
+     "vastclient": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 73
+     },
+     "videoadsdk": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 2,
+      "wallSeconds": 406
+     },
+     "iabloader": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 73
+     },
+     "iabloader+nsap": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 73
+     },
+     "shaka": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 904
+     },
+     "rmpvast": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 941
+     },
+     "rmpvast+omid": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 941
+     },
+     "ima": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 778
+     }
+    },
+    "harnessErrorCases": []
+   }
+  },
+  "firefox": {
+   "againstOwnEngineReference": {
+    "reference": "expected/browser/firefox-matrix.tsv",
+    "status": "differs only in known cells",
+    "cells": 864,
+    "differing": 1,
+    "known": 1,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "ima": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "I01|ima",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "IMA requests the icon view before the ad start request on every engine and platform; how far before varies from run to run and by platform, and the 50 ms tolerance falls inside that spread on some engines, so this cell can conform in one run and deviate in the next"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstChromiumReference": {
+    "reference": "expected/browser/chromium-matrix.tsv",
+    "status": "differs only in known cells",
+    "cells": 864,
+    "differing": 8,
+    "known": 8,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "ima": {
+      "cells": 108,
+      "differing": 3,
+      "known": 3,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "W11|videoadsdk",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     },
+     {
+      "cell": "W11|iabloader",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     },
+     {
+      "cell": "W11|iabloader+nsap",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     },
+     {
+      "cell": "W11|ima",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     },
+     {
+      "cell": "S02|rmpvast",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "S02|rmpvast+omid",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "S02|ima",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "I01|ima",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "IMA requests the icon view before the ad start request on every engine and platform; how far before varies from run to run and by platform, and the 50 ms tolerance falls inside that spread on some engines, so this cell can conform in one run and deviate in the next"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstNodeReference": {
+    "reference": "expected/node/matrix.tsv (graded cells)",
+    "status": "identical",
+    "cells": 382,
+    "differing": 0,
+    "known": 0,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap"
+    ],
+    "missingConfigs": [
+     "vastlint"
+    ],
+    "newConfigs": [
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 97,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 89,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 98,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 98,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     }
+    },
+    "changed": [],
+    "knownNotSeen": []
+   },
+   "againstMacosReference": {
+    "reference": "expected/macos/firefox-matrix.tsv",
+    "status": "identical",
+    "cells": 792,
+    "differing": 0,
+    "known": 0,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [
+     "A01",
+     "A02",
+     "A04",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "R04",
+     "R05"
+    ],
+    "perConfig": {
+     "vastclient": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "ima": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     }
+    },
+    "changed": [],
+    "knownNotSeen": [
+     "I01|ima"
+    ]
+   },
+   "runs": {
+    "clientRuns": 564,
+    "harnessErrors": 0,
+    "mutedStarts": 0,
+    "external": {
+     "archive": 1353,
+     "telemetry stub (204, not sent)": 1271
+    },
+    "perConfig": {
+     "vastclient": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 73
+     },
+     "videoadsdk": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 406
+     },
+     "iabloader": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 73
+     },
+     "iabloader+nsap": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 73
+     },
+     "shaka": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 834
+     },
+     "rmpvast": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 943
+     },
+     "rmpvast+omid": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 946
+     },
+     "ima": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 783
+     }
+    },
+    "harnessErrorCases": []
+   }
+  },
+  "webkit": {
+   "againstOwnEngineReference": {
+    "reference": "expected/browser/webkit-matrix.tsv",
+    "status": "differs only in known cells",
+    "cells": 864,
+    "differing": 10,
+    "known": 10,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 108,
+      "differing": 4,
+      "known": 4,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 108,
+      "differing": 4,
+      "known": 4,
+      "unexplained": 0
+     },
+     "ima": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "T05|rmpvast",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T05|rmpvast+omid",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T06|rmpvast",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T06|rmpvast+omid",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T07|rmpvast",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T07|rmpvast+omid",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T19|rmpvast",
+      "expected": "conforms",
+      "got": "n/a",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T19|rmpvast+omid",
+      "expected": "conforms",
+      "got": "n/a",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "S01|videoadsdk",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "the Linux WebKit reference (GStreamer) reports video/x-flv as playable, so video-ad-sdk picks the FLV file listed first and deviates; on macOS WebKit and Safari it skips the FLV file and S01 conforms"
+     },
+     {
+      "cell": "I01|ima",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "IMA requests the icon view before the ad start request on every engine and platform; how far before varies from run to run and by platform, and the 50 ms tolerance falls inside that spread on some engines, so this cell can conform in one run and deviate in the next"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstChromiumReference": {
+    "reference": "expected/browser/chromium-matrix.tsv",
+    "status": "differs only in known cells",
+    "cells": 864,
+    "differing": 12,
+    "known": 12,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 108,
+      "differing": 5,
+      "known": 5,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 108,
+      "differing": 5,
+      "known": 5,
+      "unexplained": 0
+     },
+     "ima": {
+      "cells": 108,
+      "differing": 2,
+      "known": 2,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "T05|rmpvast",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T05|rmpvast+omid",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T06|rmpvast",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T06|rmpvast+omid",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T07|rmpvast",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T07|rmpvast+omid",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T19|rmpvast",
+      "expected": "conforms",
+      "got": "n/a",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "T19|rmpvast+omid",
+      "expected": "conforms",
+      "got": "n/a",
+      "known": "macOS WebKit only: rmp-vast builds its progress offsets once, on the first durationchange, and only if the duration is finite; in this engine the list stays empty, so no progress tracker fires (T05 to T07 deviate) and T19 is n/a"
+     },
+     {
+      "cell": "S02|rmpvast",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "S02|rmpvast+omid",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "S02|ima",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "I01|ima",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "IMA requests the icon view before the ad start request on every engine and platform; how far before varies from run to run and by platform, and the 50 ms tolerance falls inside that spread on some engines, so this cell can conform in one run and deviate in the next"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstNodeReference": {
+    "reference": "expected/node/matrix.tsv (graded cells)",
+    "status": "differs only in known cells",
+    "cells": 382,
+    "differing": 3,
+    "known": 3,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap"
+    ],
+    "missingConfigs": [
+     "vastlint"
+    ],
+    "newConfigs": [
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 97,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 89,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 98,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 98,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "W11|videoadsdk",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     },
+     {
+      "cell": "W11|iabloader",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     },
+     {
+      "cell": "W11|iabloader+nsap",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstMacosReference": {
+    "reference": "expected/macos/webkit-matrix.tsv",
+    "status": "identical",
+    "cells": 792,
+    "differing": 0,
+    "known": 0,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid",
+     "ima"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [
+     "A01",
+     "A02",
+     "A04",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "R04",
+     "R05"
+    ],
+    "perConfig": {
+     "vastclient": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "ima": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     }
+    },
+    "changed": [],
+    "knownNotSeen": [
+     "I01|ima"
+    ]
+   },
+   "runs": {
+    "clientRuns": 564,
+    "harnessErrors": 0,
+    "mutedStarts": 0,
+    "external": {
+     "archive": 1362,
+     "telemetry stub (204, not sent)": 1304
+    },
+    "perConfig": {
+     "vastclient": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 73
+     },
+     "videoadsdk": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 406
+     },
+     "iabloader": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 73
+     },
+     "iabloader+nsap": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 73
+     },
+     "shaka": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 867
+     },
+     "rmpvast": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 958
+     },
+     "rmpvast+omid": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 958
+     },
+     "ima": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 820
+     }
+    },
+    "harnessErrorCases": []
+   }
+  },
+  "safari": {
+   "againstOwnEngineReference": {
+    "reference": "expected/browser/webkit-matrix.tsv",
+    "status": "differs only in known cells",
+    "cells": 756,
+    "differing": 1,
+    "known": 1,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid"
+    ],
+    "missingConfigs": [
+     "ima"
+    ],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "S01|videoadsdk",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "the Linux WebKit reference (GStreamer) reports video/x-flv as playable, so video-ad-sdk picks the FLV file listed first and deviates; on macOS WebKit and Safari it skips the FLV file and S01 conforms"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstChromiumReference": {
+    "reference": "expected/browser/chromium-matrix.tsv",
+    "status": "differs only in known cells",
+    "cells": 756,
+    "differing": 2,
+    "known": 2,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid"
+    ],
+    "missingConfigs": [
+     "ima"
+    ],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 108,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 108,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "S02|rmpvast",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     },
+     {
+      "cell": "S02|rmpvast+omid",
+      "expected": "n/a",
+      "got": "conforms",
+      "known": "the audio ad is AAC/Opus; Playwright's Chromium has no AAC decoder (rmp-vast and IMA pick the .m4a file and report 401/400, graded n/a), engines with AAC play it"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstNodeReference": {
+    "reference": "expected/node/matrix.tsv (graded cells)",
+    "status": "differs only in known cells",
+    "cells": 382,
+    "differing": 3,
+    "known": 3,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap"
+    ],
+    "missingConfigs": [
+     "vastlint"
+    ],
+    "newConfigs": [
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid"
+    ],
+    "idsNotRun": 0,
+    "newIds": [],
+    "perConfig": {
+     "vastclient": {
+      "cells": 97,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 89,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 98,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 98,
+      "differing": 1,
+      "known": 1,
+      "unexplained": 0
+     }
+    },
+    "changed": [
+     {
+      "cell": "W11|videoadsdk",
+      "expected": "conforms",
+      "got": "deviates",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     },
+     {
+      "cell": "W11|iabloader",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     },
+     {
+      "cell": "W11|iabloader+nsap",
+      "expected": "deviates",
+      "got": "conforms",
+      "known": "non-well-formed XML: Chromium and WebKit DOMParser keep the partial tree, Firefox returns a parsererror root, Node (xmldom) differs again; W11 has three runtime behaviors"
+     }
+    ],
+    "knownNotSeen": []
+   },
+   "againstMacosReference": {
+    "reference": "expected/macos/safari-matrix.tsv",
+    "status": "identical",
+    "cells": 693,
+    "differing": 0,
+    "known": 0,
+    "unexplained": 0,
+    "configs": [
+     "vastclient",
+     "videoadsdk",
+     "iabloader",
+     "iabloader+nsap",
+     "shaka",
+     "rmpvast",
+     "rmpvast+omid"
+    ],
+    "missingConfigs": [],
+    "newConfigs": [],
+    "idsNotRun": 0,
+    "newIds": [
+     "A01",
+     "A02",
+     "A04",
+     "M06",
+     "M07",
+     "M08",
+     "M09",
+     "R04",
+     "R05"
+    ],
+    "perConfig": {
+     "vastclient": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "videoadsdk": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "iabloader+nsap": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "shaka": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     },
+     "rmpvast+omid": {
+      "cells": 99,
+      "differing": 0,
+      "known": 0,
+      "unexplained": 0
+     }
+    },
+    "changed": [],
+    "knownNotSeen": []
+   },
+   "runs": {
+    "clientRuns": 494,
+    "harnessErrors": 0,
+    "mutedStarts": 0,
+    "external": {},
+    "perConfig": {
+     "vastclient": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 144
+     },
+     "videoadsdk": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 482
+     },
+     "iabloader": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 144
+     },
+     "iabloader+nsap": {
+      "clientRuns": 71,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 144
+     },
+     "shaka": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 962
+     },
+     "rmpvast": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 1045
+     },
+     "rmpvast+omid": {
+      "clientRuns": 70,
+      "harnessErrors": 0,
+      "mutedStarts": 0,
+      "wallSeconds": 1044
+     }
+    },
+    "harnessErrorCases": []
+   }
+  }
+ },
+ "grids": {
+  "errorGrid": {
+   "reference": "expected/grid/error-grid.tsv",
+   "status": "identical",
+   "cells": 748,
+   "differing": 0,
+   "known": 0,
+   "unexplained": 0,
+   "configs": [
+    "vastclient",
+    "videoadsdk",
+    "iabloader",
+    "vastlint"
+   ],
+   "missingConfigs": [],
+   "newConfigs": [],
+   "idsNotRun": 0,
+   "newIds": [],
+   "perConfig": {
+    "vastclient": {
+     "cells": 187,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "videoadsdk": {
+     "cells": 187,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "iabloader": {
+     "cells": 187,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "vastlint": {
+     "cells": 187,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    }
+   },
+   "changed": [],
+   "knownNotSeen": []
+  },
+  "errorGridGraded": {
+   "reference": "expected/grid/error-grid-graded.jsonl",
+   "status": "identical",
+   "cells": 748,
+   "differing": 0,
+   "known": 0,
+   "unexplained": 0,
+   "configs": [
+    "vastclient",
+    "videoadsdk",
+    "iabloader",
+    "vastlint"
+   ],
+   "missingConfigs": [],
+   "newConfigs": [],
+   "idsNotRun": 0,
+   "newIds": [],
+   "perConfig": {
+    "vastclient": {
+     "cells": 187,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "videoadsdk": {
+     "cells": 187,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "iabloader": {
+     "cells": 187,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "vastlint": {
+     "cells": 187,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    }
+   },
+   "changed": [],
+   "knownNotSeen": []
+  },
+  "macroGrid": {
+   "reference": "expected/grid/macro-grid.tsv (sent values compared by class)",
+   "status": "identical",
+   "cells": 580,
+   "differing": 0,
+   "known": 0,
+   "unexplained": 0,
+   "configs": [
+    "vastclient",
+    "videoadsdk",
+    "iabloader",
+    "vastlint"
+   ],
+   "missingConfigs": [],
+   "newConfigs": [],
+   "idsNotRun": 0,
+   "newIds": [],
+   "perConfig": {
+    "vastclient": {
+     "cells": 145,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "videoadsdk": {
+     "cells": 145,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "iabloader": {
+     "cells": 145,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    },
+    "vastlint": {
+     "cells": 145,
+     "differing": 0,
+     "known": 0,
+     "unexplained": 0
+    }
+   },
+   "changed": [],
+   "knownNotSeen": []
+  },
+  "errorGridHarnessErrors": []
+ },
+ "gate2": {
+  "vastclient": {
+   "expected": 49,
+   "got": 49,
+   "samples": 49,
+   "same": true
+  },
+  "videoadsdk": {
+   "expected": 49,
+   "got": 49,
+   "samples": 49,
+   "same": true
+  },
+  "iabloader": {
+   "expected": 37,
+   "got": 37,
+   "samples": 49,
+   "same": true
+  },
+  "iabloader+nsap": {
+   "expected": 43,
+   "got": 43,
+   "samples": 49,
+   "same": true
+  }
+ },
+ "engineRuns": {
+  "chromium": {
+   "launched": true,
+   "version": "141.0.7390.37",
+   "cells": 864,
+   "runs": 564,
+   "startedAt": "2026-10-27T21:10:40.229Z",
+   "finishedAt": "2026-10-27T22:19:04.324Z",
+   "error": null
+  },
+  "firefox": {
+   "launched": true,
+   "version": "142.0.1",
+   "cells": 864,
+   "runs": 564,
+   "startedAt": "2026-10-27T21:10:40.230Z",
+   "finishedAt": "2026-10-27T22:20:23.095Z",
+   "error": null
+  },
+  "chrome": {
+   "launched": true,
+   "version": "156.0.8078.48",
+   "cells": 864,
+   "runs": 564,
+   "startedAt": "2026-10-27T21:10:40.230Z",
+   "finishedAt": "2026-10-27T22:21:04.591Z",
+   "error": null
+  },
+  "webkit": {
+   "launched": true,
+   "version": "26.0",
+   "cells": 864,
+   "runs": 564,
+   "startedAt": "2026-10-27T21:10:40.230Z",
+   "finishedAt": "2026-10-27T22:21:13.478Z",
+   "error": null
+  },
+  "safari": {
+   "launched": true,
+   "version": "27.0.1",
+   "cells": 756,
+   "runs": 494,
+   "startedAt": "2026-10-27T21:11:31.053Z",
+   "finishedAt": "2026-10-27T22:17:43.030Z",
+   "error": null,
+   "hint": null,
+   "isolation": "session",
+   "configs": [
+    "vastclient",
+    "videoadsdk",
+    "iabloader",
+    "iabloader+nsap",
+    "shaka",
+    "rmpvast",
+    "rmpvast+omid"
+   ],
+   "capabilities": {
+    "browserName": "Safari",
+    "browserVersion": "27.0.1",
+    "platformName": "macOS",
+    "safari:platformVersion": "27.0.1"
+   },
+   "ima": {
+    "enabled": false,
+    "reason": "IMA session refused: session not created: Could not create a session: Capability 'proxy' could not be honored.",
+    "capabilities": null,
+    "canary": null,
+    "tlsPageReady": null
+   },
+   "startedMutedRuns": 0
+  }
+ },
+ "hashes": {
+  "builtBundles": {
+   "files": 7,
+   "mismatched": []
+  },
+  "vectors": {
+   "files": 218,
+   "mismatched": []
+  },
+  "media": {
+   "files": 8,
+   "mismatched": []
+  },
+  "imaArchive": {
+   "files": 13,
+   "mismatched": []
+  }
+ }
+}

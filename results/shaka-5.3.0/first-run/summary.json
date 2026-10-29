@@ -1,0 +1,212 @@
+{
+ "what": "Shaka Player 5.3.0 rerun of the shaka configuration, browser layer, Playwright Chromium; compared with the first Chromium reference (Shaka 5.2.12)",
+ "client": {
+  "name": "shaka-player",
+  "version": "5.3.0",
+  "reported": "v5.3.0",
+  "npmPublished": "2026-10-16T13:16:39.051Z",
+  "integrity": "sha512-bZ5MiKQcs+CBtAHFGUqHW4Q+2U3oXGVmXY+gdrSOoVmHzcilvNp+jEsqhd3/4cGhL4j4+Z66Jisq42U4jOfY1g==",
+  "gitHead": "f5fd3ce3d29d4674777280994d375802e5b7ede5"
+ },
+ "reference": {
+  "path": "results/reference/first-run/chromium/results.jsonl",
+  "config": "shaka",
+  "clientVersion": "v5.2.12"
+ },
+ "harness": "copy of code/harness with only shaka-player changed to 5.3.0 (package.json, package-lock.json, node_modules, browser/dist rebuilt); adapter unchanged",
+ "adapterChanged": false,
+ "command": "VASTCONF_EXT_ARCHIVE=sources/ima-html5/2026-10-16 node browser/run-browser.mjs --out <dir> --browsers chromium --clients shaka",
+ "run": {
+  "started": "2026-10-21T01:57:06.677Z",
+  "host": {
+   "platform": "linux",
+   "arch": "x64",
+   "release": "6.18.44-fc-v139",
+   "cpus": 2
+  },
+  "browsers": {
+   "chromium": {
+    "launched": true,
+    "version": "141.0.7390.37",
+    "startedAt": "2026-10-21T01:57:06.677Z",
+    "finishedAt": "2026-10-21T02:12:30.537Z",
+    "parallel": false,
+    "cells": 108,
+    "runs": 68,
+    "verdicts": {
+     "deviates": 20,
+     "n/a": 49,
+     "conforms": 39
+    }
+   }
+  },
+  "finished": "2026-10-21T02:12:30.538Z"
+ },
+ "cells": 108,
+ "verdicts": {
+  "5.2.12": {
+   "deviates": 28,
+   "n/a": 48,
+   "conforms": 32
+  },
+  "5.3.0": {
+   "deviates": 20,
+   "n/a": 49,
+   "conforms": 39
+  }
+ },
+ "verdictsByStrength": {
+  "5.2.12": {
+   "conforms": {
+    "must": 14,
+    "should": 16,
+    "may": 1,
+    "observation": 1
+   },
+   "deviates": {
+    "must": 21,
+    "should": 7
+   },
+   "n/a": {
+    "must": 22,
+    "should": 17,
+    "may": 1,
+    "observation": 8
+   }
+  },
+  "5.3.0": {
+   "conforms": {
+    "must": 20,
+    "should": 17,
+    "may": 1,
+    "observation": 1
+   },
+   "deviates": {
+    "must": 15,
+    "should": 5
+   },
+   "n/a": {
+    "must": 22,
+    "should": 18,
+    "may": 1,
+    "observation": 8
+   }
+  }
+ },
+ "changes": [
+  {
+   "id": "M01",
+   "strength": "must",
+   "from": "deviates",
+   "to": "conforms",
+   "cause": "fix",
+   "detail5212": "\"[CACHEBUSTING]\" (14 chars)",
+   "detail530": "53097872"
+  },
+  {
+   "id": "M02",
+   "strength": "must",
+   "from": "deviates",
+   "to": "conforms",
+   "cause": "fix",
+   "detail5212": "\"[TIMESTAMP]\"",
+   "detail530": "2026-10-21T02:01:00.602Z"
+  },
+  {
+   "id": "M03",
+   "strength": "must",
+   "from": "deviates",
+   "to": "conforms",
+   "cause": "fix",
+   "detail5212": "\"[LIMITADTRACKING]\"",
+   "detail530": "-1 (unknown/withheld; outside the 0/1 definition)"
+  },
+  {
+   "id": "M04",
+   "strength": "must",
+   "from": "n/a",
+   "to": "conforms",
+   "cause": "fix",
+   "detail5212": "TIMESTAMP left unreplaced (see M02)",
+   "detail530": "2026-10-21T02%3A01%3A00.602Z"
+  },
+  {
+   "id": "M05",
+   "strength": "should",
+   "from": "conforms",
+   "to": "deviates",
+   "cause": "regression",
+   "detail5212": "\"[NOTAREALMACRO]\"",
+   "detail530": "replaced with -1"
+  },
+  {
+   "id": "M06",
+   "strength": "must",
+   "from": "deviates",
+   "to": "n/a",
+   "cause": "harness effect (vector)",
+   "detail5212": "not replaced or implausible: ah=\"[ADPLAYHEAD]\", asi=\"[ADSERVINGID]\", ua=\"[UNIVERSALADID]\", ps=\"[PODSEQUENCE]\", au=\"[ASSETURI]\", bp=\"[BREAKPOSITION]\", ifa=\"[IFA]\", cua=\"[CLIENTUA]\"",
+   "detail530": "impression not fired"
+  },
+  {
+   "id": "M07",
+   "strength": "should",
+   "from": "deviates",
+   "to": "n/a",
+   "cause": "harness effect (vector)",
+   "detail5212": "\"[ADSERVINGID]\"",
+   "detail530": "impression not fired"
+  },
+  {
+   "id": "M11",
+   "strength": "must",
+   "from": "deviates",
+   "to": "conforms",
+   "cause": "fix",
+   "detail5212": "cb \"[CACHEBUSTING]\", ts \"[TIMESTAMP]\"",
+   "detail530": "cb 58387679, ts 2026-10-21T02:07:05.240Z"
+  },
+  {
+   "id": "P03",
+   "strength": "must",
+   "from": "deviates",
+   "to": "conforms",
+   "cause": "fix",
+   "detail5212": "misattributed: p1 imp 1 complete 0; p2 imp 1 complete 1; p3 imp 1 complete 2",
+   "detail530": "one impression and one complete per ad (3 ads)"
+  },
+  {
+   "id": "T10",
+   "strength": "should",
+   "from": "deviates",
+   "to": "conforms",
+   "cause": "fix",
+   "detail5212": "impression requested for an ad that never played",
+   "detail530": "no impression"
+  },
+  {
+   "id": "T23",
+   "strength": "should",
+   "from": "deviates",
+   "to": "conforms",
+   "cause": "fix",
+   "detail5212": "unmute fired 2 times",
+   "detail530": "unmute once"
+  }
+ ],
+ "changeCounts": {
+  "total": 11,
+  "fix": 8,
+  "regression": 1,
+  "harnessEffect": 2,
+  "unchanged": 97,
+  "must": 7,
+  "should": 4
+ },
+ "rechecks": {
+  "5.2.12 original harness, 12 cells (11 changed + T15)": "same verdicts as the reference in all 12",
+  "5.3.0, same 12 cells": "same verdicts as the main 5.3.0 run in all 12",
+  "5.3.0 full repeat on idle machine (all 108 cells)": "same verdicts as the main run in all 108 cells; details differ only in random cachebusters, timestamps and server ports (M01, M02, M04, M11, S01)"
+ },
+ "loadCaveat": "a separate gate2 rmpvast-chromium job (results/iab-samples/more-clients) overlapped the main run 18:57-19:12 PDT; hence the full repeat"
+}

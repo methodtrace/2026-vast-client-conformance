@@ -1,0 +1,12 @@
+#,URL (archive key),sha256,Status,Content type
+1,https://imasdk.googleapis.com/js/sdkloader/ima3.js,ef9c29bc079af27701174c27d25d1b8f4f4333c7e2579bb471c269c0a18e63db,200,text/javascript; charset=UTF-8
+2,https://securepubads.g.doubleclick.net/pagead/ima_ppub_config,5da8ad7612cba9c31ab4d13841b592c4a2e89f4ba3a867c0b88d1c8703817451,200,application/json; charset=UTF-8
+3,https://pagead2.googlesyndication.com/omsdk/releases/live/omweb-v1.js,6edb5275ff2227bece0bf3341bdabb6f2f6d8ff1fb31d726d263eb317996f4b3,200,text/javascript
+4,https://s0.2mdn.net/instream/video/client.js,d0bffc7261df1454c5e05475cda7d9e6647318dc6c3936767e1252bfe8849c54,200,text/javascript
+5,https://imasdk.googleapis.com/js/core/bridge3.794.0_en.html,f5648dc8113229af71c1b97a81dacfd5f8db46771c78f25fe0437caef4fe1fd0,200,text/html
+6,https://pubads.g.doubleclick.net/pagead/managed/dict/m202610150101/ima,1e04e0a75b28994312783dbadab17aa57e2d91549a803902e76328dcb137e3dd,200,text/plain; charset=UTF-8
+7,https://ep2.adtrafficquality.google/sodar/sodar2.js,1fced7b2a471cda6a17da299daf9f375bc9755fc3f00cdf2937f87c81ecdc10e,200,text/javascript
+8,https://ep2.adtrafficquality.google/sodar/sodar2/255/runner.html,c41f41da455986cf9d074c517db41020baf05e060802c11b45cb0a0a24f2a87e,200,text/html
+9,https://pagead2.googlesyndication.com/bg/HEjx3T2vFPNzlAOU_OIXv8rutZFOHemhIBBYy52kE84.js,1c48f1dd3daf14f373940394fce217bfcaeeb5914e1de9a1201058cb9da413ce,200,text/javascript
+10,https://pagead2.googlesyndication.com/omsdk/releases/control/omweb-v1.js,6edb5275ff2227bece0bf3341bdabb6f2f6d8ff1fb31d726d263eb317996f4b3,200,text/javascript
+11,https://pagead2.googlesyndication.com/omsdk/releases/canary/omweb-v1.js,6edb5275ff2227bece0bf3341bdabb6f2f6d8ff1fb31d726d263eb317996f4b3,200,text/javascript

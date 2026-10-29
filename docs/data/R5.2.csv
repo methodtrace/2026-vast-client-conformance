@@ -1,0 +1,25 @@
+Client,Context,Set,Macros,Value,-1 or -2,Literal,Empty or absent,Delegated,Deviating
+vast-client-js 6.5.0,Tracking pixel,4.3,40,6,34,0,0,0,0
+vast-client-js 6.5.0,Tracking pixel,other,5,0,0,5,0,0,5
+vast-client-js 6.5.0,"VAST request URI, CDATA",4.3,41,0,0,41,0,0,41
+vast-client-js 6.5.0,"VAST request URI, CDATA",other,9,0,0,9,0,0,9
+vast-client-js 6.5.0,"VAST request URI, escaped text",4.3,41,0,0,41,0,0,41
+vast-client-js 6.5.0,"VAST request URI, escaped text",other,9,0,0,9,0,0,9
+video-ad-sdk 4.0.1,Tracking pixel,4.3,40,2,0,38,0,0,38
+video-ad-sdk 4.0.1,Tracking pixel,other,5,0,0,5,0,0,5
+video-ad-sdk 4.0.1,"VAST request URI, CDATA",4.3,41,0,0,41,0,0,41
+video-ad-sdk 4.0.1,"VAST request URI, CDATA",other,9,0,0,9,0,0,9
+video-ad-sdk 4.0.1,"VAST request URI, escaped text",4.3,41,0,0,41,0,0,41
+video-ad-sdk 4.0.1,"VAST request URI, escaped text",other,9,0,0,9,0,0,9
+iab-vast-loader 2.5.1,Tracking pixel,4.3,40,0,0,0,0,40,0
+iab-vast-loader 2.5.1,Tracking pixel,other,5,0,0,0,0,5,0
+iab-vast-loader 2.5.1,"VAST request URI, CDATA",4.3,41,0,0,41,0,0,41
+iab-vast-loader 2.5.1,"VAST request URI, CDATA",other,9,0,0,9,0,0,9
+iab-vast-loader 2.5.1,"VAST request URI, escaped text",4.3,41,0,0,41,0,0,41
+iab-vast-loader 2.5.1,"VAST request URI, escaped text",other,9,0,0,9,0,0,9
+vastlint-client 0.15.0,Tracking pixel,4.3,40,2,0,38,0,0,38
+vastlint-client 0.15.0,Tracking pixel,other,5,0,0,5,0,0,5
+vastlint-client 0.15.0,"VAST request URI, CDATA",4.3,41,0,0,41,0,0,41
+vastlint-client 0.15.0,"VAST request URI, CDATA",other,9,0,0,9,0,0,9
+vastlint-client 0.15.0,"VAST request URI, escaped text",4.3,41,0,0,1,40,0,41
+vastlint-client 0.15.0,"VAST request URI, escaped text",other,9,0,0,0,9,0,9

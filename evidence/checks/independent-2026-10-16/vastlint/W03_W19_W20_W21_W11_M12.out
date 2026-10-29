@@ -1,0 +1,32 @@
+== w_five/start.xml
+  requests: /doc/chk/w_five/start.xml /doc/chk/w_five/w1.xml /doc/chk/w_five/w2.xml /doc/chk/w_five/w3.xml /doc/chk/w_five/w4.xml
+  stoppedReason: max_depth err: null
+  resolvedAds: w4(seq=null,resolved=false)
+  chainValid: true totalErrors: 0
+== w_follow_false/start.xml
+  requests: /doc/chk/w_follow_false/start.xml /doc/chk/w_follow_false/w1.xml /doc/chk/w_follow_false/inline.xml
+  stoppedReason: resolved err: null
+  resolvedAds: in(seq=null,resolved=true)
+  chainValid: true totalErrors: 0
+== w_allow_multiple_false/start.xml
+  requests: /doc/chk/w_allow_multiple_false/start.xml /doc/chk/w_allow_multiple_false/pod.xml
+  stoppedReason: resolved err: null
+  resolvedAds: p1(seq=1,resolved=true),p2(seq=2,resolved=true),s1(seq=null,resolved=true)
+  chainValid: true totalErrors: 0
+== w_allow_multiple_default/start.xml
+  requests: /doc/chk/w_allow_multiple_default/start.xml /doc/chk/w_allow_multiple_default/pod.xml
+  stoppedReason: resolved err: null
+  resolvedAds: p1(seq=1,resolved=true),p2(seq=2,resolved=true),s1(seq=null,resolved=true)
+  chainValid: true totalErrors: 0
+== w_malformed/start.xml
+  requests: /doc/chk/w_malformed/start.xml /doc/chk/w_malformed/bad.xml
+  stoppedReason: resolved err: null
+  resolvedAds: x(seq=null,resolved=true)
+  chainValid: false totalErrors: 1
+  last-hop issues: ["VAST-2.0-parse-error"]
+== m_request_context/start.xml
+  requests: /doc/chk/m_request_context/start.xml /doc/chk/m_request_context/inline.xml?cb=[CACHEBUSTING]&ts=[TIMESTAMP]
+  stoppedReason: resolved err: null
+  resolvedAds: in(seq=null,resolved=true)
+  chainValid: true totalErrors: 0
+== w_five with maxWrapperDepth:6 -> resolved 6 requests

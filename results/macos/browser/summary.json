@@ -1,0 +1,76 @@
+{
+ "started": "2026-10-27T21:10:40.228Z",
+ "host": {
+  "platform": "darwin",
+  "arch": "arm64",
+  "release": "27.0.0",
+  "cpus": 15
+ },
+ "browsers": {
+  "chromium": {
+   "launched": true,
+   "version": "141.0.7390.37",
+   "startedAt": "2026-10-27T21:10:40.229Z",
+   "finishedAt": "2026-10-27T22:19:04.324Z",
+   "parallel": true,
+   "cells": 864,
+   "runs": 564,
+   "verdicts": {
+    "conforms": 492,
+    "deviates": 120,
+    "n/a": 77,
+    "delegated": 175
+   }
+  },
+  "firefox": {
+   "launched": true,
+   "version": "142.0.1",
+   "startedAt": "2026-10-27T21:10:40.230Z",
+   "finishedAt": "2026-10-27T22:20:23.095Z",
+   "parallel": true,
+   "cells": 864,
+   "runs": 564,
+   "verdicts": {
+    "conforms": 493,
+    "deviates": 122,
+    "n/a": 74,
+    "delegated": 175
+   }
+  },
+  "chrome": {
+   "launched": true,
+   "version": "156.0.8078.48",
+   "startedAt": "2026-10-27T21:10:40.230Z",
+   "finishedAt": "2026-10-27T22:21:04.591Z",
+   "parallel": true,
+   "cells": 864,
+   "runs": 564,
+   "verdicts": {
+    "conforms": 495,
+    "deviates": 120,
+    "n/a": 74,
+    "delegated": 175
+   }
+  },
+  "webkit": {
+   "launched": true,
+   "version": "26.0",
+   "startedAt": "2026-10-27T21:10:40.230Z",
+   "finishedAt": "2026-10-27T22:21:13.478Z",
+   "parallel": true,
+   "cells": 864,
+   "runs": 564,
+   "verdicts": {
+    "conforms": 487,
+    "deviates": 126,
+    "n/a": 76,
+    "delegated": 175
+   }
+  }
+ },
+ "ima": {
+  "requested": true,
+  "included": true
+ },
+ "finished": "2026-10-27T22:21:13.478Z"
+}

@@ -1,0 +1,5 @@
+Package,Version in file,License,Last release,"Downloads, last month",In 25-package metadata file,Decision,Facts in the data files
+@ygoto3/omap-vmap-parser,0.0.1,MIT,2023-12-13,"23,077",yes,none,"release 2023-12-13, before 2024-10-16, so it fails condition 4; description says VMAP parser"
+@pavloniym/rmp-vast,17.0.1-esm-v3,MIT,2025-08-07,530,yes,none,"4 versions, repository pavloniym/rmp-vast; the name and description match rmp-vast, which suggests a repackaging of it; not inspected"
+vjs-vast,0.0.1,MIT,2020-06-14,137,yes,none,release 2020-06-14 (fails condition 4); repository MailOnline/videojs-vast-vpaid
+@trillboards/ads-sdk,2.4.9,MIT,2026-09-01,"2,256",yes,none,"MIT, release 2026-09-01; description says a digital signage (DOOH) advertising SDK; dependencies are react, react-dom, react-native and react-native-webview; not inspected"

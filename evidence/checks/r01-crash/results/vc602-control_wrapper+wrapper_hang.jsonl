@@ -1,0 +1,4 @@
+{"pkg":"vc602","scenario":"control_wrapper","code":0,"signal":null,"ms":155,"result":{"t":1792166035228,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc602","scenario":"control_wrapper","code":0,"signal":null,"ms":175,"result":{"t":1792166035404,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc602","scenario":"wrapper_hang","code":0,"signal":null,"ms":161,"result":{"t":1792166035567,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc602","scenario":"wrapper_hang","code":0,"signal":null,"ms":148,"result":{"t":1792166035718,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}

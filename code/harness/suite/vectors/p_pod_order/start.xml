@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.3" xmlns="http://www.iab.com/VAST">
+  <Ad id="p3" sequence="3">
+    <InLine>
+      <AdSystem>harness</AdSystem>
+      <Error><![CDATA[{{BASE}}/t/{{CASE}}/p3/err?code=[ERRORCODE]]]></Error>
+      <Impression id="p3"><![CDATA[{{BASE}}/t/{{CASE}}/p3/imp]]></Impression>
+      <AdServingId>p3-serving</AdServingId>
+      <AdTitle>p3</AdTitle>
+      <Creatives>
+        <Creative id="p3-c" adId="p3-c">
+          <Linear>
+            <TrackingEvents>
+        <Tracking event="start"><![CDATA[{{BASE}}/t/{{CASE}}/p3/start]]></Tracking>
+        <Tracking event="firstQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/p3/firstQuartile]]></Tracking>
+        <Tracking event="midpoint"><![CDATA[{{BASE}}/t/{{CASE}}/p3/midpoint]]></Tracking>
+        <Tracking event="thirdQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/p3/thirdQuartile]]></Tracking>
+        <Tracking event="complete"><![CDATA[{{BASE}}/t/{{CASE}}/p3/complete]]></Tracking>
+            </TrackingEvents>
+            <Duration>00:00:10</Duration>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360"><![CDATA[{{BASE}}/m/{{CASE}}/p3.mp4]]></MediaFile>
+            </MediaFiles>
+            <VideoClicks>
+              <ClickTracking><![CDATA[{{BASE}}/t/{{CASE}}/p3/clicktracking]]></ClickTracking>
+              <ClickThrough><![CDATA[{{BASE}}/t/{{CASE}}/p3/clickthrough]]></ClickThrough>
+            </VideoClicks>
+          </Linear>
+          <UniversalAdId idRegistry="unknown">unknown</UniversalAdId>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+  <Ad id="p1" sequence="1">
+    <InLine>
+      <AdSystem>harness</AdSystem>
+      <Error><![CDATA[{{BASE}}/t/{{CASE}}/p1/err?code=[ERRORCODE]]]></Error>
+      <Impression id="p1"><![CDATA[{{BASE}}/t/{{CASE}}/p1/imp]]></Impression>
+      <AdServingId>p1-serving</AdServingId>
+      <AdTitle>p1</AdTitle>
+      <Creatives>
+        <Creative id="p1-c" adId="p1-c">
+          <Linear>
+            <TrackingEvents>
+        <Tracking event="start"><![CDATA[{{BASE}}/t/{{CASE}}/p1/start]]></Tracking>
+        <Tracking event="firstQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/p1/firstQuartile]]></Tracking>
+        <Tracking event="midpoint"><![CDATA[{{BASE}}/t/{{CASE}}/p1/midpoint]]></Tracking>
+        <Tracking event="thirdQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/p1/thirdQuartile]]></Tracking>
+        <Tracking event="complete"><![CDATA[{{BASE}}/t/{{CASE}}/p1/complete]]></Tracking>
+            </TrackingEvents>
+            <Duration>00:00:10</Duration>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360"><![CDATA[{{BASE}}/m/{{CASE}}/p1.mp4]]></MediaFile>
+            </MediaFiles>
+            <VideoClicks>
+              <ClickTracking><![CDATA[{{BASE}}/t/{{CASE}}/p1/clicktracking]]></ClickTracking>
+              <ClickThrough><![CDATA[{{BASE}}/t/{{CASE}}/p1/clickthrough]]></ClickThrough>
+            </VideoClicks>
+          </Linear>
+          <UniversalAdId idRegistry="unknown">unknown</UniversalAdId>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+  <Ad id="p2" sequence="2">
+    <InLine>
+      <AdSystem>harness</AdSystem>
+      <Error><![CDATA[{{BASE}}/t/{{CASE}}/p2/err?code=[ERRORCODE]]]></Error>
+      <Impression id="p2"><![CDATA[{{BASE}}/t/{{CASE}}/p2/imp]]></Impression>
+      <AdServingId>p2-serving</AdServingId>
+      <AdTitle>p2</AdTitle>
+      <Creatives>
+        <Creative id="p2-c" adId="p2-c">
+          <Linear>
+            <TrackingEvents>
+        <Tracking event="start"><![CDATA[{{BASE}}/t/{{CASE}}/p2/start]]></Tracking>
+        <Tracking event="firstQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/p2/firstQuartile]]></Tracking>
+        <Tracking event="midpoint"><![CDATA[{{BASE}}/t/{{CASE}}/p2/midpoint]]></Tracking>
+        <Tracking event="thirdQuartile"><![CDATA[{{BASE}}/t/{{CASE}}/p2/thirdQuartile]]></Tracking>
+        <Tracking event="complete"><![CDATA[{{BASE}}/t/{{CASE}}/p2/complete]]></Tracking>
+            </TrackingEvents>
+            <Duration>00:00:10</Duration>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360"><![CDATA[{{BASE}}/m/{{CASE}}/p2.mp4]]></MediaFile>
+            </MediaFiles>
+            <VideoClicks>
+              <ClickTracking><![CDATA[{{BASE}}/t/{{CASE}}/p2/clicktracking]]></ClickTracking>
+              <ClickThrough><![CDATA[{{BASE}}/t/{{CASE}}/p2/clickthrough]]></ClickThrough>
+            </VideoClicks>
+          </Linear>
+          <UniversalAdId idRegistry="unknown">unknown</UniversalAdId>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

@@ -1,0 +1,13 @@
+Configuration,Layer,must,should,observation
+vast-client-js 6.5.0,Node.js,"W11, M12, P07","M09, M10",R01
+video-ad-sdk 4.0.1,Node.js,"W07, W17, E03, T07, M01, M03, P01, E09, A01, M06, M12, X11, P07","W20, W21, T02, T20, T18, A03, M07, P06",none
+"iab-vast-loader 2.5.1, defaults",Node.js,"W02, W11, X05, X06, M12, P07",W19,none
+"iab-vast-loader 2.5.1, noSingleAdPods",Node.js,"W11, X05, X06, M12, P07",W19,none
+vastlint-client 0.15.0,Node.js,"W03, W11, T05, T06, T07, M03, X02, T21, M06, M12, X17","W19, W20, W21, W23, T20, M07, X09, X18, X19",none
+vast-client-js 6.5.0,Chromium,"W11, M12, P07","M09, M10",R01
+video-ad-sdk 4.0.1,Chromium,"W07, W11, W17, E03, T07, M01, M03, P01, E05, E06, E09, A01, M06, M12, X11, P07","W20, W21, T02, T20, T18, A03, M07, P06, I03",none
+"iab-vast-loader 2.5.1, defaults",Chromium,"W02, X05, X06, M12, P07",W19,none
+"iab-vast-loader 2.5.1, noSingleAdPods",Chromium,"X05, X06, M12, P07",W19,none
+Shaka Player 5.2.12,Chromium,"W01, W02, E01, E02, E03, T05, T06, T07, M01, M02, M03, P01, E05, E06, E07, T21, A01, M06, M11, P03, I01","T10, T23, T20, T18, S01, M07, P05, I03",none
+"rmp-vast 17.2.0, defaults",Chromium,"W03, W11, M01, M03, E06, T13, T21, A01, M06, M11, M12, P07","W20, W21, T02, W23, T23, A03, M09, P05, I03",R01
+"rmp-vast 17.2.0, omidSupport",Chromium,"W03, W11, M01, M03, E06, T13, T21, M06, M11, M12, P07","W20, W21, T02, W23, T23, M09, P05, I03",R01

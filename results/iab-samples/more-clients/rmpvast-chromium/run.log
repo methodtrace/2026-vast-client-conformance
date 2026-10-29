@@ -1,0 +1,50 @@
+ 1 started complete 15061 ms VAST 4.0 Samples/Ad_Verification-test.xml
+ 2 started complete 15128 ms VAST 4.0 Samples/Category-test.xml
+ 3 started complete 14980 ms VAST 4.0 Samples/Conditional_Ad-test.xml
+ 4 started complete 14954 ms VAST 4.0 Samples/Event_Tracking-test.xml
+ 5 started complete 14974 ms VAST 4.0 Samples/Inline_Companion_Tag-test.xml
+ 6 started complete 14968 ms VAST 4.0 Samples/Inline_Linear_Tag-test.xml
+ 7 started          62443 ms VAST 4.0 Samples/Inline_Non-Linear_Tag-test.xml
+ 8 started complete 14997 ms VAST 4.0 Samples/Inline_Simple.xml
+ 9 started complete 15034 ms VAST 4.0 Samples/No_Wrapper_Tag-test.xml
+10 started complete 15003 ms VAST 4.0 Samples/Ready_to_serve_Media_Files_check-test.xml
+11 started complete 15113 ms VAST 4.0 Samples/SSAI_stitching _VPAID_separation-test.xml
+12 started complete 14994 ms VAST 4.0 Samples/SSAI_stitching_mezzanine_file_support-test.xml
+13 started complete 14996 ms VAST 4.0 Samples/Universal_Ad_ID-test.xml
+14 started complete 15039 ms VAST 4.0 Samples/Video_Clicks_and_click_tracking-Inline-test.xml
+15 started complete 14978 ms VAST 4.0 Samples/Viewable_Impression-test.xml
+16 started complete 14952 ms VAST 4.0 Samples/Wrapper_Tag-test.xml
+17 started complete 15000 ms VAST 4.1 Samples/Ad_Verification-test.xml
+18 started complete 14998 ms VAST 4.1 Samples/Audio_DAAST_Sample.xml
+19 started complete 14971 ms VAST 4.1 Samples/Category-test.xml
+20 started complete 14995 ms VAST 4.1 Samples/Closed_Caption_Test.xml
+21 started complete 15004 ms VAST 4.1 Samples/Conditional_Ad-test.xml
+22 started complete 15125 ms VAST 4.1 Samples/Event_Tracking-test.xml
+23 started complete 14990 ms VAST 4.1 Samples/Inline_Companion_Tag-test.xml
+24 started complete 15248 ms VAST 4.1 Samples/Inline_Linear_Tag-test.xml
+25 started          65049 ms VAST 4.1 Samples/Inline_Non-Linear_Tag-test.xml
+26 started complete 15117 ms VAST 4.1 Samples/Inline_Simple.xml
+27 started complete 14995 ms VAST 4.1 Samples/No_Wrapper_Tag-test.xml
+28 started complete 15137 ms VAST 4.1 Samples/Ready_to_serve_Media_Files_check-test.xml
+29 started complete 15243 ms VAST 4.1 Samples/SSAI_stitching _VPAID_separation-test.xml
+30 started complete 15139 ms VAST 4.1 Samples/SSAI_stitching_mezzanine_file_support-test.xml
+31 started complete 15070 ms VAST 4.1 Samples/Universal_Ad_ID-test.xml
+32 started complete 15087 ms VAST 4.1 Samples/Video_Clicks_and_click_tracking-Inline-test.xml
+33 started complete 15162 ms VAST 4.1 Samples/Viewable_Impression-test.xml
+34 started complete 15071 ms VAST 4.1 Samples/Wrapper_Tag-test.xml
+35 started complete 15089 ms VAST 4.2 Samples/Ad_Verification-test.xml
+36 started complete 15003 ms VAST 4.2 Samples/Category-test.xml
+37 started complete 15028 ms VAST 4.2 Samples/Closed_Caption_Test.xml
+38 started complete 15055 ms VAST 4.2 Samples/Event_Tracking-test.xml
+39 started complete 15085 ms VAST 4.2 Samples/IconClickFallbacks.xml
+40 started complete 14941 ms VAST 4.2 Samples/Inline_Companion_Tag-test.xml
+41 started complete 15172 ms VAST 4.2 Samples/Inline_Linear_Tag-test.xml
+42 started          62556 ms VAST 4.2 Samples/Inline_Non-Linear_Tag-test.xml
+43 started complete 15100 ms VAST 4.2 Samples/Inline_Simple.xml
+44 started complete 15040 ms VAST 4.2 Samples/No_Wrapper_Tag-test.xml
+45 started complete 15089 ms VAST 4.2 Samples/Ready_to_serve_Media_Files_check-test.xml
+46 started complete 15046 ms VAST 4.2 Samples/Universal_Ad_ID-multi-test.xml
+47 started complete 15088 ms VAST 4.2 Samples/Video_Clicks_and_click_tracking-Inline-test.xml
+48 started complete 15074 ms VAST 4.2 Samples/Viewable_Impression-test.xml
+49 started complete 15048 ms VAST 4.2 Samples/Wrapper_Tag-test.xml
+rmpvast 49/49 started, 46 complete

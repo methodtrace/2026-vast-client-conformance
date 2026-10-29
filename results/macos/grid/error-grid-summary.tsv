@@ -1,0 +1,14 @@
+failure	accepted codes	iabloader	vastclient	vastlint	videoadsdk
+(none)	resolve d<=6; d=7 may 302	conforms 7	conforms 7	conforms 5, deviates 2	conforms 7
+http404	301	conforms 15 [determined]	conforms 15 [301]	delegated 15 [no]	wrong-code 15 [502]
+http500	301	conforms 15 [determined]	conforms 15 [301]	delegated 15 [no]	wrong-code 15 [502]
+timeout	301	conforms 15 [determined]	conforms 15 [301] +uncaught	delegated 15 [no]	conforms 15 [301]
+stall	301	conforms 15 [determined]	deviates 5, conforms 10 [resolved / 301]	delegated 15 [no]	conforms 15 [301]
+refused	301	conforms 15 [determined]	conforms 15 [301]	delegated 15 [no]	wrong-code 15 [502]
+empty	100/303	no-code 15 [determined] +internal	wrong-code 15 [301]	delegated 15 [no]	conforms 15 [100]
+html	100/303	wrong-code 15 [determined] +internal	wrong-code 15 [301]	delegated 15 [no]	conforms 15 [100]
+malformed	100	wrong-code 15 [determined]	wrong-code 15 [301]	delegated 15 [no]	conforms 15 [100]
+novast	101/100/303	conforms 15 [determined] +internal	wrong-code 15 [301]	delegated 15 [no]	conforms 15 [303]
+noad	303	conforms 15 [determined]	conforms 15 [303]	delegated 15 [no]	conforms 15 [303]
+noad_err	303	conforms 15 [determined]	conforms 15 [303]	delegated 15 [no]	conforms 15 [303]
+nouri	101/100/301/303	conforms 15 [determined]	partial 15 [303]	delegated 15 [no]	wrong-code 15 [502 / 302]

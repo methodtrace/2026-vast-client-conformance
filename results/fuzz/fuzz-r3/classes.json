@@ -1,0 +1,157 @@
+[
+ {
+  "client": "iabloader",
+  "kind": "internal",
+  "msg": "Cannot read properties of null (reading 'length')",
+  "key": "iabloader|internal|Cannot read properties of null (reading 'length')",
+  "firstCase": "f00006",
+  "round": 1,
+  "seed": "iab:VAST 1-2.0 Samples/Tremor-Video-Samples/vast_wrapper_nonlinear_1.xml",
+  "mutations": [
+   "start.xml: DTD entity expansion (1,000x)"
+  ]
+ },
+ {
+  "client": "iabloader",
+  "kind": "internal",
+  "msg": "Cannot read properties of undefined (reading 'map')",
+  "key": "iabloader|internal|Cannot read properties of undefined (reading 'map')",
+  "firstCase": "f00016",
+  "round": 1,
+  "seed": "iab:VAST 4.2 Samples/Ready_to_serve_Media_Files_check-test.xml",
+  "mutations": [
+   "start.xml: delete <UniversalAdId>",
+   "start.xml: insert char at 42"
+  ]
+ },
+ {
+  "client": "iabloader",
+  "kind": "internal",
+  "msg": "Cannot read properties of undefined (reading 'documentElement')",
+  "key": "iabloader|internal|Cannot read properties of undefined (reading 'documentElement')",
+  "firstCase": "f00018",
+  "round": 1,
+  "seed": "vec:w_allow_multiple_false",
+  "mutations": [
+   "net start.xml ?status=204",
+   "start.xml: cdata->text <Tracking>"
+  ]
+ },
+ {
+  "client": "iabloader",
+  "kind": "internal",
+  "msg": "$impl.extensions.extension.map is not a function",
+  "key": "iabloader|internal|$impl.extensions.extension.map is not a function",
+  "firstCase": "f00027",
+  "round": 1,
+  "seed": "iab:VAST 3.0 Samples/Inline_Companion_Tag-test.xml",
+  "mutations": [
+   "start.xml: rename <Extensions> case"
+  ]
+ },
+ {
+  "client": "videoadsdk",
+  "kind": "unhandled",
+  "msg": "unhandled rejection: VastChain does not contain a supported vpaid creative",
+  "key": "videoadsdk|unhandled|unhandled rejection: VastChain does not contain a supported vpaid creative",
+  "firstCase": "f00045",
+  "round": 1,
+  "seed": "iab:VAST 1-2.0 Samples/Inline_LinearVAST2vpaid.xml",
+  "mutations": [
+   "start.xml: text <Impression>=\"{{BASE}}/t/{{CASE}}/fz/x?e=[ER\"",
+   "start.xml: encoding decl",
+   "start.xml: duplicate <Ad>"
+  ]
+ },
+ {
+  "client": "videoadsdk",
+  "kind": "unhandled",
+  "msg": "unhandled rejection: Failed to execute 'dispatchEvent' on 'EventTarget': parameter N is not of type 'Event'.",
+  "key": "videoadsdk|unhandled|unhandled rejection: Failed to execute 'dispatchEvent' on 'EventTarget': parameter N is not of type 'Event'.",
+  "firstCase": "f00056",
+  "round": 1,
+  "seed": "iab:VAST 4.2 Samples/IconClickFallbacks.xml",
+  "mutations": [
+   "start.xml: duplicate <Icons>",
+   "start.xml: cdata->text <AdServingId>"
+  ]
+ },
+ {
+  "client": "vastclient",
+  "kind": "internal",
+  "msg": "Cannot read properties of undefined (reading 'ad')",
+  "key": "vastclient|internal|Cannot read properties of undefined (reading 'ad')",
+  "firstCase": "f00093",
+  "round": 1,
+  "seed": "vec:v_30",
+  "mutations": [
+   "start.xml: rename <InLine> case",
+   "start.xml: remove Tracking@event"
+  ]
+ },
+ {
+  "client": "vastclient",
+  "kind": "uncaught",
+  "msg": "URLHandler: Request timed out after N ms (N)",
+  "key": "vastclient|uncaught|URLHandler: Request timed out after N ms (N)",
+  "firstCase": "f00155",
+  "round": 1,
+  "seed": "vec:r_text_plain",
+  "mutations": [
+   "inline.xml: VAST version",
+   "net start.xml ?delay=4500"
+  ]
+ },
+ {
+  "client": "vastclient",
+  "kind": "hang",
+  "msg": "no result within 30 s",
+  "key": "vastclient|hang|no result within 30 s",
+  "firstCase": "f00361",
+  "round": 2,
+  "seed": "vec:w_loop",
+  "mutations": [
+   "net start.xml ?stall=6000"
+  ]
+ },
+ {
+  "client": "iabloader",
+  "kind": "internal",
+  "msg": "$impl.creatives.creative.forEach is not a function",
+  "key": "iabloader|internal|$impl.creatives.creative.forEach is not a function",
+  "firstCase": "f00453",
+  "round": 2,
+  "seed": "iab:VAST 1-2.0 Samples/Inline_NonLinear_VAST2.0.xml",
+  "mutations": [
+   "start.xml: attr Ad@id=\"javascript:alert(1)\"",
+   "start.xml: rename <Creatives> case",
+   "start.xml: cdata->text <AdSystem>"
+  ]
+ },
+ {
+  "client": "iabloader",
+  "kind": "internal",
+  "msg": "$impl.impression.filter is not a function",
+  "key": "iabloader|internal|$impl.impression.filter is not a function",
+  "firstCase": "f00633",
+  "round": 3,
+  "seed": "iab:VAST 4.1 Samples/Wrapper_Tag-test.xml",
+  "mutations": [
+   "start.xml: rename <Wrapper> case"
+  ]
+ },
+ {
+  "client": "iabloader",
+  "kind": "internal",
+  "msg": "Cannot read properties of undefined (reading 'forEach')",
+  "key": "iabloader|internal|Cannot read properties of undefined (reading 'forEach')",
+  "firstCase": "f01061",
+  "round": 4,
+  "seed": "vec:w_noad",
+  "mutations": [
+   "start.xml: rename <Creatives> case",
+   "noad.xml: comment in <Error>",
+   "start.xml: insert char at 1090"
+  ]
+ }
+]

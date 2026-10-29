@@ -1,0 +1,76 @@
+{
+ "built": "2026-10-22T03:00:22.264Z",
+ "layer": "browser",
+ "cells": 864,
+ "configurations": [
+  "vastclient",
+  "videoadsdk",
+  "iabloader",
+  "iabloader+nsap",
+  "shaka",
+  "rmpvast",
+  "rmpvast+omid",
+  "ima"
+ ],
+ "verdicts": {
+  "conforms": 492,
+  "deviates": 123,
+  "n/a": 74,
+  "delegated": 175
+ },
+ "base": {
+  "file": "results/reference/first-run/firefox/results.jsonl",
+  "cells": 864,
+  "regraded": 792,
+  "regradedChanged": 13
+ },
+ "rerun": {
+  "file": "rerun 2026-10-21 (firefox)",
+  "cells": 72,
+  "verdictChangedFromBase": 3,
+  "requirements": [
+   "A01",
+   "A02",
+   "A04",
+   "M06",
+   "M07",
+   "M08",
+   "M09",
+   "R04",
+   "R05"
+  ],
+  "runSummary": {
+   "started": "2026-10-22T02:52:54.546Z",
+   "host": {
+    "platform": "linux",
+    "arch": "x64",
+    "release": "6.18.44-fc-v140",
+    "cpus": 2
+   },
+   "browsers": {
+    "firefox": {
+     "launched": true,
+     "version": "142.0.1",
+     "startedAt": "2026-10-22T02:52:54.547Z",
+     "finishedAt": "2026-10-22T02:57:19.875Z",
+     "parallel": false,
+     "cells": 72,
+     "runs": 32,
+     "verdicts": {
+      "delegated": 17,
+      "deviates": 12,
+      "conforms": 33,
+      "n/a": 10
+     }
+    }
+   },
+   "ima": {
+    "requested": true,
+    "included": true
+   },
+   "finished": "2026-10-22T02:57:19.875Z"
+  }
+ },
+ "browser": "firefox",
+ "browserVersion": "142.0.1"
+}

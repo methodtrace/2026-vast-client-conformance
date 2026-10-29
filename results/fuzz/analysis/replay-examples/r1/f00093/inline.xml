@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.3" xmlns="http://www.iab.com/VAST">
+  <Ad id="in">
+    <InLine>
+      <AdSystem>harness</AdSystem>
+      <Error><![CDATA[{{BASE}}/t/{{CASE}}/in/err?code=[ERRORCODE]]]></Error>
+      <Impression id="in"><![CDATA[{{BASE}}/t/{{CASE}}/in/imp]]></Impression>
+      <AdServingId>in-serving</AdServingId>
+      <AdTitle>in</AdTitle>
+      <AdVerifications>
+        <Verification vendor="inline.harness.test-omid">
+          <JavaScriptResource apiFramework="o

@@ -1,0 +1,49 @@
+{
+ "started": "2026-10-27T21:11:31.053Z",
+ "finished": "2026-10-27T22:17:43.033Z",
+ "host": {
+  "platform": "darwin",
+  "arch": "arm64",
+  "release": "27.0.0",
+  "cpus": 15
+ },
+ "browsers": {
+  "safari": {
+   "launched": true,
+   "startedAt": "2026-10-27T21:11:31.053Z",
+   "isolation": "session",
+   "driver": "/usr/bin/safaridriver",
+   "ima": {
+    "enabled": false,
+    "reason": "IMA session refused: session not created: Could not create a session: Capability 'proxy' could not be honored."
+   },
+   "capabilities": {
+    "browserName": "Safari",
+    "browserVersion": "27.0.1",
+    "platformName": "macOS",
+    "safari:platformVersion": "27.0.1"
+   },
+   "version": "27.0.1",
+   "finishedAt": "2026-10-27T22:17:43.030Z",
+   "parallel": false,
+   "cells": 756,
+   "runs": 494,
+   "configs": [
+    "vastclient",
+    "videoadsdk",
+    "iabloader",
+    "iabloader+nsap",
+    "shaka",
+    "rmpvast",
+    "rmpvast+omid"
+   ],
+   "verdicts": {
+    "conforms": 400,
+    "deviates": 113,
+    "n/a": 68,
+    "delegated": 175
+   },
+   "startedMuted": 0
+  }
+ }
+}

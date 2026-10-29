@@ -1,0 +1,10 @@
+# fetched by code/tools/fetch-sources.sh (third-party; not redistributed)
+sources/iab-vast-samples/*
+!sources/iab-vast-samples/MANIFEST.tsv
+sources/iab-vast-spec/
+.local-data/
+# built by evidence/checks/fuzz-repros/vc-hang/make-patched.sh
+evidence/checks/fuzz-repros/vc-hang/patched/
+evidence/checks/fuzz-repros/build/*.bundle.mjs*
+node_modules/
+.DS_Store

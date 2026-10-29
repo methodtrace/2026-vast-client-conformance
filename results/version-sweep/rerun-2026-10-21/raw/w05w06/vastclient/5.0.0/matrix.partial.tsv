@@ -1,0 +1,3 @@
+id	area	strength	spec	claim	vastclient
+W05	wrappers	must	§2.3.5.1	Terminates a Wrapper that points to itself (stops requesting it).	conforms
+W06	wrappers	should	§2.3.5.1; Error Reporting table (302)	Reports 302 (wrapper limit) for a self-referencing Wrapper loop.	conforms

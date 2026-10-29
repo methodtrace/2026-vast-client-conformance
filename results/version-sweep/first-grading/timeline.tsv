@@ -1,0 +1,511 @@
+client	requirement	strength	vastclient@3.3.0	vastclient@4.0.1	vastclient@5.0.0	vastclient@6.0.2	vastclient@6.1.0	vastclient@6.2.0	vastclient@6.3.1	vastclient@6.4.5	vastclient@6.5.0	videoadsdk@2.1.0	videoadsdk@2.2.1	videoadsdk@2.3.0	videoadsdk@2.4.3	videoadsdk@2.5.1	videoadsdk@2.6.3	videoadsdk@2.7.2	videoadsdk@3.0.0	videoadsdk@4.0.1	iabloader@2.0.0	iabloader@2.1.0	iabloader@2.2.5	iabloader@2.3.0	iabloader@2.4.0	iabloader@2.5.1	iabloader+nsap@2.0.0	iabloader+nsap@2.1.0	iabloader+nsap@2.2.5	iabloader+nsap@2.3.0	iabloader+nsap@2.4.0	iabloader+nsap@2.5.1	vastlint@0.4.24	vastlint@0.5.0	vastlint@0.6.3	vastlint@0.7.2	vastlint@0.8.4	vastlint@0.9.1	vastlint@0.10.2	vastlint@0.11.8	vastlint@0.12.0	vastlint@0.13.13	vastlint@0.14.5	vastlint@0.15.0
+vastclient	W01	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W02	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W03	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W04	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W05	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W06	should	n/a	n/a	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W07	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W08	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W09	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W10	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W11	should	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																																	
+vastclient	W12	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W13	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W14	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W15	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W16	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W17	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W18	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W19	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W20	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W21	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W22	may	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																																	
+vastclient	E01	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	E02	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	E03	must	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated																																	
+vastclient	E04	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T01	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T02	should	deviates	deviates	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T03	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T04	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T05	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T06	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T07	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T08	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T09	observation	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																																	
+vastclient	M01	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	M02	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	M03	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	M04	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	M05	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X01	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X02	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X03	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X04	observation	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																																	
+vastclient	X05	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X06	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	P01	must	deviates	deviates	deviates	deviates	deviates	conforms	conforms	conforms	conforms																																	
+vastclient	R01	observation	conforms	conforms	conforms	deviates	deviates	deviates	deviates	deviates	deviates																																	
+vastclient	R02	observation	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	W23	should	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated																																	
+vastclient	E05	must	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																																	
+vastclient	E06	must	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																																	
+vastclient	E07	must	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																																	
+vastclient	E08	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	E09	should	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated																																	
+vastclient	T10	should	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated																																	
+vastclient	T11	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T12	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T13	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T14	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T15	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T23	should	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated																																	
+vastclient	T20	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T16	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T17	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T18	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T19	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T21	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	T22	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	A01	must	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated																																	
+vastclient	A02	must	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated																																	
+vastclient	A03	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	S01	should	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated																																	
+vastclient	S02	may	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																																	
+vastclient	M06	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	M07	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	M08	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	M09	should	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																																	
+vastclient	M10	should	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																																	
+vastclient	M11	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	M12	must	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																																	
+vastclient	P06	should	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated																																	
+vastclient	P03	must	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated																																	
+vastclient	P02	should	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																																	
+vastclient	P05	should	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																																	
+vastclient	I01	must	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																																	
+vastclient	I03	must	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																																	
+vastclient	I02	must	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																																	
+vastclient	X07	observation	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X08	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X09	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X10	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X11	must	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X12	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X13	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X14	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X15	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	X16	should	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	R03	observation	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	R04	observation	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	R05	observation	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+vastclient	R06	observation	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																																	
+videoadsdk	W01	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W02	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W03	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W04	should										deviates	deviates	deviates	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W05	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W06	should										deviates	deviates	deviates	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W07	must										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	W08	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W09	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W10	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W11	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W12	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W13	must										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	W14	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W15	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W16	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W17	must										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	W18	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W19	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W20	should										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	W21	should										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	W22	may										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	E01	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	E02	must										deviates	deviates	deviates	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	E03	must										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	E04	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T01	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T02	should										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	T03	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T04	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T05	must										deviates	deviates	deviates	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T06	must										deviates	deviates	deviates	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T07	must										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	T08	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T09	observation										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	M01	must										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	M02	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	M03	must										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	M04	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	M05	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	X01	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	X02	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	X03	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	X04	observation										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	X05	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	X06	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	P01	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	deviates	deviates																								
+videoadsdk	R01	observation										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	R02	observation										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	W23	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	E05	must										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	E06	must										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	E07	must										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	E08	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	E09	should										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	T10	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T11	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T12	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T13	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T14	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T15	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T23	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T20	should										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	T16	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T17	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T18	should										n/a [adapter crash]	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	T19	should										n/a	n/a	n/a	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T21	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	T22	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	A01	must										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	A02	must										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	A03	should										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	S01	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	S02	may										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	M06	must										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	M07	should										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	M08	should										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	M09	should										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	M10	should										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	M11	must										n/a	n/a	n/a	n/a	n/a	conforms	conforms	conforms	conforms																								
+videoadsdk	M12	must										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	P06	should										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	P03	must										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	P02	should										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	P05	should										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	I01	must										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	I03	must										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	I02	must										n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a																								
+videoadsdk	X07	observation										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	X08	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	X09	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	X10	must										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	X11	must										deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates																								
+videoadsdk	X12	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	X13	should										deviates [adapter crash]	deviates [adapter crash]	deviates [adapter crash]	deviates [adapter crash]	deviates [adapter crash]	deviates [adapter crash]	deviates [adapter crash]	conforms	conforms																								
+videoadsdk	X14	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	X15	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	X16	should										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	R03	observation										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	R04	observation										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	R05	observation										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+videoadsdk	R06	observation										conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms																								
+iabloader	W01	must																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	W02	must																			deviates	deviates	deviates	deviates	deviates	deviates																		
+iabloader	W03	must																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	W04	should																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	W05	must																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	W06	should																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	W07	must																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	W08	must																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	W09	should																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	W10	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	W11	should																			deviates	deviates	deviates	deviates	deviates	deviates																		
+iabloader	W12	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	W13	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	W14	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	W15	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	W16	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	W17	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	W18	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	W19	should																			deviates	deviates	deviates	deviates	deviates	deviates																		
+iabloader	W20	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	W21	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	W22	may																			n/a	n/a	n/a	n/a	n/a	n/a																		
+iabloader	E01	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	E02	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	E03	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	E04	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T01	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T02	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T03	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T04	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T05	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T06	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T07	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T08	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T09	observation																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	M01	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	M02	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	M03	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	M04	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	M05	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	X01	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	X02	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	X03	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	X04	observation																			n/a	n/a	n/a	n/a	n/a	n/a																		
+iabloader	X05	must																			deviates	deviates	deviates	deviates	deviates	deviates																		
+iabloader	X06	must																			deviates	deviates	deviates	deviates	deviates	deviates																		
+iabloader	P01	must																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	R01	observation																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	R02	observation																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	W23	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	E05	must																			n/a	n/a	n/a	n/a	n/a	n/a																		
+iabloader	E06	must																			n/a	n/a	n/a	n/a	n/a	n/a																		
+iabloader	E07	must																			n/a	n/a	n/a	n/a	n/a	n/a																		
+iabloader	E08	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	E09	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T10	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T11	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T12	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T13	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T14	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T15	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T23	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T20	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T16	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T17	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T18	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T19	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T21	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	T22	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	A01	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	A02	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	A03	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	S01	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	S02	may																			n/a	n/a	n/a	n/a	n/a	n/a																		
+iabloader	M06	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	M07	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	M08	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	M09	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	M10	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	M11	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	M12	must																			deviates	deviates	deviates	deviates	deviates	deviates																		
+iabloader	P06	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	P03	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	P02	should																			n/a	n/a	n/a	n/a	n/a	n/a																		
+iabloader	P05	should																			n/a	n/a	n/a	n/a	n/a	n/a																		
+iabloader	I01	must																			n/a	n/a	n/a	n/a	n/a	n/a																		
+iabloader	I03	must																			n/a	n/a	n/a	n/a	n/a	n/a																		
+iabloader	I02	must																			n/a	n/a	n/a	n/a	n/a	n/a																		
+iabloader	X07	observation																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	X08	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	X09	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	X10	must																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	X11	must																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	X12	should																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	X13	should																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader	X14	should																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	X15	should																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	X16	should																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	R03	observation																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	R04	observation																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	R05	observation																			conforms	conforms	conforms	conforms	conforms	conforms																		
+iabloader	R06	observation																			delegated	delegated	delegated	delegated	delegated	delegated																		
+iabloader+nsap	W01	must																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	W02	must																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	W03	must																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	W04	should																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	W05	must																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	W06	should																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	W07	must																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	W08	must																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	W09	should																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	W10	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	W11	should																									deviates	deviates	deviates	deviates	deviates	deviates												
+iabloader+nsap	W12	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	W13	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	W14	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	W15	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	W16	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	W17	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	W18	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	W19	should																									deviates	deviates	deviates	deviates	deviates	deviates												
+iabloader+nsap	W20	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	W21	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	W22	may																									n/a	n/a	n/a	n/a	n/a	n/a												
+iabloader+nsap	E01	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	E02	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	E03	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	E04	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T01	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T02	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T03	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T04	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T05	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T06	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T07	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T08	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T09	observation																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	M01	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	M02	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	M03	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	M04	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	M05	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	X01	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	X02	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	X03	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	X04	observation																									n/a	n/a	n/a	n/a	n/a	n/a												
+iabloader+nsap	X05	must																									deviates	deviates	deviates	deviates	deviates	deviates												
+iabloader+nsap	X06	must																									deviates	deviates	deviates	deviates	deviates	deviates												
+iabloader+nsap	P01	must																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	R01	observation																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	R02	observation																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	W23	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	E05	must																									n/a	n/a	n/a	n/a	n/a	n/a												
+iabloader+nsap	E06	must																									n/a	n/a	n/a	n/a	n/a	n/a												
+iabloader+nsap	E07	must																									n/a	n/a	n/a	n/a	n/a	n/a												
+iabloader+nsap	E08	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	E09	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T10	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T11	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T12	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T13	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T14	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T15	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T23	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T20	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T16	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T17	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T18	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T19	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T21	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	T22	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	A01	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	A02	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	A03	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	S01	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	S02	may																									n/a	n/a	n/a	n/a	n/a	n/a												
+iabloader+nsap	M06	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	M07	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	M08	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	M09	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	M10	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	M11	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	M12	must																									deviates	deviates	deviates	deviates	deviates	deviates												
+iabloader+nsap	P06	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	P03	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	P02	should																									n/a	n/a	n/a	n/a	n/a	n/a												
+iabloader+nsap	P05	should																									n/a	n/a	n/a	n/a	n/a	n/a												
+iabloader+nsap	I01	must																									n/a	n/a	n/a	n/a	n/a	n/a												
+iabloader+nsap	I03	must																									n/a	n/a	n/a	n/a	n/a	n/a												
+iabloader+nsap	I02	must																									n/a	n/a	n/a	n/a	n/a	n/a												
+iabloader+nsap	X07	observation																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	X08	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	X09	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	X10	must																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	X11	must																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	X12	should																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	X13	should																									delegated	delegated	delegated	delegated	delegated	delegated												
+iabloader+nsap	X14	should																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	X15	should																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	X16	should																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	R03	observation																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	R04	observation																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	R05	observation																									conforms	conforms	conforms	conforms	conforms	conforms												
+iabloader+nsap	R06	observation																									delegated	delegated	delegated	delegated	delegated	delegated												
+vastlint	W01	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	W02	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	W03	must																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	W04	should																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	W05	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	W06	should																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	W07	must																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	W08	must																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	W09	should																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	W10	must																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	W11	should																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	W12	must																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	W13	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	W14	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	W15	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	W16	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	W17	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	W18	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	W19	should																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	W20	should																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	W21	should																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	W22	may																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	E01	must																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	E02	must																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	E03	must																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	E04	must																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	T01	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T02	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T03	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T04	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T05	must																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	T06	must																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	T07	must																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	T08	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T09	observation																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	M01	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	M02	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	M03	must																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	M04	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	M05	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	X01	should																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	X02	must																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	X03	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	X04	observation																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	X05	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	X06	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	P01	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	R01	observation																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	R02	observation																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	W23	should																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	E05	must																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	E06	must																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	E07	must																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	E08	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	E09	should																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	T10	should																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	T11	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T12	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T13	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T14	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T15	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T23	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T20	should																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	T16	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T17	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T18	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	T19	should																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	T21	must																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	T22	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	A01	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	A02	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	A03	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	S01	should																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	S02	may																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	M06	must																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	M07	should																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	M08	should																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	M09	should																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	M10	should																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	M11	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	M12	must																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	P06	should																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	P03	must																															delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated	delegated
+vastlint	P02	should																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	P05	should																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	I01	must																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	I03	must																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	I02	must																															n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a
+vastlint	X07	observation																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	X08	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	X09	should																															deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates	deviates
+vastlint	X10	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	X11	must																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	X12	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	X13	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	X14	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	X15	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	X16	should																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	R03	observation																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	R04	observation																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	R05	observation																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms
+vastlint	R06	observation																															conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms	conforms

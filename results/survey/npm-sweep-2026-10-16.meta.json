@@ -1,0 +1,24 @@
+{
+ "date": "2026-10-16",
+ "registry": "registry.npmjs.org /-/v1/search size=250",
+ "queries": {
+  "vast parser": 250,
+  "vast 4": 250,
+  "vast wrapper": 250,
+  "vast": 250,
+  "vmap": 91,
+  "vast tracker": 250,
+  "iab vast": 250,
+  "ssai vast": 250,
+  "vast client": 250,
+  "ad pod": 250,
+  "vast xml": 250,
+  "video ad": 250,
+  "vast player": 250,
+  "vpaid": 52,
+  "simid": 13,
+  "videojs vast": 250
+ },
+ "filter": "name, description or keywords match \\bvast\\b|vmap|vpaid|simid|\\bima\\b",
+ "downloads": "api.npmjs.org point/last-month"
+}

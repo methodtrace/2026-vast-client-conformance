@@ -1,0 +1,8 @@
+module=code/harness/node_modules/@dailymotion/vast-client/dist/vast-client-node.js timeout=2000 wrapperLimit=default (10) load1=0.29
+     1 ms  resolving depth=0 /doc/x/wforever/start.xml
+    38 ms  resolved  depth=0 duration=37 ms status=200 error=null
+    40 ms  resolving depth=1 /doc/x/wforever/inline.xml?stall=900000
+301486 ms  VAST-error code=301
+get() resolved, ads=0 after 301486 ms
+doc requests: 2; error pixels: []
+RESULT {"outcome":"resolved, ads=0","totalMs":301486,"docRequests":2,"uncaught":[],"load1":0.3}

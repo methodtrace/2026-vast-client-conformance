@@ -1,0 +1,12 @@
+{"pkg":"vc600","scenario":"control_wrapper","code":0,"signal":null,"ms":146,"result":{"t":1792165961308,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc600","scenario":"control_wrapper","code":0,"signal":null,"ms":133,"result":{"t":1792165961442,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc600","scenario":"control_wrapper","code":0,"signal":null,"ms":132,"result":{"t":1792165961576,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc600","scenario":"wrapper_hang","code":0,"signal":null,"ms":137,"result":{"t":1792165961713,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc600","scenario":"wrapper_hang","code":0,"signal":null,"ms":161,"result":{"t":1792165961874,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc600","scenario":"wrapper_hang","code":0,"signal":null,"ms":146,"result":{"t":1792165962022,"ev":"result","ok":false,"caught":"ReferenceError: window is not defined"},"done":0,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc600","scenario":"concurrent_50_one_slow","code":0,"signal":null,"ms":2256,"result":{"t":1792165964275,"ev":"result","finished":50},"done":50,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc600","scenario":"concurrent_50_one_slow","code":0,"signal":null,"ms":2239,"result":{"t":1792165966516,"ev":"result","finished":50},"done":50,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc600","scenario":"concurrent_50_one_slow","code":0,"signal":null,"ms":2231,"result":{"t":1792165968747,"ev":"result","finished":50},"done":50,"unhandled":0,"service":null,"stderr":""}
+{"pkg":"vc600","scenario":"service","code":null,"signal":"SIGTERM","ms":2487,"result":null,"done":0,"unhandled":0,"service":{"ok":20,"failed":[]},"stderr":""}
+{"pkg":"vc600","scenario":"service","code":null,"signal":"SIGTERM","ms":2481,"result":null,"done":0,"unhandled":0,"service":{"ok":20,"failed":[]},"stderr":""}
+{"pkg":"vc600","scenario":"service","code":null,"signal":"SIGTERM","ms":2514,"result":null,"done":0,"unhandled":0,"service":{"ok":20,"failed":[]},"stderr":""}

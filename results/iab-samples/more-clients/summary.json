@@ -1,0 +1,64 @@
+{
+ "date": "2026-10-20",
+ "samples": 49,
+ "source": "sources/iab-vast-samples (MANIFEST.tsv), VAST 4.0/4.1/4.2 folders",
+ "definition": {
+  "vastlint": "load call yields at least one resolved InLine ad (gate2.mjs rule)",
+  "rmpvast": "an ad started (rmp-vast adstarted event) under window.VASTCONF.run('rmpvast', url, {timeout:3000}, {kind:'full'})"
+ },
+ "results": {
+  "vastlint": {
+   "client": {
+    "id": "vastlint",
+    "name": "vastlint-client",
+    "version": "0.15.0 (vastlint 0.15.0)",
+    "language": "JavaScript (WebAssembly core)"
+   },
+   "layer": "Node.js",
+   "resolved": 49,
+   "samples": 49,
+   "failed": []
+  },
+  "vastclient (control, same run)": {
+   "client": {
+    "id": "vastclient",
+    "name": "@dailymotion/vast-client",
+    "version": "6.5.0",
+    "language": "JavaScript"
+   },
+   "resolved": 49,
+   "samples": 49
+  },
+  "rmpvast": {
+   "client": {
+    "id": "rmpvast",
+    "name": "rmp-vast",
+    "version": "17.2.0 (bundles @dailymotion/vast-client 6.4.2)",
+    "language": "JavaScript"
+   },
+   "layer": "chromium 141.0.7390.37",
+   "started": 49,
+   "samples": 49,
+   "playedToComplete": 46,
+   "notComplete": [
+    "VAST 4.0 Samples/Inline_Non-Linear_Tag-test.xml",
+    "VAST 4.1 Samples/Inline_Non-Linear_Tag-test.xml",
+    "VAST 4.2 Samples/Inline_Non-Linear_Tag-test.xml"
+   ],
+   "notCompleteReason": "NonLinear overlay ads have no complete event; each started (adimpression, adstarted, adcreativeview) and was destroyed when the harness ended the run after 60 s",
+   "failed": []
+  }
+ },
+ "agreement": "started/resolved InLine Ad id equals stored vast-client-js 6.5.0 resolved Ad id (results/iab-samples/node/results.jsonl) for all 49 samples, for both vastlint and rmp-vast",
+ "media": {
+  "note": "IAB sample MediaFiles (video/mp4 on iab-publicfiles.s3.amazonaws.com and cdn.iabcdn.com) answered by the runner with the harness 10-second ad (code/harness/browser/media/ad-10s.webm) remuxed to MP4 without re-encoding (VP9/Opus), since Playwright Chromium has no H.264 decoder",
+  "file": "ad-10s-vp9.mp4",
+  "sha256": "6e462fd3064cc75d6a80cd73fa6f71d427630d78fb56aa5ca2b27364f1047b1c",
+  "made_with": "ffmpeg -i ad-10s.webm -c copy -movflags +faststart ad-10s-vp9.mp4"
+ },
+ "files": {
+  "node": "node/results.jsonl, node/summary.json",
+  "rmpvast": "rmpvast-chromium/results.jsonl, rmpvast-chromium/summary.json, rmpvast-chromium/run.log",
+  "runner": "runner/gate2-rmpvast.mjs, runner/gate2-clients-env.patch"
+ }
+}

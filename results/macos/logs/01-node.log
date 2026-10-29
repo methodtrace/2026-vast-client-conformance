@@ -1,0 +1,3 @@
+node tarball sha256 expected 5ed4db0fcf1eaf84d91ad12462631d73bf4576c1377e192d222e48026a902640
+node tarball sha256 got      5ed4db0fcf1eaf84d91ad12462631d73bf4576c1377e192d222e48026a902640
+installed ~/vast-conformance-runs/sat-2026-10-24/vast-conformance-harness/.tools/node-v22.22.0-darwin-arm64

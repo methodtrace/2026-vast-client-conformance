@@ -1,0 +1,36 @@
+{
+ "corpus": 139,
+ "stored": 1442,
+ "tried": 102,
+ "longestMatch": 1442,
+ "seedsWithAnyMatch": [
+  {
+   "seed": 20261017,
+   "matchingCases": 1442
+  }
+ ],
+ "full": {
+  "20261017": {
+   "rounds": 5,
+   "draws": 1500,
+   "generatedCases": 1442,
+   "storedCases": 1442,
+   "mismatches": 0,
+   "perRoundGenerated": [
+    289,
+    291,
+    290,
+    283,
+    289
+   ],
+   "perRoundStored": [
+    289,
+    291,
+    290,
+    283,
+    289
+   ],
+   "perRoundEqual": true
+  }
+ }
+}

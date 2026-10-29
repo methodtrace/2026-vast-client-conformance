@@ -1,0 +1,12 @@
+{"probe":"a0_control","vastclient":"1","videoadsdk":"1","iabloader":"1","vastlint":"1"}
+{"probe":"c1_creatives_lowercase","vastclient":"0 \"no ad\"","videoadsdk":"1","iabloader":"0 \"$impl.creatives.creative.forEach is not a function\"","vastlint":"1"}
+{"probe":"c2_ad_lowercase","vastclient":"0 \"no ad\"","videoadsdk":"1","iabloader":"0 \"Multiple values for VAST.ad\"","vastlint":"1"}
+{"probe":"d1_dup_adservingid","vastclient":"1","videoadsdk":"1","iabloader":"0 \"Multiple values for InLine.AdServingId\"","vastlint":"1"}
+{"probe":"d2_dup_duration","vastclient":"1","videoadsdk":"1","iabloader":"0 \"Multiple values for Linear.Duration\"","vastlint":"1"}
+{"probe":"m1_no_mediafile","vastclient":"0 \"no ad\"","videoadsdk":"1","iabloader":"1","vastlint":"1"}
+{"probe":"m2_mediafile_lowercase","vastclient":"0 \"no ad\"","videoadsdk":"1","iabloader":"1","vastlint":"1"}
+{"probe":"x1_xmldecl_v2","vastclient":"0 \"Invalid VAST XMLDocument\"","videoadsdk":"0 \"No next ad to request\"","iabloader":"1","vastlint":"1"}
+{"probe":"x2_fffe_in_text","vastclient":"0 \"Invalid VAST XMLDocument\"","videoadsdk":"0 \"No next ad to request\"","iabloader":"1","vastlint":"1"}
+{"probe":"x3_nul_in_text","vastclient":"0 \"Invalid VAST XMLDocument\"","videoadsdk":"0 \"No next ad to request\"","iabloader":"1","vastlint":"1"}
+{"probe":"x4_stray_lt","vastclient":"0 \"Invalid VAST XMLDocument\"","videoadsdk":"0 \"No next ad to request\"","iabloader":"1","vastlint":"1"}
+{"probe":"x5_unclosed","vastclient":"0 \"Invalid VAST XMLDocument\"","videoadsdk":"0 \"No next ad to request\"","iabloader":"1","vastlint":"1"}

@@ -1,0 +1,9 @@
+module=evidence/checks/fuzz-repros/vc-hang/patched/vast-client-6.5.0-fix/dist/vast-client-node.js timeout=2000 wrapperLimit=default (10) load1=2.71
+     1 ms  resolving depth=0 /doc/x/f00361/start.xml
+    72 ms  resolved  depth=0 duration=71 ms status=200 error=null
+    74 ms  resolving depth=1 /doc/x/f00361/start.xml?stall=6000
+  2079 ms  resolved  depth=1 duration=2005 ms status=408 error=URLHandler: Request timed out after 2000 ms (408)
+  2079 ms  VAST-error code=301
+get() resolved, ads=0 after 2080 ms
+doc requests: 2; error pixels: []
+RESULT {"outcome":"resolved, ads=0","totalMs":2080,"docRequests":2,"uncaught":[],"load1":2.71}

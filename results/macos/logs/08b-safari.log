@@ -1,0 +1,497 @@
+   IMA in Safari: SKIPPED: IMA session refused: session not created: Could not create a session: Capability 'proxy' could not be honored.
+== safari 27.0.1 (isolation: session)
+   ran sa0001 vastclient      w_one load ok 2068 ms
+   ran sa0002 videoadsdk      w_one load ok 1879 ms
+   ran sa0003 iabloader       w_one load ok 1888 ms
+   ran sa0004 iabloader+nsap  w_one load ok 1862 ms
+   ran sa0005 shaka           w_one full not-ok 11543 ms
+   ran sa0006 rmpvast         w_one full ok 15908 ms
+   ran sa0007 rmpvast+omid    w_one full ok 15888 ms
+   ran sa0008 vastclient      w_one_seq load ok 1861 ms
+   ran sa0009 videoadsdk      w_one_seq load ok 1888 ms
+   ran sa0010 iabloader       w_one_seq load ok 1900 ms
+   ran sa0011 iabloader+nsap  w_one_seq load ok 1872 ms
+   ran sa0012 shaka           w_one_seq full not-ok 11539 ms
+   ran sa0013 rmpvast         w_one_seq full ok 15884 ms
+   ran sa0014 rmpvast+omid    w_one_seq full ok 15861 ms
+   ran sa0015 vastclient      w_five load ok 1897 ms
+   ran sa0016 videoadsdk      w_five load ok 1868 ms
+   ran sa0017 iabloader       w_five load ok 1681 ms
+   ran sa0018 iabloader+nsap  w_five load ok 1894 ms
+   ran sa0019 shaka           w_five full not-ok 11526 ms
+   ran sa0020 rmpvast         w_five full not-ok 2921 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0021 rmpvast+omid    w_five full not-ok 3150 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0022 vastclient      w_six load ok 1861 ms
+   ran sa0023 videoadsdk      w_six load not-ok 1864 ms No next ad to request
+   ran sa0024 iabloader       w_six load ok 1888 ms
+   ran sa0025 iabloader+nsap  w_six load ok 1876 ms
+   ran sa0026 shaka           w_six full not-ok 11535 ms
+   ran sa0027 rmpvast         w_six full not-ok 3165 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0028 rmpvast+omid    w_six full not-ok 3139 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0029 vastclient      w_loop load ok 1883 ms
+   ran sa0030 videoadsdk      w_loop load not-ok 1884 ms No next ad to request
+   ran sa0031 iabloader       w_loop load not-ok 1866 ms VAST error 302: Wrapper limit reached, as defined by the video player. Too many 
+   ran sa0032 iabloader+nsap  w_loop load not-ok 1886 ms VAST error 302: Wrapper limit reached, as defined by the video player. Too many 
+   ran sa0033 shaka           w_loop full not-ok 11544 ms
+   ran sa0034 rmpvast         w_loop full not-ok 3152 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0035 rmpvast+omid    w_loop full not-ok 3158 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0036 vastclient      w_http404 load ok 1861 ms
+   ran sa0037 videoadsdk      w_http404 load not-ok 1888 ms No next ad to request
+   ran sa0038 iabloader       w_http404 load not-ok 1904 ms VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI 
+   ran sa0039 iabloader+nsap  w_http404 load not-ok 1878 ms VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI 
+   ran sa0040 shaka           w_http404 full not-ok 11559 ms
+   ran sa0041 rmpvast         w_http404 full not-ok 3143 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0042 rmpvast+omid    w_http404 full not-ok 3165 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0043 vastclient      w_timeout load ok 3914 ms
+   ran sa0044 videoadsdk      w_timeout load not-ok 3929 ms RequestAd timeout
+   ran sa0045 iabloader       w_timeout load not-ok 3929 ms VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI 
+   ran sa0046 iabloader+nsap  w_timeout load not-ok 3901 ms VAST error 301: Timeout of VAST URI provided in Wrapper element, or of VAST URI 
+   ran sa0047 shaka           w_timeout full not-ok 11547 ms
+   ran sa0048 rmpvast         w_timeout full not-ok 4977 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0049 rmpvast+omid    w_timeout full not-ok 5192 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0050 vastclient      w_noad load ok 1872 ms
+   ran sa0051 videoadsdk      w_noad load not-ok 1875 ms No next ad to request
+   ran sa0052 iabloader       w_noad load not-ok 1869 ms VAST error 303: No ads VAST response after one or more Wrappers. Also includes n
+   ran sa0053 iabloader+nsap  w_noad load not-ok 1671 ms VAST error 303: No ads VAST response after one or more Wrappers. Also includes n
+   ran sa0054 shaka           w_noad full not-ok 11549 ms
+   ran sa0055 rmpvast         w_noad full not-ok 2943 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0056 rmpvast+omid    w_noad full not-ok 3138 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0057 vastclient      w_malformed load ok 1871 ms
+   ran sa0058 videoadsdk      w_malformed load not-ok 1873 ms No next ad to request
+   ran sa0059 iabloader       w_malformed load not-ok 1861 ms XML parsing error
+   ran sa0060 iabloader+nsap  w_malformed load not-ok 1862 ms XML parsing error
+   ran sa0061 shaka           w_malformed full not-ok 11564 ms
+   ran sa0062 rmpvast         w_malformed full not-ok 3157 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0063 rmpvast+omid    w_malformed full not-ok 3155 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0064 vastclient      w_two_wrappers_inline_error full ok 1865 ms
+   ran sa0065 videoadsdk      w_two_wrappers_inline_error full not-ok 1892 ms No next ad to request
+   ran sa0066 iabloader       w_two_wrappers_inline_error full ok 1868 ms
+   ran sa0067 iabloader+nsap  w_two_wrappers_inline_error full ok 1902 ms
+   ran sa0068 shaka           w_two_wrappers_inline_error full not-ok 11526 ms
+   ran sa0069 rmpvast         w_two_wrappers_inline_error full not-ok 3152 ms aderror 403: Couldn't find MediaFile that is supported by this video player, bas
+   ran sa0070 rmpvast+omid    w_two_wrappers_inline_error full not-ok 3140 ms aderror 403: Couldn't find MediaFile that is supported by this video player, bas
+   ran sa0071 vastclient      w_one full ok 1901 ms
+   ran sa0072 videoadsdk      w_one full ok 11874 ms
+   ran sa0073 iabloader       w_one full ok 1870 ms
+   ran sa0074 iabloader+nsap  w_one full ok 1877 ms
+   ran sa0075 vastclient      t_wrapper_events full ok 1864 ms
+   ran sa0076 videoadsdk      t_wrapper_events full ok 12088 ms
+   ran sa0077 iabloader       t_wrapper_events full ok 1874 ms
+   ran sa0078 iabloader+nsap  t_wrapper_events full ok 1854 ms
+   ran sa0079 shaka           t_wrapper_events full not-ok 11565 ms
+   ran sa0080 rmpvast         t_wrapper_events full ok 15919 ms
+   ran sa0081 rmpvast+omid    t_wrapper_events full ok 15905 ms
+   ran sa0082 vastclient      w_click_inline_wins click ok 1861 ms
+   ran sa0083 videoadsdk      w_click_inline_wins click ok 5569 ms
+   ran sa0084 iabloader       w_click_inline_wins click ok 1894 ms
+   ran sa0085 iabloader+nsap  w_click_inline_wins click ok 1887 ms
+   ran sa0086 shaka           w_click_inline_wins click not-ok 11357 ms
+   ran sa0087 rmpvast         w_click_inline_wins click ok 11612 ms
+   ran sa0088 rmpvast+omid    w_click_inline_wins click ok 11830 ms
+   ran sa0089 vastclient      w_click_wrapper_fallback click ok 1882 ms
+   ran sa0090 videoadsdk      w_click_wrapper_fallback click ok 5254 ms
+   ran sa0091 iabloader       w_click_wrapper_fallback click ok 1879 ms
+   ran sa0092 iabloader+nsap  w_click_wrapper_fallback click ok 1889 ms
+   ran sa0093 shaka           w_click_wrapper_fallback click not-ok 11581 ms
+   ran sa0094 rmpvast         w_click_wrapper_fallback click ok 11448 ms
+   ran sa0095 rmpvast+omid    w_click_wrapper_fallback click ok 11755 ms
+   ran sa0096 vastclient      w_click_tracking click ok 1863 ms
+   ran sa0097 videoadsdk      w_click_tracking click ok 5585 ms
+   ran sa0098 iabloader       w_click_tracking click ok 1874 ms
+   ran sa0099 iabloader+nsap  w_click_tracking click ok 1887 ms
+   ran sa0100 shaka           w_click_tracking click not-ok 11357 ms
+   ran sa0101 rmpvast         w_click_tracking click ok 11908 ms
+   ran sa0102 rmpvast+omid    w_click_tracking click ok 11704 ms
+   ran sa0103 vastclient      w_follow_false load ok 1869 ms
+   ran sa0104 videoadsdk      w_follow_false load not-ok 1884 ms No next ad to request
+   ran sa0105 iabloader       w_follow_false load ok 1863 ms
+   ran sa0106 iabloader+nsap  w_follow_false load ok 1873 ms
+   ran sa0107 shaka           w_follow_false full not-ok 11335 ms
+   ran sa0108 rmpvast         w_follow_false full not-ok 3165 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0109 rmpvast+omid    w_follow_false full not-ok 3182 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0110 vastclient      w_allow_multiple_false load ok 1882 ms
+   ran sa0111 videoadsdk      w_allow_multiple_false load not-ok 1885 ms No next ad to request
+   ran sa0112 iabloader       w_allow_multiple_false load ok 1883 ms
+   ran sa0113 iabloader+nsap  w_allow_multiple_false load ok 1897 ms
+   ran sa0114 shaka           w_allow_multiple_false full not-ok 11581 ms
+   ran sa0115 rmpvast         w_allow_multiple_false full ok 34519 ms
+   ran sa0116 rmpvast+omid    w_allow_multiple_false full ok 34536 ms
+   ran sa0117 vastclient      w_allow_multiple_default load ok 1868 ms
+   ran sa0118 videoadsdk      w_allow_multiple_default load ok 1887 ms
+   ran sa0119 iabloader       w_allow_multiple_default load ok 1883 ms
+   ran sa0120 iabloader+nsap  w_allow_multiple_default load ok 1912 ms
+   ran sa0121 shaka           w_allow_multiple_default full not-ok 11582 ms
+   ran sa0122 rmpvast         w_allow_multiple_default full ok 34542 ms
+   ran sa0123 rmpvast+omid    w_allow_multiple_default full ok 34471 ms
+   ran sa0124 vastclient      w_blocked_category load ok 1888 ms
+   ran sa0125 videoadsdk      w_blocked_category load ok 1867 ms
+   ran sa0126 iabloader       w_blocked_category load ok 1866 ms
+   ran sa0127 iabloader+nsap  w_blocked_category load ok 1869 ms
+   ran sa0128 shaka           w_blocked_category full not-ok 11570 ms
+   ran sa0129 rmpvast         w_blocked_category full ok 15922 ms
+   ran sa0130 rmpvast+omid    w_blocked_category full ok 15873 ms
+   ran sa0131 vastclient      e_noad_root load ok 1882 ms
+   ran sa0132 videoadsdk      e_noad_root load not-ok 1876 ms No next ad to request
+   ran sa0133 iabloader       e_noad_root load ok 1884 ms
+   ran sa0134 iabloader+nsap  e_noad_root load ok 1883 ms
+   ran sa0135 shaka           e_noad_root full not-ok 11580 ms
+   ran sa0136 rmpvast         e_noad_root full not-ok 3169 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0137 rmpvast+omid    e_noad_root full not-ok 3174 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0138 vastclient      e_inline_unplayable full ok 1896 ms
+   ran sa0139 videoadsdk      e_inline_unplayable full not-ok 1924 ms No next ad to request
+   ran sa0140 iabloader       e_inline_unplayable full ok 1889 ms
+   ran sa0141 iabloader+nsap  e_inline_unplayable full ok 1872 ms
+   ran sa0142 shaka           e_inline_unplayable full ok 3657 ms
+   ran sa0143 rmpvast         e_inline_unplayable full not-ok 3163 ms aderror 403: Couldn't find MediaFile that is supported by this video player, bas
+   ran sa0144 rmpvast+omid    e_inline_unplayable full not-ok 3152 ms aderror 403: Couldn't find MediaFile that is supported by this video player, bas
+   ran sa0145 vastclient      t_inline_full full ok 1854 ms
+   ran sa0146 videoadsdk      t_inline_full full ok 12300 ms
+   ran sa0147 iabloader       t_inline_full full ok 1882 ms
+   ran sa0148 iabloader+nsap  t_inline_full full ok 1882 ms
+   ran sa0149 shaka           t_inline_full full ok 13890 ms
+   ran sa0150 rmpvast         t_inline_full full ok 15896 ms
+   ran sa0151 rmpvast+omid    t_inline_full full ok 15887 ms
+   ran sa0152 vastclient      t_inline_full partial ok 1882 ms
+   ran sa0153 videoadsdk      t_inline_full partial ok 8006 ms
+   ran sa0154 iabloader       t_inline_full partial ok 1882 ms
+   ran sa0155 iabloader+nsap  t_inline_full partial ok 1678 ms
+   ran sa0156 shaka           t_inline_full partial ok 13873 ms
+   ran sa0157 rmpvast         t_inline_full partial ok 11915 ms
+   ran sa0158 rmpvast+omid    t_inline_full partial ok 11852 ms
+   ran sa0159 vastclient      m_macros full ok 1883 ms
+   ran sa0160 videoadsdk      m_macros full ok 12103 ms
+   ran sa0161 iabloader       m_macros full ok 1885 ms
+   ran sa0162 iabloader+nsap  m_macros full ok 1893 ms
+   ran sa0163 shaka           m_macros full ok 14086 ms
+   ran sa0164 rmpvast         m_macros full ok 15878 ms
+   ran sa0165 rmpvast+omid    m_macros full ok 15938 ms
+   ran sa0166 vastclient      x_whitespace full ok 1909 ms
+   ran sa0167 videoadsdk      x_whitespace full ok 12334 ms
+   ran sa0168 iabloader       x_whitespace full ok 1874 ms
+   ran sa0169 iabloader+nsap  x_whitespace full ok 1875 ms
+   ran sa0170 shaka           x_whitespace full ok 14112 ms
+   ran sa0171 rmpvast         x_whitespace full ok 15931 ms
+   ran sa0172 rmpvast+omid    x_whitespace full ok 15739 ms
+   ran sa0173 vastclient      x_comment full ok 1864 ms
+   ran sa0174 videoadsdk      x_comment full ok 11871 ms
+   ran sa0175 iabloader       x_comment full ok 1870 ms
+   ran sa0176 iabloader+nsap  x_comment full ok 1873 ms
+   ran sa0177 shaka           x_comment full ok 13894 ms
+   ran sa0178 rmpvast         x_comment full ok 15743 ms
+   ran sa0179 rmpvast+omid    x_comment full ok 15933 ms
+   ran sa0180 vastclient      x_entities full ok 1887 ms
+   ran sa0181 videoadsdk      x_entities full ok 12085 ms
+   ran sa0182 iabloader       x_entities full ok 1871 ms
+   ran sa0183 iabloader+nsap  x_entities full ok 1655 ms
+   ran sa0184 shaka           x_entities full ok 13836 ms
+   ran sa0185 rmpvast         x_entities full ok 15900 ms
+   ran sa0186 rmpvast+omid    x_entities full ok 15926 ms
+   ran sa0187 vastclient      x_no_namespace load ok 1875 ms
+   ran sa0188 videoadsdk      x_no_namespace load ok 1878 ms
+   ran sa0189 iabloader       x_no_namespace load ok 1884 ms
+   ran sa0190 iabloader+nsap  x_no_namespace load ok 1883 ms
+   ran sa0191 shaka           x_no_namespace full ok 13866 ms
+   ran sa0192 rmpvast         x_no_namespace full ok 15965 ms
+   ran sa0193 rmpvast+omid    x_no_namespace full ok 15980 ms
+   ran sa0194 vastclient      x_multi_uaid load ok 1891 ms
+   ran sa0195 videoadsdk      x_multi_uaid load ok 1902 ms
+   ran sa0196 iabloader       x_multi_uaid load not-ok 1902 ms Multiple values for Creative.UniversalAdId
+   ran sa0197 iabloader+nsap  x_multi_uaid load not-ok 1887 ms Multiple values for Creative.UniversalAdId
+   ran sa0198 shaka           x_multi_uaid full ok 13905 ms
+   ran sa0199 rmpvast         x_multi_uaid full ok 15965 ms
+   ran sa0200 rmpvast+omid    x_multi_uaid full ok 15980 ms
+   ran sa0201 vastclient      x_multi_cc load ok 1882 ms
+   ran sa0202 videoadsdk      x_multi_cc load ok 1892 ms
+   ran sa0203 iabloader       x_multi_cc load not-ok 1885 ms Multiple values for ClosedCaptionFiles.ClosedCaptionFile
+   ran sa0204 iabloader+nsap  x_multi_cc load not-ok 1688 ms Multiple values for ClosedCaptionFiles.ClosedCaptionFile
+   ran sa0205 shaka           x_multi_cc full ok 13922 ms
+   ran sa0206 rmpvast         x_multi_cc full ok 15986 ms
+   ran sa0207 rmpvast+omid    x_multi_cc full ok 15985 ms
+   ran sa0208 vastclient      p_pod_order load ok 1910 ms
+   ran sa0209 videoadsdk      p_pod_order load ok 1894 ms
+   ran sa0210 iabloader       p_pod_order load ok 1892 ms
+   ran sa0211 iabloader+nsap  p_pod_order load ok 1916 ms
+   ran sa0212 shaka           p_pod_order full ok 34867 ms
+   ran sa0213 rmpvast         p_pod_order full ok 34712 ms
+   ran sa0214 rmpvast+omid    p_pod_order full ok 34585 ms
+   ran sa0215 vastclient      w_fallback_noad load ok 1887 ms
+   ran sa0216 videoadsdk      w_fallback_noad load ok 1876 ms No Ad
+   ran sa0217 iabloader       w_fallback_noad load not-ok 1886 ms VAST error 303: No ads VAST response after one or more Wrappers. Also includes n
+   ran sa0218 iabloader+nsap  w_fallback_noad load not-ok 1893 ms VAST error 303: No ads VAST response after one or more Wrappers. Also includes n
+   ran sa0219 shaka           w_fallback_noad full ok 13871 ms
+   ran sa0220 rmpvast         w_fallback_noad full not-ok 3157 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0221 rmpvast+omid    w_fallback_noad full not-ok 3179 ms aderror 303: No VAST response after one or more Wrappers.
+   ran sa0222 vastclient      e_media_404 full ok 1886 ms
+   ran sa0223 videoadsdk      e_media_404 full ok 4950 ms
+   ran sa0224 iabloader       e_media_404 full ok 1892 ms
+   ran sa0225 iabloader+nsap  e_media_404 full ok 1893 ms
+   ran sa0226 shaka           e_media_404 full ok 3682 ms
+   ran sa0227 rmpvast         e_media_404 full not-ok 3168 ms aderror 401: File not found. Unable to find Linear/MediaFile from URI.
+   ran sa0228 rmpvast+omid    e_media_404 full not-ok 3174 ms aderror 401: File not found. Unable to find Linear/MediaFile from URI.
+   ran sa0229 vastclient      e_media_corrupt full ok 1883 ms
+   ran sa0230 videoadsdk      e_media_corrupt full ok 4982 ms
+   ran sa0231 iabloader       e_media_corrupt full ok 1876 ms
+   ran sa0232 iabloader+nsap  e_media_corrupt full ok 1890 ms
+   ran sa0233 shaka           e_media_corrupt full ok 3673 ms
+   ran sa0234 rmpvast         e_media_corrupt full not-ok 3175 ms aderror 401: File not found. Unable to find Linear/MediaFile from URI.
+   ran sa0235 rmpvast+omid    e_media_corrupt full not-ok 3176 ms aderror 401: File not found. Unable to find Linear/MediaFile from URI.
+   ran sa0236 vastclient      e_media_timeout full ok 1880 ms
+   ran sa0237 videoadsdk      e_media_timeout full ok 39891 ms
+   ran sa0238 iabloader       e_media_timeout full ok 1900 ms
+   ran sa0239 iabloader+nsap  e_media_timeout full ok 1881 ms
+   ran sa0240 shaka           e_media_timeout full ok 63426 ms
+   ran sa0241 rmpvast         e_media_timeout full not-ok 11105 ms aderror 402: Timeout of MediaFile URI.
+   ran sa0242 rmpvast+omid    e_media_timeout full not-ok 11100 ms aderror 402: Timeout of MediaFile URI.
+   ran sa0243 vastclient      e_nonlinear_only full not-ok 1889 ms no linear creative
+   ran sa0244 videoadsdk      e_nonlinear_only full not-ok 1904 ms No next ad to request
+   ran sa0245 iabloader       e_nonlinear_only full ok 1894 ms
+   ran sa0246 iabloader+nsap  e_nonlinear_only full ok 1887 ms
+   ran sa0247 shaka           e_nonlinear_only full ok 8532 ms
+   ran sa0248 rmpvast         e_nonlinear_only full ok 63132 ms
+   ran sa0249 rmpvast+omid    e_nonlinear_only full ok 63122 ms
+   ran sa0250 vastclient      t_interact interact ok 2153 ms
+   ran sa0251 videoadsdk      t_interact interact ok 12439 ms
+   ran sa0252 iabloader       t_interact interact ok 1687 ms
+   ran sa0253 iabloader+nsap  t_interact interact ok 1895 ms
+   ran sa0254 shaka           t_interact interact ok 14452 ms
+   ran sa0255 rmpvast         t_interact interact ok 16492 ms
+   ran sa0256 rmpvast+omid    t_interact interact ok 16490 ms
+   ran sa0257 vastclient      t_skip skip ok 1898 ms
+   ran sa0258 videoadsdk      t_skip skip ok 8085 ms
+   ran sa0259 iabloader       t_skip skip ok 1682 ms
+   ran sa0260 iabloader+nsap  t_skip skip ok 1885 ms
+   ran sa0261 shaka           t_skip skip ok 9835 ms
+   ran sa0262 rmpvast         t_skip skip ok 11869 ms
+   ran sa0263 rmpvast+omid    t_skip skip ok 11881 ms
+   ran sa0264 vastclient      t_skip_pct skip ok 1894 ms
+   ran sa0265 videoadsdk      t_skip_pct skip ok 8101 ms
+   ran sa0266 iabloader       t_skip_pct skip ok 1890 ms
+   ran sa0267 iabloader+nsap  t_skip_pct skip ok 1883 ms
+   ran sa0268 shaka           t_skip_pct skip ok 13721 ms
+   ran sa0269 rmpvast         t_skip_pct skip ok 11936 ms
+   ran sa0270 rmpvast+omid    t_skip_pct skip ok 11925 ms
+   ran sa0271 vastclient      t_rewind rewind ok 2139 ms
+   ran sa0272 videoadsdk      t_rewind rewind ok 14700 ms
+   ran sa0273 iabloader       t_rewind rewind ok 1890 ms
+   ran sa0274 iabloader+nsap  t_rewind rewind ok 1886 ms
+   ran sa0275 shaka           t_rewind rewind ok 16526 ms
+   ran sa0276 rmpvast         t_rewind rewind ok 18326 ms
+   ran sa0277 rmpvast+omid    t_rewind rewind ok 18114 ms
+   ran sa0278 vastclient      a_verification_inline full ok 1875 ms
+   ran sa0279 videoadsdk      a_verification_inline full ok 11937 ms
+   ran sa0280 iabloader       a_verification_inline full ok 1889 ms
+   ran sa0281 iabloader+nsap  a_verification_inline full ok 1883 ms
+   ran sa0282 shaka           a_verification_inline full ok 13702 ms
+   ran sa0283 rmpvast         a_verification_inline full ok 15954 ms
+   ran sa0284 rmpvast+omid    a_verification_inline full ok 15987 ms
+   ran sa0285 vastclient      a_verification_js full ok 1882 ms
+   ran sa0286 videoadsdk      a_verification_js full ok 12132 ms
+   ran sa0287 iabloader       a_verification_js full ok 1688 ms
+   ran sa0288 iabloader+nsap  a_verification_js full ok 1683 ms
+   ran sa0289 shaka           a_verification_js full not-ok 11359 ms
+   ran sa0290 rmpvast         a_verification_js full ok 15986 ms
+   ran sa0291 rmpvast+omid    a_verification_js full ok 15986 ms
+   ran sa0292 vastclient      a_verification_404 full ok 1912 ms
+   ran sa0293 videoadsdk      a_verification_404 full ok 12148 ms
+   ran sa0294 iabloader       a_verification_404 full ok 1872 ms
+   ran sa0295 iabloader+nsap  a_verification_404 full ok 1895 ms
+   ran sa0296 shaka           a_verification_404 full ok 13910 ms
+   ran sa0297 rmpvast         a_verification_404 full ok 15981 ms
+   ran sa0298 rmpvast+omid    a_verification_404 full ok 15955 ms
+   ran sa0299 vastclient      s_flv_first full ok 1884 ms
+   ran sa0300 videoadsdk      s_flv_first full ok 12152 ms
+   ran sa0301 iabloader       s_flv_first full ok 1686 ms
+   ran sa0302 iabloader+nsap  s_flv_first full ok 1889 ms
+   ran sa0303 shaka           s_flv_first full ok 3692 ms
+   ran sa0304 rmpvast         s_flv_first full ok 15984 ms
+   ran sa0305 rmpvast+omid    s_flv_first full ok 15960 ms
+   ran sa0306 vastclient      s_audio full ok 1885 ms
+   ran sa0307 videoadsdk      s_audio full ok 12140 ms
+   ran sa0308 iabloader       s_audio full ok 1866 ms
+   ran sa0309 iabloader+nsap  s_audio full ok 1889 ms
+   ran sa0310 shaka           s_audio full ok 13910 ms
+   ran sa0311 rmpvast         s_audio full ok 15972 ms
+   ran sa0312 rmpvast+omid    s_audio full ok 15979 ms
+   ran sa0313 vastclient      m_optional_noflv full ok 1872 ms
+   ran sa0314 videoadsdk      m_optional_noflv full ok 12151 ms
+   ran sa0315 iabloader       m_optional_noflv full not-ok 1888 ms Multiple values for Creative.UniversalAdId
+   ran sa0316 iabloader+nsap  m_optional_noflv full not-ok 1885 ms Multiple values for Creative.UniversalAdId
+   ran sa0317 shaka           m_optional_noflv full ok 13883 ms
+   ran sa0318 rmpvast         m_optional_noflv full ok 15980 ms
+   ran sa0319 rmpvast+omid    m_optional_noflv full ok 15980 ms
+   ran sa0320 vastclient      m_optional full ok 1905 ms
+   ran sa0321 videoadsdk      m_optional full ok 11936 ms
+   ran sa0322 iabloader       m_optional full not-ok 1898 ms Multiple values for Creative.UniversalAdId
+   ran sa0323 iabloader+nsap  m_optional full not-ok 1884 ms Multiple values for Creative.UniversalAdId
+   ran sa0324 shaka           m_optional full ok 3433 ms
+   ran sa0325 rmpvast         m_optional full ok 15951 ms
+   ran sa0326 rmpvast+omid    m_optional full ok 15986 ms
+   ran sa0327 vastclient      m_error_context full ok 1871 ms
+   ran sa0328 videoadsdk      m_error_context full not-ok 1686 ms No next ad to request
+   ran sa0329 iabloader       m_error_context full ok 1888 ms
+   ran sa0330 iabloader+nsap  m_error_context full ok 1878 ms
+   ran sa0331 shaka           m_error_context full ok 3683 ms
+   ran sa0332 rmpvast         m_error_context full not-ok 3151 ms aderror 403: Couldn't find MediaFile that is supported by this video player, bas
+   ran sa0333 rmpvast+omid    m_error_context full not-ok 3166 ms aderror 403: Couldn't find MediaFile that is supported by this video player, bas
+   ran sa0334 vastclient      m_request_context load ok 1680 ms
+   ran sa0335 videoadsdk      m_request_context load ok 1894 ms
+   ran sa0336 iabloader       m_request_context load ok 1675 ms
+   ran sa0337 iabloader+nsap  m_request_context load ok 1674 ms
+   ran sa0338 shaka           m_request_context full not-ok 11356 ms
+   ran sa0339 rmpvast         m_request_context full ok 15979 ms
+   ran sa0340 rmpvast+omid    m_request_context full ok 15765 ms
+   ran sa0341 vastclient      p_pod_play pod ok 1884 ms
+   ran sa0342 videoadsdk      p_pod_play pod ok 12124 ms
+   ran sa0343 iabloader       p_pod_play pod ok 1885 ms
+   ran sa0344 iabloader+nsap  p_pod_play pod ok 1892 ms
+   ran sa0345 shaka           p_pod_play pod ok 34878 ms
+   ran sa0346 rmpvast         p_pod_play pod ok 34548 ms
+   ran sa0347 rmpvast+omid    p_pod_play pod ok 34562 ms
+   ran sa0348 vastclient      p_pod_fail pod ok 1886 ms
+   ran sa0349 videoadsdk      p_pod_fail pod ok 12151 ms
+   ran sa0350 iabloader       p_pod_fail pod ok 1877 ms
+   ran sa0351 iabloader+nsap  p_pod_fail pod ok 1901 ms
+   ran sa0352 shaka           p_pod_fail pod ok 34697 ms
+   ran sa0353 rmpvast         p_pod_fail pod ok 15773 ms
+   ran sa0354 rmpvast+omid    p_pod_fail pod ok 16017 ms
+   ran sa0355 vastclient      i_icon icon ok 1903 ms
+   ran sa0356 videoadsdk      i_icon icon ok 14009 ms
+   ran sa0357 iabloader       i_icon icon ok 1880 ms
+   ran sa0358 iabloader+nsap  i_icon icon ok 1883 ms
+   ran sa0359 shaka           i_icon icon ok 14054 ms
+   ran sa0360 rmpvast         i_icon icon ok 17598 ms
+   ran sa0361 rmpvast+omid    i_icon icon ok 17835 ms
+   ran sa0362 vastclient      i_icon_timed icon ok 1888 ms
+   ran sa0363 videoadsdk      i_icon_timed icon ok 12119 ms
+   ran sa0364 iabloader       i_icon_timed icon ok 1892 ms
+   ran sa0365 iabloader+nsap  i_icon_timed icon ok 1903 ms
+   ran sa0366 shaka           i_icon_timed icon ok 13878 ms
+   ran sa0367 rmpvast         i_icon_timed icon ok 18059 ms
+   ran sa0368 rmpvast+omid    i_icon_timed icon ok 17857 ms
+   ran sa0369 vastclient      x_adtaguri_ws load ok 1892 ms
+   ran sa0370 videoadsdk      x_adtaguri_ws load ok 1896 ms
+   ran sa0371 iabloader       x_adtaguri_ws load ok 1891 ms
+   ran sa0372 iabloader+nsap  x_adtaguri_ws load ok 1888 ms
+   ran sa0373 shaka           x_adtaguri_ws full not-ok 11339 ms
+   ran sa0374 rmpvast         x_adtaguri_ws full ok 15938 ms
+   ran sa0375 rmpvast+omid    x_adtaguri_ws full ok 15950 ms
+   ran sa0376 vastclient      x_unknown_event full ok 1897 ms
+   ran sa0377 videoadsdk      x_unknown_event full ok 12093 ms
+   ran sa0378 iabloader       x_unknown_event full ok 1907 ms
+   ran sa0379 iabloader+nsap  x_unknown_event full ok 1885 ms
+   ran sa0380 shaka           x_unknown_event full ok 13916 ms
+   ran sa0381 rmpvast         x_unknown_event full ok 15928 ms
+   ran sa0382 rmpvast+omid    x_unknown_event full ok 15936 ms
+   ran sa0383 vastclient      x_extension_impression full ok 1887 ms
+   ran sa0384 videoadsdk      x_extension_impression full ok 12122 ms
+   ran sa0385 iabloader       x_extension_impression full ok 1883 ms
+   ran sa0386 iabloader+nsap  x_extension_impression full ok 1884 ms
+   ran sa0387 shaka           x_extension_impression full ok 13882 ms
+   ran sa0388 rmpvast         x_extension_impression full ok 15708 ms
+   ran sa0389 rmpvast+omid    x_extension_impression full ok 15715 ms
+   ran sa0390 vastclient      x_bom load ok 1890 ms
+   ran sa0391 videoadsdk      x_bom load ok 1888 ms
+   ran sa0392 iabloader       x_bom load ok 1877 ms
+   ran sa0393 iabloader+nsap  x_bom load ok 1686 ms
+   ran sa0394 shaka           x_bom full ok 13869 ms
+   ran sa0395 rmpvast         x_bom full ok 15715 ms
+   ran sa0396 rmpvast+omid    x_bom full ok 15727 ms
+   ran sa0397 vastclient      x_cdata_split full ok 1899 ms
+   ran sa0398 videoadsdk      x_cdata_split full ok 12098 ms
+   ran sa0399 iabloader       x_cdata_split full ok 1884 ms
+   ran sa0400 iabloader+nsap  x_cdata_split full ok 1896 ms
+   ran sa0401 shaka           x_cdata_split full ok 13669 ms
+   ran sa0402 rmpvast         x_cdata_split full ok 15925 ms
+   ran sa0403 rmpvast+omid    x_cdata_split full ok 15936 ms
+   ran sa0404 vastclient      x_uaid_idvalue load ok 1892 ms
+   ran sa0405 videoadsdk      x_uaid_idvalue load ok 1907 ms
+   ran sa0406 iabloader       x_uaid_idvalue load ok 1887 ms
+   ran sa0407 iabloader+nsap  x_uaid_idvalue load ok 1888 ms
+   ran sa0408 shaka           x_uaid_idvalue full ok 13701 ms
+   ran sa0409 rmpvast         x_uaid_idvalue full ok 15955 ms
+   ran sa0410 rmpvast+omid    x_uaid_idvalue full ok 15949 ms
+   ran sa0411 vastclient      x_empty_impression full ok 1893 ms
+   ran sa0412 videoadsdk      x_empty_impression full ok 12097 ms
+   ran sa0413 iabloader       x_empty_impression full ok 1891 ms
+   ran sa0414 iabloader+nsap  x_empty_impression full ok 1876 ms
+   ran sa0415 shaka           x_empty_impression full ok 13899 ms
+   ran sa0416 rmpvast         x_empty_impression full ok 15962 ms
+   ran sa0417 rmpvast+omid    x_empty_impression full ok 15964 ms
+   ran sa0418 vastclient      v_30 load ok 1682 ms
+   ran sa0419 videoadsdk      v_30 load ok 1893 ms
+   ran sa0420 iabloader       v_30 load ok 1895 ms
+   ran sa0421 iabloader+nsap  v_30 load ok 1891 ms
+   ran sa0422 shaka           v_30 full ok 13875 ms
+   ran sa0423 rmpvast         v_30 full ok 15930 ms
+   ran sa0424 rmpvast+omid    v_30 full ok 15921 ms
+   ran sa0425 vastclient      v_20 load ok 1894 ms
+   ran sa0426 videoadsdk      v_20 load ok 1898 ms
+   ran sa0427 iabloader       v_20 load ok 1892 ms
+   ran sa0428 iabloader+nsap  v_20 load ok 1896 ms
+   ran sa0429 shaka           v_20 full ok 13892 ms
+   ran sa0430 rmpvast         v_20 full ok 15925 ms
+   ran sa0431 rmpvast+omid    v_20 full ok 15919 ms
+   ran sa0432 vastclient      v_mixed_chain load ok 1890 ms
+   ran sa0433 videoadsdk      v_mixed_chain load ok 1901 ms
+   ran sa0434 iabloader       v_mixed_chain load ok 1883 ms
+   ran sa0435 iabloader+nsap  v_mixed_chain load ok 1883 ms
+   ran sa0436 shaka           v_mixed_chain full not-ok 11347 ms
+   ran sa0437 rmpvast         v_mixed_chain full ok 15928 ms
+   ran sa0438 rmpvast+omid    v_mixed_chain full ok 15915 ms
+   ran sa0439 vastclient      r_redirect load ok 1887 ms
+   ran sa0440 videoadsdk      r_redirect load ok 1891 ms
+   ran sa0441 iabloader       r_redirect load ok 1673 ms
+   ran sa0442 iabloader+nsap  r_redirect load ok 1877 ms
+   ran sa0443 shaka           r_redirect full not-ok 11340 ms
+   ran sa0444 rmpvast         r_redirect full ok 15922 ms
+   ran sa0445 rmpvast+omid    r_redirect full ok 15947 ms
+   ran sa0446 vastclient      r_gzip_root load ok 1886 ms
+   ran sa0447 videoadsdk      r_gzip_root load ok 1894 ms
+   ran sa0448 iabloader       r_gzip_root load ok 1875 ms
+   ran sa0449 iabloader+nsap  r_gzip_root load ok 1881 ms
+   ran sa0450 shaka           r_gzip_root full ok 13879 ms
+   ran sa0451 rmpvast         r_gzip_root full ok 15931 ms
+   ran sa0452 rmpvast+omid    r_gzip_root full ok 15925 ms
+   ran sa0453 vastclient      r_text_plain_root load ok 1879 ms
+   ran sa0454 videoadsdk      r_text_plain_root load ok 1863 ms
+   ran sa0455 iabloader       r_text_plain_root load ok 1892 ms
+   ran sa0456 iabloader+nsap  r_text_plain_root load ok 1895 ms
+   ran sa0457 shaka           r_text_plain_root full ok 13878 ms
+   ran sa0458 rmpvast         r_text_plain_root full ok 15955 ms
+   ran sa0459 rmpvast+omid    r_text_plain_root full ok 15920 ms
+   ran sa0460 vastclient      r_pixel_500 full ok 1891 ms
+   ran sa0461 videoadsdk      r_pixel_500 full ok 12095 ms
+   ran sa0462 iabloader       r_pixel_500 full ok 1883 ms
+   ran sa0463 iabloader+nsap  r_pixel_500 full ok 1882 ms
+   ran sa0464 shaka           r_pixel_500 full ok 13883 ms
+   ran sa0465 rmpvast         r_pixel_500 full ok 15920 ms
+   ran sa0466 rmpvast+omid    r_pixel_500 full ok 15938 ms
+   ran sa0467 vastclient      x_comment_impression full ok 1875 ms
+   ran sa0468 videoadsdk      x_comment_impression full ok 12110 ms
+   ran sa0469 iabloader       x_comment_impression full ok 1885 ms
+   ran sa0470 iabloader+nsap  x_comment_impression full ok 1893 ms
+   ran sa0471 shaka           x_comment_impression full ok 13877 ms
+   ran sa0472 rmpvast         x_comment_impression full ok 15930 ms
+   ran sa0473 rmpvast+omid    x_comment_impression full ok 15928 ms
+   ran sa0474 vastclient      x_adtaguri_amp load ok 1887 ms
+   ran sa0475 videoadsdk      x_adtaguri_amp load ok 1892 ms
+   ran sa0476 iabloader       x_adtaguri_amp load ok 1903 ms
+   ran sa0477 iabloader+nsap  x_adtaguri_amp load ok 1892 ms
+   ran sa0478 shaka           x_adtaguri_amp full not-ok 11346 ms
+   ran sa0479 rmpvast         x_adtaguri_amp full ok 15924 ms
+   ran sa0480 rmpvast+omid    x_adtaguri_amp full ok 15911 ms
+   ran sa0481 vastclient      x_adtaguri_ncr load ok 1872 ms
+   ran sa0482 videoadsdk      x_adtaguri_ncr load ok 1686 ms
+   ran sa0483 iabloader       x_adtaguri_ncr load ok 1890 ms
+   ran sa0484 iabloader+nsap  x_adtaguri_ncr load ok 1876 ms
+   ran sa0485 shaka           x_adtaguri_ncr full not-ok 11570 ms
+   ran sa0486 rmpvast         x_adtaguri_ncr full ok 15714 ms
+   ran sa0487 rmpvast+omid    x_adtaguri_ncr full ok 15911 ms
+   ran sa0488 vastclient      p_pod_wrapper load ok 1888 ms
+   ran sa0489 videoadsdk      p_pod_wrapper load ok 1898 ms
+   ran sa0490 iabloader       p_pod_wrapper load not-ok 1882 ms VAST error 303: No ads VAST response after one or more Wrappers. Also includes n
+   ran sa0491 iabloader+nsap  p_pod_wrapper load not-ok 1903 ms VAST error 303: No ads VAST response after one or more Wrappers. Also includes n
+   ran sa0492 shaka           p_pod_wrapper full not-ok 11583 ms
+   ran sa0493 rmpvast         p_pod_wrapper full ok 34518 ms
+   ran sa0494 rmpvast+omid    p_pod_wrapper full ok 34322 ms
+== safari done: 756 cells, 494 client runs (IMA skipped)

@@ -1,0 +1,5 @@
+Package,Version in file,License,Last release,"Downloads, last month",In 25-package metadata file,Decision,Reason
+rmp-vast (GitHub distribution),17.2.0,MIT,2026-02-26,not applicable (not on npm at this version),no,"tested, two configurations","MIT, released 2026-02-26; fails condition 2 for fetching, parsing and the Wrapper chain (bundles @dailymotion/vast-client 6.4.2); kept as the production player built on vast-client-js"
+rmp-vast,6.0.0,MIT,2022-06-24,183,yes,not tested at this version,"the npm package stops at 6.0.0, released 2022-06-24; the tested code is the GitHub 17.2.0 distribution"
+vastlint-client,0.15.0,Apache-2.0,2026-10-13,"2,293",yes,tested,"passes all four conditions: Apache-2.0, released 2026-10-13; a session runtime from the VASTlint project, by Aleksander Sekowski; 52 versions in the metadata file"
+Google IMA HTML5 SDK,3.794.0 (archived),proprietary,not applicable,not applicable,no,tested as closed comparison,"proprietary, so it fails condition 1; kept as a closed comparison; browser only; pinned by archiving the served ima3.js with its sha256"

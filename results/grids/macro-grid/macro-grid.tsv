@@ -1,0 +1,146 @@
+context	macro	support	vastclient	videoadsdk	iabloader	vastlint
+request	TIMESTAMP	required	literal	literal	literal	literal
+request	CACHEBUSTING	required	literal	literal	literal	literal
+request	CONTENTPLAYHEAD	deprecated	literal	literal	literal	literal
+request	MEDIAPLAYHEAD	optional	literal	literal	literal	literal
+request	BREAKPOSITION	optional	literal	literal	literal	literal
+request	BLOCKEDADCATEGORIES	optional	literal	literal	literal	literal
+request	ADCATEGORIES	optional	literal	literal	literal	literal
+request	ADCOUNT	optional	literal	literal	literal	literal
+request	TRANSACTIONID	optional	literal	literal	literal	literal
+request	PLACEMENTTYPE	optional	literal	literal	literal	literal
+request	ADTYPE	optional	literal	literal	literal	literal
+request	BREAKMAXDURATION	optional	literal	literal	literal	literal
+request	BREAKMAXADS	optional	literal	literal	literal	literal
+request	BREAKMINADLENGTH	optional	literal	literal	literal	literal
+request	BREAKMAXADLENGTH	optional	literal	literal	literal	literal
+request	IFA	optional	literal	literal	literal	literal
+request	IFATYPE	optional	literal	literal	literal	literal
+request	CLIENTUA	optional	literal	literal	literal	literal
+request	SERVERUA	optional	literal	literal	literal	literal
+request	DEVICEUA	optional	literal	literal	literal	literal
+request	SERVERSIDE	optional	literal	literal	literal	literal
+request	DEVICEIP	optional	literal	literal	literal	literal
+request	LATLONG	optional	literal	literal	literal	literal
+request	DOMAIN	optional	literal	literal	literal	literal
+request	PAGEURL	required-if-OM	literal	literal	literal	literal
+request	APPBUNDLE	required-if-OM	literal	literal	literal	literal
+request	VASTVERSIONS	optional	literal	literal	literal	literal
+request	APIFRAMEWORKS	optional	literal	literal	literal	literal
+request	EXTENSIONS	optional	literal	literal	literal	literal
+request	VERIFICATIONVENDORS	optional	literal	literal	literal	literal
+request	OMIDPARTNER	required-if-OM	literal	literal	literal	literal
+request	MEDIAMIME	optional	literal	literal	literal	literal
+request	PLAYERCAPABILITIES	optional	literal	literal	literal	literal
+request	CLICKTYPE	optional	literal	literal	literal	literal
+request	INVENTORYSTATE	optional	literal	literal	literal	literal
+request	PLAYERSIZE	optional	literal	literal	literal	literal
+request	CONTENTID	optional	literal	literal	literal	literal
+request	CONTENTURI	optional	literal	literal	literal	literal
+request	LIMITADTRACKING	required	literal	literal	literal	literal
+request	REGULATIONS	optional	literal	literal	literal	literal
+request	GDPRCONSENT	optional	literal	literal	literal	literal
+request	STOREID	optional	literal	literal	literal	literal
+request	STOREURL	optional	literal	literal	literal	literal
+request	PLAYBACKMETHODS	optional	literal	literal	literal	literal
+request	CONTENTCAT	optional	literal	literal	literal	literal
+request	GPPSTRING	optional	literal	literal	literal	literal
+request	GPPSECTIONID	optional	literal	literal	literal	literal
+request	DSAREQUIRED	optional	literal	literal	literal	literal
+request	DSAPARAMS	optional	literal	literal	literal	literal
+request	DSAPUBRENDER	optional	literal	literal	literal	literal
+pixel	TIMESTAMP	required	value:2026-10-16T21:39:49.557Z	value:2026-10-16T21:39:52.633Z	delegated	value:2026-10-16T21:39:58.314Z
+pixel	CACHEBUSTING	required	value:30393073	value:7351846736	delegated	value:52676468
+pixel	CONTENTPLAYHEAD	deprecated	unknown (-1)	literal	delegated	literal
+pixel	MEDIAPLAYHEAD	optional	unknown (-1)	literal	delegated	literal
+pixel	BREAKPOSITION	optional	unknown (-1)	literal	delegated	literal
+pixel	ADCOUNT	optional	unknown (-1)	literal	delegated	literal
+pixel	TRANSACTIONID	optional	unknown (-1)	literal	delegated	literal
+pixel	PLACEMENTTYPE	optional	unknown (-1)	literal	delegated	literal
+pixel	ADTYPE	optional	value:video	literal	delegated	literal
+pixel	UNIVERSALADID	optional	value:ad-id.org MACR0001	literal	delegated	literal
+pixel	BREAKMAXDURATION	optional	unknown (-1)	literal	delegated	literal
+pixel	BREAKMAXADS	optional	unknown (-1)	literal	delegated	literal
+pixel	BREAKMINADLENGTH	optional	unknown (-1)	literal	delegated	literal
+pixel	BREAKMAXADLENGTH	optional	unknown (-1)	literal	delegated	literal
+pixel	IFA	optional	unknown (-1)	literal	delegated	literal
+pixel	IFATYPE	optional	unknown (-1)	literal	delegated	literal
+pixel	CLIENTUA	optional	unknown (-1)	literal	delegated	literal
+pixel	SERVERUA	optional	unknown (-1)	literal	delegated	literal
+pixel	DEVICEUA	optional	unknown (-1)	literal	delegated	literal
+pixel	SERVERSIDE	optional	unknown (-1)	literal	delegated	literal
+pixel	DEVICEIP	optional	unknown (-1)	literal	delegated	literal
+pixel	LATLONG	optional	unknown (-1)	literal	delegated	literal
+pixel	DOMAIN	optional	unknown (-1)	literal	delegated	literal
+pixel	PAGEURL	required-if-OM	unknown (-1)	literal	delegated	literal
+pixel	APPBUNDLE	required-if-OM	unknown (-1)	literal	delegated	literal
+pixel	OMIDPARTNER	required-if-OM	unknown (-1)	literal	delegated	literal
+pixel	PLAYERCAPABILITIES	optional	unknown (-1)	literal	delegated	literal
+pixel	CLICKTYPE	optional	unknown (-1)	literal	delegated	literal
+pixel	PLAYERSTATE	optional	unknown (-1)	literal	delegated	literal
+pixel	INVENTORYSTATE	optional	unknown (-1)	literal	delegated	literal
+pixel	PLAYERSIZE	optional	unknown (-1)	literal	delegated	literal
+pixel	ADPLAYHEAD	optional	unknown (-1)	literal	delegated	literal
+pixel	ASSETURI	optional	value:http://127.0.0.1:45899/m	literal	delegated	literal
+pixel	CONTENTID	optional	unknown (-1)	literal	delegated	literal
+pixel	CONTENTURI	optional	unknown (-1)	literal	delegated	literal
+pixel	PODSEQUENCE	optional	unknown (-1)	literal	delegated	literal
+pixel	ADSERVINGID	optional	value:serving-123	literal	delegated	literal
+pixel	LIMITADTRACKING	required	unknown (-1)	literal	delegated	literal
+pixel	REGULATIONS	optional	unknown (-1)	literal	delegated	literal
+pixel	GDPRCONSENT	optional	unknown (-1)	literal	delegated	literal
+pixel	STOREID	optional	literal	literal	delegated	literal
+pixel	STOREURL	optional	literal	literal	delegated	literal
+pixel	PLAYBACKMETHODS	optional	literal	literal	delegated	literal
+pixel	GPPSTRING	optional	literal	literal	delegated	literal
+pixel	GPPSECTIONID	optional	literal	literal	delegated	literal
+request (escaped &amp;)	TIMESTAMP	required	literal	literal	literal	literal
+request (escaped &amp;)	CACHEBUSTING	required	literal	literal	literal	missing
+request (escaped &amp;)	CONTENTPLAYHEAD	deprecated	literal	literal	literal	missing
+request (escaped &amp;)	MEDIAPLAYHEAD	optional	literal	literal	literal	missing
+request (escaped &amp;)	BREAKPOSITION	optional	literal	literal	literal	missing
+request (escaped &amp;)	BLOCKEDADCATEGORIES	optional	literal	literal	literal	missing
+request (escaped &amp;)	ADCATEGORIES	optional	literal	literal	literal	missing
+request (escaped &amp;)	ADCOUNT	optional	literal	literal	literal	missing
+request (escaped &amp;)	TRANSACTIONID	optional	literal	literal	literal	missing
+request (escaped &amp;)	PLACEMENTTYPE	optional	literal	literal	literal	missing
+request (escaped &amp;)	ADTYPE	optional	literal	literal	literal	missing
+request (escaped &amp;)	BREAKMAXDURATION	optional	literal	literal	literal	missing
+request (escaped &amp;)	BREAKMAXADS	optional	literal	literal	literal	missing
+request (escaped &amp;)	BREAKMINADLENGTH	optional	literal	literal	literal	missing
+request (escaped &amp;)	BREAKMAXADLENGTH	optional	literal	literal	literal	missing
+request (escaped &amp;)	IFA	optional	literal	literal	literal	missing
+request (escaped &amp;)	IFATYPE	optional	literal	literal	literal	missing
+request (escaped &amp;)	CLIENTUA	optional	literal	literal	literal	missing
+request (escaped &amp;)	SERVERUA	optional	literal	literal	literal	missing
+request (escaped &amp;)	DEVICEUA	optional	literal	literal	literal	missing
+request (escaped &amp;)	SERVERSIDE	optional	literal	literal	literal	missing
+request (escaped &amp;)	DEVICEIP	optional	literal	literal	literal	missing
+request (escaped &amp;)	LATLONG	optional	literal	literal	literal	missing
+request (escaped &amp;)	DOMAIN	optional	literal	literal	literal	missing
+request (escaped &amp;)	PAGEURL	required-if-OM	literal	literal	literal	missing
+request (escaped &amp;)	APPBUNDLE	required-if-OM	literal	literal	literal	missing
+request (escaped &amp;)	VASTVERSIONS	optional	literal	literal	literal	missing
+request (escaped &amp;)	APIFRAMEWORKS	optional	literal	literal	literal	missing
+request (escaped &amp;)	EXTENSIONS	optional	literal	literal	literal	missing
+request (escaped &amp;)	VERIFICATIONVENDORS	optional	literal	literal	literal	missing
+request (escaped &amp;)	OMIDPARTNER	required-if-OM	literal	literal	literal	missing
+request (escaped &amp;)	MEDIAMIME	optional	literal	literal	literal	missing
+request (escaped &amp;)	PLAYERCAPABILITIES	optional	literal	literal	literal	missing
+request (escaped &amp;)	CLICKTYPE	optional	literal	literal	literal	missing
+request (escaped &amp;)	INVENTORYSTATE	optional	literal	literal	literal	missing
+request (escaped &amp;)	PLAYERSIZE	optional	literal	literal	literal	missing
+request (escaped &amp;)	CONTENTID	optional	literal	literal	literal	missing
+request (escaped &amp;)	CONTENTURI	optional	literal	literal	literal	missing
+request (escaped &amp;)	LIMITADTRACKING	required	literal	literal	literal	missing
+request (escaped &amp;)	REGULATIONS	optional	literal	literal	literal	missing
+request (escaped &amp;)	GDPRCONSENT	optional	literal	literal	literal	missing
+request (escaped &amp;)	STOREID	optional	literal	literal	literal	missing
+request (escaped &amp;)	STOREURL	optional	literal	literal	literal	missing
+request (escaped &amp;)	PLAYBACKMETHODS	optional	literal	literal	literal	missing
+request (escaped &amp;)	CONTENTCAT	optional	literal	literal	literal	missing
+request (escaped &amp;)	GPPSTRING	optional	literal	literal	literal	missing
+request (escaped &amp;)	GPPSECTIONID	optional	literal	literal	literal	missing
+request (escaped &amp;)	DSAREQUIRED	optional	literal	literal	literal	missing
+request (escaped &amp;)	DSAPARAMS	optional	literal	literal	literal	missing
+request (escaped &amp;)	DSAPUBRENDER	optional	literal	literal	literal	missing

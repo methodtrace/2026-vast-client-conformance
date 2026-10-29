@@ -1,0 +1,2 @@
+id	area	strength	spec	claim	videoadsdk
+X13	xml	should	§3.4.4 (Impression)	An empty Impression element does not stop the other Impression from being requested.	conforms

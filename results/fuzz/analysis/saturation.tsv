@@ -1,0 +1,8 @@
+campaign	round	cases	classes_observed_in_round	new_classes
+r1	1	145	7	7
+r1	2	135	7	2
+r1	3	139	6	0
+r2	1	276	8	8
+r2	2	284	7	0
+r2	3	278	8	2
+r2	4	289	8	0

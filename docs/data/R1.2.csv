@@ -1,0 +1,11 @@
+Step,Count,Source
+Result rows summed over the 16 queries (with repeats across queries),"3,406 (computed)",results/survey/npm-sweep-2026-10-16.meta.json
+Unique packages before the keyword filter,not stored,no file states it
+Packages after the keyword filter,267,results/survey/npm-candidates-2026-10-16.json (267 keys); paper Section 4.1
+Plausible clients with metadata and dependency lists,25,results/survey/npm-metadata-2026-10-16.json (25 keys)
+Packages unpacked and searched by hand,10,Section 1 above
+Clients in the set before the survey,"4 (vast-client-js 6.5.0, video-ad-sdk 4.0.1, iab-vast-loader 2.5.1, Shaka Player 5.2.12)","paper Section 4.1 (three established libraries, plus Shaka Player added by hand)"
+New candidates considered for testing,"7: vastlint-client 0.15.0 (passes all four conditions), rmp-vast 17.2.0 (fails condition 2), Google IMA HTML5 (fails condition 1), and four small players that pass all four conditions",paper Section 4.1; sections 5 and 6 below
+New candidates tested,"3 (vastlint-client, rmp-vast, IMA)",paper Section 4.1
+New candidates eligible and not tested,4,paper Sections 4.1 and 7
+Tested client set,"7 clients: vast-client-js, video-ad-sdk, iab-vast-loader, vastlint-client, rmp-vast, Shaka Player, Google IMA (computed: 4 chosen before the survey plus 3 new). Eight open-source configurations, seven in the browsers and five under Node.js; IMA adds one browser configuration",the README of the archive's reference results (configurations); paper Section 4.1 and Table 1

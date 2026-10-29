@@ -1,0 +1,4 @@
+Package,Version in file,License,Last release,"Downloads, last month",In 25-package metadata file,Decision,Reason
+vastlint,0.15.0,not in metadata file,2026-10-13,"2,908",no,excluded,"validator, not a client (vastlint-client is the client)"
+@types/vast-client,3.0.4,not in metadata file,2023-11-07,"25,721",no,excluded,type definitions
+vast,2.0.18,not in metadata file,2026-10-03,"85,042",no,excluded,"the English word ""vast"" (a state container library)"

@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+type: software
+version: 1.0.0
+message: "If you use this harness, its test vectors or its results, please cite the paper it accompanies. Code: Apache-2.0; results, test vectors and Online Resources: CC-BY-4.0."
+title: "Do Open-Source Video Ad Clients Follow VAST 4.3? An Empirical Study of Player Conformance: reproducibility artifact"
+authors:
+  - family-names: Chaudhary
+    given-names: Prashant
+    affiliation: Independent Researcher
+    orcid: "https://orcid.org/0009-0001-1980-109X"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+repository-code: "https://github.com/methodtrace/2026-vast-client-conformance"
+url: "https://methodtrace.github.io/2026-vast-client-conformance"
+doi: "10.5281/zenodo.23581408"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23581408"
+    description: "This version (1.0.0) of this artifact"
+  - type: doi
+    value: "10.5281/zenodo.23581407"
+    description: "All versions of this artifact"
+keywords:
+  - VAST
+  - video advertising
+  - conformance testing
+  - specification-based testing
+  - test oracles
+  - connected TV
+preferred-citation:
+  type: article
+  title: "Do Open-Source Video Ad Clients Follow VAST 4.3? An Empirical Study of Player Conformance"
+  authors:
+    - family-names: Chaudhary
+      given-names: Prashant
+  year: 2026
