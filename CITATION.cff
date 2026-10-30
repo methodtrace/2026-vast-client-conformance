@@ -14,6 +14,7 @@ license:
 repository-code: "https://github.com/methodtrace/2026-vast-client-conformance"
 url: "https://methodtrace.github.io/2026-vast-client-conformance"
 doi: "10.5281/zenodo.23581408"
+date-released: "2026-10-29"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.23581408"
@@ -21,6 +22,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.23581407"
     description: "All versions of this artifact"
+  - type: doi
+    value: "10.48550/arXiv.2610.39093"
+    description: "arXiv preprint of the associated manuscript"
 keywords:
   - VAST
   - video advertising

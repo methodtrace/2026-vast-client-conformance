@@ -6,7 +6,7 @@ Replication package for the paper by **Prashant Chaudhary** (ORCID [0009-0001-19
 
 - Cite this version (1.0.0): https://doi.org/10.5281/zenodo.23581408
 - All versions: https://doi.org/10.5281/zenodo.23581407
-- Preprint: forthcoming on arXiv
+- Preprint: arXiv:2610.39093, https://doi.org/10.48550/arXiv.2610.39093
 - Published version: not yet accepted
 - Repository: https://github.com/methodtrace/2026-vast-client-conformance, tag `v1.0.0`
 - Browsable tables (Online Resources 1 to 5): https://methodtrace.github.io/2026-vast-client-conformance
